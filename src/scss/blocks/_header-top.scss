@@ -1,6 +1,5 @@
-.header {
+.header-top {
   padding-top: 51px;
-  padding-bottom: 65px;
 	background-color: #fff;
 
 	&__row {
@@ -10,16 +9,16 @@
 	}
 }
 
-.header__nav {
+.header-top__nav {
 	@include tablet {
 		display: none;
 	}
 }
 
-.header__cta {
+.header-top__cta {
   width: 255px;
 }
 
-.header__phone {
+.header-top__phone {
   column-gap: 10px;
 }

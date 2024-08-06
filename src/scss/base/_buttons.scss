@@ -20,6 +20,16 @@
   }
 }
 
+.button-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 68px;
+  height: 68px;
+  background-color: rgba(110, 156, 159, 0.1);
+}
+
 .button-outline {
   display: inline-block;
   padding: 22px 50px;

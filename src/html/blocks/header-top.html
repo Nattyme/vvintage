@@ -1,24 +1,24 @@
-<header class="header">
+<header class="header-top">
     <div class="container">
-        <div class="header__row">
+        <div class="header-top__row">
             @@include('_logo.html')
-            <nav class="header__nav nav">
+            <nav class="header-top__nav nav">
               @@include('_nav.html')
             </nav>
-            <div class="header__cta flex-block">
-              <div class="header__phone flex-block">
+            <div class="header-top__cta flex-block">
+              <a href="tel:74958235412" class="header__phone flex-block">
                 <svg class="icon icon--phone">
                   <use href="./img/svgsprite/sprite.symbol.svg#phone"></use>
                 </svg>
                 <span>+7 (495) 823-54-12</span>
-              </div>
-              <div class="header__user flex-block">
-                <div class="cart">
+              </a>
+              <div class="header-top__user flex-block">
+                <a href="good.html" class="cart">
                   <svg class="icon icon--shopping-bag">
                     <use href="./img/svgsprite/sprite.symbol.svg#shopping-bag"></use>
                   </svg>
                   <span class="counter">3</span>
-                </div>
+                </a>
               </div>
             </div>
             <button class="mobile-nav-btn none">

@@ -35,14 +35,16 @@
 }
 
 .icon--phone {
+  padding: 3px 4px 7px 6px;
   width: 27px;
   height: 27px;
   fill: #6E9C9F;
 	transition: all 0.5s ease;
+}
 
-	&:hover {
-		fill: #fff;
-	}
+:is(a:hover) .icon--phone {
+  background-color: var(--accent);
+  fill: #fff;
 }
 
 .incon--instagram, 
