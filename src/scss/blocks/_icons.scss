@@ -7,30 +7,60 @@
 .icon {
 	fill: transparent;
 	stroke: transparent;
-	width: 62px;
-	height: 62px;
+	width: 25px;
+	height: 25px;
 }
 
-.icon--heart-line {
-	fill: rgb(241, 68, 131);
+.icon--logo {
+	fill: #000;
 }
 
-.icon--id-card-line {
-	fill: rgb(51, 51, 51);
-}
-.icon--search-line {
-	fill: rgb(28, 176, 80);
+.icon--shopping-bag {
+	fill: #000;
 }
 
-.icon--user-star {
-	fill: rgb(26, 134, 235);
+.icon--arrow-bottom {
+  width: 14px;
+  height: 28px;
+	stroke: #6e9c9f;
 }
 
-.icon--user {
-	stroke: rgb(26, 134, 235);
-	transition: all 0.2s ease-in;
+.icon--approved,
+.icon--settings,
+.hand 
+{
+  width: 61px;
+  height: 61px;
+	fill: #000;
+}
+
+.icon--phone {
+  width: 27px;
+  height: 27px;
+  fill: #6E9C9F;
+	transition: all 0.5s ease;
 
 	&:hover {
-		stroke: rgb(17, 193, 90);
+		fill: #fff;
 	}
+}
+
+.incon--instagram, 
+.incon--facebook, 
+.incon--twitter {
+  width: 23px;
+  height: 23px;
+  fill: #000;
+}
+
+.icon--close {
+  width: 16px;
+  height: 16px;
+  fill: #000;
+}
+
+.icon--file-check {
+  width: 96px;
+  height: 96px;
+  fill: #6E9C9F;
 }
