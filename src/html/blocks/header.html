@@ -1,15 +1,27 @@
 <header class="header">
     <div class="container">
         <div class="header__row">
-            <div class="logo">
-              <svg class="icon icon--logo">
-                <use href="./img/svgsprite/sprite.symbol.svg#logo"></use>
-              </svg>
-            </div>
+            @@include('_logo.html')
             <nav class="header__nav nav">
-              <!-- @@include('nav.html') -->
+              @@include('_nav.html')
             </nav>
-            <button class="mobile-nav-btn">
+            <div class="header__cta flex-block">
+              <div class="header__phone flex-block">
+                <svg class="icon icon--phone">
+                  <use href="./img/svgsprite/sprite.symbol.svg#phone"></use>
+                </svg>
+                <span>+7 (495) 823-54-12</span>
+              </div>
+              <div class="header__user flex-block">
+                <div class="cart">
+                  <svg class="icon icon--shopping-bag">
+                    <use href="./img/svgsprite/sprite.symbol.svg#shopping-bag"></use>
+                  </svg>
+                  <span class="counter">3</span>
+                </div>
+              </div>
+            </div>
+            <button class="mobile-nav-btn none">
                 <div class="nav-icon"></div>
             </button>
         </div>

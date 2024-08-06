@@ -1,11 +1,33 @@
 .header__nav {
+  
 }
+
 .nav {
-	font-size: 18px;
+	
 }
+
 .nav__list {
 	display: flex;
-	column-gap: 30px;
+  align-items: center;
+	column-gap: 45px;
 }
-.active {
+
+.nav__item {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #000;
+}
+
+.nav__item a {
+  color: #000;
+  transition: color 0.5s ease;
+
+  &:hover {
+    color: var(--link-color);
+  }
 }
