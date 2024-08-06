@@ -1,9 +1,24 @@
 .h1 {
-  font-family: var(--font-family);
-  font-weight: 500;
+  font-family: var(	--font-titles);
   font-size: 55px;
   line-height: 1.1;
-  letter-spacing: 0.02em;
-  color: #000;
+}
+
+.h2 {
+  font-family: var(	--font-titles);
+  font-size: 40px;
+  line-height: 1.1;
+}
+
+.h3 {
+  font-family: var(	--font-titles);
+  font-size: 20px;
+  line-height: 1.4;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.section-title {
+  margin-bottom: 92px;
 }
 

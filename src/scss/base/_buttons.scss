@@ -1,15 +1,13 @@
 .button-solid {
   display: inline-block;
-  padding: 22px 50px;
+  padding: 22px 0;
   width: 243px;
   height: 68px;
   background-color: var(--button-bg);
 
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 17px;
   line-height: 1.39;
-  letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
 
@@ -32,23 +30,20 @@
 
 .button-outline {
   display: inline-block;
-  padding: 22px 50px;
+  padding: 20px 0;
   width: 243px;
   height: 68px;
   border: 1px solid var(--button-bg);
 
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 17px;
   line-height: 1.39;
-  letter-spacing: 0.02em;
   text-align: center;
   color: var(--button-bg);
 
   transition: all 0.5s ease;
 
   &:hover {
-    border: unset;
     background-color: var(--button-bg);
     color: #fff;
   }
