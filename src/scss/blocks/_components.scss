@@ -40,3 +40,13 @@
   }
 }
 
+.social-list {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 12px;
+}
+
+.payment-list {
+  display: flex;
+  justify-content: flex-end;
+}
