@@ -1,6 +1,10 @@
 .header-top {
   padding-top: 51px;
-  background: linear-gradient(90deg, rgba(255,255,255,1) 57%, rgba(241,234,220,1) 57%);
+  background: linear-gradient(
+    90deg, 
+    #fff 57%, 
+    var(--page-bg-accent) 57%
+    );
 
 	&__row {
 		display: flex;
