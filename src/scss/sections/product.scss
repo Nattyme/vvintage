@@ -1,4 +1,26 @@
-.product {
+main.product-page {
   padding-top: 110px;
   padding-bottom: 130px;
+}
+
+.product {
+  margin-bottom: 130px;
+}
+
+.product__content {
+  display: flex;
+  align-items: center;
+  column-gap: 74px;
+}
+
+.product__price {
+}
+
+.product__cta {
+  display: flex;
+  column-gap: 11px;
+}
+.product__qty {
+}
+.button-solid {
 }

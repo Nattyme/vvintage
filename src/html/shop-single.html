@@ -14,29 +14,52 @@
 
 <body>
 	@@include('blocks/header-top.html')
-	<main>
+	<main class="product-page">
     <section class="product">
       <div class="container">
-        <div class="product__content">
-          <header class="products__header">
-            <div class="products__title">
-              <h1 class="h1">Свитшот Sweet Shot</h1>
-            </div>
-            <div class="breadcrumbs">
-              <p>Главная <span>—</span> Свитшоты <span>—</span> Свитшот Sweet Shot</p>
-            </div>
-          </header>
-          <div class="product__content">
-            <div class="product__img">
-              <img src="./../img/card-full/01.jpg" srcset="./../img/card-full/01@2x.jpg" alt="">
-            </div>
-            <div class="product__desc"></div>
+        <header class="shop-header">
+          <div class="shop-header__title">
+            <h1 class="h1">Свитшот Sweet Shot</h1>
           </div>
-        
+          <div class="breadcrumbs">
+            <p>Главная <span>—</span> Свитшоты <span>—</span> Свитшот Sweet Shot</p>
+          </div>
+        </header>
+       
+        <div class="product__content">
+          <div class="product__img">
+            <img src="./../img/card-full/01.jpg" srcset="./../img/card-full/01@2x.jpg" alt="">
+          </div>
+          <div class="product__desc">
+            <div class="product__price"><span class="price">$311</span><span class="price-old">$450</span></div>
+            <p>Бренд: <span>CINER</span></p>
+            <form action="" class="form" method="POST">
+           
+              <div class="input-wrapper">
+                <input type="text" placeholder="0">
+              </div>
+              <button class="button-solid" type="submit">Добавить в корзину</button>
+            
+            </form>
+
+          </div>
         </div>
         
       </div>
       
+    </section>
+    <section class="see-also">
+      <div class="container">
+        <div class="see-also__content">
+          <div class="section-title">
+            <h2 class="h2">Связанные товары</h2>
+          </div>
+          <div class="cards-row">
+            @@include('./blocks/card.html')
+            @@include('./blocks/card.html')
+          </div>
+        </div>
+      </div>
     </section>
     
 	</main>

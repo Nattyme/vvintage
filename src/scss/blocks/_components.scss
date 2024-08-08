@@ -60,3 +60,18 @@
   line-height: 1.4;
   color: #808080;
 }
+
+.price {
+  font-size: 40px;
+  line-height: 1.1;
+  color: var(--accent-additional);
+}
+
+.price-old {
+  margin-left: 30px;
+  
+  font-size: 30px;
+  line-height: 1.1;
+  text-decoration: line-through;
+  color: #9c9c9c;
+}
