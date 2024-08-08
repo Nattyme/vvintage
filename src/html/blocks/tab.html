@@ -1,30 +1,30 @@
-<div class="tab">
-  <div class="tab__nav">
-    <button class="tab__nav-button active">Все</button>
-    <button class="tab__nav-button">Пальто</button>
-    <button class="tab__nav-button">Свитшоты</button>
-    <button class="tab__nav-button">Кардиганы</button>
-    <button class="tab__nav-button">Толстовки</button>
+<div class="tab" data-control="tab">
+  <div class="tab__nav" data-control="tab-nav">
+    <button class="tab__nav-button active" data-control="tab-button">Все</button>
+    <button class="tab__nav-button" data-control="tab-button">Пальто</button>
+    <button class="tab__nav-button" data-control="tab-button">Свитшоты</button>
+    <button class="tab__nav-button" data-control="tab-button">Кардиганы</button>
+    <button class="tab__nav-button" data-control="tab-button">Толстовки</button>
   </div>
   <div class="tab__content">
-    <div class="tab__block">
-      @@include('./card.html')
-      @@include('./card.html')
-    </div>
-    <div class="tab__block">
-      @@include('./card.html')
+    <div class="tab__block active" data-control="tab-block">
+      tab1
       @@include('./card.html')
     </div>
-    <div class="tab__block">
-      @@include('./card.html')
-      @@include('./card.html')
-    </div>
-    <div class="tab__block">
-      @@include('./card.html')
+    <div class="tab__block" data-control="tab-block">
+      tab2
       @@include('./card.html')
     </div>
-    <div class="tab__block">
+    <div class="tab__block" data-control="tab-block">
+      tab3
       @@include('./card.html')
+    </div>
+    <div class="tab__block" data-control="tab-block">
+      tab4
+      @@include('./card.html')
+    </div>
+    <div class="tab__block" data-control="tab-block">
+      tab5
       @@include('./card.html')
     </div>
   </div>
