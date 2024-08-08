@@ -8,4 +8,6 @@ Fancybox.bind('[data-fancybox]', {
 
 // Мобильная навигация
 import mobileNav from './modules/mobile-nav.js';
+import catList from './modules/cat-list.js';
 mobileNav();
+catList();

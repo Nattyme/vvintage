@@ -1,0 +1,36 @@
+.tab__nav {
+  margin-bottom: 92px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.tab__nav-button {
+  padding: 19px 65px;
+  border: 1px solid #000;
+
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.4;
+  transition: all 0.5s ease;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #faf6f6;
+  }
+}
+
+.tab__nav-button.active {
+  background-color: #000;
+  color: #fff;
+}
+
+.tab__block {
+  display: flex;
+  column-gap: 30px;
+  row-gap: 65px;
+  flex-wrap: wrap;
+}
+

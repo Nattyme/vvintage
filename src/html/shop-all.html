@@ -15,11 +15,11 @@
 <body>
 	@@include('blocks/header-top.html')
 	<main>
-    <section class="shop">
+    <section class="products">
       <div class="container">
-        <div class="shop__content">
-          <header class="shop__header">
-            <div class="shop__title">
+        <div class="products__content">
+          <header class="products__header">
+            <div class="products__title">
               <h1 class="h1">Магазин</h1>
             </div>
             <div class="breadcrumbs">
@@ -27,26 +27,8 @@
             </div>
           </header>
          
-          <div class="shop__cards">
-            <div class="shop__category">
-              <ul class="category-list">
-                  <li class="category-list__item">
-                    <a href="" class="category-list__link">Все</a>
-                  </li>
-                  <li class="category-list__item">
-                    <a href="" class="category-list__link">Пальто</a>
-                  </li>
-                  <li class="category-list__item">
-                    <a href="" class="category-list__link">Свитшоты</a>
-                  </li>
-                  <li class="category-list__item">
-                    <a href="" class="category-list__link">Кардиганы</a>
-                  </li>
-                  <li class="category-list__item">
-                    <a href="" class="category-list__link">Толстовки</a>
-                  </li>
-              </ul>
-            </div>
+          <div class="products__cards">
+            @@include('blocks/tab.html')
           </div>
         </div>
         
