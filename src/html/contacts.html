@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Womazing - контакты</title>
+	<link rel="stylesheet" href="./css/main.css" />
+
+	<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg">
+	<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+</head>
+
+<body>
+	@@include('blocks/header-top.html')
+	<main class="inner-page">
+    <section class="contacts">
+      <div class="container">
+        <div class="contacts__header">
+          <div class="section-title">
+            <h1 class="h1">Контакты</h1>
+          </div>
+          <div class="breadcrumbs">
+            <p>Главная <span>—</span> Контакты</p>
+          </div>
+        </div>
+        <div class="contacts__map-wrapper">
+          <div class="contacts__map">КАРТА</div>
+        </div>
+        <div class="contacts__widget">
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <p>Телефон</p>
+              <a href="tel:74958235412" class="contacts__link">+7 (495) 823-54-12</a>
+            </li>
+            <li class="contacts__item">
+              <p>E-mail</p>
+              <a href="mailto:info@sitename.com" class="contacts__link">info@sitename.com</a>
+            </li>
+            <li class="contacts__item">
+              <p>Адрес</p>
+              <p>г. Москва, 3-я улица Строителей, 25</p>
+            </li>
+          </ul>
+        </div>
+        
+      </div>
+    </section>
+	</main>
+	@@include('blocks/footer.html')
+	<script src="./js/index.bundle.js"></script>
+</body>
