@@ -1,6 +1,5 @@
 .product-cart {
   display: grid;
-  padding-right: 100px;
   grid-template-columns: 475px auto;
 
   & + & {
@@ -12,11 +11,14 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-
-  &:last-child {
-    justify-content: space-between;
-  }
 }
+
+.product-cart__wrapper:last-child {
+  display: grid;
+  column-gap: 30px;
+  grid-template-columns: 1fr 1fr 65px 1fr;
+}
+
 .product-cart__controls {
   margin-right: 45px;
 }
@@ -49,4 +51,5 @@
 .icon--control-down {
 }
 .product-cart__total {
+  grid-column: 4;
 }

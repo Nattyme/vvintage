@@ -2,7 +2,6 @@
 }
 .cart-header {
   padding-bottom: 26px;
-  padding-right: 100px;
   margin-bottom: 50px;
 
   display: grid;
@@ -11,9 +10,9 @@
 }
 
 .cart-header__wrapper {
-  display: flex;
-  column-gap: 15px;
-  justify-content: space-between;
+  display: grid;
+  column-gap: 30px;
+  grid-template-columns: 1fr 1fr 65px 1fr;
 }
 
 .cart-header__title {
@@ -24,6 +23,10 @@
 }
 .cart-header__cost {
 }
+.cart-header__total {
+  grid-column: 4;
+}
+
 .cart-footer {
   display: flex;
   align-items: center;
