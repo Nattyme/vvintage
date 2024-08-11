@@ -3,6 +3,7 @@
 .cart-header {
   padding-bottom: 26px;
   padding-right: 100px;
+  margin-bottom: 50px;
 
   display: grid;
   grid-template-columns: 475px auto;
@@ -24,6 +25,14 @@
 .cart-header__cost {
 }
 .cart-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.cart-footer__total {
+  padding: 16px 31px;
+  background-color: #f1eadc;
 }
 .cart-footer__text {
 }
@@ -32,6 +41,7 @@
 .cart-footer__price {
 }
 .cart-footer__button {
+  margin-left: 15px;
 }
 .button-solid {
 }

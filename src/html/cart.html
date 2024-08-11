@@ -38,12 +38,15 @@
               </div>
             </header>
             <!-- product -->
-            @@include('sections/product.html')
+            @@include('sections/product-cart.html')
             <!--// product -->
             <footer class="cart-footer">
-              <div class="cart-footer__text">Итого:</div>
-              <div class="cart-footer__count">3 единицы</div>
-              <div class="cart-footer__price">$129</div>
+              <div class="cart-footer__total">
+                <span class="cart-footer__text">Итого: </span>
+                <span class="cart-footer__count">3 единицы </span>
+                <span class="cart-footer__price">$129</span>
+              </div>
+        
               <div class="cart-footer__button">
                 <button class="button-solid" type="submit">Оформить заказ</button>
               </div>

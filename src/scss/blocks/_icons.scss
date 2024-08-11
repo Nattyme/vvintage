@@ -64,12 +64,6 @@
   fill: #000;
 }
 
-.icon--close {
-  width: 16px;
-  height: 16px;
-  fill: #000;
-}
-
 .icon--file-check {
   width: 96px;
   height: 96px;
@@ -79,4 +73,10 @@
 .icon--control-up, .icon--control-down {
   width: 14px;
   stroke: #A0BBCC;
+}
+
+.icon--delete {
+  width: 12px;
+  height: 12px;
+  stroke: #000;
 }
