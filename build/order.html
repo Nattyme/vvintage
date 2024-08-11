@@ -68,18 +68,90 @@
 		</div>
 
 		<main class="inner-page">
-			<section class="order">
+			<section class="section-cart">
 				<div class="container">
-					<div class="order__header">
+					<div class="section-cart__header">
 						<div class="section-title">
-							<h1 class="h1">Оформление заказа</h1>
+							<h1 class="h1">Корзина</h1>
 						</div>
 						<div class="breadcrumbs">
-							<p>Главная <span>&#8212;</span> Оформление заказа</p>
+							<p>Главная <span>&#8212;</span> Корзина</p>
 						</div>
 					</div>
 
-					<div class="order__body"></div>
+					<div class="section-cart__body">
+						<section class="cart">
+							<header class="cart-header">
+								<div class="cart-header__title">Товар</div>
+								<div class="cart-header__wrapper">
+									<div class="cart-header__title cart-header__count">Цена</div>
+									<div class="cart-header__title cart-header__cost">Количество</div>
+									<div class="cart-header__title cart-header__total">Всего</div>
+								</div>
+							</header>
+							<!-- product -->
+							<section class="product-cart">
+								<div class="product-cart__wrapper">
+									<div class="product-cart__controls">
+										<button class="button-delete">
+											<svg class="icon icon--delete">
+												<use href="./img/svgsprite/sprite.symbol.svg#delete"></use>
+											</svg>
+										</button>
+									</div>
+									<div class="product-cart__img">
+										<picture>
+											<source srcset="./img/cart/01.webp 1x, ./img/cart/01@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/cart/01.jpg 1x, ./img/cart/01@2x.jpg 2x" type="image/jpeg" />
+											<img src="./img/cart/01.jpg" srcset="./img/cart/01@2x.jpg" alt="apple MacBook" />
+										</picture>
+									</div>
+									<div class="product-cart__title">
+										Футболка USA
+									</div>
+								</div>
+								<div class="product-cart__wrapper">
+									<div class="product-cart__price">
+										$129
+									</div>
+									<div class="product-cart__count">
+										<div class="count">
+											<div class="count__box">
+												<input type="number" class="count__input" min="1" max="100" value="1" />
+											</div>
+											<div class="count__controls">
+												<button class="count__up">
+													<svg class="icon icon--control-up">
+														<use href="./img/svgsprite/sprite.symbol.svg#control-up"></use>
+													</svg>
+												</button>
+												<button class="count__down">
+													<svg class="icon icon--control-down">
+														<use href="./img/svgsprite/sprite.symbol.svg#control-down"></use>
+													</svg>
+												</button>
+											</div>
+										</div>
+									</div>
+									<div class="product-cart__total">
+										$129
+									</div>
+								</div>
+							</section>
+							<!--// product -->
+							<footer class="cart-footer">
+								<div class="cart-footer__total">
+									<span class="cart-footer__text">Итого: </span>
+									<span class="cart-footer__count">3 шт.</span>
+									<span class="cart-footer__price">$129</span>
+								</div>
+
+								<div class="cart-footer__button">
+									<button class="button-solid" type="submit">Оформить заказ</button>
+								</div>
+							</footer>
+						</section>
+					</div>
 				</div>
 			</section>
 		</main>

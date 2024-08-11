@@ -16,42 +16,19 @@
 <body>
 	@@include('blocks/header-top.html')
 	<main class="inner-page">
-    <section class="section-cart">
+    <section class="order">
       <div class="container">
-        <div class="section-cart__header">
+        <div class="order__header">
           <div class="section-title">
-            <h1 class="h1">Корзина</h1>
+            <h1 class="h1">Оформление заказа</h1>
           </div>
           <div class="breadcrumbs">
-            <p>Главная <span>—</span> Корзина</p>
+            <p>Главная <span>—</span> Оформление заказа</p>
           </div>
         </div>
 
-        <div class="section-cart__body">
-          <section class="cart">
-            <header class="cart-header">
-              <div class="cart-header__title"> Товар</div>
-              <div class="cart-header__wrapper">
-                <div class="cart-header__title cart-header__count">Цена</div>
-                <div class="cart-header__title cart-header__cost">Количество</div>
-                <div class="cart-header__title cart-header__total">Всего</div>
-              </div>
-            </header>
-            <!-- product -->
-            @@include('sections/product-cart.html')
-            <!--// product -->
-            <footer class="cart-footer">
-              <div class="cart-footer__total">
-                <span class="cart-footer__text">Итого: </span>
-                <span class="cart-footer__count">3 шт.</span>
-                <span class="cart-footer__price">$129</span>
-              </div>
-        
-              <div class="cart-footer__button">
-                <button class="button-solid" type="submit">Оформить заказ</button>
-              </div>
-            </footer>
-          </section>
+        <div class="order__body">
+          
         </div>
       
 
