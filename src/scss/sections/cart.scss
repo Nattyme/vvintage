@@ -31,8 +31,12 @@
 }
 
 .cart-footer__total {
+  height: 68px;
   padding: 16px 31px;
   background-color: #f1eadc;
+
+  font-size: 25px;
+  line-height: 1.4;
 }
 .cart-footer__text {
 }

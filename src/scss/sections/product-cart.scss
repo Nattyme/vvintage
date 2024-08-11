@@ -11,17 +11,20 @@
 .product-cart__wrapper {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+
+  &:last-child {
+    justify-content: space-between;
+  }
 }
 .product-cart__controls {
+  margin-right: 45px;
 }
 .button-delete {
 }
-.icon {
-}
-.icon--delete {
-}
+
 .product-cart__img {
+  margin-right: 36px;
 }
 .product-cart__title {
 }
