@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Womazing - контакты</title>
+	<link rel="stylesheet" href="./css/main.css" />
+
+	<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg">
+	<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+  <script src="https://api-maps.yandex.ru/v3/?apikey=144f79d1-953e-448c-9341-fb93fa71b6c2&lang=ru_RU"></script>
+</head>
+
+<body>
+	@@include('blocks/header-top.html')
+	<main class="inner-page">
+    <section class="section-cart">
+      <div class="container">
+        <div class="section-cart__header">
+          <div class="section-title">
+            <h1 class="h1">Корзина</h1>
+          </div>
+          <div class="breadcrumbs">
+            <p>Главная <span>—</span> Корзина</p>
+          </div>
+        </div>
+
+        <div class="section-cart__body">
+          <section class="cart">
+            <header class="cart-header">
+              <div class="cart-header__title"> Товар</div>
+              <div class="cart-header__count">Цена</div>
+              <div class="cart-header__cost">Количество</div>
+              <div class="cart-header__cost">Всего</div>
+            </header>
+            <!-- product -->
+            <section class="product">
+              <div class="product__controls">
+                <button class="button-delete">
+                  <svg class="icon icon--delete">
+                    <use href="./img/svgsprite/sprite.symbol.svg#delete"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="product__img">
+                <img src="./../img/cart/01.jpg" srcset="./../img/cart/01@2x.jpg" alt="apple MacBook">
+              </div>
+              <div class="product__title">
+                Футболка USA
+              </div>
+              <div class="product__price">
+                $129
+              </div>
+              <div class="product__count">
+                  <div class="count">
+                      <div class="count__box">
+                          <input type="number" class="count__input" min="1" max="100" value="1">
+                      </div>
+                      <div class="count__controls">
+                          <button class="count__up">
+                              <svg class="icon icon--control-up">
+                                <use href="./img/svgsprite/sprite.symbol.svg#control-up"></use>
+                              </svg>
+                          </button>
+                          <button class="count__down">
+                            <svg class="icon icon--control-down">
+                              <use href="./img/svgsprite/sprite.symbol.svg#control-down"></use>
+                            </svg>
+                          </button>
+                      </div>
+                  </div>
+              </div>
+              <div class="product__total">
+                $129
+              </div>
+            </section>
+            <!--// product -->
+            <footer class="cart-footer">
+              <div class="cart-footer__text">Итого:</div>
+              <div class="cart-footer__count">3 единицы</div>
+              <div class="cart-footer__price">$129</div>
+              <div class="cart-footer__button">
+                <button class="button-solid" type="submit">Оформить заказ</button>
+              </div>
+            </footer>
+          </section>
+        </div>
+      
+
+      </div>
+    </section>
+	</main>
+	@@include('blocks/footer.html')
+	<script src="./js/index.bundle.js"></script>
+</body>
