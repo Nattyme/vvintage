@@ -17,24 +17,23 @@
 }
 
 .contacts__list {
+  display: flex;
+  column-gap: 100px;
 }
+
 .contacts__item {
+  font-size: 20px;
+  line-height: 1.4;
+  
+  p {
+    margin-bottom: 20px;
+  }
 }
+
 .contacts__link {
 }
+
 .contacts__form {
-}
-.form-contact {
-}
-.form-contact__title {
-}
-.form-contact__input {
-}
-.form-contact__button {
-}
-.button-solid {
-}
-.form-contact__notification {
-}
-.message-success {
+  width: 443px;
+  height: 462px;
 }

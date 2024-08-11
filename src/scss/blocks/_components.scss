@@ -75,3 +75,16 @@
   text-decoration: line-through;
   color: #9c9c9c;
 }
+
+.notification {
+  margin-top: 62px;
+  padding: 30px 30px;
+  width: 437px;
+  text-align: center;
+  background: #f1eadc;
+}
+
+.notification__text {
+  font-size: 17px;
+  line-height: 1.4;
+}
