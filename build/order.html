@@ -68,89 +68,48 @@
 		</div>
 
 		<main class="inner-page">
-			<section class="section-cart">
+			<section class="section-order">
 				<div class="container">
-					<div class="section-cart__header">
+					<div class="section-order__header">
 						<div class="section-title">
-							<h1 class="h1">Корзина</h1>
+							<h1 class="h1">Оформление заказа</h1>
 						</div>
 						<div class="breadcrumbs">
-							<p>Главная <span>&#8212;</span> Корзина</p>
+							<p>Главная <span>&#8212;</span> Оформление заказа</p>
 						</div>
 					</div>
-
-					<div class="section-cart__body">
-						<section class="cart">
-							<header class="cart-header">
-								<div class="cart-header__title">Товар</div>
-								<div class="cart-header__wrapper">
-									<div class="cart-header__title cart-header__count">Цена</div>
-									<div class="cart-header__title cart-header__cost">Количество</div>
-									<div class="cart-header__title cart-header__total">Всего</div>
-								</div>
-							</header>
-							<!-- product -->
-							<section class="product-cart">
-								<div class="product-cart__wrapper">
-									<div class="product-cart__controls">
-										<button class="button-delete">
-											<svg class="icon icon--delete">
-												<use href="./img/svgsprite/sprite.symbol.svg#delete"></use>
-											</svg>
-										</button>
-									</div>
-									<div class="product-cart__img">
-										<picture>
-											<source srcset="./img/cart/01.webp 1x, ./img/cart/01@2x.webp 2x" type="image/webp" />
-											<source srcset="./img/cart/01.jpg 1x, ./img/cart/01@2x.jpg 2x" type="image/jpeg" />
-											<img src="./img/cart/01.jpg" srcset="./img/cart/01@2x.jpg" alt="apple MacBook" />
-										</picture>
-									</div>
-									<div class="product-cart__title">
-										Футболка USA
+					<div class="section-order__form">
+						<form class="form-order" method="POST">
+							<div class="form-order__user">
+								<div class="form-order__block">
+									<div class="form-order__title">
+										<h3>Данные покупателя</h3>
 									</div>
 								</div>
-								<div class="product-cart__wrapper">
-									<div class="product-cart__price">
-										$129
-									</div>
-									<div class="product-cart__count">
-										<div class="count">
-											<div class="count__box">
-												<input type="number" class="count__input" min="1" max="100" value="1" />
-											</div>
-											<div class="count__controls">
-												<button class="count__up">
-													<svg class="icon icon--control-up">
-														<use href="./img/svgsprite/sprite.symbol.svg#control-up"></use>
-													</svg>
-												</button>
-												<button class="count__down">
-													<svg class="icon icon--control-down">
-														<use href="./img/svgsprite/sprite.symbol.svg#control-down"></use>
-													</svg>
-												</button>
-											</div>
-										</div>
-									</div>
-									<div class="product-cart__total">
-										$129
+								<div class="form-order__block">
+									<div class="form-order__title">
+										<h3>Адрес получателя</h3>
 									</div>
 								</div>
-							</section>
-							<!--// product -->
-							<footer class="cart-footer">
-								<div class="cart-footer__total">
-									<span class="cart-footer__text">Итого: </span>
-									<span class="cart-footer__count">3 шт.</span>
-									<span class="cart-footer__price">$129</span>
+								<div class="form-order__block">
+									<div class="form-order__title">
+										<h3>Комментарии</h3>
+									</div>
 								</div>
-
-								<div class="cart-footer__button">
-									<button class="button-solid" type="submit">Оформить заказ</button>
+							</div>
+							<div class="form-order__details">
+								<div class="form-order__block">
+									<div class="form-order__title">
+										<h3>Ваш заказ</h3>
+									</div>
 								</div>
-							</footer>
-						</section>
+								<div class="form-order__block">
+									<div class="form-order__title">
+										<h3>Способы оплаты</h3>
+									</div>
+								</div>
+							</div>
+						</form>
 					</div>
 				</div>
 			</section>
