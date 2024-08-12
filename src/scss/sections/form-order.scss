@@ -1,0 +1,30 @@
+.form-order {
+  width: 918px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-order__user {
+  width: 350px;
+}
+
+.form-order__details {
+  width: 284px;
+}
+
+.form-order__block {
+  * + * {
+    margin-top: 35px;
+  }
+  &:not(:last-child) {
+    margin-bottom: 80px;
+  }
+}
+
+.form-order__title {
+  margin-bottom: 47px;
+
+  font-size: 25px;
+  line-height: 1.4;
+}
+
