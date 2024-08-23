@@ -14,28 +14,21 @@
 
 /*text*/
 .header__text {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  
 }
 
 .header__title {
   margin-bottom: 45px;
-  grid-column-start: 1;
-  grid-column-end: 4;
 }
 
 .header__desc {
   margin-bottom: 52px;
-  grid-column-start: 1;
-  grid-column-end: 3;
+  padding-right: 163px;
 
   p {
-    font-family: var(--font-family);
     font-weight: 400;
     font-size: 20px;
     line-height: 1.4;
-    letter-spacing: 0.02em;
     text-align: right;
     color: #000;
   }
@@ -47,8 +40,8 @@
 
 .header__button {
   display: flex;
-  grid-column-start: 2;
-  grid-column-end: 3;
+  justify-content: flex-end;
+  padding-right: 163px;
 }
 
 /* images*/
