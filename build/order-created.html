@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Womazing&#160;&#8212; контакты</title>
+		<title>Womazing&#160;&#8212; заказ оформлен</title>
 		<link rel="stylesheet" href="./css/main.css" />
 
 		<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg" />
@@ -68,88 +68,34 @@
 		</div>
 
 		<main class="inner-page">
-			<section class="section-order">
+			<section class="order">
 				<div class="container">
-					<div class="section-order__header">
+					<div class="order__header">
 						<div class="section-title">
-							<h1 class="h1">Оформление заказа</h1>
+							<h1 class="h1">Заказ получен</h1>
 						</div>
 						<div class="breadcrumbs">
-							<p>Главная <span>&#8212;</span> Оформление заказа</p>
+							<p>Главная <span>&#8212;</span> Оформление заказа <span>-</span> Заказ получен</p>
 						</div>
 					</div>
-					<div class="section-order__form">
-						<form class="form-order" method="POST">
-							<div class="form-order__user">
-								<div class="form-order__block">
-									<div class="form-order__title">
-										<h3>Данные покупателя</h3>
-									</div>
-									<div class="form-input-wrapper">
-										<input type="text" class="form-input" placeholder="Имя" name="name" />
-										<input type="text" class="form-input" placeholder="E-mail" name="email" />
-										<input type="text" class="form-input" placeholder="Телефон" name="phone" />
-									</div>
-								</div>
-								<div class="form-order__block">
-									<div class="form-order__title">
-										<h3>Адрес получателя</h3>
-									</div>
-									<div class="form-input-wrapper">
-										<input type="text" class="form-input" placeholder="Имя" name="name" />
-										<input type="text" class="form-input" placeholder="E-mail" name="email" />
-										<input type="text" class="form-input" placeholder="Телефон" name="phone" />
-										<input type="text" class="form-input" placeholder="Телефон" name="phone" />
-										<input type="text" class="form-input" placeholder="Телефон" name="phone" />
-									</div>
-								</div>
-								<div class="form-order__block">
-									<div class="form-order__title">
-										<h3>Комментарии</h3>
-										<div class="form-input-wrapper">
-											<textarea type="text" class="form-textarea" name="message">Сообщение</textarea>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="form-order__details">
-								<div class="form-order__block">
-									<div class="form-order__title">
-										<h3>Ваш заказ</h3>
-									</div>
 
-									<table class="form-order__total">
-										<thead>
-											<tr>
-												<th>Товар</th>
-												<th>Всего</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<th>Футболка USA</th>
-												<th>$129</th>
-											</tr>
-											<tr>
-												<th>Подытог</th>
-												<th>$129</th>
-											</tr>
-										</tbody>
-										<tfoot>
-											<tr>
-												<th>Итого</th>
-												<th>$129</th>
-											</tr>
-										</tfoot>
-									</table>
+					<div class="order__body">
+						<div class="order__row">
+							<div class="order__notification">
+								<div class="order__img">
+									<svg class="icon icon--success">
+										<use href="./img/svgsprite/sprite.symbol.svg#success"></use>
+									</svg>
 								</div>
-								<div class="form-order__block">
-									<div class="form-order__title">
-										<h3>Способы оплаты</h3>
-									</div>
+								<div class="order__text">
+									<p class="order__title">Заказ успешно оформлен</p>
+									<p class="order__message">Мы&#160;свяжемся с&#160;вами в&#160;ближайшее время!</p>
 								</div>
 							</div>
-						</form>
+							<div class="order__button">
+								<a href="#1" class="button-outline">Перейти на&#160;главную</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>

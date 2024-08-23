@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Womazing - заказ оформлен</title>
+	<link rel="stylesheet" href="./css/main.css" />
+
+	<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg">
+	<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+  <script src="https://api-maps.yandex.ru/v3/?apikey=144f79d1-953e-448c-9341-fb93fa71b6c2&lang=ru_RU"></script>
+</head>
+
+<body>
+	@@include('blocks/header-top.html')
+	<main class="inner-page">
+    <section class="order">
+      <div class="container">
+        <div class="order__header">
+          <div class="section-title">
+            <h1 class="h1">Заказ получен</h1>
+          </div>
+          <div class="breadcrumbs">
+            <p>Главная <span>—</span> Оформление заказа <span>-</span> Заказ получен</p>
+          </div>
+        </div>
+
+        <div class="order__body">
+          <div class="order__row">
+            <div class="order__notification">
+              <div class="order__img">
+                <svg class="icon icon--success">
+                  <use href="./img/svgsprite/sprite.symbol.svg#success"></use>
+                </svg>
+              </div>
+              <div class="order__text">
+                <p class="order__title"> Заказ успешно оформлен</p>
+                <p class="order__message">Мы свяжемся с вами в ближайшее время!</p>
+              </div>
+    
+            </div>
+            <div class="order__button">
+              <a href="#1" class="button-outline">Перейти на главную</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+	</main>
+	@@include('blocks/footer.html')
+	<script src="./js/index.bundle.js"></script>
+</body>
