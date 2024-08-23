@@ -4,9 +4,9 @@ import 'swiper/css/bundle';
 function swiperHeader () {
  
     const swiperHeaderText = new Swiper(".swiperHeaderText", {
-      spaceBetween: 10,
+      spaceBetween: 20,
       slidesPerView: 1,
-      freeMode: true,
+      // freeMode: true,
       watchSlidesProgress: true,
     });
     const swiperHeaderImg = new Swiper(".swiperHeaderImg", {
