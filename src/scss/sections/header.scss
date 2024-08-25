@@ -1,4 +1,5 @@
 .header {
+  height: 706px;
   background: linear-gradient(
     90deg, 
     #fff 57%, 
@@ -54,6 +55,7 @@
 }
 
 .header__image-main {
+  padding-left: 50px;
   overflow: hidden;
 
   img {

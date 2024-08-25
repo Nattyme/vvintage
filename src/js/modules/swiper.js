@@ -9,16 +9,16 @@ function swiperHeader () {
       // freeMode: true,
       watchSlidesProgress: true,
     });
-    const swiperHeaderImg = new Swiper(".swiperHeaderImg", {
-      spaceBetween: 10,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      thumbs: {
-        swiper: swiperHeaderText,
-      },
-    });
+    // const swiperHeaderImg = new Swiper(".swiperHeaderImg", {
+    //   spaceBetween: 10,
+    //   navigation: {
+    //     nextEl: ".swiper-button-next",
+    //     prevEl: ".swiper-button-prev",
+    //   },
+    //   thumbs: {
+    //     swiper: swiperHeaderText,
+    //   },
+    // });
 }
 
 export default swiperHeader;
