@@ -9,16 +9,19 @@ function swiperHeader () {
       // freeMode: true,
       watchSlidesProgress: true,
     });
-    // const swiperHeaderImg = new Swiper(".swiperHeaderImg", {
-    //   spaceBetween: 10,
-    //   navigation: {
-    //     nextEl: ".swiper-button-next",
-    //     prevEl: ".swiper-button-prev",
-    //   },
-    //   thumbs: {
-    //     swiper: swiperHeaderText,
-    //   },
-    // });
+    swiper.on('slideChange', function () {
+      console.log('slide changed');
+    });
+    const swiperHeaderImg = new Swiper(".swiperHeaderImg", {
+      spaceBetween: 10,
+    });
+
+    const swipeAllSliders = (index) => {
+      swiperHeaderText.slideToLoop(index);
+      swiperHeaderImg.slideToLoop(index);
+    };
+    
+    swiperHeaderText.on('slideChange', () => swipeAllSliders( swiperHeaderText.realIndex));
 }
 
 export default swiperHeader;
