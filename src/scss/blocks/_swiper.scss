@@ -10,7 +10,7 @@
 }
 
 /*Pagination*/
-.swiperHeaderText-buttons {
+.swiperHeaderText-buttons .swiper-pagination-bullets.swiper-pagination-horizontal.swiperHeaderText-button {
   bottom: -126px;
   right: 163px;
 
@@ -19,14 +19,14 @@
   column-gap: 12px;
 }
 
-.swiperHeaderText-buttons button {
+.swiper-pagination.swiperHeaderText-buttons .swiper-pagination-bullets.swiper-pagination-horizontal {
   display: inline-block;
   width: 30px;
   height: 4px;
   background-color: #d1d1d1;
 }
 
-.swiperHeaderText-buttons button.active {
+.swiper-pagination.swiperHeaderText-buttons .swiper-pagination-bullets.swiper-pagination-horizontal.active  {
   background-color: #000;
 }
 

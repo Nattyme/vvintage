@@ -6,12 +6,12 @@ function swiperHeader () {
     const swiperHeaderText = new Swiper(".swiperHeaderText", {
       spaceBetween: 20,
       slidesPerView: 1,
-      // freeMode: true,
       watchSlidesProgress: true,
+      pagination: {
+        el: ".swiper-pagination",
+      },
     });
-    swiper.on('slideChange', function () {
-      console.log('slide changed');
-    });
+    
     const swiperHeaderImg = new Swiper(".swiperHeaderImg", {
       spaceBetween: 10,
     });
