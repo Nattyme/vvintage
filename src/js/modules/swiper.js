@@ -4,21 +4,31 @@ import 'swiper/css/bundle';
 function swiperHeader () {
  
     const swiperHeaderText = new Swiper(".swiperHeaderText", {
-      spaceBetween: 20,
+      autoplay:{
+        delay:	5000,
+        pauseOnMouseEnter: true,
+      },
+      spaceBetween: 30,
       slidesPerView: 1,
-      watchSlidesProgress: true,
+      speed: 2000,
+      loop: true,
+      watchSlidesProgress: false,
       pagination: {
         el: ".swiper-pagination",
       },
     });
-    
+  
     const swiperHeaderImg = new Swiper(".swiperHeaderImg", {
-      spaceBetween: 10,
+      watchSlidesProgress: false,
+      speed: 2000,
+      loop: true,
+      watchSlidesProgress: false,
+      spaceBetween: 30,
     });
 
-    const swipeAllSliders = (index) => {
-      swiperHeaderText.slideToLoop(index);
-      swiperHeaderImg.slideToLoop(index);
+    const swipeAllSliders = (realIndex) => {
+      swiperHeaderText.slideToLoop(realIndex);
+      swiperHeaderImg.slideToLoop(realIndex);
     };
     
     swiperHeaderText.on('slideChange', () => swipeAllSliders( swiperHeaderText.realIndex));
