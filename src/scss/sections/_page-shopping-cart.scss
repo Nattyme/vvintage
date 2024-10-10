@@ -91,3 +91,17 @@
   }
  
 }
+
+.page-shopping-cart__check {
+  margin-bottom: 28px;
+}
+
+.page-shopping-cart__row {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.page-shopping-cart__buttons-wrapper {
+  display: flex;
+  column-gap: 15px;
+}
