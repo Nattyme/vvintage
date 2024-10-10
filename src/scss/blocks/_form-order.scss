@@ -20,9 +20,13 @@
 
 .form-order__row {
   display: flex;
-  column-gap: 10px;
-  row-gap: 15px;
   flex-wrap: wrap;
+  column-gap: 120px;
+  row-gap: 15px;
+}
+
+.form-order__row + .form-order__row  {
+  margin-top: 20px;
 }
 
 .form-order__title {
@@ -79,6 +83,7 @@
 
 .radio-button {
   display: flex;
+  align-items: center;
   column-gap: 14px;
 }
 
@@ -129,4 +134,9 @@
 
 .radio-button-real:checked + .radio-button-custom::before {
   transform: translate(-50%, -50%) scale(1);
+}
+
+.form-order__img-wrapper {
+  width: 60px;
+  height: auto;
 }
