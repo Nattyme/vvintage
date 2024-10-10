@@ -46,14 +46,16 @@
   column-gap: 12px;
 }
 
-.breadcrumbs {
+.breadcrumb {
+  display: inline-block;
+  
   font-size: 17px;
   line-height: 1.4;
   letter-spacing: 0.02em;
   color: #000;
 }
 
-.breadcrumbs--active {
+.breadcrumb--active {
   color: #909090;
 }
 
