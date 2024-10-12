@@ -24,6 +24,20 @@ function isMobile () {
   let body = document.querySelector('body');
   if (isMobile.any()) {
     body.classList.add('touch');
+    let arrow = document.querySelectorAll('.arrow');
+    
+    for(let i=0; i<arrow.length; i++) {
+        let thisLink = arrow[i].previousElementSibling;
+        let subNav = arrow[i].nextElementSibling;
+        let thisArrow = arrow[i];
+        thisLink.classList.add('parent');
+
+        arrow[i].addEventListener('click', function () {
+        
+          subNav.classList.toggle('open');
+          thisArrow.classList.toggle('active');
+      })
+    }
   } else {
     body.classList.add('mouse');
   }
