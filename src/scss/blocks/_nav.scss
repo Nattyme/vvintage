@@ -14,10 +14,6 @@
   color: #000;
 }
 
-.nav__list > li:hover .sub-nav__list {
-  display: block;
-}
-
 .nav__item a {
   color: #000;
   transition: color 0.5s ease;
@@ -38,10 +34,6 @@
 
 .sub-nav__list > li {
   background-color: var(--accent);
-}
-
-.sub-nav__list > li:hover .sub-sub-nav__list {
-  display: block;
 }
 
 .sub-nav__link {
@@ -65,3 +57,26 @@
 
 .sub-sub-nav__link {
 }
+
+.nav__arrow {
+}
+.arrow {
+  position: absolute;
+  right: 0;
+  top: 12px;
+
+  width: 0;
+  height: 0;
+  border-top: 10px solid #000;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+}
+
+body.mouse .nav__list > li:hover .sub-nav__list {
+  display: block;
+}
+
+body.mouse .sub-nav__list > li:hover .sub-sub-nav__list {
+  display: block;
+}
+ 
