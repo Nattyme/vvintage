@@ -1,15 +1,21 @@
-.nav {
+.nav li {
+  position: relative;
+}
+
+.nav__list {
 	display: flex;
   align-items: center;
 	column-gap: 45px;
-}
 
-.nav__item {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 15px;
   line-height: 1.4;
   color: #000;
+}
+
+.nav__list > li:hover .sub-nav__list {
+  display: block;
 }
 
 .nav__item a {
@@ -19,4 +25,43 @@
   &:hover {
     color: var(--link-color);
   }
+}
+
+.sub-nav__list {
+  display: none;
+  min-width: 300px;
+  padding: 20px 0px 0px 0px;
+  position: absolute;
+  left: 0;
+  top: 20px;
+}
+
+.sub-nav__list > li {
+  background-color: var(--accent);
+}
+
+.sub-nav__list > li:hover .sub-sub-nav__list {
+  display: block;
+}
+
+.sub-nav__link {
+  padding: 5px 10px;
+  color: #fff;
+}
+
+.sub-sub-nav__list {
+  padding: 0px 0px 0px 5px;
+
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  min-width: 300px;
+}
+
+.sub-sub-nav__list > li {
+  background-color: #fff;
+}
+
+.sub-sub-nav__link {
 }

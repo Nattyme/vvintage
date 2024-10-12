@@ -1,8 +1,9 @@
 .header-top {
   position: sticky;
-  z-index: 9;
+  z-index: 99;
   top: 0;
   padding-top: 50px;
+  padding-bottom: 40px;
   background-color: #fff;
 
 	&__row {
@@ -12,8 +13,7 @@
 	}
 }
 
-.main-page .header-top {
-  padding-bottom: 40px;
+.main-page .header-top.header-top--gradient-bg {
   background: linear-gradient(
     90deg, 
     #fff 57%, 
