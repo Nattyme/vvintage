@@ -13,6 +13,9 @@ function swiperAbout () {
       prevEl: ".swiperAbout-button-prev",
       nextEl: ".swiperAbout-button-next",
     },
+    pagination: {
+      el: ".swiperAbout-pagination",
+    },
   });
 }
 

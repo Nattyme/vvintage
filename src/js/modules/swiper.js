@@ -11,7 +11,7 @@ function swiperHeader () {
     loop: true,
     watchSlidesProgress: false,
     pagination: {
-      el: ".swiper-pagination",
+      el: ".swiperHeaderText-pagination",
       clickable: true,
     },
   });

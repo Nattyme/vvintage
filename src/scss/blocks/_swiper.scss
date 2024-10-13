@@ -1,8 +1,9 @@
 .swiperHeaderText {
   width: 563px;
-  height: 385px;
+  height: 300px;
 }
-
+// swiper-pagination swiper-pagination-custom swiperHeaderText-pagination
+// swiper-pagination swiper-pagination-custom swiper-pagination-custom--light swiperAbout-pagination
 .swiper.swiperHeaderImg {
   margin-right: unset;
   width: 410px;
@@ -10,12 +11,8 @@
 }
 
 /*Pagination*/
-.swiperHeaderText-buttons.swiper-pagination.swiper-pagination-bullets  {
+.swiper-pagination-custom.swiper-pagination.swiper-pagination-bullets {
   width: 114px;
-  bottom: -126px;
-  left: unset;
-  right: 0;
-  right: 163px;
 
   display: flex;
   justify-content: flex-start;
@@ -37,3 +34,29 @@
     background-color: #000;
   }
 }
+
+.swiper-pagination-custom.swiper-pagination-custom--light.swiper-pagination.swiper-pagination-bullets {
+  .swiper-pagination-bullet {
+    background-color: rgba(255, 255, 255, 0.36);
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #fff;
+  }
+}
+
+.swiperHeaderText-pagination.swiper-pagination.swiper-pagination-bullets  {
+  bottom: -126px;
+  left: unset;
+  right: unset;
+  right: 163px;
+}
+
+.swiperAbout-pagination.swiper-pagination.swiper-pagination-bullets  {
+  left: 50%;
+  bottom: 60px;
+  transform: translateX(-50%);
+}
+
+
+
