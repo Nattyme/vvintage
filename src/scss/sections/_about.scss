@@ -5,16 +5,10 @@
 
 .about__content {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr auto 1fr;
-}
-
-.about__img {
-  grid-column-start: 1;
-  grid-column-end: 4;
-}
-
-.about__desc {
-  grid-column-start: 5;
+  grid-template-columns: 6fr 3fr;
+  -moz-column-gap: 30px;
+  justify-content: space-between;
+  column-gap: 30px;
 }
 
 .about__header {

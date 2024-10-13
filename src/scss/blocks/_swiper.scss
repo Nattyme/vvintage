@@ -10,24 +10,30 @@
 }
 
 /*Pagination*/
-.swiperHeaderText-buttons .swiper-pagination-bullets.swiper-pagination-horizontal.swiperHeaderText-button {
+.swiperHeaderText-buttons.swiper-pagination.swiper-pagination-bullets  {
+  width: 114px;
   bottom: -126px;
+  left: unset;
+  right: 0;
   right: 163px;
 
   display: flex;
   justify-content: flex-start;
   column-gap: 12px;
+
+  .swiper-pagination-bullet {
+    margin: 0;
+
+    display: inline-block;
+    width: 30px;
+    height: 4px;
+
+    border-radius: unset;
+    opacity: 1;
+    background-color: #d1d1d1;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #000;
+  }
 }
-
-.swiper-pagination.swiperHeaderText-buttons .swiper-pagination-bullets.swiper-pagination-horizontal {
-  display: inline-block;
-  width: 30px;
-  height: 4px;
-  background-color: #d1d1d1;
-}
-
-.swiper-pagination.swiperHeaderText-buttons .swiper-pagination-bullets.swiper-pagination-horizontal.active  {
-  background-color: #000;
-}
-
-
