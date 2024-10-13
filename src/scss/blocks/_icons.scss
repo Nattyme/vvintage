@@ -87,3 +87,11 @@
   height: 96px;
   fill: #6E9C9F;
 }
+
+.icon--slider-arrow {
+  stroke: #000;
+}
+
+.icon--slider-arrow-prev {
+  transform: rotate(180deg);
+}

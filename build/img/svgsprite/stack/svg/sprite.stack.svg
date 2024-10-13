@@ -168,8 +168,8 @@
             <path fill="#fff" d="M0 0h24v24H0z"/>
         </clipPath>
     </defs>
-</svg><svg fill="none" viewBox="0 0 29 16" id="slider-arrow" xmlns="http://www.w3.org/2000/svg">
-    <path d="M29 8H1m0 0 7.19-7M1 8l7.19 7" stroke="#858585"/>
+</svg><svg fill="none" viewBox="0 0 21 11" id="slider-arrow" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 5.5h20m0 0-5.135 5M20 5.5l-5.135-5" stroke="#000"/>
 </svg><svg fill="none" viewBox="0 0 72 84" id="success" xmlns="http://www.w3.org/2000/svg">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M53.122 30.876a2.999 2.999 0 0 1 0 4.248l-18 18a2.998 2.998 0 0 1-4.248 0l-9-9a3.004 3.004 0 0 1 4.248-4.248l6.876 6.882 15.876-15.882a3 3 0 0 1 4.248 0Z" fill="#6E9C9F"/>
     <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0h48a12 12 0 0 1 12 12v60a12 12 0 0 1-12 12H12A12 12 0 0 1 0 72V12A12 12 0 0 1 12 0Zm0 6a6 6 0 0 0-6 6v60a6 6 0 0 0 6 6h48a6 6 0 0 0 6-6V12a6 6 0 0 0-6-6H12Z" fill="#6E9C9F"/>
