@@ -7,8 +7,6 @@ main.product-page {
   margin-bottom: 130px;
 }
 
-// swiper-slide-active
-
 .product__swiper {
   display: flex;
   flex-direction: column;
@@ -21,14 +19,7 @@ main.product-page {
   column-gap: 74px;
 }
 
-.product__price {
-}
-
 .product__cta {
   display: flex;
   column-gap: 11px;
-}
-.product__qty {
-}
-.button-solid {
 }

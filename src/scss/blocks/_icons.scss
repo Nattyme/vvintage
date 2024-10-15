@@ -36,11 +36,15 @@
 
 .icon--approved,
 .icon--settings,
-.icon--hand 
-{
+.icon--hand {
   width: 61px;
   height: 61px;
-	fill: #000;
+}
+
+.icon--approved, .icon--wheel, .icon--hand {
+  width: 60px;
+  height: 60px;
+  fill: #000;
 }
 
 .icon--phone {
