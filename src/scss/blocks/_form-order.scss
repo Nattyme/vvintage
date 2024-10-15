@@ -81,61 +81,6 @@
   margin-top: 47px;
 }
 
-.radio-button {
-  display: flex;
-  align-items: center;
-  column-gap: 14px;
-}
-
-.radio-button-real {
-  width: 0;
-  height: 0;
-  position: absolute;
-  opacity: 0;
-  z-index: -1;
-}
-
-.radio-button-custom {
-  position: relative;
-  display: inline-block;
-  width: 22px;
-  height: 22px;
-
-  border: 1px solid #000;
-
-  vertical-align: sub;
-}
-
-.radio-button-real:focus + .radio-button-custom {
-  box-shadow: 0px 0px 0px 1px #000, 0px 0px 10px #ccc;
-}
-
-.radio-button-custom::before {
-  content: "";
-
-  /* Рисуем квадрат*/
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  background-color: #000;
-
-  /* Выравниваем по центру */
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%) scale(0);
-
-  transition: 0.2s ease-in;
-}
-
-/*
-Активируем фейковый(декоративный) чекбокс
-*/
-
-.radio-button-real:checked + .radio-button-custom::before {
-  transform: translate(-50%, -50%) scale(1);
-}
-
 .form-order__img-wrapper {
   width: 60px;
   height: auto;

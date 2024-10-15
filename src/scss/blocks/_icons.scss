@@ -11,11 +11,7 @@
 	height: 25px;
 }
 
-.icon--logo {
-	fill: #000;
-}
-
-.icon--shopping-bag {
+.icon--logo, .icon--shopping-bag, .icon--arrow-right.dark  {
 	fill: #000;
 }
 
@@ -28,17 +24,6 @@
 .icon--arrow-right {
   width: 32px;
   height: 24px;
-}
-
-.icon--arrow-right.dark {
-  stroke: #000;
-}
-
-.icon--approved,
-.icon--settings,
-.icon--hand {
-  width: 61px;
-  height: 61px;
 }
 
 .icon--approved, .icon--wheel, .icon--hand {
@@ -60,9 +45,7 @@
   fill: #fff;
 }
 
-.icon--instagram, 
-.icon--facebook, 
-.icon--twitter {
+.icon--instagram, .icon--facebook, .icon--twitter {
   width: 23px;
   height: 23px;
   fill: #000;
@@ -105,6 +88,6 @@
 }
 
 .icon--logout {
-  stroke: #000;
+  fill: #000;
 }
 
