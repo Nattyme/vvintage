@@ -1,0 +1,40 @@
+.product-swiper {
+  width: 536px;
+  height: 566px;
+}
+
+.swiper-button-next {
+}
+
+.product-swiper__button {
+}
+
+.product-swiper__button--next {
+}
+
+.swiper-button-prev {
+}
+
+.product-swiper__button--prev {
+}
+
+.product-thumbs {
+  width: 536px;
+}
+
+.product-thumbs__wrapper {
+  column-gap: 25px;
+}
+
+.product-thumbs__slide {
+  width: 100px;
+  height: auto;
+  
+  overflow: hidden;
+  img {
+    width: 114px;
+    height: 104px;
+    object-fit: cover;
+  }
+ 
+}

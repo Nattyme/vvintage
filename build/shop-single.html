@@ -5,10 +5,10 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Womazing&#160;&#8212; магазин. Все товары</title>
-		<link rel="stylesheet" href="./css/main.css" />
-
 		<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg" />
 		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+		<link rel="stylesheet" href="./css/main.css" />
 	</head>
 
 	<body>
@@ -221,12 +221,97 @@
 					</header>
 
 					<div class="product__content">
-						<div class="product__img">
-							<picture>
-								<source srcset="./img/card-full/01.webp 1x, ./img/card-full/01@2x.webp 2x" type="image/webp" />
-								<source srcset="./img/card-full/01.jpg 1x, ./img/card-full/01@2x.jpg 2x" type="image/jpeg" />
-								<img src="./img/card-full/01.jpg" srcset="./img/card-full/01@2x.jpg" alt="" />
-							</picture>
+						<div class="product__swiper">
+							<!-- swiper -->
+							<div class="swiper product-swiper">
+								<div class="swiper-wrapper product-swiper__wrapper">
+									<div class="swiper-slide product-swiper__slide">
+										<picture>
+											<source srcset="./img/card-full/01.webp 1x, ./img/card-full/01@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/card-full/01.jpg 1x, ./img/card-full/01@2x.jpg 2x" type="image/jpeg" />
+											<img src="./img/card-full/01.jpg" srcset="./img/card-full/01@2x.jpg" alt="" />
+										</picture>
+									</div>
+									<div class="swiper-slide product-swiper__slide">
+										<picture>
+											<source srcset="./img/card-full/01.webp 1x, ./img/card-full/01@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/card-full/01.jpg 1x, ./img/card-full/01@2x.jpg 2x" type="image/jpeg" />
+											<img src="./img/card-full/01.jpg" srcset="./img/card-full/01@2x.jpg" alt="" />
+										</picture>
+									</div>
+									<div class="swiper-slide product-swiper__slide">
+										<picture>
+											<source srcset="./img/card-full/01.webp 1x, ./img/card-full/01@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/card-full/01.jpg 1x, ./img/card-full/01@2x.jpg 2x" type="image/jpeg" />
+											<img src="./img/card-full/01.jpg" srcset="./img/card-full/01@2x.jpg" alt="" />
+										</picture>
+									</div>
+									<div class="swiper-slide product-swiper__slide">
+										<picture>
+											<source srcset="./img/card-full/01.webp 1x, ./img/card-full/01@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/card-full/01.jpg 1x, ./img/card-full/01@2x.jpg 2x" type="image/jpeg" />
+											<img src="./img/card-full/01.jpg" srcset="./img/card-full/01@2x.jpg" alt="" />
+										</picture>
+									</div>
+									<div class="swiper-slide product-swiper__slide">
+										<picture>
+											<source srcset="./img/card-full/01.webp 1x, ./img/card-full/01@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/card-full/01.jpg 1x, ./img/card-full/01@2x.jpg 2x" type="image/jpeg" />
+											<img src="./img/card-full/01.jpg" srcset="./img/card-full/01@2x.jpg" alt="" />
+										</picture>
+									</div>
+								</div>
+								<div class="swiper-button-next product-swiper__button product-swiper__button--next"></div>
+								<div class="swiper-button-prev product-swiper__button product-swiper__button--prev"></div>
+							</div>
+							<!--// swiper -->
+
+							<!-- thumbs -->
+							<div thumbsSlider="" class="swiper product-thumbs">
+								<div class="swiper-wrapper product-thumbs__wrapper">
+									<div class="swiper-slide product-thumbs__slide">
+										<picture>
+											<source srcset="./img/card-full/01.webp 1x, ./img/card-full/01@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/card-full/01.jpg 1x, ./img/card-full/01@2x.jpg 2x" type="image/jpeg" />
+											<img src="./img/card-full/01.jpg" srcset="./img/card-full/01@2x.jpg" alt="" />
+										</picture>
+									</div>
+									<div class="swiper-slide product-thumbs__slide">
+										<picture>
+											<source srcset="./img/card-full/01.webp 1x, ./img/card-full/01@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/card-full/01.jpg 1x, ./img/card-full/01@2x.jpg 2x" type="image/jpeg" />
+											<img src="./img/card-full/01.jpg" srcset="./img/card-full/01@2x.jpg" alt="" />
+										</picture>
+									</div>
+									<div class="swiper-slide product-thumbs__slide">
+										<picture>
+											<source srcset="./img/card-full/01.webp 1x, ./img/card-full/01@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/card-full/01.jpg 1x, ./img/card-full/01@2x.jpg 2x" type="image/jpeg" />
+											<img src="./img/card-full/01.jpg" srcset="./img/card-full/01@2x.jpg" alt="" />
+										</picture>
+									</div>
+									<div class="swiper-slide product-thumbs__slide">
+										<picture>
+											<source srcset="./img/card-full/01.webp 1x, ./img/card-full/01@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/card-full/01.jpg 1x, ./img/card-full/01@2x.jpg 2x" type="image/jpeg" />
+											<img src="./img/card-full/01.jpg" srcset="./img/card-full/01@2x.jpg" alt="" />
+										</picture>
+									</div>
+									<div class="swiper-slide product-thumbs__slide">
+										<picture>
+											<source srcset="./img/card-full/01.webp 1x, ./img/card-full/01@2x.webp 2x" type="image/webp" />
+											<source srcset="./img/card-full/01.jpg 1x, ./img/card-full/01@2x.jpg 2x" type="image/jpeg" />
+											<img src="./img/card-full/01.jpg" srcset="./img/card-full/01@2x.jpg" alt="" />
+										</picture>
+									</div>
+								</div>
+							</div>
+							<!--// thumbs -->
+							<!-- <picture>
+<source srcset="./img/card-full/01.webp 1x, ./img/card-full/01@2x.webp 2x" type="image/webp">
+<source srcset="./img/card-full/01.jpg 1x, ./img/card-full/01@2x.jpg 2x" type="image/jpeg">
+<img src="./img/card-full/01.jpg" srcset="./img/card-full/01@2x.jpg" alt="">
+</picture> -->
 						</div>
 						<div class="product__desc">
 							<div class="product__price"><span class="price">$311</span><span class="price-old">$450</span></div>
@@ -393,6 +478,7 @@
 			</div>
 		</footer>
 
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 		<script src="./js/index.bundle.js"></script>
 	</body>
 </html>

@@ -7,6 +7,12 @@ main.product-page {
   margin-bottom: 130px;
 }
 
+.product__swiper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 25px;
+}
+
 .product__content {
   display: flex;
   align-items: center;
