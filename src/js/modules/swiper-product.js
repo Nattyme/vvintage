@@ -5,9 +5,10 @@ function swiperProduct () {
     freeMode: true,
     watchSlidesProgress: true,
   });
+
   var productSwiper = new Swiper(".product-swiper", {
+    speed: 1000,
     lazy: true,
-    zoom: true,
     keyboard: {
       enabled: true,
     },
