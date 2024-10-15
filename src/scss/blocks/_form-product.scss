@@ -2,8 +2,27 @@
   padding-right: 93px;
 }
 
-.form-product__row + .form-product__row {
-  margin-top: 60px;
+.form-product__row {
+  margin-bottom: 60px;
+}
+
+.form-product__button {
+  display: flex;
+  column-gap: 10px;
+}
+
+.form-product__amount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: 68px;
+  height: 68px;
+  border: 1px solid #afafaf;
+
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
 }
 
 .form-input {
