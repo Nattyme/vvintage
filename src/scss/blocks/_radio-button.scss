@@ -1,4 +1,4 @@
-.radio-button {
+.radio-button-row {
   display: flex;
   align-items: center;
   column-gap: 14px;
@@ -18,6 +18,22 @@
   vertical-align: sub;
 
   transition: color 0.3s ease, background-color 0.2s ease-in;
+
+  &--bg-gray {
+    background-color: #927876;
+  }
+
+  &--bg-khaki {
+    background-color: #d4d4d4;
+  }
+
+  &--bg-coral {
+    background-color: #fd9696;
+  }
+
+  &--bg-gold {
+    background-color: #fdc796;
+  }
 }
 
 .radio-button-custom--payment {
@@ -43,6 +59,9 @@
   height: 41px;
 
   border-radius: 50%;
+  border: 1px solid transparent;
+
+  transition: border-color 0.2s ease;
 }
 
 .radio-button-real:focus + .radio-button-custom--before::before  {
@@ -81,4 +100,8 @@
 .radio-button-real:checked + .radio-button-custom--size {
   background-color: #000;
   color: #fff;
+}
+
+.radio-button-real:checked + .radio-button-custom--colour {
+  border-color: #000;
 }
