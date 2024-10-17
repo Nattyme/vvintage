@@ -1,5 +1,7 @@
 function swiperProduct () {
   var productThumbs = new Swiper(".product-thumbs", {
+    centeredSlides: true,
+    centeredSlidesBounds: true,
     spaceBetween: 25,
     slidesPerView: "auto",
     freeMode: true,

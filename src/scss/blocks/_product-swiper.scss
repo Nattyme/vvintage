@@ -3,6 +3,15 @@
   height: 566px;
 }
 
+.product-swiper__icon-wrapper  {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9;
+}
+
 .product-swiper__slide {
   width: 536px;
   overflow: hidden;

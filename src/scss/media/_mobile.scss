@@ -1,0 +1,251 @@
+/* Mobile */
+@media (max-width: 767px) {
+    .title {
+        font-size: 32px;
+    }
+
+    .title.grad-border {
+        background-position: center bottom 4px;
+        background-size: 100% 8px;
+    }
+
+    .timeline-item__title.grad-border {
+        background-position: center bottom 1px;
+    }
+
+    /*** Header ****/
+    .header-top .container {
+        width: 100%;
+    }
+
+    .header-intro__text {
+        padding-top: 2px;
+    }
+
+    .header-intro__title {
+        margin-bottom: 18px;
+    }
+
+    .header-intro__content {
+        flex-direction: column;
+    }
+
+    .header-intro__desc:nth-child(2) {
+        display: none;
+    }
+
+    .header-intro__desc:last-child {
+        display: block;
+    }
+
+    .header-intro__img {
+        margin-bottom: 10px;
+    }
+
+    .header-banner {
+        margin-top: 0;
+
+        img {
+            height: 168px;
+        }
+    }
+
+    .header-about {
+        margin-top: -70px;
+    }
+
+    .header-about__subtitle {
+        margin-bottom: 21px;
+    }
+
+    .header-about__content {
+        column-gap: 0;
+        flex-direction: column;
+    }
+
+    .header-about__column {
+        margin-bottom: 30px;
+    }
+
+    .header-about__column:first-child {
+        width: unset;
+    }
+
+    .header-about__column:last-child {
+        margin-bottom: 0;
+    }
+
+    /**** Portfolio ****/
+    .mix-block__btn {
+        display: none;
+    }
+
+    .portfolio__cards {
+        row-gap: 30px;
+        column-gap: 0;
+    }
+
+    .portfolio-card {
+        width: 290px;
+        height: 235px;
+    }
+
+    .portfolio-card__img {
+        width: 290px;
+        height: 180px;
+
+        img {
+            width: 290px;
+            height: 180px;
+        }
+    }
+
+    .portfolio-card__text {
+        height: 45px;
+    }
+
+    .portfolio-card:first-child,
+    .portfolio-card:nth-child(2) {
+        width: 290px;
+        height: 235px;
+
+        img {
+            width: 100%;
+            height: 180px;
+        }
+
+        .portfolio-card__text {
+            height: 58px;
+        }
+
+        .portfolio-card__title {
+            margin-bottom: 4px;
+            font-size: 18px;
+        }
+
+        .portfolio-card__desc {
+            font-size: 14px;
+        }
+    }
+
+    /****** Timeline ******/
+    .timeline {
+        overflow-x: hidden;
+    }
+    
+    .timeline-wrapper {
+        width: 100%;
+        margin-left: unset;
+        margin-right: unset;
+    }
+
+    .timeline-item__title {
+        font-size: 20px;
+    }
+
+    .timeline-item {
+
+        &:first-child::before,
+        &:first-child::after {
+            top: 0;
+        }
+
+        p {
+            font-size: 14px;
+            margin-top: 7px;
+        }
+
+        p+* {
+            margin-top: 10px;
+        }
+
+        p+p {
+            margin-top: 7px;
+        }
+    }
+
+    /***** Contacts *****/
+    .contacts__row {
+        flex-direction: column;
+        row-gap: 49px;
+    }
+
+    .contacts__list {
+        margin-bottom: 25px;
+
+        li+li {
+            margin-top: 10px;
+        }
+
+        span {
+            display: block;
+            width: unset;
+            font-size: 16px;
+        }
+    }
+
+    .contact-form__img {
+        display: none;
+    }
+
+    .contact-form {
+        padding: 44px 15px 40px;
+        width: 100%;
+
+        .button {
+            width: 100%;
+        }
+    }
+
+    textarea.form-input:valid {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.3;
+    }
+
+    .fake-placeholder {
+        font-size: 18px;
+    }
+
+    .form-item {
+        &+& {
+            margin-top: 20px;
+        }
+
+        &:last-child {
+            margin-top: 30px;
+        }
+
+        textarea {
+            height: 188px;
+        }
+    }
+
+    .form-input {
+        height: 30px;
+    }
+
+    .contacts__text {
+        margin-bottom: 20px;
+
+        p+p {
+            margin-top: 5px;
+        }
+    }
+
+    /***** Footer *****/
+    .footer__copyright {
+        width: unset;
+    }
+
+    .footer__text p + p {
+        margin-top: 15px;
+    }
+
+    .backtop-btn {
+        bottom: 20px;
+        right: 10px;
+    }
+}

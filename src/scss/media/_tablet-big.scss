@@ -1,0 +1,19 @@
+/* Tablet-big*/
+@media (max-width: 1139px) {
+  .container {
+    max-width: 1169px;
+  }
+
+  .header-top {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .header-top__phone {
+    display: none;
+  }
+
+  .flex-block {
+    justify-content: flex-end;
+}
+}

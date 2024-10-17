@@ -9,6 +9,10 @@
 	<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg">
 	<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+  />
   <link rel="stylesheet" href="./css/main.css" />
 
 </head>
@@ -37,34 +41,51 @@
             <!-- swiper -->
             <div class="swiper product-swiper">
               <div class="swiper-wrapper product-swiper__wrapper">
-                <a data-fancybox="gallery" href="./../img/card-full/01@2x.webp" class="swiper-slide product-swiper__slide">
+                <div class="swiper-slide product-swiper__slide">
                   <img src="./../img/card-full/01.jpg" srcset="./../img/card-full/01@2x.jpg" alt="" loading="lazy">
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                </a>
-
-                <a data-fancybox="gallery" href="./../img/card-full/02@2x.webp" class="swiper-slide product-swiper__slide">
+                  <a class="product-swiper__icon-wrapper" data-fancybox="gallery" href="./../img/card-full/01@2x.webp" data-thumb="./../img/card-full/01@2x.webp">
+                    <img src="./img/svgsprite/stack/svg/sprite.stack.svg#zoom" alt="zoom">
+                  </a>
+                </div>
+                <div class="swiper-slide product-swiper__slide">
                   <img src="./../img/card-full/02.jpg" srcset="./../img/card-full/02@2x.jpg" alt="" loading="lazy">
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                </a>
-
-                <a data-fancybox="gallery" href="./../img/card-full/03@2x.webp" class="swiper-slide product-swiper__slide">
+                  <a class="product-swiper__icon-wrapper" data-fancybox="gallery" href="./../img/card-full/02@2x.webp" data-thumb="./../img/card-full/02@2x.webp">
+                    <img src="./img/svgsprite/stack/svg/sprite.stack.svg#zoom" alt="zoom">
+                  </a>
+                </div>
+                <div class="swiper-slide product-swiper__slide">
                   <img src="./../img/card-full/03.jpg" srcset="./../img/card-full/03@2x.jpg" alt="" loading="lazy">
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                </a>
+                  <a class="product-swiper__icon-wrapper" data-fancybox="gallery" href="./../img/card-full/03@2x.webp" data-thumb="./../img/card-full/03@2x.webp">
+                    <img src="./img/svgsprite/stack/svg/sprite.stack.svg#zoom" alt="zoom">
+                  </a>
+                </div>
 
-                <a data-fancybox="gallery" href="./../img/card-full/01@2x.webp" class="swiper-slide product-swiper__slide">
+                <div class="swiper-slide product-swiper__slide">
                   <img src="./../img/card-full/01.jpg" srcset="./../img/card-full/01@2x.jpg" alt="" loading="lazy">
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                </a>
-                <a data-fancybox="gallery" href="./../img/card-full/02@2x.webp" class="swiper-slide product-swiper__slide">
+                  <a class="product-swiper__icon-wrapper" data-fancybox="gallery" href="./../img/card-full/01@2x.webp" data-thumb="./../img/card-full/01@2x.webp">
+                    <img src="./img/svgsprite/stack/svg/sprite.stack.svg#zoom" alt="zoom">
+                  </a>
+                </div>
+                <div class="swiper-slide product-swiper__slide">
                   <img src="./../img/card-full/02.jpg" srcset="./../img/card-full/02@2x.jpg" alt="" loading="lazy">
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                </a>
-
-                <a data-fancybox="gallery" href="./../img/card-full/03@2x.webp" class="swiper-slide product-swiper__slide">
+                  <a class="product-swiper__icon-wrapper" data-fancybox="gallery" href="./../img/card-full/02@2x.webp" data-thumb="./../img/card-full/02@2x.webp">
+                    <img src="./img/svgsprite/stack/svg/sprite.stack.svg#zoom" alt="zoom">
+                  </a>
+                </div>
+                <div class="swiper-slide product-swiper__slide">
                   <img src="./../img/card-full/03.jpg" srcset="./../img/card-full/03@2x.jpg" alt="" loading="lazy">
                   <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-                </a>
+                  <a class="product-swiper__icon-wrapper" data-fancybox="gallery" href="./../img/card-full/03@2x.webp" data-thumb="./../img/card-full/03@2x.webp">
+                    <img src="./img/svgsprite/stack/svg/sprite.stack.svg#zoom" alt="zoom">
+                  </a>
+                </div>
+              
+
                 
             
               </div>
@@ -191,6 +212,7 @@
     
 	</main>
 	@@include('blocks/footer.html')
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<script src="./js/index.bundle.js"></script>
 </body>
