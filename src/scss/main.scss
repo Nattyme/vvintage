@@ -19,7 +19,10 @@
 @import './sections/*.scss';
 
 /*Media*/
-@import './media/*.scss';
+@import './media/_desc.scss';
+@import './media/_tablet-big.scss';
+@import './media/_tablet.scss';
+@import './media/_mobile.scss';
 
 
 /* No styles code below. Only in modules */

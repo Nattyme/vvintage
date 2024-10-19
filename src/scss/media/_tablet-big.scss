@@ -4,25 +4,4 @@
   .h1 {
     font-size: 35px;
   }
-
-  .header__content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    column-gap: 30px;
-  }
-
-  .header__image-main img {
-    width: 250px;
-    height: 400px;
-  }
-  .swiper.swiperHeaderText {
-    width: 350px;
-  }
-
-  .swiper.swiperHeaderImg {
-    width: 350px;
-    height: auto;
-  }
 }
