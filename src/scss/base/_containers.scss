@@ -12,6 +12,21 @@
 
 	max-width: var(--container-width);
 	width: 100%;
+
+    /* Tablet - big*/
+  @media (max-width: 1200px) {
+    width: 900px;
+  }
+
+  /* Tablet */
+  @media (max-width: 899px) {
+      width: 768px;
+  }
+
+  /* Mobile */
+  @media (max-width: 767px) {
+      width: 320px;
+  }
 }
 
 .container-full {
@@ -90,4 +105,6 @@
 	@include mobile {
 		padding: 0 var(--container-padding);
 	}
+
+  
 }

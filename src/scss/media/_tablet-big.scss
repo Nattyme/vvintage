@@ -1,19 +1,28 @@
 /* Tablet-big*/
-@media (max-width: 1139px) {
-  .container {
-    max-width: 1169px;
+@media (max-width: 1000px) {
+
+  .h1 {
+    font-size: 35px;
   }
 
-  .header-top {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-  
-  .header-top__phone {
-    display: none;
+  .header__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 30px;
   }
 
-  .flex-block {
-    justify-content: flex-end;
-}
+  .header__image-main img {
+    width: 250px;
+    height: 400px;
+  }
+  .swiper.swiperHeaderText {
+    width: 350px;
+  }
+
+  .swiper.swiperHeaderImg {
+    width: 350px;
+    height: auto;
+  }
 }

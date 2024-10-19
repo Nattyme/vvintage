@@ -1,11 +1,27 @@
 /* Tablet */
-@media (max-width: 899px) {
+@media (max-width: 900px) {
+  .container {
+    max-width: 899px;
+  }
+
   .header-top {
     padding-top: 30px;
     padding-bottom: 30px;
   }
 
+  .nav {
+    display: none;
+  }
+
   .header__phone {
     display: none;
+  }
+
+  .swiper.swiperHeaderText {
+    width: 250px;
+  }
+
+  .swiper.swiperHeaderImg {
+    width: 250px;
   }
 }
