@@ -17,11 +17,26 @@
     display: none;
   }
 
+  .header__hero {
+    position: absolute;
+    z-index: 0;
+  }
+
   .swiper.swiperHeaderText {
-    width: 250px;
+    width: 320px;
+    background-color: rgba(255, 255, 255, 0.8);
   }
 
   .swiper.swiperHeaderImg {
-    width: 250px;
+    width: 320px;
+  }
+
+  .header__image-main img {
+    width: 320px;
+    height: 400px;
+  }
+
+  .header__desc {
+    padding-right: 0;
   }
 }
