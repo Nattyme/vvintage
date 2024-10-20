@@ -1,5 +1,22 @@
 /* Tablet */
 @media (max-width: 900px) {
+  .h2 {
+    font-size: 32px;
+  }
+
+  .h4 {
+    font-size: 18px;
+  }
+
+  .section-title {
+    margin-bottom: 40px;
+  }
+
+  .button-outline {
+    height: 58px;
+    line-height: 17px;
+  }
+
   .container {
     max-width: 899px;
   }
@@ -24,6 +41,32 @@
   .swiper.swiperHeaderImg {
     width: 350px;
     height: auto;
+  }
+
+  .arrival {
+    padding-top: 60px;
+  }
+
+  .arrival__cards-wrapper {
+    margin-bottom: 45px;
+  }
+
+  .cards-row {
+    column-gap: 15px;
+  }
+
+  .card {
+    height: 400px;
+    width: 236px;
+  }
+
+  .card__img {
+    margin-bottom: 16px;
+  }
+
+  .card__img img {
+    width: 236px;
+    height: 330px;
   }
  
 }
