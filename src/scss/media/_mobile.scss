@@ -17,6 +17,10 @@
     text-align: center;
   }
 
+  .breadcrumb {
+    font-size: 12px;
+  }
+
   .nav {
     display: none;
   }
@@ -293,6 +297,14 @@
     margin-bottom: 25px;
   }
 
+  .product__content {
+    justify-content: stretch;
+  }
+
+  .product__desc {
+    width: 100%;
+  }
+
   .products-tab__nav {
     display: none;
   }
@@ -304,5 +316,22 @@
 
   .products__cards {
     margin-bottom: 25px;
+  }
+
+  .product__swiper {
+    margin-bottom: 60px;
+  }
+
+  .product-swiper {
+    width: 290px;
+    height: 390px;
+  }
+
+  .product-thumbs {
+    width: 290px;
+  }
+
+  .product .button-solid, .product a.button-solid {
+    width: 100%;
   }
 }

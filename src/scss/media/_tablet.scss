@@ -17,6 +17,10 @@
     line-height: 17px;
   }
 
+  .cart {
+    margin-right: 12px;
+  }
+
   /* Header -top*/
   .header-top {
     padding-top: 30px;
@@ -139,4 +143,49 @@
   .card {
     width: 226px;
   }
+
+  /*****************************/
+  /******* PRODUCT PAGE *******/
+  /***************************/
+  main.product-page {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .product {
+    margin-bottom: 60px;
+  }
+
+  .product__content {
+    align-items: flex-start;
+  }
+
+  .radio-button-row {
+    justify-content: space-between;
+  }
+
+  .form-product__amount {
+    min-width: 58px;
+    height: 58px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .product .button-solid, .product a.button-solid {
+    width: 200px;
+    height: 58px;
+    font-size: 17px;
+    line-height: 17px;
+  }
+
+  .product-swiper {
+    width: 440px;
+  }
+
+  .product-thumbs {
+    width: 440px;
+  }
+
+
 }

@@ -139,6 +139,29 @@
   .products-tab__nav-button {
     padding-left: 40px;
     padding-right: 40px;    
-}
-  
+  }
+
+  /*****************************/
+  /******* PRODUCT PAGE *******/
+  /***************************/
+  main.product-page {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  .product {
+    margin-bottom: 90px;
+  }
+
+  .product__content {
+    column-gap: 25px;
+  }
+
+  .product-swiper {
+    width: 450px;
+  }
+
+  .product-thumbs {
+    width: 450px;
+  }
 }

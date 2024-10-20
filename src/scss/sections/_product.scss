@@ -20,7 +20,9 @@ main.product-page {
 .product__content {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   column-gap: 74px;
+  flex-wrap: wrap;
 }
 
 .product__cta {
