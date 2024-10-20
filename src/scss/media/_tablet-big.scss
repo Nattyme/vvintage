@@ -12,6 +12,11 @@
     width: 240px;
   }
 
+  .flex-block {
+    justify-content: flex-end;
+  }
+
+  /* Header - top*/
   .header-top {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -25,17 +30,17 @@
     width: unset;
   }
 
-  .flex-block {
-    justify-content: flex-end;
-  }
-
+  /* Hader */
   .header__title {
     margin-bottom: 30px;
   }
 
- 
-  .header__image-less:first-child {
-    left: 0;
+  .header__desc {
+    padding-right: 100px;
+  }
+
+  .header__button {
+    padding-right: 100px;
   }
 
   .swiper.swiperHeaderImg {
@@ -57,16 +62,13 @@
     display: none;
   }
 
-  .header__desc {
-    padding-right: 100px;
-  }
-
-  .header__button {
-    padding-right: 100px;
-  }
-
+  /* Arrival*/
   .arrival {
     padding-top: 60px;
+  }
+
+  .arrival__cards-wrapper {
+    margin-bottom: 45px;
   }
 
   .cards-row {
@@ -77,7 +79,14 @@
     width: 270px;
   }
 
-  .arrival__cards-wrapper {
-    margin-bottom: 45px;
+  /* Features */
+  .feature {
+    padding-top: 60px;
   }
+
+  .feature__list {
+    margin-bottom: 50px;
+    column-gap: 20px;
+  }
+  
 }

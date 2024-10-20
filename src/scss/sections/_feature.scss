@@ -5,11 +5,8 @@
 .feature__list {
   margin-bottom: 65px;
   display: grid;
+  column-gap: 30px;
   grid-template-columns: repeat(3, 1fr);
-}
-
-.feature__item {
-  width: 350px;
 }
 
 .feature__img {
@@ -27,6 +24,10 @@
 }
 
 .feature__text {
+  font-size: 17px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+
   p + p {
     margin-top: 10px;
   }

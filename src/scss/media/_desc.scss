@@ -3,10 +3,6 @@
     margin-right: auto;
   }
 
-  .header__image-less:last-child {
-    right: 100px;
-  }
-
   .header__image-main {
     padding-left: 0;
   }
@@ -15,12 +11,7 @@
     width: 150px;
   }
 
-  
-  // .header__image-main img {
-  //   width: 350px;
-  // }
-
   .header__image-less:last-child {
-    right: 170px;
+    right: 100px;
   }
 }
