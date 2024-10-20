@@ -1,9 +1,5 @@
 /* Tablet */
 @media (max-width: 900px) {
-  .container {
-    max-width: 899px;
-  }
-
   .h2 {
     font-size: 32px;
   }
@@ -45,10 +41,6 @@
     height: auto;
   }
 
-  .arrival {
-    padding-top: 60px;
-  }
-
   /* Arrival*/
   .arrival__cards-wrapper {
     margin-bottom: 45px;
@@ -71,4 +63,40 @@
     width: 236px;
     height: 330px;
   }
+
+  /* About*/
+  .about {
+    padding-top: 60px;
+  }
+
+  .about__header {
+    margin-bottom: 15px;
+    font-size: 22px;
+  }
+
+  .about__content {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    align-items: center;
+  }
+
+  .about__text {
+    margin-bottom: 25px;
+  }
+
+  .swiperAbout {
+    width: 430px;
+    height: 288px;
+  }
+
+  .swiper-arrows {
+    display: none;
+  }
+
+  .swiperAbout-pagination.swiper-pagination.swiper-pagination-bullets {
+    bottom: 30px;
+  }
+
+   /* Footer */
+
 }

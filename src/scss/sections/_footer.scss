@@ -11,10 +11,6 @@
 .footer__content {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-
-  a {
-    display: block;
-  }
 }
 
 .footer__column {
@@ -41,18 +37,32 @@
   grid-column: 3;
   text-align: right;
 
+  font-size: 15px;
+
   * + * {
     margin-top: 10px;
+  }
+
+  a {
+    display: block;
   }
 }
 
 .footer__copyright {
   grid-column: 1;
+
+  p + p {
+    margin-top: 6px;
+  }
 }
 
 .nav-list {
   display: flex;
   justify-content: space-between;
+}
+
+.nav-list__item {
+  font-size: 15px;
 }
 
 .inner-nav-wrapper {
@@ -61,5 +71,9 @@
 
 .inner-nav__list li + li {
   margin-top: 10px;
+}
+
+.inner-nav__list {
+  font-size: 13px;
 }
 

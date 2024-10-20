@@ -88,5 +88,46 @@
     margin-bottom: 50px;
     column-gap: 20px;
   }
+
+  /* About*/
+  .about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .about__content {
+    // grid-template-columns: 1fr 3fr;
+    column-gap: 20px;
+  }
+
+  .swiperAbout {
+    width: 500px;
+    height: 334px;
+  }
+
+  .swiperAbout-button-prev {
+    left: 0;
+  }
+
+  .swiperAbout-button-next {
+    text-align: right;
+    right: 0;
+  }
+
+  .icon--slider-arrow {
+    width: 20px;
+    height: 20px;
+  }
+
+   /* Footer */
+   .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .footer__content {
+    column-gap: 15px;
+  }
+  
   
 }
