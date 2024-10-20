@@ -1,7 +1,83 @@
 /* Tablet-big*/
-@media (max-width: 1000px) {
-
+@media (max-width: 1200px) {
   .h1 {
-    font-size: 35px;
+    font-size: 45px;
+  }
+
+  .section-title {
+    margin-bottom: 40px;
+  }
+
+  .button-solid, a.button-solid {
+    width: 240px;
+  }
+
+  .header-top {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  .header-top__phone {
+    display: none;
+  }
+
+  .header-top__cta {
+    width: unset;
+  }
+
+  .flex-block {
+    justify-content: flex-end;
+  }
+
+  .header__title {
+    margin-bottom: 30px;
+  }
+
+ 
+  .header__image-less:first-child {
+    left: 0;
+  }
+
+  .swiper.swiperHeaderImg {
+    margin-right: 0; 
+    .swiper-slide {
+      margin-right: 0;
+    }
+  }
+
+  .swiper.swiperHeaderImg {
+    width: 350px;
+  }
+
+  .swiper.swiperHeaderText {
+    width: 450px;
+  }
+
+  .header__image-less:last-child, .header__image-less:first-child {
+    display: none;
+  }
+
+  .header__desc {
+    padding-right: 100px;
+  }
+
+  .header__button {
+    padding-right: 100px;
+  }
+
+  .arrival {
+    padding-top: 60px;
+  }
+
+  .cards-row {
+    column-gap: 20px;
+  }
+
+  .card {
+    width: 270px;
+  }
+
+  .arrival__cards-wrapper {
+    margin-bottom: 45px;
   }
 }
