@@ -83,9 +83,12 @@
   font-size: 20px;
 
   span {
-    padding: 8px 18px 11px 20px;
+    display: inline-block;
     width: 47px;
     height: 47px;
+
+    line-height: 47px;
+    text-align: center;
 
     border: 1px solid #afafaf;
   }
@@ -105,3 +108,4 @@
   display: flex;
   column-gap: 15px;
 }
+

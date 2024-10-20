@@ -187,5 +187,37 @@
     width: 440px;
   }
 
+  /*****************************/
+  /******* CART *******/
+  /***************************/
+  .inner-page {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .page-shopping-cart__heading {
+    font-size: 18px;
+  }
+
+  .button-fake {
+    width: 240px;
+
+    padding: 0 30px;
+    font-size: 17px;
+    line-height: 68px;
+  }
+
+  .page-shopping-cart__img {
+    margin-right: 15px;
+  }
+
+  .page-shopping-cart__delete {
+    margin-right: 15px;
+  }
+
+  .page-shopping-cart__img img {
+    width: 100px;
+    height: 150px;
+  }
 
 }
