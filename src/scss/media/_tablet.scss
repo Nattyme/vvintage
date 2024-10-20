@@ -97,6 +97,46 @@
     bottom: 30px;
   }
 
-   /* Footer */
+  /*****************************/
+  /******* CATALOG PAGE *******/
+  /***************************/
+  .products {
+    padding-top: 60px;
+  }
 
+  .products__pages-shown {
+    margin-bottom: 35px;
+  }
+
+  .pages-shown {
+    font-size: 15px;
+  }
+
+  .shop-header__title {
+    margin-bottom: 15px;
+  } 
+
+  .shop-header {
+    margin-bottom: 50px;
+  }
+
+  .products-tab__block {
+    column-gap: 15px;
+  }
+
+  .products-tab__nav {
+    margin-bottom: 40px;
+
+    justify-content: space-between;
+  }
+
+  .products-tab__nav-button {
+    padding: 12px 10px;
+  
+    min-width: 135px;
+  }
+
+  .card {
+    width: 226px;
+  }
 }

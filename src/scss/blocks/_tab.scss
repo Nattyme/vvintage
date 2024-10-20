@@ -1,42 +1,14 @@
 .tab__nav {
-  margin-bottom: 65px;
-
   display: flex;
-  justify-content: flex-start;
   align-items: center;
-  column-gap: 10px;
 }
 
 .tab__block {
   display: none;
-  column-gap: 30px;
-  row-gap: 65px;
-  flex-wrap: wrap;
 }
 
 .tab__block.active {
   display: flex;
-}
-
-.tab__nav-button {
-  padding: 19px 65px;
-  border: 1px solid #000;
-
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 1.4;
-  text-overflow: ellipsis;
-  transition: all 0.5s ease;
-
-  &:hover {
-    cursor: pointer;
-    background-color: #eaeaea;
-  }
-}
-
-.tab__nav-button.active {
-  background-color: #000;
-  color: #fff;
 }
 
 
