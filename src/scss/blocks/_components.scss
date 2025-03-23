@@ -97,3 +97,24 @@
   font-size: 17px;
   line-height: 1.4;
 }
+
+.header-text-separator {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+  position: relative;
+
+  &::before {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    content: "";
+
+    display: inline-block;
+    width: 100px;
+    height: 5px;
+    background-color: #ea9145;
+  }
+}
