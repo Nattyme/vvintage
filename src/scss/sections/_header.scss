@@ -1,21 +1,31 @@
 .header {
-  padding-bottom: 60px;
-  background: linear-gradient(
-    90deg, 
-    #fff 57%, 
-    var(--page-bg-accent) 57%
-    );
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header__img-wrapper {
+  height: 480px;
+  overflow: hidden;
+}
+
+.header__img-wrapper img {
+  width: 100%;
+  height: 100%;
 }
 
 .header__content {
-  display: grid;
-  align-items: center;
-  grid-template-columns: repeat(2, 1fr);
+  position: relative;
 }
 
 /*text*/
 .header__block {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 0;
+
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .header__title {
