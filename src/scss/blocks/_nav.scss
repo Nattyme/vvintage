@@ -9,7 +9,7 @@
 .nav__list {
 	display: flex;
   align-items: center;
-	column-gap: 45px;
+  justify-content: space-between;
 
   font-family: var(--font-family);
   font-weight: 400;

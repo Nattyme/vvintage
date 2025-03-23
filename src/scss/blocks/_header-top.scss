@@ -13,6 +13,14 @@
 	}
 }
 
+.header-top__row + .header-top__row {
+  margin-top: 35px;
+}
+
+.header-top__row nav {
+  width: 100%;
+}
+
 .main-page .header-top.header-top--gradient-bg {
   background: linear-gradient(
     90deg, 
@@ -25,16 +33,4 @@
 	@include tablet {
 		display: none;
 	}
-}
-
-.header-top__cta {
-  width: 255px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.header-top__phone {
-  column-gap: 10px;
 }

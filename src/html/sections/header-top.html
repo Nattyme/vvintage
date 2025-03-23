@@ -1,17 +1,11 @@
 <header class="header-top">
     <div class="container">
         <div class="header-top__row">
-            @@include('_logo.html')
-            
-              @@include('_nav.html')
+            <div class="header-top__logo">
+              @@include('_logo.html')
+            </div>
           
             <div class="header-top__cta">
-              <a href="tel:74958235412" class="header-top__phone flex-block">
-                <svg class="icon icon--phone">
-                  <use href="./img/svgsprite/sprite.symbol.svg#phone"></use>
-                </svg>
-                <span>+7 (495) 823-54-12</span>
-              </a>
               <div class="header-top__user flex-block">
                 <a href="good.html" class="cart">
                   <svg class="icon icon--shopping-bag">
@@ -24,6 +18,9 @@
             <button class="mobile-nav-btn none">
                 <div class="nav-icon"></div>
             </button>
+        </div>
+        <div class="header-top__row">
+          @@include('_nav.html')
         </div>
     </div>
 </header>
