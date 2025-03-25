@@ -1,0 +1,98 @@
+.prices {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.prices__header {
+  text-align: center;
+}
+
+
+.prices__cards .cards-row {
+  justify-content: center;
+  column-gap: 25px;
+}
+
+.price-card {
+  height: 450px;
+  width: 350px;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.price-card__body {
+  height: 80%;
+  border-radius: 15px;
+  background-color: #282626;
+}
+
+.price-card__title {
+  margin-bottom: 40px;
+}
+
+.price-card__header {
+  margin-bottom: 90px;
+  padding: 30px 30px 15px 30px;
+
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+}
+
+.price-card__text {
+  margin-bottom: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 22px;
+  color: #fff;
+}
+
+.price-card__table {
+  margin-right: auto;
+  margin-left: auto;
+
+  height: 170px;
+  width: 80%;
+
+  border: 2px solid #000;
+}
+
+.price-card__plans-row {
+  display: flex;
+  height: 100%;
+}
+
+.price-card__plan {
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  font-size: 18px;
+  text-align: center;
+}
+
+.price-card__plan--1 {
+  background-color: #efecd5;
+}
+.price-card__plan--2 {
+  background-color: #f3eba1;
+}
+.price-card__plan--3 {
+  background-color: #f3e56d;
+}
+.price-card__plan--4 {
+  background-color: #d4c649;
+}
+.price-card__plan--5 {
+  background-color: #c8b610;
+}
+
+
