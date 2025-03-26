@@ -547,10 +547,6 @@
 			<section class="product">
 				<div class="container">
 					<header class="shop-header">
-						<div class="shop-header__title">
-							<h1 class="h1">Свитшот Sweet Shot</h1>
-						</div>
-
 						<div class="breadcrumbs">
 							<a href="#!" class="breadcrumb ">Главная</a>
 							<span>&#8212;</span>
@@ -559,7 +555,6 @@
 							<a href="#!" class="breadcrumb breadcrumb--active">Свитшот Sweet Shot</a>
 						</div>
 					</header>
-
 					<div class="product__content">
 						<div class="product__swiper">
 							<!-- swiper -->
@@ -642,6 +637,7 @@
 							<div thumbsSlider="" class="swiper product-thumbs">
 								<div class="swiper-wrapper product-thumbs__wrapper">
 									<div class="swiper-slide product-thumbs__slide">
+										<!-- <figure></figure> -->
 										<picture>
 											<source srcset="./img/card-full/01.webp 1x, ./img/card-full/01@2x.webp 2x" type="image/webp" />
 											<source srcset="./img/card-full/01.jpg 1x, ./img/card-full/01@2x.jpg 2x" type="image/jpeg" />
@@ -693,70 +689,41 @@
 </picture> -->
 						</div>
 						<div class="product__desc">
-							<div class="product__price"><span class="price">$311</span><span class="price-old">$450</span></div>
-
-							<form action="" class="form-product" method="POST">
-								<!-- size -->
-								<div class="form-product__row">
-									<div class="product__text">
-										<p>Выберите размер</p>
-									</div>
-									<div class="radio-button-row">
-										<label class="radio-button">
-											<input class="radio-button-real" name="select-size" type="radio" />
-											<span class="radio-button-custom radio-button-custom--size">S</span>
-										</label>
-										<label class="radio-button">
-											<input class="radio-button-real" name="select-size" type="radio" checked />
-											<span class="radio-button-custom radio-button-custom--size">M</span>
-										</label>
-										<label class="radio-button">
-											<input class="radio-button-real" name="select-size" type="radio" />
-											<span class="radio-button-custom radio-button-custom--size">L</span>
-										</label>
-										<label class="radio-button">
-											<input class="radio-button-real" name="select-size" type="radio" />
-											<span class="radio-button-custom radio-button-custom--size">XL</span>
-										</label>
-										<label class="radio-button">
-											<input class="radio-button-real" name="select-size" type="radio" />
-											<span class="radio-button-custom radio-button-custom--size">XXL</span>
-										</label>
-									</div>
+							<header class="product__header">
+								<div class="product-row">
+									<h1 class="h1">Свитшот Sweet Shot</h1>
 								</div>
-								<!--// size -->
-
-								<div class="form-product__row">
-									<div class="product__text">
-										<p>Выберите цвет</p>
-									</div>
-
-									<div class="radio-button-row">
-										<label class="radio-button">
-											<input class="radio-button-real" name="select-colour" type="radio" />
-											<span class="radio-button-custom radio-button-custom--colour radio-button-custom--bg-gray"></span>
-										</label>
-										<label class="radio-button">
-											<input class="radio-button-real" name="select-colour" type="radio" checked />
-											<span class="radio-button-custom radio-button-custom--colour  radio-button-custom--bg-khaki"></span>
-										</label>
-										<label class="radio-button">
-											<input class="radio-button-real" name="select-colour" type="radio" />
-											<span class="radio-button-custom radio-button-custom--colour radio-button-custom--bg-coral"></span>
-										</label>
-										<label class="radio-button">
-											<input class="radio-button-real" name="select-colour" type="radio" />
-											<span class="radio-button-custom radio-button-custom--colour radio-button-custom--bg-gold"></span>
-										</label>
-									</div>
+								<div class="product-row">
+									<p>New without tegs</p>
+									<a href="#" class="product__brand">Michael Course</a>
 								</div>
-								<div class="form-product__button">
-									<div class="form-product__amount">
-										<span>1</span>
-									</div>
-									<button class="button-solid" type="submit">Добавить в&#160;корзину</button>
+								<div class="product-row">
+									<div class="product__price"><span class="price">$311</span></div>
 								</div>
-							</form>
+							</header>
+
+							<ul class="product-details">
+								<li class="product-details__item">
+									<p>Brand</p>
+									<a href="">Michael Kors</a>
+								</li>
+								<li class="product-details__item">
+									<p>Condition</p>
+									<p>New without tegs</p>
+								</li>
+								<li class="product-details__item">
+									<p>Colour</p>
+									<p>Black</p>
+								</li>
+								<li class="product-details__item">
+									<p>Uploaded</p>
+									<p>a&#160;day ago</p>
+								</li>
+							</ul>
+
+							<div class="form-product__button">
+								<button class="button-solid" type="submit">Добавить в&#160;корзину</button>
+							</div>
 						</div>
 					</div>
 				</div>
