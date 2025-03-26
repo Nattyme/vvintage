@@ -1,0 +1,31 @@
+.product__imgs-container {
+  width: 660px;
+  height: 420px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  gap: 2px;
+}
+ 
+.product__imgs-main {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.product__img, .product__img a {
+  height: 100%;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.product__imgs-small {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2px;
+}

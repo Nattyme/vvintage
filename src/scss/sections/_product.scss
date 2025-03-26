@@ -18,10 +18,8 @@ main.product-page {
 }
 
 .product__content {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  column-gap: 74px;
+  display: grid;
+  grid-template-columns: 660px 1fr;
 }
 
 .product__header {
