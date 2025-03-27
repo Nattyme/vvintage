@@ -2,10 +2,6 @@
   position: relative;
 }
 
-.nav a.parent {
-  margin: 0px 26px 0px 0px;
-}
-
 .nav__item {
   position: relative;
 
@@ -40,15 +36,17 @@
 }
 
 .nav__list > li:hover .nav__item {
-  background-color: #f4f2f2;
+  background-color: #dcdcdc2a;
   
   &::after {
-    background-color: #a49191;
+    height: 2px;
+    background-color: #d5a609;
   }
 }
 
 .nav-tab {
   position: relative;
+  cursor: pointer;
 }
 
 .nav__item {
@@ -57,7 +55,6 @@
   padding-top: 15px;
   padding-bottom: 15px;
 
-  cursor: pointer;
   color: #000;
   transition: color 0.5s ease;
 
@@ -66,22 +63,43 @@
   }
 }
 
-.sub-nav__list {
-  padding: 15px;
-  display: none;
+.sub-nav {
+  position: fixed;
   width: 1115px;
+  padding: 15px;
+
+  justify-content: center;
+
+
   position: absolute;
   left: 0;
   top: 52px;
+
+  
   background-color: #fff;
 }
 
+.sub-nav__container {
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: 200px 1fr;
+}
+
+
 .sub-nav__list > li {
+  
+}
+
+.sub-nav__item {
+  padding-bottom: 15px;
+
+  display: grid;
+  align-items: center;
+  column-gap: 20px;
+  grid-template-columns: 20px 1fr 20px;
 }
 
 .sub-nav__link {
-  padding: 5px 10px;
-  color: #fff;
 }
 
 .sub-sub-nav__list {
@@ -98,22 +116,46 @@
   background-color: #fff;
 }
 
+.sub-sub-nav_list {
+  padding: 15px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: inline-block;
+    width: 1px;
+    height: 100%;
+    background-color: #ea9245a1;
+  }
+
+}
+
+
 .sub-sub-nav__link {
 }
 
 .nav__arrow {
+  position: relative;
 }
 .arrow {
   display: none;
   position: absolute;
-  right: 0;
-  top: 8px;
+  left: 50%;
+  top: 50%;
 
-  width: 0;
-  height: 0;
-  border-top: 10px solid #000;
-  border-right: 10px solid transparent;
-  border-left: 10px solid transparent;
+  width: 10px;
+  height: 10px;
+
+  border-top: 2px solid #000;
+  border-right: 2px solid #000;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.sub-nav__item:hover .arrow {
+  display: block;
 }
 
 .sub-nav__arrow.arrow {
