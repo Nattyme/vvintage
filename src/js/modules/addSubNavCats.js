@@ -18,32 +18,32 @@ const addSubNavCats = () => {
           'id' : '7',
           'name' : 'Сумки',
           'icon' : 'bag',
-          'subSubCats' : ['Рюкзак', 'Клатч', 'Портмоне']
+          'subSubCats' : [{'id' : '22', 'name' : 'Рюкзак'}, {'id' : '22', 'name' : 'Клатч'},{'id' : '22', 'name' : 'Портмоне'}]
         },
         {
           'id' : '8',
           'name' : 'Очки',
           'icon' : 'glasses',
-          'subSubCats' : ['Авитаторы', 'Круглые', 'Коллекционные']
+          'subSubCats' : [{'id' : '32', 'name' : 'Авиаторы'}, {'id' : '33', 'name' : 'Круглые'},{'id' : '34', 'name' : 'Коллекционные'}]
         },
         {
           'id' : '9',
           'name' : 'Часы',
           'icon' : 'watch',
-          'subSubCats' : ['На ремешке', 'Металлические', 'С драгоценными вставками']
+          'subSubCats' : [{'id' : '42', 'name' : 'На ремешке'}, {'id' : '43', 'name' : 'Металлические'},{'id' : '34', 'name' : 'С драгоценными вставками'}]
         },
         {
           'id' : '10',
           'name' : 'Бижутерия',
-          'icon' : 'parfume',
-          'subSubCats' : ['Кольца', 'Колье', 'Серьги']
+          'icon' : 'earrings',
+          'subSubCats' : [{'id' : '52', 'name' : 'Кольца'}, {'id' : '53', 'name' : 'Колье'},{'id' : '54', 'name' : 'Серьги'}]
         },
     
         {
           'id' : '11',
           'name' : 'Косметика',
           'icon' : 'cosmetics',
-          'subSubCats' : ['Кремы', 'Палетки теней', 'Тушь', 'Помада']
+          'subSubCats' : [{'id' : '62', 'name' : 'Крем'}, {'id' : '63', 'name' : 'Тушь'},{'id' : '64', 'name' : 'Помада'}]
         }
     
       ],
@@ -62,41 +62,54 @@ const addSubNavCats = () => {
         {
           'id' : '13',
           'name' : 'Очки',
-          'icon' : 'glasses',
-          'subSubCats' : ['Авитаторы', 'Круглые', 'Коллекционные']
+          'icon' : 'glasses_men',
+          'subSubCats' : [{'id' : '92', 'name' : 'Авиаторы'}, {'id' : '93', 'name' : 'Круглые'}, {'id' : '94', 'name' : 'Коллекционные'}]
         },
         {
           'id' : '14',
           'name' : 'Часы',
-          'icon' : 'watches',
-          'subSubCats' : ['На ремешке', 'Металлические', 'С драгоценными вставками']
+          'icon' : 'watch_man',
+          'subSubCats' : [{'id' : '102', 'name' : 'На ремешке'}, {'id' : '103', 'name' : 'Металлические'}, {'id' : '104', 'name' : 'Карманные'}]
         },
         {
           'id' : '15',
           'name' : 'Ремни',
-          'icon' : 'parfume',
-          'subSubCats' : ['Кожанные', 'Классика', 'Разные']
+          'icon' : 'belt',
+          'subSubCats' : [{'id' : '112', 'name' : 'Кожанные'}, {'id' : '113', 'name' : 'Классика'},{'id' : '114', 'name' : 'Разные'}]
         },
     
         {
           'id' : '16',
           'name' : 'Галстуки',
-          'icon' : 'cosmetics',
-          'subSubCats' : ['Классика', 'Шёлковые', 'Бабочка']
+          'icon' : 'necktie',
+          'subSubCats' : [{'id' : '122', 'name' : 'Классика'}, {'id' : '123', 'name' : 'Шёлковые'}, {'id' : '124', 'name' : 'Бабочка'}]
         },
         {
           'id' : '17',
           'name' : 'Сумки',
-          'icon' : 'bag',
-          'subSubCats' : ['Рюкзак', 'На плечо', 'Дипломат']
-        },
-    
+          'icon' : 'suitcase',
+          'subSubCats' : [{'id' : '132', 'name' : 'Рюкзак'}, {'id' : '133', 'name' : 'На плечо'}, {'id' : '134', 'name' : 'Дипломат'}]
+        }
+
       ],
     },
     {
       'id' : '3',
       'name' : 'Для Детей',
-      'subCats' :  [],
+      'subCats' :  [
+        {
+          'id' : '-1',
+          'name' : 'Все категории',
+          'icon' : 'category_all',
+          'subSubCats' : []
+        },
+        {
+          'id' : '18',
+          'name' : 'Игрушки',
+          'icon' : 'toy',
+          'subSubCats' : [{'id' : '71', 'name' : 'Мягкие'}, {'id' : '75', 'name' : 'Пластмассовые'}, {'id' : '76', 'name' : 'Деревянные'}]
+        }
+      ],
     },
   ];
 
@@ -104,12 +117,12 @@ const addSubNavCats = () => {
   navList.innerHTML = cats.map(cat => 
     `
       <li
-      id="${cat.id}"
-      class="nav-tab"
-      role="tab"
-      area-selected="false"
-      tabindex="0"
-    >
+        id="${cat.id}"
+        class="nav-tab"
+        role="tab"
+        area-selected="false"
+        tabindex="0"
+      >
     <div class="nav__item">
       <span class="nav__title">${cat.name}</span>
       </div>
@@ -118,9 +131,9 @@ const addSubNavCats = () => {
     `
   ).join(' ');
 
-
   const addSubNav = (e) => {
     e.stopPropagation();
+
     const listItem = e.target.closest('li');
     if (!listItem) return;
     // id категории, по на котороую навели мышку
@@ -142,142 +155,36 @@ const addSubNavCats = () => {
         <a href="#" class="sub-nav__link" data-cat="${cat.id}">
           ${cat.name}
         </a>
+        <div class="nav__arrow">
+          <div class="arrow"></div>
+        </div>
       </li>
       `
     ).join('');
-  
+
+    const  addSubSubNav = (e) => {
+      const subCatId = e.target.children[1]?.getAttribute('data-cat');
+      if(!subCatId) return;
+      const currentSubCatData = currentCatData.subCats.find(cat => cat.id === subCatId);
+      console.log(currentSubCatData);
+      subSubNav.innerHTML = currentSubCatData.subSubCats.map (subCat => 
+        `
+        <li class="sub-sub-nav__item">
+          <a href="#" class="sub-sub-nav__link">
+            ${subCat.name}
+          </a>
+        </li>
+        `
+      ).join('');
+    }
+
+    subNav.addEventListener('mouseover', addSubSubNav);
   }
 
+
+
   nav.addEventListener('mouseover', addSubNav);
-
-
-  // subNav.innerHTML = `
-  //       <li class="sub-nav__item">
-  //         <svg class="sub-nav__icon icon icon--category_all">
-  //           <use href="./img/svgsprite/sprite.symbol.svg#category_all"></use>
-  //         </svg>
-  //         <a href="#" class="sub-nav__link" data-cat="all">
-  //           Все категории
-  //         </a>
-  //       </li>
-      
-  //       <li class="sub-nav__item">
-  //         <svg class="sub-nav__icon icon icon--bag">
-  //           <use href="./img/svgsprite/sprite.symbol.svg#bag"></use>
-  //         </svg>
-  //         <a href="#" class="sub-nav__link" data-cat="bags">
-  //           Сумки
-  //         </a>
-  //         <div class="nav__arrow">
-  //           <div class="arrow"></div>
-  //         </div>
-  //       </li>
-  //       <li class="sub-nav__item">
-  //         <svg class="sub-nav__icon icon icon--glasses">
-  //           <use href="./img/svgsprite/sprite.symbol.svg#glasses"></use>
-  //         </svg>
-  //         <a href="#" class="sub-nav__link"  data-cat="glasses">
-  //           Очки
-  //         </a>
-  //         <div class="nav__arrow">
-  //           <div class="arrow"></div>
-  //         </div>
-  //       </li>
-  //       <li class="sub-nav__item">
-  //         <svg class="sub-nav__icon icon icon--parfume">
-  //           <use href="./img/svgsprite/sprite.symbol.svg#parfume"></use>
-  //         </svg>
-  //         <a href="#" class="sub-nav__link" data-cat="parfume">
-  //           Парфюмерия
-  //         </a>
-  //         <div class="nav__arrow">
-  //           <div class="arrow"></div>
-  //         </div>
-  //       </li>
-  //       <li class="sub-nav__item">
-  //         <svg class="sub-nav__icon icon icon--cosmetics">
-  //           <use href="./img/svgsprite/sprite.symbol.svg#cosmetics"></use>
-  //         </svg>
-  //         <a href="#" class="sub-nav__link" data-cat="cosmetic">
-  //           Косметика
-  //         </a>
-  //         <div class="nav__arrow">
-  //           <div class="arrow"></div>
-  //         </div>
-  //       </li>
-  //       <li class="sub-nav__item">
-  //         <svg class="sub-nav__icon icon icon--watch">
-  //           <use href="./img/svgsprite/sprite.symbol.svg#watch"></use>
-  //         </svg>
-  //         <a href="#" class="sub-nav__link" data-cat="watches">
-  //           Часы
-  //         </a>
-  //         <div class="nav__arrow">
-  //           <div class="arrow"></div>
-  //         </div>
-  //       </li>
-  // `;
-
-//   const men = {
-//     glasses : ['Авиаторы', 'Квадратые', 'Круглые'],
-//     watches : ['На ремешке', 'Металлические', 'С драгоценными вставками'],
-//     belts : ['Кожанные', 'С пряжкой', 'Разные'],
-//     ties : ['Для офиса', 'Для вечера', 'Разные'],
-//     bags : ['Рюкзак', 'Клатч', 'Портмоне']
-//   }
-
-//   const women = {
-//     bags : ['Рюкзак', 'Клатч', 'Портмоне'],
-//     glasses : ['Авиаторы', 'Квадратые', 'Круглые'],
-//     parfume : ['Парфюмерная вода', 'Духи', 'Пробники', 'Наборы ароматов'],
-//     cosmetic : ['Кремы', 'Палетки теней', 'Тушь', 'Помада'],
-//     watches : ['На ремешке', 'Металлические', 'С драгоценными вставками']
-//   };
-
-//   const addCategories = (e) => {
-//     e.stopPropagation();
-//     if (e.target.children[1] && e.target.children[1].hasAttribute('data-cat')) {
-//       const currentCat = e.target.children[1].getAttribute('data-cat');
-//       const subNavList = e.target.closest('ul');
-//       console.log(subNavList);
-      
-//       const subNavContainer = subNavList.nextElementSibling;
-// console.log(subNavContainer);
-
-//       if (women[currentCat]) {
-//           subNavContainer.innerHTML = women[currentCat].map(cat => 
-//               `
-//             <li class="sub-nav__item">
-//               <a href="#">${cat}</a>
-//             </li>
-//             `).join("");
-//       } 
-      
-//       if (men[currentCat]) {
-//         console.log(men[currentCat]);
-        
-//           subNavContainer.innerHTML = men[currentCat].map(cat => 
-//               `
-//             <li class="sub-nav__item">
-//               <a href="#">${cat}</a>
-//             </li>
-//             `).join("");
-//       }
-
-//       if (currentCat === 'all') {
-//         subNavContainer.innerHTML= '';
-//       }
-   
-      
-//     }
-  
-//   }
-
-  // subNavLists.forEach(subNavList => {
-  //   subNavList.addEventListener( 'mouseover', addCategories);
-  // });
-
-
+ 
 };
 
 export default addSubNavCats;

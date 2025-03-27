@@ -55,7 +55,6 @@
 }
 
 .nav-tab {
-  position: relative;
   cursor: pointer;
 }
 
@@ -96,11 +95,6 @@
   display: grid;
   column-gap: 20px;
   grid-template-columns: 200px 1fr;
-}
-
-
-.sub-nav__list > li {
-  
 }
 
 .sub-nav__item {
@@ -147,6 +141,15 @@
     background-color: #ea9245a1;
   }
 
+}
+
+.sub-sub-nav__item {
+  padding: 10px 5px;
+  transition:  background-color, 0.3s ease-in;
+
+  &:hover {
+    background-color: #ededed79;
+  }
 }
 
 
