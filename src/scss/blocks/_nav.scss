@@ -1,4 +1,4 @@
-.nav li {
+.nav { 
   position: relative;
 }
 
@@ -64,6 +64,7 @@
 }
 
 .sub-nav {
+  // display: none;
   position: fixed;
   width: 1115px;
   padding: 15px;
@@ -73,7 +74,7 @@
 
   position: absolute;
   left: 0;
-  top: 52px;
+  top: 50px;
 
   
   background-color: #fff;
@@ -91,12 +92,14 @@
 }
 
 .sub-nav__item {
-  padding-bottom: 15px;
+  padding: 10px 5px;
 
   display: grid;
   align-items: center;
   column-gap: 20px;
   grid-template-columns: 20px 1fr 20px;
+
+  transition:  background-color, 0.3s ease-in;
 }
 
 .sub-nav__link {
@@ -154,8 +157,12 @@
   border-right: 2px solid #000;
   transform: translate(-50%, -50%) rotate(45deg);
 }
-.sub-nav__item:hover .arrow {
-  display: block;
+.sub-nav__item:hover {
+  background-color: #ededed79;
+
+  .arrow {
+    display: block;
+  }
 }
 
 .sub-nav__arrow.arrow {
@@ -170,7 +177,7 @@
   transform: rotate(-180deg);
 }
 
-.nav__list > li:hover .sub-nav__list {
+.nav__list > li:hover .sub-nav {
   display: block;
 }
 
