@@ -62,3 +62,32 @@
   line-height: 1.4;
   color: #000;
 }
+
+.button-login {
+  padding: 8px 5px;
+
+  display: flex;
+  justify-content: center;
+  min-width: 100px;
+
+  border-radius: 5px;
+  font-size: 14px;
+
+  border: 1px solid var(--accent);
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    border-color: #934907;
+  }
+
+  &--register {
+    color: #fff;
+    background-color: var(--accent);
+    border-color: transparent;
+
+    &:hover {
+      background-color: #d06609;
+    }
+  }
+}
+
