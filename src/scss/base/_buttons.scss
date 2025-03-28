@@ -1,7 +1,7 @@
 .button-solid, a.button-solid  {
   display: inline-block;
   padding: 22px 0;
-  min-width: 243px;
+  width: 243px;
   height: 68px;
   background-color: var(--button-bg);
 
@@ -65,7 +65,7 @@
 
 .button-primary, a.button-primary {
   padding: 15px 15px;
-  min-width: 200px;
+  width: 200px;
   height: 50px;
 
   border-radius: 5px;
@@ -102,7 +102,7 @@
 
 .button-primary-outline, a.button-primary-outline {
   padding: 15px 15px;
-  min-width: 200px;
+  width: 200px;
   height: 50px;
 
   border-radius: 5px;
@@ -142,11 +142,10 @@
 
   &--with-icon {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 
     &::after {
-      margin-right: 80px;
+      margin-left: 20px;
 
       display: inline-block;
       content: "";
@@ -162,7 +161,7 @@
     }
 
     &:hover::after {
-      margin-right: 60px;
+      margin-left: 35px;
     }
   }
 }
