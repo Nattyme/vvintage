@@ -13,13 +13,13 @@
 		<link rel="stylesheet" href="./css/main.css" />
 	</head>
 
-	<body class="page-login">
+	<body class="authorization-page">
 		<main class="inner-page">
-			<section class="login-page">
+			<section class="authorization">
 				<div class="container">
-					<div class="login-page__form">
-						<div class="forms-grid">
-							<form class="authorization-form" method="POST" action="">
+					<div class="authorization__content">
+						<div class="authorization__forms-wrapper">
+							<form class="authorization-form" method="POST" name="formLogin" action="">
 								<div class="authorization-form__heading">
 									<h2 class="heading">Вход</h2>
 								</div>
@@ -37,20 +37,20 @@
 								</div>
 
 								<div class="authorization-form__links">
-									<a class="login-button" href="">Войти</a>
+									<a class="button-primary button-primary--with-icon" href="">Войти</a>
 								</div>
 							</form>
 
-							<div class="notMember">
-								<h2 class="notMember__title">Не&#160;зарегестрированы?</h2>
+							<div class="authorization__links">
+								<h2 class="authorization__subtitle">Не&#160;зарегестрированы?</h2>
 								<div class="authorization-form__button">
-									<button name="register" value="register" class="login-button login-button--register" type="submit">Регистрация</button>
+									<a href="./page-registration.html" class="button-primary button-primary--with-icon button-primary--outline">Регистрация</a>
 								</div>
 
 								<div class="authorization-form__button">
-									<button name="lost-password" value="lost-password" class="login-button login-button--register" type="submit">
+									<a href="./page-lost-password.html" class="button-primary button-primary--with-icon button-primary--outline">
 										Восстановить
-									</button>
+									</a>
 								</div>
 							</div>
 						</div>

@@ -13,13 +13,13 @@
 		<link rel="stylesheet" href="./css/main.css" />
 	</head>
 
-	<body class="page-login">
+	<body class="authorization-page">
 		<main class="inner-page">
-			<section class="login-page">
+			<section class="authorization">
 				<div class="container">
-					<div class="login-page__form">
-						<div class="forms-grid">
-							<form class="authorization-form authorization-form--registration" method="POST" action="">
+					<div class="authorization__content">
+						<div class="authorization__forms-wrapper">
+							<form class="authorization-form authorization-form--registration" name="formRegistration" method="POST" action="">
 								<div class="authorization-form__heading">
 									<h2 class="heading">Регистрация</h2>
 								</div>
@@ -47,20 +47,20 @@
 								</div>
 
 								<div class="authorization-form__links">
-									<a class="login-button" href="">Регистрация</a>
+									<button class="button-primary button-primary--with-icon">Регистрация</button>
 								</div>
 							</form>
 
-							<div class="notMember">
-								<h2 class="notMember__title">Зарегестрированы?</h2>
-								<div class="notMember__img">
+							<div class="authorization__links">
+								<h2 class="authorization__subtitle">Зарегестрированы?</h2>
+								<div class="authorization__img">
 									<svg class="icon icon--woman-with-hat">
 										<use href="./img/svgsprite/sprite.symbol.svg#woman-with-hat"></use>
 									</svg>
 								</div>
 
 								<div class="authorization-form__button">
-									<button name="register" value="register" class="login-button login-button--register" type="submit">Войти</button>
+									<a href="./page-login.html" class="button-primary button-primary--with-icon button-primary--outline">Войти</a>
 								</div>
 							</div>
 						</div>

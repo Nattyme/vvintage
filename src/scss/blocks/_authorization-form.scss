@@ -1,0 +1,51 @@
+.authorization-form {
+  padding: 50px 40px;
+  height: 100%;
+
+  border: 1px solid #1b262c;
+  
+  text-align: center;
+  color: #1b262c;
+  background-color: #fff;
+}
+
+.authorization-form__heading {
+  margin-bottom: 30px;
+  text-align: left;
+
+  .heading {
+    font-size: 32px;
+  }
+}
+
+.authorization-form__heading {
+  margin-bottom: 30px;
+}
+
+.authorization-form__subtitle {
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.authorization-form__input {
+
+  input {
+    display: block;
+    margin-right: auto;
+
+    padding: 10px 15px;
+    width: 200px;
+    border-radius: 2px;
+    border: 1px solid #1b262c;
+  }
+
+}
+
+.authorization-form__input + .authorization-form__input {
+  margin-top: 25px;
+}
+
+.authorization-form__button, .authorization-form__links {
+  margin-top: 40px;
+  text-align: left;
+}

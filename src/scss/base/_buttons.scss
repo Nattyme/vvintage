@@ -63,36 +63,7 @@
   color: #000;
 }
 
-.button-login {
-  padding: 8px 5px;
-
-  display: flex;
-  justify-content: center;
-  min-width: 100px;
-
-  border-radius: 5px;
-  font-size: 14px;
-
-  border: 1px solid var(--accent);
-  transition: all 0.2s ease-in;
-
-  &:hover {
-    border-color: #934907;
-  }
-
-  &--register {
-    color: #fff;
-    background-color: var(--accent);
-    border-color: transparent;
-
-    &:hover {
-      background-color: #d06609;
-    }
-  }
-}
-
-.login-button {
-  position: relative;
+.button-primary {
   padding: 15px 15px;
   width: 200px;
   height: 50px;
@@ -114,38 +85,40 @@
     }
   }
 
-  &--register {
+  &--outline {
+    text-align: left;
+    background-color: transparent;
+    border-color: #fff;
     color: #fff;
-    background-color: var(--accent);
-    border-color: transparent;
 
     &:hover {
       background-color: #d06609;
     }
   }
 
-  &:before {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
+  &--with-icon {
+    position: relative;
 
-    content: "";
-    position: absolute;
-
-    top: 18px;
-    right: 40px;
-
-    border-left: 2px solid #fff;
-    border-top: 2px solid #fff;
-    transform: rotate(135deg);
-
-    transition: right 0.5s ease;
+    &:before {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+  
+      content: "";
+      position: absolute;
+  
+      top: 18px;
+      right: 40px;
+  
+      border-left: 2px solid #fff;
+      border-top: 2px solid #fff;
+      transform: rotate(135deg);
+  
+      transition: right 0.5s ease;
+    }
   }
 
-  &--register {
-    text-align: left;
-    background-color: transparent;
-    border-color: #fff;
-  }
+
 }
+
 
