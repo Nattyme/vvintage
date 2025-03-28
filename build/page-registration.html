@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>VVintage&#160;&#8212; страница авторизации</title>
+		<title>VVintage&#160;&#8212; регистрация нового пользователя</title>
 		<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg" />
 		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png" />
 		<script src="https://api-maps.yandex.ru/v3/?apikey=144f79d1-953e-448c-9341-fb93fa71b6c2&lang=ru_RU"></script>
@@ -19,17 +19,27 @@
 				<div class="container">
 					<div class="login-page__form">
 						<div class="forms-grid">
-							<form class="authorization-form" method="POST" action="">
+							<form class="authorization-form authorization-form--registration" method="POST" action="">
 								<div class="authorization-form__heading">
-									<h2 class="heading">Вход</h2>
+									<h2 class="heading">Регистрация</h2>
+								</div>
+
+								<div class="authorization-form__input">
+									<p class="authorization-form__subtitle">Имя</p>
+
+									<input placeholder="Введите имя" name="email" class="input" type="text" value="" />
+								</div>
+								<div class="authorization-form__input">
+									<p class="authorization-form__subtitle">Фамилия</p>
+
+									<input placeholder="Введите фамилию" name="email" class="input" type="text" value="" />
 								</div>
 
 								<div class="authorization-form__input">
 									<p class="authorization-form__subtitle">Email</p>
 
-									<input placeholder="Введите ваш email" name="email" class="input" type="text" value="" />
+									<input name="password" class="input" type="password" placeholder="Введите email" />
 								</div>
-
 								<div class="authorization-form__input">
 									<p class="authorization-form__subtitle">Пароль</p>
 
@@ -37,20 +47,20 @@
 								</div>
 
 								<div class="authorization-form__links">
-									<a class="login-button" href="">Войти</a>
+									<a class="login-button" href="">Регистрация</a>
 								</div>
 							</form>
 
 							<div class="notMember">
-								<h2 class="notMember__title">Не&#160;зарегестрированы?</h2>
-								<div class="authorization-form__button">
-									<button name="register" value="register" class="login-button login-button--register" type="submit">Регистрация</button>
+								<h2 class="notMember__title">Зарегестрированы?</h2>
+								<div class="notMember__img">
+									<svg class="icon icon--woman-with-hat">
+										<use href="./img/svgsprite/sprite.symbol.svg#woman-with-hat"></use>
+									</svg>
 								</div>
 
 								<div class="authorization-form__button">
-									<button name="lost-password" value="lost-password" class="login-button login-button--register" type="submit">
-										Восстановить
-									</button>
+									<button name="register" value="register" class="login-button login-button--register" type="submit">Войти</button>
 								</div>
 							</div>
 						</div>
