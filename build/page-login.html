@@ -24,31 +24,33 @@
 									<h2 class="heading">Вход</h2>
 								</div>
 
-								<div class="authorization-form__input">
-									<p class="authorization-form__subtitle">Email</p>
+								<div class="authorization-form__field">
+									<p class="authorization-form__field-title">Email</p>
 
-									<input placeholder="Введите ваш email" name="email" class="input" type="text" value="" />
+									<input type="email" class="input" name="email" value="" placeholder="Введите ваш email" required />
 								</div>
 
-								<div class="authorization-form__input">
-									<p class="authorization-form__subtitle">Пароль</p>
+								<div class="authorization-form__field">
+									<p class="authorization-form__field-title">Пароль</p>
 
-									<input name="password" class="input" type="password" placeholder="Введите пароль" />
+									<input type="password" class="input" name="password" placeholder="Введите пароль" required />
 								</div>
 
-								<div class="authorization-form__links">
-									<a class="button-primary button-primary--with-icon" href="">Войти</a>
+								<div class="authorization-form__button">
+									<button name="lost-password" value="lost-password" class="button button--with-icon button-primary" type="submit">
+										Войти
+									</button>
 								</div>
 							</form>
 
 							<div class="authorization__links">
 								<h2 class="authorization__subtitle">Не&#160;зарегестрированы?</h2>
 								<div class="authorization-form__button">
-									<a href="./page-registration.html" class="button-primary button-primary--with-icon button-primary--outline">Регистрация</a>
+									<a href="./page-registration.html" class="button button--with-icon button-primary-outline">Регистрация</a>
 								</div>
 
 								<div class="authorization-form__button">
-									<a href="./page-lost-password.html" class="button-primary button-primary--with-icon button-primary--outline">
+									<a href="./page-lost-password.html" class="button button--with-icon button-primary-outline">
 										Восстановить
 									</a>
 								</div>

@@ -4,25 +4,34 @@
   </div>
 
 
-  <div class="authorization-form__input">
-    <p class="authorization-form__subtitle">Email</p>
+  <div class="authorization-form__field">
+    <p class="authorization-form__field-title">Email</p>
     
     <input 
-      placeholder="Введите ваш email"
-      name="email" 
+      type="email" 
       class="input" 
-      type="text" 
+      name="email" 
       value="" 
+      placeholder="Введите ваш email"
+      required
     />
   </div>
 
-  <div class="authorization-form__input">
-    <p class="authorization-form__subtitle">Пароль</p>
+  <div class="authorization-form__field">
+    <p class="authorization-form__field-title">Пароль</p>
 
-    <input name="password" class="input" type="password" placeholder="Введите пароль" />
+    <input 
+      type="password" 
+      class="input" 
+      name="password" 
+      placeholder="Введите пароль" 
+      required
+    />
   </div>
       
-  <div class="authorization-form__links">
-    <a class="button-primary button-primary--with-icon" href="">Войти</a>
+  <div class="authorization-form__button">
+    <button name="lost-password" value="lost-password" class="button button--with-icon button-primary" type="submit">
+      Войти
+    </button>
   </div>
 </form>

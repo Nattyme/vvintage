@@ -6,6 +6,8 @@
 	--font-main: "Dancing Script", sans-serif;
 	--font-titles: "Dancing Script", sans-serif;
 
+  --white: #fff;
+
 	--page-bg: #fff;
   --page-bg-accent: #f1eadc;
 	--text-color: #000;
@@ -14,7 +16,25 @@
 	--link-color: var(--accent);
 
   --button-bg: var(--accent);
-  --button-bg-hover: #ea9145; 
+  --button-primary-bg: var(--accent);
+  --button-primary-bg--hover: #ea9145;
+  --button-primary-text: var(--white);
+
+  --button-primary-bg--focus: #c75614;
+  --button-primary-bg--active: #a75627;
+  --button-primary-bg--disabled: #d3b59b;
+
+  --button-primary-outline-bg: transparent;
+  --button-primary-outline-bg-hover: #ea9145; 
+  --button-primary-outline--hover: var(--button-primary-bg--hover);
+  --button-primary-outline-border: var(--white);
+  --button-primary-outline-text: var(--white);
+
+  --button-primary-outline-bg--focus: #c75614;
+  --button-primary-outline-bg--active: #a75627;
+  --button-primary-outline-bg--disabled: #d3b59b;
+
+  --button-icon-bg: rgba(110, 156, 159, 0.1);
 
 
   --laptop-size: 1600px;
