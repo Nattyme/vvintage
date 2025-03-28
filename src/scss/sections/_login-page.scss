@@ -1,0 +1,81 @@
+.page-login {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+
+  background-color: #999;
+  background-image: url('./../../img/login/1@2x.avif');
+  background-position: center center; // x y
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    display: inline-block;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: #daa9710f;
+  }
+  
+}
+
+
+.login-page__form {
+
+}
+
+.forms-grid {
+  display: grid;
+  width: 600px;
+  min-height: 400px;
+  grid-template-columns: 400px 1fr;
+  align-items: center;
+}
+
+.authorization-form {
+  padding: 50px 40px;
+  height: 100%;
+
+  border: 1px solid #1b262c;
+  
+  text-align: center;
+  color: #1b262c;
+  background-color: #fff;
+}
+
+.authorization-form__heading {
+  font-size: 22px;
+  text-align: left;
+}
+
+
+
+.notMember {
+  padding: 50px 30px;
+  height: 100%;
+  border: 1px solid #1b262c;
+  color: #fff;
+  background-color: #1b262c;
+}
+.authorization-form__heading {
+}
+.heading {
+}
+.authorization-form__input {
+}
+.input {
+}
+.authorization-form__button {
+}
+.primnary-button {
+}
+.authorization-form__links {
+}

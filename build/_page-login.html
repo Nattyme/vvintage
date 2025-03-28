@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>VVintage- авторизация</title>
+		<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg" />
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png" />
+		<script src="https://api-maps.yandex.ru/v3/?apikey=144f79d1-953e-448c-9341-fb93fa71b6c2&lang=ru_RU"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+
+	<body class="inner-page inner-page--login">
+		<main class="maintext">
+			<section class="login">
+				<div class="container">
+					<form class="authorization-form" method="POST" action="">
+						<div class="authorization-form__heading">
+							<h2 class="heading">Регистрация</h2>
+						</div>
+
+						<div class="authorization-form__input">
+							<input name="email" class="input" type="text" value="" />
+						</div>
+
+						<div class="authorization-form__input">
+							<input name="password" class="input" type="password" placeholder="Пароль" />
+						</div>
+
+						<div class="authorization-form__button">
+							<button name="register" value="register" class="primary-button" type="submit">Зарегистрироваться</button>
+						</div>
+
+						<div class="authorization-form__links">
+							<a href="">Вход на&#160;сайт</a>
+						</div>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__content">
+					<div class="footer__column">
+						<div class="footer__logo">
+							<a href="index.html" class="logo">
+								VVintage
+							</a>
+						</div>
+						<div class="footer__copyright">
+							<p>&#169; Все права защищены</p>
+							<p><a href="">Политика конфиденциальности</a></p>
+							<p><a href="">Публичная оферта</a></p>
+							<p><a href="./policy.html">О&#160;предоставлении услуг</a></p>
+						</div>
+					</div>
+
+					<div class="footer__nav">
+						<ul class="nav-list">
+							<li class="nav-list__item">
+								<a class="nav-list__link" href="#!">Главная</a>
+							</li>
+							<li class="nav-list__item">
+								<a class="nav-list__link nav-list__inner-nav" href="#!">Магазин</a>
+								<div class="inner-nav-wrapper">
+									<ul class="inner-nav__list">
+										<li class="inner-nav__item">
+											<a href="#!" class="inner-nav__link">Пальто</a>
+										</li>
+										<li class="inner-nav__item">
+											<a href="#!" class="inner-nav__link">Свитшоты</a>
+										</li>
+										<li class="inner-nav__item">
+											<a href="#!" class="inner-nav__link">Кардиганы</a>
+										</li>
+										<li class="inner-nav__item">
+											<a href="#!" class="inner-nav__link">Толстовки</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav-list__item">
+								<a class="nav-list__link" href="#!">О&#160;нас</a>
+							</li>
+							<li class="nav-list__item">
+								<a class="nav-list__link" href="#!">Контакты</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="footer__column">
+						<div class="footer__contact">
+							<a href="tel:330606459426">+33-0606459426</a>
+							<a href="mailto:vvintage.store@yandex.com">vvintage.store@yandex.com</a>
+						</div>
+						<ul class="social-list">
+							<li>
+								<a href="#">
+									<svg class="icon icon--instagram">
+										<use href="./img/svgsprite/sprite.symbol.svg#instagram"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<svg class="icon icon--facebook">
+										<use href="./img/svgsprite/sprite.symbol.svg#facebook"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<svg class="icon icon--twitter">
+										<use href="./img/svgsprite/sprite.symbol.svg#twitter"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+						<ul class="payment-list">
+							<li>
+								<picture>
+									<source srcset="./img/payment/visa-mastercard.webp 1x, ./img/payment/visa-mastercard@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/payment/visa-mastercard.png 1x, ./img/payment/visa-mastercard@2x.png 2x" type="image/png" />
+									<img src="./img/payment/visa-mastercard.png" srcset="./img/payment/visa-mastercard@2x.png" alt="" />
+								</picture>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+		<script src="./js/index.bundle.js"></script>
+	</body>
+</html>
