@@ -56,8 +56,6 @@
   }
 }
 
-
-
 .icon--file-check {
   width: 96px;
   height: 96px;
@@ -135,4 +133,12 @@
 
 .header-top__login a:hover .icon--woman-with-hat {
   fill: var(--accent);
+}
+
+
+// admin panel 
+.admin-panel {
+  .icon--target, .icon--mail, .icon--folder, .icon--message-square, .icon--edit {
+    stroke: var(--white);
+  }
 }
