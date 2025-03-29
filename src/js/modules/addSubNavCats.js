@@ -118,7 +118,7 @@ const addSubNavCats = () => {
     `
       <li
         id="${cat.id}"
-        class="nav-tab"
+        class="nav__tab"
         role="tab"
         area-selected="false"
         tabindex="0"
