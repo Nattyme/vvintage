@@ -1,5 +1,7 @@
 .nav { 
-
+  position: relative;
+  z-index: 9;
+  background-color: #fff;
 }
 
 .catalog-dropdown__container {
@@ -12,7 +14,7 @@
 
 .catalog-dropdown__background {
   display: none;
-  z-index: -1;
+ 
   position: fixed;
   top: 20%;
   left: 0;
@@ -72,7 +74,6 @@
 
 .nav:hover ~  .catalog-dropdown__background {
   display: flex;
-  
 }
 
 .nav-tab {
