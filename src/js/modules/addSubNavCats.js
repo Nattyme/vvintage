@@ -1,8 +1,4 @@
 const addSubNavCats = () => {
-  const nav = document.querySelector('#nav');
-  const navList = nav.querySelector('.nav__list')
-  const subNav = document.querySelector('#sub-nav-list');
-  const subSubNav = document.querySelector('#sub-sub-nav');
   const cats = [
     {
       'id' : '1',
@@ -90,7 +86,7 @@ const addSubNavCats = () => {
           'icon' : 'suitcase',
           'subSubCats' : [{'id' : '132', 'name' : 'Рюкзак'}, {'id' : '133', 'name' : 'На плечо'}, {'id' : '134', 'name' : 'Дипломат'}]
         }
-
+  
       ],
     },
     {
@@ -113,78 +109,264 @@ const addSubNavCats = () => {
     },
   ];
 
-  // Добавляем разметку основных категорий в навигацию
-  navList.innerHTML = cats.map(cat => 
-    `
-      <li
-        id="${cat.id}"
-        class="nav__tab"
-        role="tab"
-        area-selected="false"
-        tabindex="0"
-      >
-    <div class="nav__item">
-      <span class="nav__title">${cat.name}</span>
-      </div>
- 
-    </li>
-    `
-  ).join(' ');
+  document.addEventListener('DOMContentLoaded', () => {
+    const nav = document.querySelector('#nav');
+    const navList = nav.querySelector('#nav__list');
+    const navOverlay = document.querySelector('.catalog-dropdown__background');
 
-  const addSubNav = (e) => {
-    e.stopPropagation();
-
-    const listItem = e.target.closest('li');
-    if (!listItem) return;
-    // id категории, по на котороую навели мышку
-    const catId = listItem.id;
-
-    if (!catId || !navList) return;
-
-    // Найдём объект нужной категории 
-    const currentCatData = cats.find(cat => cat.id === catId);
   
-    if(!currentCatData) return;
 
-    subNav.innerHTML = currentCatData.subCats.map( cat => 
+    // Добавляем разметку основных категорий в навигацию
+    navList.innerHTML = cats.map(cat => 
       `
-      <li class="sub-nav__item">
-        <svg class="sub-nav__icon icon icon--${cat.icon}">
-          <use href="./img/svgsprite/sprite.symbol.svg#${cat.icon}"></use>
-        </svg>
-        <a href="#" class="sub-nav__link" data-cat="${cat.id}">
-          ${cat.name}
-        </a>
-        <div class="nav__arrow">
-          <div class="arrow"></div>
+        <li
+          id="${cat.id}"
+          class="nav__block"
+          role="tab"
+          area-selected="false"
+          tabindex="0"
+        >
+        <div class="nav__item">
+          <span class="nav__title">${cat.name}</span>
         </div>
+  
       </li>
       `
-    ).join('');
+    ).join(' ');
 
-    const  addSubSubNav = (e) => {
-      const subCatId = e.target.children[1]?.getAttribute('data-cat');
-      if(!subCatId) return;
-      const currentSubCatData = currentCatData.subCats.find(cat => cat.id === subCatId);
-      console.log(currentSubCatData);
-      subSubNav.innerHTML = currentSubCatData.subSubCats.map (subCat => 
-        `
-        <li class="sub-sub-nav__item">
-          <a href="#" class="sub-sub-nav__link">
-            ${subCat.name}
-          </a>
-        </li>
-        `
-      ).join('');
-    }
+    const catBlocksAll = navList.querySelectorAll('.nav__block');
+    if(!catBlocksAll) return;
+    
+    catBlocksAll.forEach(catBlock => catBlock.addEventListener('mouseenter', (e) => {
+      const catId = catBlock.id; // id категории
+      const currentCatData = cats.find(cat => cat.id === catId); // получаем данные объекта ко категории
 
-    subNav.addEventListener('mouseover', addSubSubNav);
-  }
+      if(!currentCatData) return;
+      const subNavs = navList.querySelectorAll('.sub-nav');
+      subNavs.forEach(nav => nav.remove());
+
+      // Добавляем подменю на страницу
+      catBlock.insertAdjacentHTML('beforeend', `
+          <div class="sub-nav">
+            <div class="sub-nav__container container">
+              <ul class="sub-nav__list"></ul>
+              <ul class="sub-sub-nav_list"></ul>
+            </div>
+    
+          </div>
+      `);
+
+      //Добалем оверлей
+      navOverlay.classList.add('active');
+
+
+      const subNav = catBlock.querySelector('.sub-nav');
+      nav.addEventListener('mouseleave', () => {
+        console.log('ушли из саб нав');
+        console.log(e.target);
+        
+        const subNavs = navList.querySelectorAll('.sub-nav');
+        subNavs.forEach(nav => nav.remove());
+
+        // Убираем оверлей
+        navOverlay.classList.remove('active');
+      });
+     
+    }))
+
+    // Слушаем событие hover
+    // navList.addEventListener('mouseover', (e) => {
+    //   console.log(e.target);
+      
+    //     const listItem = e.target.closest('li');
+    //     if (!listItem) return;
+
+    //     // Если уже есть меню - удаляем
+    //     navList.querySelectorAll('.sub-nav').forEach((subNav) => subNav.remove());
+
+    //     // id выбранной категории
+    //     const catId = listItem.id;
+    //     const currentCatData = cats.find(cat => cat.id === catId);
+    //     if(!currentCatData) return;
+
+    //     // Добавляем подменю на страницу
+    //     listItem.insertAdjacentHTML('beforeend', `
+    //         <div class="sub-nav" id="sub-nav">
+    //           <div class="sub-nav__container container">
+    //             <ul class="sub-nav__list" id="sub-nav-list"></ul>
+    //             <ul class="sub-sub-nav_list" id="sub-sub-nav"></ul>
+    //           </div>
+      
+    //         </div>
+    //     `);
+
+    //     // Добавляем оверлей
+    //     navOverlay.classList.add('active');
+
+    //     const subNavList = listItem.querySelector('#sub-nav-list');
+    //     const subSubNav = listItem.querySelector('#sub-sub-nav');
+
+    //     subNavList.innerHTML = currentCatData.subCats.map( cat => 
+    //       `
+    //       <li class="sub-nav__item">
+    //         <svg class="sub-nav__icon icon icon--${cat.icon}">
+    //           <use href="./img/svgsprite/sprite.symbol.svg#${cat.icon}"></use>
+    //         </svg>
+    //         <a href="#" class="sub-nav__link" data-cat="${cat.id}">
+    //           ${cat.name}
+    //         </a>
+    //         <div class="nav__arrow">
+    //           <div class="arrow"></div>
+    //         </div>
+    //       </li>
+    //       `
+    //     ).join('');
+
+    //     const addSubSubNavList = (e) => {
+    //       e.stopPropagation();
+    //       const subCatId = e.target.children[1]?.getAttribute('data-cat');
+    //       if(!subCatId) return;
+    //       const currentSubCatData = currentCatData.subCats.find(cat => cat.id === subCatId);
+        
+    //       subSubNav.innerHTML = currentSubCatData.subSubCats.map (subCat => 
+    //         `
+    //         <li class="sub-sub-nav__item">
+    //           <a href="#" class="sub-sub-nav__link">
+    //             ${subCat.name}
+    //           </a>
+    //         </li>
+    //         `
+    //       ).join('');
+    //     }
+
+    //   // subNavList.addEventListener('mouseover', addSubSubNavList);
+
+    //   // Убираем подменю, если курсор ушел с навигации
+    //   // const subNav = nav.querySelector('#sub-nav');
+
+  
+    //   // if (!subNav) return;
+    //   // console.log(subNav);
+    //   // subNav.addEventListener('click', (e) => {
+    //   //   // e.stopPropagation();
+    //   //   console.log('click');
+    //   //   subNav.remove();
+    //   //   // Убираем оверлей
+    //   //   navOverlay.classList.remove('active');
+    //   // });
+
+    //   // Для тач скринов
+    //   // navOverlay.addEventListener('click', (e) => {
+    //   //   e.stopPropagation();
+    //   //   console.log('click');
+    //   //   const subNav = nav.querySelector('#sub-nav');
+    //   //   subNav?.remove();
+        
+        
+    //   //   // Убираем оверлей
+    //   //   navOverlay.classList.remove('active');
+    //   // });
+     
+
+      
+    // });
+
+  });
+}
+
+// const addSubNavCats = () => {
+//   const nav = document.querySelector('#nav');
+//   const navList = nav.querySelector('#nav__list')
 
 
 
-  nav.addEventListener('mouseover', addSubNav);
+//   // Добавляем разметку основных категорий в навигацию
+//   navList.innerHTML = cats.map(cat => 
+//     `
+//       <li
+//         id="${cat.id}"
+//         class="nav__block"
+//         role="tab"
+//         area-selected="false"
+//         tabindex="0"
+//       >
+//       <div class="nav__item">
+//         <span class="nav__title">${cat.name}</span>
+//       </div>
  
-};
+//     </li>
+//     `
+//   ).join(' ');
+
+//   const addSubNav = (e) => {
+//     console.log('add sub func');
+    
+//     const listItem = e.target.closest('li');
+//     if (!listItem) return;
+//     // id категории, по на котороую навели мышку
+//     const catId = listItem.id;
+
+//     if (!catId || !navList) return;
+
+//     // Найдём объект нужной категории 
+//     const currentCatData = cats.find(cat => cat.id === catId);
+  
+//     if(!currentCatData) return;
+  
+//     // Добавим sub-nav с нужными подкатегориями
+//     listItem.insertAdjacentHTML('beforeend', `
+//         <div class="sub-nav" id="sub-nav">
+//           <div class="sub-nav__container">
+//             <ul class="sub-nav__list" id="sub-nav-list"></ul>
+//             <ul class="sub-sub-nav_list" id="sub-sub-nav"></ul>
+//           </div>
+   
+//         </div>
+//     `);
+
+//     const subNavList = nav.querySelector('#sub-nav-list');
+//     const subSubNav = nav.querySelector('#sub-sub-nav');
+
+//     if(!subNavList) return;
+
+//     subNavList.innerHTML = currentCatData.subCats.map( cat => 
+//       `
+//       <li class="sub-nav__item">
+//         <svg class="sub-nav__icon icon icon--${cat.icon}">
+//           <use href="./img/svgsprite/sprite.symbol.svg#${cat.icon}"></use>
+//         </svg>
+//         <a href="#" class="sub-nav__link" data-cat="${cat.id}">
+//           ${cat.name}
+//         </a>
+//         <div class="nav__arrow">
+//           <div class="arrow"></div>
+//         </div>
+//       </li>
+//       `
+//     ).join('');
+
+//     const addSubSubNavList = (e) => {
+//       stopPropagation();
+//       const subCatId = e.target.children[1]?.getAttribute('data-cat');
+//       if(!subCatId) return;
+//       const currentSubCatData = currentCatData.subCats.find(cat => cat.id === subCatId);
+//       console.log(currentSubCatData);
+//       subSubNav.innerHTML = currentSubCatData.subSubCats.map (subCat => 
+//         `
+//         <li class="sub-sub-nav__item">
+//           <a href="#" class="sub-sub-nav__link">
+//             ${subCat.name}
+//           </a>
+//         </li>
+//         `
+//       ).join('');
+//     }
+
+//     subNavList.addEventListener('mouseover', addSubSubNavList);
+//   }
+
+//   navList.addEventListener('mouseover', addSubNav);
+
+// };
 
 export default addSubNavCats;

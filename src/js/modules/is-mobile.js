@@ -1,6 +1,8 @@
 function isMobile () {
   let isMobile = {
     Android: function () {
+      console.log(navigator.userAgent);
+      
       return navigator.userAgent.match(/Android/i);
     },
     BlackBerry: function() {

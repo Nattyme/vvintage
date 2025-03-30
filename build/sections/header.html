@@ -1,30 +1,54 @@
-<section class="hero">
-	<div class="hero-block">
-		<div class="hero-block__background">
-			<div class="hero-block__img">
-				<picture>
-					<source srcset="./img/hero/01.webp 1x, ./img/hero/01@2x.webp 2x" type="image/webp" />
-					<source srcset="./img/hero/01.jpg 1x, ./img/hero/01@2x.jpg 2x" type="image/jpeg" />
-					<img src="./img/hero/01.jpg" srcset="./img/hero/01@2x.jpg" alt="" />
-				</picture>
+<header class="header">
+	<div class="header__top">
+		<div class="container">
+			<div class="header__row">
+				<div class="header__logo">
+					<a href="index.html" class="logo">
+						VVintage
+					</a>
+				</div>
+
+				<div class="header__cta">
+					<div class="header__user flex-block">
+						<div class="header__login">
+							<a href="./../page-login.html">
+								<svg class="icon icon--woman-with-hat">
+									<use href="./img/svgsprite/sprite.symbol.svg#woman-with-hat"></use>
+								</svg>
+							</a>
+
+							<!-- 
+                <a href="#!" class="button-login"><span>Вход</span></a>
+                <a href="#!" class="button-login button-login--register"><span>Регистрация</span></a>  -->
+						</div>
+						<a href="good.html" class="cart">
+							<svg class="icon icon--shopping-bag">
+								<use href="./img/svgsprite/sprite.symbol.svg#shopping-bag"></use>
+							</svg>
+							<span class="counter">3</span>
+						</a>
+					</div>
+				</div>
+				<button class="mobile-nav-btn none">
+					<div class="nav-icon"></div>
+				</button>
 			</div>
 		</div>
 	</div>
 
-	<div class="container">
-		<div class="hero__block">
-			<div class="hero__text">
-				<div class="hero__title">
-					<h1 class="h1">Откройте для себя VVintage</h1>
-				</div>
-				<div class="hero__text-separator"></div>
-				<div class="hero__desc">
-					<p>Мода, вдохновленная прошлым&#8230;</p>
-				</div>
-			</div>
-			<a href="#arrival" class="hero__button">
-				<span class="button-solid">Открыть магазин</span>
-			</a>
+	<div class="header__nav">
+		<div class="container catalog-dropdown__container">
+			<nav class="nav" id="nav">
+				<ul class="nav__list" role="tablist" id="nav__list"></ul>
+			</nav>
+
+			<div class="catalog-dropdown__background" role="none"></div>
 		</div>
 	</div>
-</section>
+</header>
+<div class="mobile-nav">
+	<ul class="mobile-nav__list">
+		<li><a href="index.html">Главная</a></li>
+		<li><a href="docs.html">Документация</a></li>
+	</ul>
+</div>

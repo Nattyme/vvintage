@@ -1,5 +1,5 @@
 // Мобильная навигация
-// import isMobile from './modules/is-mobile.js';
+import isMobile from './modules/is-mobile.js';
 // import mobileNav from './modules/mobile-nav.js';
 import tab from './modules/tab.js';
 import addSubNavCats from './modules/addSubNavCats.js';
@@ -13,4 +13,4 @@ fancyBox();
 
 addSubNavCats();
 // yMap();
-// isMobile();
+isMobile();
