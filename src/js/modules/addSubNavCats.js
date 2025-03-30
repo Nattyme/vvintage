@@ -134,18 +134,20 @@ const addSubNavCats = () => {
       `
     ).join(' ');
 
+    // Находим все блоки главной навигации. На каждый блок вешаем прослушку событий hover
     const catBlocksAll = navList.querySelectorAll('.nav__block');
     if(!catBlocksAll) return;
     
-    catBlocksAll.forEach(catBlock => catBlock.addEventListener('mouseenter', (e) => {
+    catBlocksAll.forEach(catBlock => catBlock.addEventListener('mouseenter', () => {
       const catId = catBlock.id; // id категории
       const currentCatData = cats.find(cat => cat.id === catId); // получаем данные объекта ко категории
-
       if(!currentCatData) return;
+
+      // Находим все саб меню и удаляем их
       const subNavs = navList.querySelectorAll('.sub-nav');
       subNavs.forEach(nav => nav.remove());
 
-      // Добавляем подменю на страницу
+      // Добавляем новое подменю на страницу
       catBlock.insertAdjacentHTML('beforeend', `
           <div class="sub-nav">
             <div class="sub-nav__container container">
@@ -156,23 +158,59 @@ const addSubNavCats = () => {
           </div>
       `);
 
-      //Добалем оверлей
+      const subNavList = catBlock.querySelector('.sub-nav__list');
+      const subSubNav = catBlock.querySelector('.sub-sub-nav_list');
+console.log(subSubNav);
+
+      // Заполняем меню подактагорий данными
+      subNavList.innerHTML = currentCatData.subCats.map( cat => 
+        `
+        <li class="sub-nav__item">
+          <svg class="sub-nav__icon icon icon--${cat.icon}">
+            <use href="./img/svgsprite/sprite.symbol.svg#${cat.icon}"></use>
+          </svg>
+          <a href="#" class="sub-nav__link" data-cat="${cat.id}">
+            ${cat.name}
+          </a>
+          <div class="nav__arrow">
+            <div class="arrow"></div>
+          </div>
+        </li>
+        `
+      ).join('');
+
+      // Добалем оверлей
       navOverlay.classList.add('active');
 
-
-      const subNav = catBlock.querySelector('.sub-nav');
+      // Слушаем, когда курсор покинет навигацию
       nav.addEventListener('mouseleave', () => {
-        console.log('ушли из саб нав');
-        console.log(e.target);
-        
+
+        // Находи все subNav в навигации и ужаляем их. Убираем оверлей
         const subNavs = navList.querySelectorAll('.sub-nav');
         subNavs.forEach(nav => nav.remove());
-
-        // Убираем оверлей
         navOverlay.classList.remove('active');
       });
+
+      const addSubSubNavList = (e) => {
+
+        const subCatId = e.target.children[1]?.getAttribute('data-cat');
+        if(!subCatId) return;
+        const currentSubCatData = currentCatData.subCats.find(cat => cat.id === subCatId);
+          
+        subSubNav.innerHTML = currentSubCatData.subSubCats.map (subCat => 
+          `
+          <li class="sub-sub-nav__item">
+            <a href="#" class="sub-sub-nav__link">
+              ${subCat.name}
+            </a>
+          </li>
+          `
+        ).join('');
+      }
+
+      subNavList.addEventListener('mouseover', addSubSubNavList);
      
-    }))
+    }));
 
     // Слушаем событие hover
     // navList.addEventListener('mouseover', (e) => {
