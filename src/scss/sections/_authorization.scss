@@ -6,7 +6,8 @@
   align-items: center;
   justify-content:center;
 
-  background-color: #1b262c;
+  // background-color: #1b262c;
+  background-color: #fff;
   // background-image: url('./../../img/login/1@2x.avif');
   // background-position: center center; // x y
   // background-size: cover;
@@ -49,7 +50,7 @@
   grid-template-columns: 400px 1fr;
   align-items: center;
 
-  box-shadow: 10px 15px 30px #000;
+  box-shadow: -15px 15px 10px 2px #1b262c;
 
   form {
     height: 100%;
