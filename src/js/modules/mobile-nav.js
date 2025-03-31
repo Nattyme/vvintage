@@ -127,18 +127,24 @@ const mobileNav = () => {
 
 
   // Добавляем разметку основных категорий в навигацию
+
   mobileNavList.innerHTML = cats.map(cat => 
+
+    
     `
       <li
         id="${cat.id}"
-        class="nav__block"
+        class="mobile-nav__item"
         role="tab"
         area-selected="false"
         tabindex="0"
       >
-      <div class="nav__item">
-        <span class="nav__title">${cat.name}</span>
-      </div>
+      <a href="#" class="mobile-nav__link">
+        <svg class="mobile-nav__icon icon icon--${cat.subCats[1].icon}">
+          <use href="./img/svgsprite/sprite.symbol.svg#${cat.subCats[1].icon}"></use>
+        </svg> 
+        <span class="mobile-nav__subtitle">${cat.name}</span>
+      </a>
 
     </li>
     `
