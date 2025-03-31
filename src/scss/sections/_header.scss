@@ -28,10 +28,6 @@
   border-top: 1px solid var(--accent);
 }
 
-
-.header__row nav {
-}
-
 .header__nav {
 	@include tablet {
 		display: none;
