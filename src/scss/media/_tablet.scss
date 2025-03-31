@@ -21,6 +21,14 @@
     margin-right: 12px;
   }
 
+  .header__nav, .header__cta {
+    display: none;
+  }
+
+  .mobile-nav-btn {
+    display: flex;
+  }
+
   /* Header -top*/
   .header-top {
     padding-top: 30px;

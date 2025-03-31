@@ -64,12 +64,14 @@
 }
 
 .button-primary, a.button-primary {
-  padding: 15px 15px;
+  padding: 0 15px;
   width: 200px;
   height: 50px;
+  
 
   border-radius: 5px;
   color: var(--button-primary-text);
+  line-height: 50px;
   font-size: 16px;
 
   background-color: var(--button-primary-bg);
@@ -101,9 +103,10 @@
 }
 
 .button-primary-outline, a.button-primary-outline {
-  padding: 15px 15px;
+  padding: 0 15px;
   width: 200px;
   height: 50px;
+  line-height: 50px;
 
   border-radius: 5px;
   background-color: var(--button-primary-outline-bg);

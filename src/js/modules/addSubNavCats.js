@@ -112,9 +112,8 @@ const addSubNavCats = () => {
     },
   ];
 
-  isMobile();
-
   document.addEventListener('DOMContentLoaded', () => {
+    isMobile();
     const nav = document.querySelector('#nav');
     const navList = nav.querySelector('#nav__list');
     const navOverlay = document.querySelector('.catalog-dropdown__background');
@@ -126,7 +125,7 @@ const addSubNavCats = () => {
     };
 
 
-    const addSubNav = (e, catBlock) => {
+    const addSubNav = (catBlock) => {
      
       const catId = catBlock.id; // id категории
       const currentCatData = cats.find(cat => cat.id === catId); // получаем данные объекта ко категории
@@ -214,7 +213,7 @@ const addSubNavCats = () => {
       </div>
     `;
 
-  
+  if (!navList) return;
 
     // Добавляем разметку основных категорий в навигацию
     navList.innerHTML = cats.map(cat => 
@@ -238,7 +237,7 @@ const addSubNavCats = () => {
     const catBlocksAll = navList.querySelectorAll('.nav__block');
     if(!catBlocksAll) return;
 
-    catBlocksAll.forEach(catBlock => catBlock.addEventListener('mouseenter', (e) => addSubNav(e, catBlock)));
+    catBlocksAll.forEach(catBlock => catBlock.addEventListener('mouseenter', () => addSubNav(catBlock)));
   });
 }
 

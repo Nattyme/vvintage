@@ -1,6 +1,6 @@
 .header {
   position: sticky;
-  z-index: 99;
+  z-index: 999;
   background-color: #fff;
   overflow: hidden;
 
@@ -16,6 +16,11 @@
   top: 54px;
 }
 
+.header__top {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .header__row + .header__row {
   margin-top: 35px;
 }
@@ -29,9 +34,7 @@
 }
 
 .header__nav {
-	@include tablet {
-		display: none;
-	}
+
 }
 
 .header__login {
