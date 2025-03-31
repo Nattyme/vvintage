@@ -11,6 +11,16 @@ import yMap from './modules/ymap.js';
 tab();
 fancyBox();
 
+   // Debounce
+   const debounce = (func, delay) => {
+    let timeout;
+    return function (...args) {
+      clearTimeout(timeout);
+      timeout = setTimeout( () => func.apply(this, args), delay);
+    }
+  }
+
+
 addSubNavCats();
 // yMap();
 

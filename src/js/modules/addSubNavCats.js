@@ -17,7 +17,7 @@ const addSubNavCats = () => {
           'id' : '7',
           'name' : 'Сумки',
           'icon' : 'bag',
-          'subSubCats' : [{'id' : '22', 'name' : 'Рюкзак'}, {'id' : '22', 'name' : 'Клатч'},{'id' : '22', 'name' : 'Портмоне'},{'id' : '22', 'name' : 'Рюкзак'}, {'id' : '22', 'name' : 'Клатч'},{'id' : '22', 'name' : 'Портмоне'}, {'id' : '22', 'name' : 'Рюкзак'}, {'id' : '22', 'name' : 'Клатч'},{'id' : '22', 'name' : 'Портмоне'},{'id' : '22', 'name' : 'Рюкзак'}, {'id' : '22', 'name' : 'Клатч'},{'id' : '22', 'name' : 'Портмоне'}]
+          'subSubCats' : [{'id' : '22', 'name' : 'Рюкзак'}, {'id' : '23', 'name' : 'Клатч'},{'id' : '24', 'name' : 'Портмоне'}]
         },
         {
           'id' : '8',
@@ -118,13 +118,16 @@ const addSubNavCats = () => {
     const nav = document.querySelector('#nav');
     const navList = nav.querySelector('#nav__list');
     const navOverlay = document.querySelector('.catalog-dropdown__background');
+    if(!nav || !navList || !navOverlay) return;
 
     // Ф-ция находит и удаляет все под меню
     const findAndRemoveAllSubNavs = (navList) => {
       navList.querySelectorAll('.sub-nav').forEach(nav => nav.remove());
     };
 
-    const addSubNav = (catBlock) => {
+
+    const addSubNav = (e, catBlock) => {
+     
       const catId = catBlock.id; // id категории
       const currentCatData = cats.find(cat => cat.id === catId); // получаем данные объекта ко категории
       if(!currentCatData) return;
@@ -161,22 +164,24 @@ const addSubNavCats = () => {
 
       // Слушаем, когда курсор покинет навигацию
       nav.addEventListener('mouseleave', () => {
-
         // Находи все subNav в навигации и ужаляем их. Убираем оверлей
         findAndRemoveAllSubNavs(navList);
         navOverlay.classList.remove('active');
       });
 
+ 
+   
       const subNavBlocksAll = subNavList.querySelectorAll('li');
       subNavBlocksAll.forEach( subNavBlock => subNavBlock.addEventListener('mouseenter', (e) => addSubSubNavList(e, currentCatData, subSubNav)));
     }
 
     // Ф-ция добавляем меню 3го уровня
     const addSubSubNavList = (e, currentCatData, subSubNav) => {
-      const subCatId = e.target.children[1]?.getAttribute('data-cat');
-      if(!subCatId) return;
-
-      const currentSubCatData = currentCatData.subCats.find(cat => cat.id === subCatId);
+      const subCatWrapper = e.target.querySelector('[data-cat]');      
+      if(!subCatWrapper) return;
+      const subCatId = subCatWrapper.dataset.cat;
+      
+      const currentSubCatData = currentCatData.subCats.find(cat => cat.id == subCatId);
 
       // Пройдемся по всем категориям 2го уровня и сначала удали активный класс у всех, а потом добавим его к текущей подкатегории
       const subCatBlocksAll = e.target.closest('ul').querySelectorAll('li');
@@ -209,6 +214,8 @@ const addSubNavCats = () => {
       </div>
     `;
 
+  
+
     // Добавляем разметку основных категорий в навигацию
     navList.innerHTML = cats.map(cat => 
       `
@@ -231,7 +238,7 @@ const addSubNavCats = () => {
     const catBlocksAll = navList.querySelectorAll('.nav__block');
     if(!catBlocksAll) return;
 
-    catBlocksAll.forEach(catBlock => catBlock.addEventListener('mouseenter', () => addSubNav(catBlock)));
+    catBlocksAll.forEach(catBlock => catBlock.addEventListener('mouseenter', (e) => addSubNav(e, catBlock)));
   });
 }
 

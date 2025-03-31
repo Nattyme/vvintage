@@ -48,7 +48,7 @@
 }
 
 .sub-nav {
-  z-index: 9;
+  z-index: 1;
   position: fixed;
   left: 0;
 
@@ -88,6 +88,7 @@
 }
 
 .sub-nav__item {
+  padding: 0 10px;
   height: 40px;
   line-height: 40px;
 
@@ -121,10 +122,12 @@
 
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-content: flex-start;
   flex-wrap: wrap;
-  gap: 5px;
-  max-height: calc(100vh - 500px);
+  column-gap: 30px;
+  row-gap: 10px;
+
+  max-height: calc(100vh - 400px);
 }
 
 .sub-sub-nav__item {
