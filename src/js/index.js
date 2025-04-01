@@ -1,26 +1,19 @@
 // Мобильная навигация
 
 import mobileNav from './modules/mobile-nav.js';
-import tab from './modules/tab.js';
 import addSubNavCats from './modules/addSubNavCats.js';
+import addAccordion from './modules/accordion.js';
 //fancybox
 import fancyBox from './modules/fancybox.js';
 // import yMap from './modules/ymap.js';
-mobileNav();
-
-tab();
-fancyBox();
-
-   // Debounce
-   const debounce = (func, delay) => {
-    let timeout;
-    return function (...args) {
-      clearTimeout(timeout);
-      timeout = setTimeout( () => func.apply(this, args), delay);
-    }
-  }
 
 
-addSubNavCats();
+document.addEventListener('DOMContentLoaded', () => {
+  mobileNav();
+  // fancyBox(); // запускать только на странице продукта.(сделать проверку какая страница?)
+  addAccordion('many', '#accordion-products');
+  addSubNavCats();
+});
+
 // yMap();
 
