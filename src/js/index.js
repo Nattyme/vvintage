@@ -11,7 +11,7 @@ import fancyBox from './modules/fancybox.js';
 document.addEventListener('DOMContentLoaded', () => {
   mobileNav();
   // fancyBox(); // запускать только на странице продукта.(сделать проверку какая страница?)
-  addAccordion('many', '#accordion-products');
+  // addAccordion('many', '#accordion-products'); // запускать только на странице аккордеона
   addSubNavCats();
 });
 

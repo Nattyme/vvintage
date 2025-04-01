@@ -3,8 +3,14 @@
   padding-bottom: 72px;
 }
 
-.products__cards {
+.products__cards-wrapper {
   margin-bottom: 65px;
+}
+
+.products__cards-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 .products__pages-shown {
