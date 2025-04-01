@@ -11,6 +11,7 @@
   /*colors*/
   --white: #fff;
   --black: #000;
+  --gray-light: #ededed;
   --black-secondary: #1b262c;
 
 	--page-bg: #fff;
@@ -51,6 +52,11 @@
   --input-border-active: var(--accent);
   --input-border-disabled: #b7b7b7;
   --input-bg-disabled: #e1e1e1;
+
+  /*Cart*/
+  --cart-total-bg-color: var( --gray-light);
+  // --cart-total-text-color: var(--white);
+  
 
   /* media */
   --laptop-size: 1600px;
