@@ -1,8 +1,12 @@
-.product__imgs-container {
+.product__gallery-container{
   padding-right: 20px;
   width: 660px;
   height: 420px;
 
+  overflow: hidden;
+}
+
+.product__gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
