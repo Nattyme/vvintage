@@ -53,6 +53,18 @@
   --input-border-disabled: #b7b7b7;
   --input-bg-disabled: #e1e1e1;
 
+  /* Single product page*/
+  --product-gallery-width: 660px;
+  // --product-gallery-width: 660px;
+  --product-gallery-small-img-qty: 2;
+  --product-gallery-gap: 2px;
+  --product-gallery-block-width: calc((var(--product-gallery-width) / 2) - var(--product-gallery-gap));
+  --product-gallery-small-img-width: calc((var(--product-gallery-block-width) / 2) - 2px);
+
+
+
+  
+
   /*Cart*/
   --cart-total-bg-color: var( --gray-light);
   // --cart-total-text-color: var(--white);
