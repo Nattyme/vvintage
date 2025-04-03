@@ -41,18 +41,29 @@ const addControlPanel = () => {
     }
   ];
 
-  const panel = document.querySelector('.control-panel__list');
+  const panel = document.querySelector('#sidebar-tab');
+
+  const panelList = panel.querySelector('.sidebar__list');
   const panelItemTemplate = (cat, icon) => {
     return `
-            <li class="control-panel__list-item">
-              <button class="control-panel__list-button" title="Перейти в раздел '${cat}'">
-                <div class="control-panel__list-img-wrapper">
-                  <img class="control-panel__list-img" src="./../../img/svgsprite/stack/svg/sprite.stack.svg#${icon}" alt="Админ панель" />
+            <li class="sidebar__list-item">
+              <button class="sidebar__list-button" title="Перейти в раздел '${cat}'">
+                <div class="sidebar__list-img-wrapper">
+                  <img class="sidebar__list-img" src="./../../img/svgsprite/stack/svg/sprite.stack.svg#${icon}" alt="Админ панель" />
                 </div>
                 ${cat}
               </button>
             </li>
           `;
+  }
+
+  const doScrollOnlyByWheel = (block) => {
+    block.addEventListener('wheel', (e) => {
+      e.preventDefault();
+      block.scrollTop += e.deltaY;
+      console.log('hello from scroll');
+      
+    });
   }
 
   const panelTabTemplate = () => {
@@ -61,12 +72,12 @@ const addControlPanel = () => {
 
   // Обходим массив с данными и создаем HTML разметку
   const controlPanelList = data.map(item => panelItemTemplate(item.cat, item.icon)).join('');
-  if(!panel) return;
-  panel.insertAdjacentHTML('beforeend', controlPanelList);
+  if(!panelList) return;
+  panelList.insertAdjacentHTML('beforeend', controlPanelList);
 
   // Запускаем функцию аккордеона
-  addAccordion('many', '#control-panel-tab');
- 
+  addAccordion('many', '#sidebar-tab'); 
+  // doScrollOnlyByWheel(panelList);
 }
 
 export default addControlPanel;
