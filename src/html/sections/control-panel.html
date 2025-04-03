@@ -5,7 +5,7 @@
       <h2 class="control-panel__title">VVintage</h2>
       <p class="control-panel__subtitle">панель управления</p>
     </a>
-    <ul class="control-panel__list">
+    <ul class="control-panel__list" id="control-panel-tab">
   
       <li class="control-panel__list-item">
         <a class="control-panel__list-link" href="" title="Перейти на главную панель управления сайтом">
@@ -18,7 +18,7 @@
           Админ панель
         </a>
       </li>
-      <li class="control-panel__list-item">
+      <li class="control-panel__list-item accordion__btn">
         <a href="?shop" class="control-panel__list-link" 
            title="Перейти страницу редактирования магазина"
            data-name="accordeon-title">
@@ -136,9 +136,8 @@
         </a>
       </li>
 
-      
       <!-- Страницы -->
-      <li class="control-panel__list-item">
+      <li class="control-panel__list-item accordion__btn">
         <a href="?blog" class="control-panel__list-link"  
             title="Перейти на страницу редактирования страниц сайта" 
             data-name="accordeon-title">
@@ -150,8 +149,8 @@
         </a>
         <ul class="control-panel__list hidden">
           <!-- Главная страница -->
-          <li class="control-panel__list-item">
-            <a class="control-panel__list-link control-panel__inner-link" 
+          <li class="control-panel__list-item accordion__item">
+            <a class="control-panel__list-link control-panel__inner-link accordion__content" 
                 href="" title="Перейти на страницу редактирования главной страницы сайта">
                 <!-- href="<?php echo HOST;?>admin/main" title="Перейти на страницу редактирования главной страницы сайта"> -->
               <div class="control-panel__list-img-wrapper">
@@ -177,17 +176,17 @@
         </ul>
       </li>
 
-         <!-- Настройки -->
-        <li class="control-panel__list-item">
-          <a class="control-panel__list-link" href="" title="Перейти на страницу общих настроек сайта">
-          <!-- <a class="control-panel__list-link" href="<?php HOST;?>settings" title="Перейти на страницу общих настроек сайта"> -->
-            <div class="control-panel__list-img-wrapper">
-              <img class="control-panel__list-img" src="./../../img/svgsprite/stack/svg/sprite.stack.svg#settings" alt="icon" />
-              <!-- <img class="control-panel__list-img" src="<?php echo HOST . 'static/img/svgsprite/stack/svg/sprite.stack.svg#settings';?>" alt="icon" /> -->
-            </div>Настройки
-          </a>
-        </li>
-        <!-- Настройки -->
+      <!-- Настройки -->
+      <li class="control-panel__list-item">
+        <a class="control-panel__list-link" href="" title="Перейти на страницу общих настроек сайта">
+        <!-- <a class="control-panel__list-link" href="<?php HOST;?>settings" title="Перейти на страницу общих настроек сайта"> -->
+          <div class="control-panel__list-img-wrapper">
+            <img class="control-panel__list-img" src="./../../img/svgsprite/stack/svg/sprite.stack.svg#settings" alt="icon" />
+            <!-- <img class="control-panel__list-img" src="<?php echo HOST . 'static/img/svgsprite/stack/svg/sprite.stack.svg#settings';?>" alt="icon" /> -->
+          </div>Настройки
+        </a>
+      </li>
+      <!-- Настройки -->
 
     </ul>
   </div>

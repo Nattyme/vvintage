@@ -24,7 +24,7 @@
 							<h2 class="control-panel__title">VVintage</h2>
 							<p class="control-panel__subtitle">панель управления</p>
 						</a>
-						<ul class="control-panel__list">
+						<ul class="control-panel__list" id="control-panel-tab">
 							<li class="control-panel__list-item">
 								<a class="control-panel__list-link" href="" title="Перейти на главную панель управления сайтом">
 									<!-- <a class="control-panel__list-link" href="<?php echo HOST;?>admin" title="Перейти на главную панель управления сайтом"> -->
@@ -35,7 +35,7 @@
 									Админ панель
 								</a>
 							</li>
-							<li class="control-panel__list-item">
+							<li class="control-panel__list-item accordion__btn">
 								<a href="?shop" class="control-panel__list-link" title="Перейти страницу редактирования магазина" data-name="accordeon-title">
 									<div class="control-panel__list-img-wrapper">
 										<img class="control-panel__list-img" src="./img/svgsprite/stack/svg/sprite.stack.svg#shop" alt="icon" />
@@ -147,7 +147,7 @@
 							</li>
 
 							<!-- Страницы -->
-							<li class="control-panel__list-item">
+							<li class="control-panel__list-item accordion__btn">
 								<a href="?blog" class="control-panel__list-link" title="Перейти на страницу редактирования страниц сайта" data-name="accordeon-title">
 									<div class="control-panel__list-img-wrapper">
 										<img class="control-panel__list-img" src="./img/svgsprite/stack/svg/sprite.stack.svg#file" alt="icon" />
@@ -157,8 +157,12 @@
 								</a>
 								<ul class="control-panel__list hidden">
 									<!-- Главная страница -->
-									<li class="control-panel__list-item">
-										<a class="control-panel__list-link control-panel__inner-link" href="" title="Перейти на страницу редактирования главной страницы сайта">
+									<li class="control-panel__list-item accordion__item">
+										<a
+											class="control-panel__list-link control-panel__inner-link accordion__content"
+											href=""
+											title="Перейти на страницу редактирования главной страницы сайта"
+										>
 											<!-- href="<?php echo HOST;?>admin/main" title="Перейти на страницу редактирования главной страницы сайта"> -->
 											<div class="control-panel__list-img-wrapper">
 												<img class="control-panel__list-img" src="./img/svgsprite/stack/svg/sprite.stack.svg#about-me" alt="icon" />
@@ -312,6 +316,6 @@
 		</div>
 		<!-- <?php $messages = R::find('messages', 'ORDER BY id DESC'); ;?> -->
 
-		<!-- endbuild -->
+		<script src="./js/index.bundle.js"></script>
 	</body>
 </html>

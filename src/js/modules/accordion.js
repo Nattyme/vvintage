@@ -58,7 +58,7 @@ const addAccordion = (type, selector) => {
     }
 
   }
-
+  console.log('hello from accordeon');
 
   // Слушаем клик по кнопкам 
   accordionBtns.forEach(btn => btn.addEventListener ('click',  (e) => startAccordionByType(e, btn)));
