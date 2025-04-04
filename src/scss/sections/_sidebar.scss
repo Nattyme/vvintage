@@ -2,6 +2,15 @@
   overflow-y: auto;
 }
 
+.sidebar-wrapper {
+  overflow-y: auto; /* Оставляет прокрутку */
+  scrollbar-width: none; /* Для Firefox */
+}
+
+.sidebar-wrapper::-webkit-scrollbar {
+  display: none; /* Для Chrome, Safari */
+}
+
 .sidebar {
   max-width: 280px;
   min-height: 100%;
@@ -23,7 +32,7 @@
 }
 
 .sidebar__list-item {
-  height: 60px;
+  min-height: 60px;
   line-height: 60px;
 
   & > * {
@@ -34,7 +43,6 @@
     margin-top: 100px;
   }
 }
-
 
 .sidebar__title-wrapper {
   margin-bottom: 15px;
@@ -86,6 +94,26 @@
   }
 }
 
+.sidebar__list-item > .sidebar__list {
+  padding-left: 20px;
+}
+
+.sidebar__list-item > .sidebar__list  > .sidebar__list-item  {
+
+  &:nth-last-child(2) {
+    margin-top: 0;
+  }
+
+  .sidebar__list-img-wrapper {
+    margin-right: 10px;
+  
+    width: 15px;
+    height: 15px;
+  }
+}
+
+
+
 
 // .sidebar__inner-link {
 //   padding-left: 65px;
@@ -128,6 +156,7 @@
   display: inline-block;
   width: 24px;
   height: 24px;
+  overflow: hidden;
 }
 
 .sidebar__list-img-wrapper-img {
