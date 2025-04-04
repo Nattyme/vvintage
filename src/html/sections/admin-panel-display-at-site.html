@@ -1,0 +1,123 @@
+<div class="admin-panel">
+ 
+  <div class="admin-panel__row">
+    
+      <div class="admin-panel__logo">
+        @@include('./../blocks/_logo.html')
+      </div>
+
+      
+      <!-- <?php if( isset($_SESSION['login']) && $_SESSION['role'] === 'admin') : ?> -->
+      <div class="admin-panel__nav">
+
+        <div class="admin-panel__block-list">
+          <!-- <a class="admin-panel__link" href="<?php echo HOST; ?>admin" title="Перейти в панель управления сайтом"> -->
+          <a class="admin-panel__link" href="./../page-admin.html" title="Перейти в панель управления сайтом">
+            <div class="admin-panel__item">
+              <svg class="icon icon--target">
+                <use href="./img/svgsprite/sprite.symbol.svg#target"></use>
+              </svg>
+            
+              <!-- <img src="<?php echo HOST . 'static/img/svgsprite/stack/svg/sprite.stack.svg#target';?>" alt=""> -->
+            </div>
+            <span>Панель управления</span>
+          </a>
+
+          <!-- <a class="admin-panel__link" href="<?php echo HOST; ?>profile" title="Перейти на страницу своего профиля"> -->
+          <a class="admin-panel__link" href="./../" title="Перейти на страницу своего профиля">
+            <div class="admin-panel__item">
+              <svg class="icon icon--user">
+                <use href="./img/svgsprite/sprite.symbol.svg#user"></use>
+              </svg>
+              <!-- <img src="<?php echo HOST; ?>static/img/admin-panel/user.svg" alt="Профиль"> -->
+            </div>
+            <span>Профиль</span>
+          </a>
+
+        <!-- Сообщения -->
+          <!-- <a class="admin-panel__link" href="<?php echo HOST; ?>admin/messages" title="Перейти списку сообщений"> -->
+          <a class="admin-panel__link" href="" title="Перейти списку сообщений">
+            <div class="admin-panel__item">
+              <svg class="icon icon--mail">
+                <use href="./img/svgsprite/sprite.symbol.svg#mail"></use>
+              </svg>
+            
+              <!-- <img src="<?php echo HOST . 'static/img/svgsprite/stack/svg/sprite.stack.svg#mail';?>" alt="Сообщения"> -->
+              <!-- <?php if ($messagesNewCounter > 0 ) : ?> -->
+                    <div class="admin-panel__item-icon">9
+                    
+                      <!-- <?php 
+                        if ($messagesNewCounter <= $messagesDisplayLimit) {
+                          echo $messagesNewCounter;
+                        } else {
+                          echo '&hellip;';
+                        }
+                      ?> -->
+                    </div>
+                  <!-- <?php endif;?> -->
+            </div>
+            <span>Сообщение</span>
+          </a>
+          <!--// Сообщения -->
+
+          <!-- Заказы -->
+          <!-- <a class="admin-panel__link" href="<?php echo HOST; ?>admin/orders" title="Перейти к списку заказов"> -->
+          <a class="admin-panel__link" href="" title="Перейти к списку заказов">
+            <div class="admin-panel__item">
+              <svg class="icon icon--folder">
+                <use href="./img/svgsprite/sprite.symbol.svg#folder"></use>
+              </svg>
+              <!-- <img src="<?php echo HOST . 'static/img/svgsprite/stack/svg/sprite.stack.svg#folder';?>" alt="Заказы"> -->
+            </div>
+            <span>Заказы</span>
+          </a>
+          <!--// Заказы -->
+        
+          <!-- Комментарии -->
+          <!-- <a class="admin-panel__link" href="<?php echo HOST . 'admin/comments';?>" title="Перейти к списку комментариев"> -->
+          <a class="admin-panel__link" href="" title="Перейти к списку комментариев">
+            <div class="admin-panel__item">
+              <svg class="icon icon--message-square">
+                <use href="./img/svgsprite/sprite.symbol.svg#message-square"></use>
+              </svg>
+              <!-- <img src="<?php echo HOST . 'static/img/svgsprite/stack/svg/sprite.stack.svg#message-square';?>" alt="Сообщения"> -->
+            </div>
+            <span>Комментарии</span>
+          </a>
+          <!--// Комментарии -->
+
+          <!-- Редактирование текущей страницы -->
+          <!-- <?php if ( $uriModule === 'blog' && isset($uriGet) && $uriGet !== 'cat') : ?> -->
+            <!-- <a class="admin-panel__link" href="<?php echo HOST . 'admin/post-edit?id=' . $uriGet; ?>" title='Перейти к редактированию текущей страницы'> -->
+            <a class="admin-panel__link" href="" title='Перейти к редактированию текущей страницы'>
+              <div class="admin-panel__item">
+                <svg class="icon icon--edit">
+                  <use href="./img/svgsprite/sprite.symbol.svg#edit"></use>
+                </svg>
+                <!-- <img src="<?php echo HOST . 'static/img/svgsprite/stack/svg/sprite.stack.svg#edit';?>" alt="Редактировать эту страницу"> -->
+              </div>
+              <span>Редактировать</span>
+            </a>
+          <!-- <?php endif; ?> -->
+        </div>
+      
+      </div> 
+
+    
+    
+      <div class="admin-panel__login"> 
+        <a href="#!" class="button-login">
+          <img class="sidebar__list-img" src="./../../img/svgsprite/stack/svg/sprite.stack.svg#user" alt="Админ панель" />
+        </a>
+        <button href="#!" class="button-login" title="Выйти из текущего профиля">
+           <!-- <a href="<?php echo HOST; ?>logout" class="admin-panel__block-button" title="Выйти из текущего профиля">Выход</a> -->
+          <img class="sidebar__list-img" src="./../../img/svgsprite/stack/svg/sprite.stack.svg#log-out" alt="Админ панель" />
+        </button>  
+      </div>
+      <!-- <?php endif; ?> --> 
+
+  </div>
+ 
+</div>
+
+

@@ -1,5 +1,5 @@
 .admin-panel {
-  padding: 10px 20px;
+  padding: 0 20px;
 
   position: fixed;
   z-index: 999;
@@ -8,6 +8,7 @@
   right: 0;
 
   height: 54px;
+  line-height: 54px;
   background-color: var(--admin-panel-bg);
 
   &__row {
@@ -49,8 +50,8 @@
   top: -50%;
   left: 50%;
 
-  display: block;
-  min-width: 18px;
+  display: inline-block;
+  width: 18px;
   border-radius: 50%;
   background-color: var(--admin-panel-note-marker-bg);
 
