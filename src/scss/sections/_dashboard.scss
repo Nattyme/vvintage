@@ -1,3 +1,8 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+}
+
 .dashboard__header {
   margin-bottom: 20px;
   padding: 25px;
@@ -17,6 +22,7 @@
 }
 
 .dashboard__item {
+ 
 }
 
 .dashboard__title {
@@ -27,6 +33,7 @@
 
 .dashboard__content {
   display: flex;
+  min-height: 100%;
   flex-wrap: wrap;
 }
 

@@ -123,3 +123,10 @@
   scrollbar-color: #c4c9cc transparent;
   scrollbar-width: thin;
 }
+
+.glass {
+  background-color: rgb(255, 255, 255, 0.3);
+  
+  backdrop-filter: blur(2px);
+  box-shadow: 1px 1px 4px #7d7b7b;
+}

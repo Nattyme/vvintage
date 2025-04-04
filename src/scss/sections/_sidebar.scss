@@ -1,16 +1,3 @@
-.sidebar-wrapper {
-  overflow-y: auto;
-}
-
-.sidebar-wrapper {
-  overflow-y: auto; /* Оставляет прокрутку */
-  scrollbar-width: none; /* Для Firefox */
-}
-
-.sidebar-wrapper::-webkit-scrollbar {
-  display: none; /* Для Chrome, Safari */
-}
-
 .sidebar {
   max-width: 280px;
   min-height: 100%;
