@@ -118,12 +118,12 @@ const addSubNavCats = () => {
   const navOverlay = document.querySelector('.catalog-dropdown__background');
   if(!nav || !navList || !navOverlay) return;
 
-  // Ф-ция находит и удаляет все под меню
+  // Ф-ция находит и удаляет все подменю
   const findAndRemoveAllSubNavs = (navList) => {
     navList.querySelectorAll('.sub-nav').forEach(nav => nav.remove());
   };
 
-
+  // Ф-ция добавляет 2-й уровенб меню
   const addSubNav = (catBlock) => {
     
     const catId = catBlock.id; // id категории

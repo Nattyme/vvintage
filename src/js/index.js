@@ -10,7 +10,7 @@ const pageProduct = '/shop-single.html';
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  if (!window.location.pathname === pageAdmin ) {
+  if (window.location.pathname !== pageAdmin) {
     mobileNav();
     addSubNavCats();
   }

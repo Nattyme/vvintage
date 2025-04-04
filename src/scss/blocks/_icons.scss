@@ -1,6 +1,7 @@
 .icons-wrapper {
 	padding: 30px 0;
 	display: flex;
+  justify-content: center;
 	column-gap: 30px;
 }
 
@@ -141,6 +142,33 @@
   .icon--target, .icon--mail, .icon--folder, .icon--message-square, .icon--edit, .icon--user {
     stroke: var(---white);
   }
+}
+
+.catalog {
+  .icon--remove, .icon--edit {
+    stroke: rgb(0, 0, 0, 0.4);
+    fill: rgb(0, 0, 0, 0.4);
+  }
+
+  .icon--plus, .icon--minus {
+    stroke: rgb(0, 0, 0, 0.8);
+    fill: rgb(0, 0, 0, 0.8);
+  }
+
+  .icon--remove, .icon--edit, .icon--plus, .icon--minus {
+    display: flex;
+    width: 16px;
+    height: 16px;
+
+    transition: all 0.2s ease-in;
+
+    &:hover {
+      stroke: rgb(0, 0, 0, 1);
+      fill: rgb(0, 0, 0, 1);
+    }
+  }
+
+
 }
 
 .control-panel {
