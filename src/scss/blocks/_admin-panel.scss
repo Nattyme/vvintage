@@ -1,5 +1,5 @@
 .admin-panel {
-  padding: 15px 40px;
+  padding: 10px 20px;
 
   position: fixed;
   z-index: 999;
@@ -8,15 +8,28 @@
   right: 0;
 
   height: 54px;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   background-color: var(--admin-panel-bg);
+
+  &__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 }
 
 .admin-panel ~ .header-top {
   padding-top: 70px;
+}
+
+.admin-panel__logo .logo {
+  font-size: 22px;
+  color: #fff;
+}
+
+.admin-panel__login {  
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
 }
 
 .admin-panel__item {
@@ -83,5 +96,22 @@
   }
 }
 
+.admin-panel__login .button-login {
+  width: 22px;
+  height: 22px;
+}
 
 
+
+// .header {
+//   position: sticky;
+//   z-index: 999;
+//   background-color: #fff;
+//   overflow: hidden;
+
+// 	&__row {
+// 		display: flex;
+// 		justify-content: space-between;
+// 		align-items: center;
+// 	}
+// }

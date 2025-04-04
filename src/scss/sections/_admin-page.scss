@@ -6,6 +6,10 @@ html, body {
   justify-content: space-between;
 }
 
+.admin-page > .admin-panel {
+  position: relative;
+}
+
 .admin-panel-wrapper {
   display: flex;
   height: 100vh;
