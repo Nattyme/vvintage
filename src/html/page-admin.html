@@ -16,19 +16,19 @@
 </head>
 
 <body class="admin-page">
-  <div class="admin-panel-wrapper">
+  <main class="admin-panel-wrapper">
     <aside class="sidebar-wrapper  fancy-scrollbar">
       @@include('sections/sidebar.html')
     </aside>
   
     <div class="admin-page__content">
-      <div class="admin-page__content-form">
+      <div class="admin-page__dashboard">
        
-          @@include('sections/admin-form.html')
+          @@include('sections/dashboard.html')
     
       </div>
     </div>
-  </div>
+  </main>
   <!-- <?php $messages = R::find('messages', 'ORDER BY id DESC'); ;?> -->
   
 <script src="./js/index.bundle.js"></script>

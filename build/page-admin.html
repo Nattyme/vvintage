@@ -15,7 +15,7 @@
 	</head>
 
 	<body class="admin-page">
-		<div class="admin-panel-wrapper">
+		<main class="admin-panel-wrapper">
 			<aside class="sidebar-wrapper  fancy-scrollbar">
 				<section class="sidebar" id="sidebar-tab">
 					<div class="sidebar__container">
@@ -37,22 +37,24 @@
 			</aside>
 
 			<div class="admin-page__content">
-				<div class="admin-page__content-form">
-					<div class="admin-form">
+				<div class="admin-page__dashboard">
+					<div class="dashboard">
+						<header class="dashboard__header">
+							<div class="dashboard__title-wrapper">
+								<h2 class="dashboard-title"><span>VVintage</span> Панель управления</h2>
+							</div>
+						</header>
+
 						<!-- <?php include ROOT . "admin/templates/components/errors.tpl"; ?>
   <?php include ROOT . "admin/templates/components/success.tpl"; ?> -->
 
-						<div class="admin-form__item admin-form__title">
-							<h2 class="heading">Админ панель</h2>
-						</div>
-
-						<div class="dashboard">
+						<main class="dashboard__content">
 							<section class="dashboard-item">
 								<div class="dashboard-item__title">
 									<!-- <a href="<?php echo HOST; ?>admin/blog"> -->
 									<a href="">
 										<!-- <?php echo num_decline( $postCount, ['Запись', 'Записи', 'Записей']); ?>  -->
-										в&#160;блоге
+										Бренды
 									</a>
 								</div>
 								<div class="dashboard-item__value"></div>
@@ -67,14 +69,14 @@
 									<!-- <a href="<?php echo HOST; ?>admin/category"> -->
 									<a href="">
 										<!-- <?php echo num_decline( $categoriesCount, ['Категория', 'Категории', 'Категорий']); ?>  -->
-										в&#160;блоге
+										Категорий
 									</a>
 								</div>
 								<!-- <div class="dashboard-item__value"><?php echo $categoriesCount;?></div> -->
 								<div class="dashboard-item__value"></div>
 								<div class="dashboard-item__action">
 									<!-- <a href="<?php echo HOST; ?>admin/category-new" class="button-solid">Добавить категорию</a> -->
-									<a href="" class="button-solid">Добавить категорию</a>
+									<a href="" class="button-solid">Добавить бренд</a>
 								</div>
 							</section>
 
@@ -83,7 +85,7 @@
 									<!-- <a href="<?php echo HOST; ?>admin/comments"> -->
 									<a href="">
 										<!-- <?php echo num_decline( $commentsCount, ['Комментарий', 'Комментария', 'Комментариев']); ?>  -->
-										в&#160;блоге
+										Товары
 									</a>
 								</div>
 								<!-- <div class="dashboard-item__value"><?php echo $commentsCount;?></div> -->
@@ -95,7 +97,7 @@
 									<!-- <a href="<?php echo HOST; ?>admin/portfolio"> -->
 									<a href="">
 										<!-- <?php echo num_decline( $userCount, ['Пользователь', 'Пользователя', 'Пользователей']); ?>  -->
-										в&#160;блоге
+										Просмотров сегодня
 									</a>
 								</div>
 								<!-- <div class="dashboard-item__value"><?php echo $userCount;?></div> -->
@@ -107,17 +109,17 @@
 									<!-- <a href="<?php echo HOST; ?>admin/messages"> -->
 									<a href="">
 										<!-- <?php echo num_decline( $messagesTotalCount, ['Сообщение', 'Сообщения', 'Сообщений']); ?>  -->
-										в&#160;в&#160;блоге
+										Всего просмотров
 									</a>
 								</div>
 								<!-- <div class="dashboard-item__value"><?php echo $messagesTotalCount;?></div> -->
 								<div class="dashboard-item__value"></div>
 							</section>
-						</div>
+						</main>
 					</div>
 				</div>
 			</div>
-		</div>
+		</main>
 		<!-- <?php $messages = R::find('messages', 'ORDER BY id DESC'); ;?> -->
 
 		<script src="./js/index.bundle.js"></script>
