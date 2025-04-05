@@ -146,16 +146,11 @@
 
 .catalog {
   .icon--remove, .icon--edit {
-    stroke: rgb(0, 0, 0, 0.4);
-    fill: rgb(0, 0, 0, 0.4);
+    stroke: rgb(0, 0, 0, 0.3);
+    fill: rgb(0, 0, 0, 0.3);
   }
 
-  .icon--plus, .icon--minus {
-    stroke: rgb(0, 0, 0, 0.8);
-    fill: rgb(0, 0, 0, 0.8);
-  }
-
-  .icon--remove, .icon--edit, .icon--plus, .icon--minus {
+  .icon--remove, .icon--edit {
     display: flex;
     width: 16px;
     height: 16px;
