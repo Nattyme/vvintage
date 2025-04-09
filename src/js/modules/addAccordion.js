@@ -14,13 +14,19 @@ const addAccordion = (type, selector) => {
   const showContent = (e, btn) => {
     e.preventDefault();
     const {currentItem, currentContent} = findContentAndItem(btn);
+
+    // if (e.target.dataset) return;
+      // console.log(target.dataset);
+      
     
-    if (currentItem.classList.contains('active')) {
+    if (currentItem.classList.contains('active')) {    
       currentItem.classList.remove('active');
       currentContent.style.maxHeight = 0;
+      currentItem.querySelector('.expand-icon')?.classList.remove('expand-icon--active');
     } else {
       currentItem.classList.add('active');
       currentContent.style.maxHeight = currentContent.scrollHeight + 'px';
+      currentItem.querySelector('.expand-icon')?.classList.add('expand-icon--active');
     }
    
 

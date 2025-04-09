@@ -7,36 +7,35 @@
     <div class="catalog__content">
    
     
-      <ul class="catalog-list">
-        <li class="catalog-list__item">
-          <button type="button" class="category-block">
-            <span class="expand__body"></span>
+      <ul class="catalog-list" id="catalog-list">
+        <li class="catalog-list__item accordion__item text-eclipse">
+          <button type="button" class="category-block accordion__btn" >
+            <span class="expand-icon">
+              <span class="expand-icon__body"></span>
+            </span>
             <span class="category-block__text">
               Для Мужчин
-              <span class="category-block__counter">(5)</span>
+              <!-- <span class="category-block__counter">(5)</span> -->
             </span>
             <span class="category-block__action-links">
-              <a href="edit.php" class="category-block__link">
+              <a href="edit.php" class="category-block__link" data-btn="edit">
                 <svg class="icon icon--edit">
                   <use href="./img/svgsprite/sprite.symbol.svg#edit"></use>
                 </svg>
               </a>
-              <a href="delete.php" class="category-block__link">
+              <a href="delete.php" class="category-block__link" data-btn="remove">
                 <svg class="icon icon--remove">
                   <use href="./img/svgsprite/sprite.symbol.svg#remove"></use>
                 </svg>
               </a>
             </span>
           </button>
-          <ul class="catalog-list__sublist">
+          <ul class="catalog-list__sublist accordion__content">
             <li class="catalog-list__sublist__item">
               <button type="button" class="category-block category-block--sublist">
-                <span class="expand">
-                  <span class="expand__body"></span>
-                </span>
-                <span class="category-block__text">
+                <span class="category-block__text text-eclipse">
                   Сумки
-                  <span class="category-block__counter">(5)</span>
+                  <!-- <span class="category-block__counter">(5)</span> -->
                 </span>
                 <span class="category-block__action-links">
                   <a href="edit.php" class="category-block__link">
@@ -54,10 +53,29 @@
             </li>
             <li class="catalog-list__sublist__item">
               <button type="button" class="category-block category-block--sublist">
-                <span class="expand__body"></span>
-                <span class="category-block__text">
+                <span class="category-block__text text-eclipse">
                   Сумки
-                  <span class="category-block__counter">(5)</span>
+                  <!-- <span class="category-block__counter">(5)</span> -->
+                </span>
+                <span class="category-block__action-links">
+                  <a href="edit.php" class="category-block__link">
+                    <svg class="icon icon--edit">
+                      <use href="./img/svgsprite/sprite.symbol.svg#edit"></use>
+                    </svg>
+                  </a>
+                  <a href="delete.php" class="category-block__link">
+                    <svg class="icon icon--remove">
+                      <use href="./img/svgsprite/sprite.symbol.svg#remove"></use>
+                    </svg>
+                  </a>
+                </span>
+              </button>
+            </li>
+            <li class="catalog-list__sublist__item">
+              <button type="button" class="category-block category-block--sublist">
+                <span class="category-block__text text-eclipse">
+                  Сумкииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииии
+                  <!-- <span class="category-block__counter">(5)</span> -->
                 </span>
                 <span class="category-block__action-links">
                   <a href="edit.php" class="category-block__link">
@@ -76,18 +94,10 @@
          
           </ul>
         </li>
-      
       </ul>
-  
-    
-      <ul class="cards-list" id="cards-list">
-        <li class="cards-list__item">
-          <div class="catalog-blocks__img">
 
-          </div>
-          <div class="catalog-blocks__text">Для женщин</div>
-        </li>
-      </ul>
+      <ul class="catalog-cards">Карточки</ul>
+ 
   
     </div>
 

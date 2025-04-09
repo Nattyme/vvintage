@@ -131,16 +131,22 @@
   box-shadow: 1px 1px 4px #7d7b7b;
 }
 
-.expand {
+.expand-icon {
+  padding: 5px;
+  margin: -5px;
   display: flex;
 
-  &.expand--active.expand__body::before {
+  &:hover .expand-icon__body::before,  &:hover .expand-icon__body::after {
+    background-color: var(--accent);
+  }
+
+  &--active .expand-icon__body::before {
     background-color: #000;
     transform: translate(-50%, -50%) rotate(0deg);
   }
 }
 
-.expand__body {
+.expand-icon__body {
   display: inline-block;
   width: 15px;
   height: 15px;
@@ -167,6 +173,4 @@
   &::before {
    transform: translate(-50%, -50%) rotate(-90deg);
   }                              
-
-  
 }

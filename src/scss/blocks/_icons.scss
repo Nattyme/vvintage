@@ -144,28 +144,22 @@
   }
 }
 
-.catalog {
-  .icon--remove, .icon--edit {
-    stroke: rgb(0, 0, 0, 0.3);
-    fill: rgb(0, 0, 0, 0.3);
-  }
-
+.category-block__link {
   .icon--remove, .icon--edit {
     display: flex;
     width: 16px;
     height: 16px;
 
-    transition: all 0.2s ease-in;
+    stroke: rgb(0, 0, 0, 0.3);
+    fill: rgb(0, 0, 0, 0.3);
 
-    &:hover {
-      stroke: rgb(0, 0, 0, 1);
-      fill: rgb(0, 0, 0, 1);
-    }
+    transition: all 0.2s ease-in;
+  }
+
+  &:hover .icon {
+    stroke: rgb(0, 0, 0, 1);
+    fill: rgb(0, 0, 0, 1);
   }
 
 
-}
-
-.control-panel {
-  
 }

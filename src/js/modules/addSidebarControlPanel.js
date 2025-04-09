@@ -1,7 +1,6 @@
-import addAccordion from "./accordion";
+import addAccordion from "./addAccordion.js";
 
-
-const addControlPanel = () => {
+const addSidebarControlPanel = () => {
   // Данные разделов панели управления 
   const data = [
     {
@@ -126,5 +125,5 @@ const addControlPanel = () => {
   // doScrollOnlyByWheel(panelList);
 }
 
-export default addControlPanel;
+export default addSidebarControlPanel;
 

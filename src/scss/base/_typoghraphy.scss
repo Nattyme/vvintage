@@ -47,4 +47,18 @@
   text-transform: uppercase;
 }
 
+.text-wrap {
+  white-space: normal;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+.text-eclipse {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+
 

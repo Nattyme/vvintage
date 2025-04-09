@@ -1,7 +1,8 @@
 // Мобильная навигация
 import mobileNav from './modules/mobile-nav.js';
+import addSideBarCatalog from './modules/addSideBarCatalog.js';
 import addSubNavCats from './modules/addSubNavCats.js';
-import addControlPanel from './modules/addControlPanel.js';
+import addSidebarControlPanel from './modules/addSidebarControlPanel.js';
 import fancyBox from './modules/fancybox.js';
 // import yMap from './modules/ymap.js';
 
@@ -16,7 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   if (window.location.pathname === pageProduct) fancyBox();
-  if (window.location.pathname === pageAdmin) addControlPanel();
+  if (window.location.pathname === pageAdmin) {
+    addSidebarControlPanel();
+    addSideBarCatalog();
+  };
 });
 
 // yMap();
