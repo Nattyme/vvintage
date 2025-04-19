@@ -6,7 +6,7 @@
 .dashboard__header {
   margin-bottom: 20px;
   padding: 25px;
-  background-color: #faf4f4;
+  background-color: var(--dashboard-header-bg);
   border-bottom: 1px solid var(--accent);
 }
 

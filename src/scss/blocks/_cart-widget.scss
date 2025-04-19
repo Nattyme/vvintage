@@ -1,6 +1,7 @@
 .cart-widget {
   position: relative;
-  padding-right: 10px;
+  display: inline-block;
+  padding-right: 14px;
 }
 
 .cart-widget__counter {
@@ -8,7 +9,7 @@
   content: "";
   position: absolute;
   top: 0;
-  right: -4px;
+  right: -0;
   display: inline-block;
 }
 
