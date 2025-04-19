@@ -10,14 +10,13 @@ html, body {
   position: relative;
 }
 
-.admin-panel-wrapper {
-  display: flex;
-  height: 100vh;
+.admin-page__panel-wrapper {
+  flex: 1;
 }
 
-.admin-page__content {
-  flex-grow: 1;
-}
+// .admin-page__content {
+//   flex-grow: 1;
+// }
 
 .admin-page__content-form {
   height: 100%;
