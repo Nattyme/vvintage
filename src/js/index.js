@@ -1,6 +1,6 @@
 // Мобильная навигация
 import mobileNav from './modules/mobile-nav.js';
-import addSideBarCatalog from './modules/admin/addSideBarCatalog.js';
+import addAdminCatalog from './modules/admin/addAdminCatalog.js';
 import addSidebarControlPanel from './modules/admin/addSidebarControlPanel.js';
 import addCatsCards from './modules/addCatsCards.js';
 import addSubNavCats from './modules/addSubNavCats.js';
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (window.location.pathname === pageProduct) fancyBox();
   if (window.location.pathname === pageAdmin) {
     addSidebarControlPanel();
-    addSideBarCatalog();
+    addAdminCatalog('#catalog-list');
   };
 
   if (window.location.pathname.trim() === '/index.html' || window.location.pathname.trim() === '') {
