@@ -1,53 +1,12 @@
-import addAccordion from "./addAccordion.js";
+import addAccordion from "./../addAccordion.js";
+import controlPanelData from './../../../data/admin/controlPanel.json';
 
 const addSidebarControlPanel = () => {
   // Данные разделов панели управления 
-  const data = [
-    {
-      'cat' : 'Админ панель',
-      'icon' : 'inbox',
-      'subCat' : []
-    },
-    {
-      'cat' : 'Каталог',
-      'icon' : 'catalog',
-      'subCat' : []
-    },
-    {
-      'cat' : 'Магазин',
-      'icon' : 'shop',
-      'subCat' : ['Добавить товар', 'Все товары', 'Все бренды', 'Все категории', 'Заказы']
-    },
-    {
-      'cat' : 'Сообщения',
-      'icon' : 'mail',
-      'subCat' : []
-    },
-    {
-      'cat' : 'Страницы',
-      'icon' : 'file',
-      'subCat' : ['Главная', 'Контакты']
-    },
-    {
-      'cat' : 'Настройки',
-      'icon' : 'settings',
-      'subCat' : []
-    },
-    {
-      'cat' : 'Мой профиль',
-      'icon' : 'user',
-      'subCat' : []
-    },
-    {
-      'cat' : 'Выход',
-      'icon' : 'log-out',
-      'subCat' : []
-    }
-  ];
-
+  const data = JSON.parse(JSON.stringify(controlPanelData));
   const panel = document.querySelector('#sidebar-tab');
-
   const panelList = panel.querySelector('.sidebar__list');
+  
   const panelItemTemplate = (cat) => {
     return `
             <li class="sidebar__list-item">

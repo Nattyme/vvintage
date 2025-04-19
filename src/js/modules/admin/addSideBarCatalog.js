@@ -1,4 +1,4 @@
-import addAccordion from "./addAccordion.js";
+import addAccordion from "./../addAccordion.js";
 
 const addSideBarCatalog = () => {
   const cats = [
