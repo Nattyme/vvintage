@@ -1,0 +1,14 @@
+.cart-widget {
+  position: relative;
+  padding-right: 10px;
+}
+
+.cart-widget__counter {
+  z-index: 9;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -4px;
+  display: inline-block;
+}
+

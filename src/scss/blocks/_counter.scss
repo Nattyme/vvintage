@@ -1,0 +1,17 @@
+.counter {
+  padding: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  max-width: 22px;
+  max-height: 22px;
+  border-radius: 50%;
+  background-color: var(--counter-bg-colour);
+  
+  & > * {
+    font-size: 10px;
+    color: var(--counter-font-colour);
+  }
+}

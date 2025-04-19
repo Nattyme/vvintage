@@ -60,7 +60,6 @@
 								<!-- <?php if ($messagesNewCounter > 0 ) : ?> -->
 								<div class="admin-panel__item-icon">
 									9
-
 									<!-- <?php 
                         if ($messagesNewCounter <= $messagesDisplayLimit) {
                           echo $messagesNewCounter;
@@ -143,23 +142,18 @@
 						<div class="header__cta">
 							<div class="header__user flex-block">
 								<div class="header__login">
-									<a href="./../page-login.html">
-										<svg class="icon icon--woman-with-hat">
-											<use href="./img/svgsprite/sprite.symbol.svg#woman-with-hat"></use>
-										</svg>
-									</a>
-
-									<!-- 
-                <a href="#!" class="button-login"><span>Вход</span></a>
-                <a href="#!" class="button-login button-login--register"><span>Регистрация</span></a>  -->
+									<a href="./../page-login.html" class="button-login"><span>Войти</span></a>
+									<a href="./../page-registration.html" class="button-login button-login--register"><span>Регистрация</span></a>
 								</div>
 								<div class="header__cart">
 									<a href="good.html" class="cart-widget">
 										<svg class="icon icon--shopping-bag">
 											<use href="./img/svgsprite/sprite.symbol.svg#shopping-bag"></use>
 										</svg>
-										<div class="counter">
-											<span>3</span>
+										<div class="cart-widget__counter">
+											<div class="counter">
+												<span class="text-ellipsis">33</span>
+											</div>
 										</div>
 									</a>
 								</div>

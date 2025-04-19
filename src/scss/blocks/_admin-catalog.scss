@@ -15,6 +15,7 @@
 
 .catalog__content {
   display: flex;
+  align-items: flex-start;
   justify-content: space-between;
   column-gap: 30px;
 }

@@ -8,7 +8,7 @@
    
     
       <ul class="catalog-list" id="catalog-list">
-        <li class="catalog-list__item accordion__item text-eclipse">
+        <li class="catalog-list__item accordion__item text-ellipsis">
           <button type="button" class="category-block accordion__btn" >
             <span class="expand-icon">
               <span class="expand-icon__body"></span>
@@ -33,7 +33,7 @@
           <ul class="catalog-list__sublist accordion__content">
             <li class="catalog-list__sublist__item">
               <button type="button" class="category-block category-block--sublist">
-                <span class="category-block__text text-eclipse">
+                <span class="category-block__text text-ellipsis">
                   Сумки
                   <!-- <span class="category-block__counter">(5)</span> -->
                 </span>
@@ -53,7 +53,7 @@
             </li>
             <li class="catalog-list__sublist__item">
               <button type="button" class="category-block category-block--sublist">
-                <span class="category-block__text text-eclipse">
+                <span class="category-block__text text-ellipsis">
                   Сумки
                   <!-- <span class="category-block__counter">(5)</span> -->
                 </span>
@@ -73,7 +73,7 @@
             </li>
             <li class="catalog-list__sublist__item">
               <button type="button" class="category-block category-block--sublist">
-                <span class="category-block__text text-eclipse">
+                <span class="category-block__text text-ellipsis">
                   Сумкииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииии
                   <!-- <span class="category-block__counter">(5)</span> -->
                 </span>
@@ -96,7 +96,11 @@
         </li>
       </ul>
 
-      <ul class="catalog-cards">Карточки</ul>
+      <ul class="catalog-cards">
+        <li>
+         @@include('./card-small.html')
+        </li>
+      </ul>
  
   
     </div>

@@ -61,7 +61,10 @@
   --product-gallery-block-width: calc((var(--product-gallery-width) / 2) - var(--product-gallery-gap));
   --product-gallery-small-img-width: calc((var(--product-gallery-block-width) / 2) - 2px);
 
-
+  /* Components*/
+  --counter-bg-colour: var(--accent);
+  --counter-font-colour: var(--white);
+  
 
   
 
