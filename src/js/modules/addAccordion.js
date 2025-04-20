@@ -15,8 +15,10 @@ const addAccordion = (type, selector) => {
     e.preventDefault();
     const {currentItem, currentContent} = findContentAndItem(btn);
 
-    // if (e.target.dataset) return;
-      // console.log(target.dataset);
+    if (e.target.closest('a') && e.target.closest('a').dataset) {
+      const linkData = e.target.closest('a').dataset;
+      if(linkData.btn === 'edit' || linkData.btn === 'remove') return linkData.btn;
+    };
       
     
     if (currentItem.classList.contains('active')) {    
