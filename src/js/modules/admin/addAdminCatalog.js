@@ -5,10 +5,15 @@ const addAdminCatalog = (catalogWrapper) => {
   const cats = JSON.parse(JSON.stringify(catalogData));
   const catalogList = document.querySelector(catalogWrapper);
 
+  const getFirstLvlCatsList = catsData => catsData.filter(cat => cat.parentId == 0);
+  const getCurrentSubCatList = (catsData, currentCat) => catsData.filter(cat => cat.parentId == currentCat.id);
+
+  const firstLvlCatsList = getFirstLvlCatsList(cats);
+
   // Ф-ция возвращает разметку кнопки с ссылками
-  const getCategoryBlockLink = (url, dataBtn, icon) => {
+  const getCategoryBlockLink = (url, dataBtn, icon, catId) => {
     return `
-      <a href="${url}" class="category-block__link" data-btn="${dataBtn}"">
+      <a href="${url}" class="category-block__link" data-btn="${dataBtn}" data-cat="${catId}">
         <svg class="icon icon--${icon}">
           <use href="./img/svgsprite/sprite.symbol.svg#${icon}"></use>
         </svg>
@@ -17,7 +22,7 @@ const addAdminCatalog = (catalogWrapper) => {
   }
 
   // Ф-ция возвращает разметку для элем. каталога 2-го уровня
-  const getCatalogItemSubCatTemplate = (subCats, parentId) => {
+  const getCatalogItemSubCatTemplate = (subCats) => {
     return subCats.map( subCatItem => {
       if (subCatItem.name === 'Все категории') return; // Чтобы не добавлся объкет "Все категории" 
 
@@ -29,8 +34,8 @@ const addAdminCatalog = (catalogWrapper) => {
               <!-- <span class="category-block__counter">(5)</span> -->
             </span>
             <span class="category-block__action-links">
-              ${getCategoryBlockLink('#', 'edit', 'edit', parentId)}
-              ${getCategoryBlockLink('#', 'remove', 'remove', parentId)}
+              ${getCategoryBlockLink('#', 'edit', 'edit', subCatItem.id)}
+              ${getCategoryBlockLink('#', 'remove', 'remove', subCatItem.id)}
             </span>
           </button>
         </li>
@@ -40,9 +45,10 @@ const addAdminCatalog = (catalogWrapper) => {
 
   // Ф-ция возвращает разметку для элем. каталога 1-го уровня
   const getCatalogItemCatTemplate = (item) => {
-    const subCatsTemplate = getCatalogItemSubCatTemplate(item.subCats, item.id);
+    const currentSubCats = getCurrentSubCatList(cats, item);
+    const subCatsTemplate = getCatalogItemSubCatTemplate(currentSubCats);
     return `
-     <li class="catalog-list__item accordion__item text-ellipsis" data-id="${item.id}">
+      <li class="catalog-list__item accordion__item text-ellipsis" data-id="${item.id}">
           <button type="button" class="category-block accordion__btn" title="Открыть категорию ${item.name}">
             <span class="expand-icon">
               <span class="expand-icon__body"></span>
@@ -99,13 +105,19 @@ const addAdminCatalog = (catalogWrapper) => {
       });
     });
   }
+  
 
-  // Обходим массив категории и подставляем данные в шаблон
-  const catalogListTemplate = cats.map(cat => getCatalogItemCatTemplate(cat)).join('');
-  catalogList.insertAdjacentHTML('beforeend', catalogListTemplate); // добавляем разметку на страницу
-  handlingCatalogLinks(); // обрабатываем клики по ссылкам 
-  setTimeout(() => addAccordion('many', catalogWrapper), 0.1); // Запускаем функцию аккордеона
- 
+
+
+   // Обходим массив категории и подставляем данные в шаблон
+   const catalogListTemplate = firstLvlCatsList.map(cat => getCatalogItemCatTemplate(cat)).join('');
+   catalogList.insertAdjacentHTML('beforeend', catalogListTemplate); // добавляем разметку на страницу
+   handlingCatalogLinks(); // обрабатываем клики по ссылкам 
+   setTimeout(() => addAccordion('many', catalogWrapper), 0.1); // Запускаем функцию аккордеона
+
+
+
+
 }
 
 export default addAdminCatalog;
