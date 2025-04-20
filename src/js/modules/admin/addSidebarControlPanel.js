@@ -7,7 +7,7 @@ const addSidebarControlPanel = () => {
   const panel = document.querySelector('#sidebar-tab');
   const panelList = panel.querySelector('.sidebar__list');
   
-  const panelItemTemplate = (cat) => {
+  const getPanelItemTemplate = (cat) => {
     return `
             <li class="sidebar__list-item">
               <button class="sidebar__list-button" title="Перейти в раздел '${cat.cat}'">
@@ -29,7 +29,7 @@ const addSidebarControlPanel = () => {
   //   });
   // }
 
-  const panelItemWithTabTemplate = (cat) => {
+  const getPanelItemWithTabTemplate = (cat) => {
     return  `
             <li class="sidebar__list-item accordion__item">
               <button href="?shop" class="sidebar__list-button accordion__btn" 
@@ -64,10 +64,10 @@ const addSidebarControlPanel = () => {
 
   // Обходим массив с данными и создаем HTML разметку
   const controlPanelList = data.map(item => {
-    let catItem = panelItemTemplate(item);
+    let catItem = getPanelItemTemplate(item);
 
     if (item.subCat.length > 0) {
-      catItem = panelItemWithTabTemplate(item);
+      catItem = getPanelItemWithTabTemplate(item);
     }
     return catItem;
   }).join('');

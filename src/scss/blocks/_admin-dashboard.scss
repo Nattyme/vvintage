@@ -1,17 +1,18 @@
 .dashboard {
   display: flex;
   flex-direction: column;
+  background-color: var(--admin-dashboard-bg);
 }
 
 .dashboard__header {
   margin-bottom: 20px;
   padding: 25px;
-  background-color: var(--dashboard-header-bg);
-  border-bottom: 1px solid var(--accent);
+  background-color: var(--admin-dashboard-header-bg);
+  border-bottom: 1px solid var(--admin-dashboard-header-border);
 }
 
 .dashboard-title {
-  color: #3a3939;
+  color: var(--admin-dashboard-title-color);
   font-size: 18px;
 
   span {
@@ -32,9 +33,7 @@
 }
 
 .dashboard__content {
-  display: flex;
-  min-height: 100%;
-  flex-wrap: wrap;
+
 }
 
 

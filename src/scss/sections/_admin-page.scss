@@ -18,6 +18,32 @@ html, body {
   height: 100%;
 }
 
+.admin-page__panel-wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+.admin-page__content {
+  flex-grow: 1;
+}
+
+.admin-page__admin-page__dashboard {
+  height: 100%;
+}
+
+.admin-page__sidebar {
+  flex-shrink: 0;
+  overflow-y: auto; /* Оставляет прокрутку */
+  scrollbar-width: none; /* Для Firefox */
+}
+
+.admin-page__sidebar::-webkit-scrollbar {
+  display: none; /* Для Chrome, Safari */
+}
+
+
+
+
 
 
 
