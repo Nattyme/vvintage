@@ -4,15 +4,11 @@ import catalogData from './../../../data/categories.json';
 const addAdminCatalog = (catalogWrapper) => {
   const cats = JSON.parse(JSON.stringify(catalogData));
   const catalogList = document.querySelector(catalogWrapper);
-  // Запускаем функцию аккордеона
-  setTimeout(() => {
-    addAccordion('many', catalogWrapper); 
-  }, 0);
 
-  // Ф-ция создает кнопки с ссылками
+  // Ф-ция возвращает разметку кнопки с ссылками
   const getCategoryBlockLink = (url, dataBtn, icon) => {
     return `
-      <a href="${url}" class="category-block__link" data-btn="${dataBtn}">
+      <a href="${url}" class="category-block__link" data-btn="${dataBtn}"">
         <svg class="icon icon--${icon}">
           <use href="./img/svgsprite/sprite.symbol.svg#${icon}"></use>
         </svg>
@@ -20,30 +16,33 @@ const addAdminCatalog = (catalogWrapper) => {
     `;
   }
 
-  const getCatalogItemSubCatTemplate = (subCats) => {
+  // Ф-ция возвращает разметку для элем. каталога 2-го уровня
+  const getCatalogItemSubCatTemplate = (subCats, parentId) => {
     return subCats.map( subCatItem => {
       if (subCatItem.name === 'Все категории') return; // Чтобы не добавлся объкет "Все категории" 
+
       return `
-      <li class="catalog-list__sublist__item" dataId="${subCatItem.id}">
-        <button type="button" class="category-block category-block--sublist">
-          <span class="category-block__text text-ellipsis">
-          ${subCatItem.name}
-            <!-- <span class="category-block__counter">(5)</span> -->
-          </span>
-          <span class="category-block__action-links">
-            ${getCategoryBlockLink('edit.php', 'edit', 'edit')}
-            ${getCategoryBlockLink('delete.php', 'remove', 'remove')}
-          </span>
-        </button>
-      </li>
-    `;
+        <li class="catalog-list__sublist__item" data-id="${subCatItem.id}">
+          <button type="button" class="category-block category-block--sublist">
+            <span class="category-block__text text-ellipsis">
+            ${subCatItem.name}
+              <!-- <span class="category-block__counter">(5)</span> -->
+            </span>
+            <span class="category-block__action-links">
+              ${getCategoryBlockLink('#', 'edit', 'edit', parentId)}
+              ${getCategoryBlockLink('#', 'remove', 'remove', parentId)}
+            </span>
+          </button>
+        </li>
+      `;
     }).join('');
   }
 
-  const getCatalogItemTemplate = (item) => {
-    const subCatsTemplate = getCatalogItemSubCatTemplate(item.subCats);
+  // Ф-ция возвращает разметку для элем. каталога 1-го уровня
+  const getCatalogItemCatTemplate = (item) => {
+    const subCatsTemplate = getCatalogItemSubCatTemplate(item.subCats, item.id);
     return `
-     <li class="catalog-list__item accordion__item text-ellipsis">
+     <li class="catalog-list__item accordion__item text-ellipsis" data-id="${item.id}">
           <button type="button" class="category-block accordion__btn" title="Открыть категорию ${item.name}">
             <span class="expand-icon">
               <span class="expand-icon__body"></span>
@@ -62,32 +61,51 @@ const addAdminCatalog = (catalogWrapper) => {
     `;
   }
 
+  // Ф-ция обрабатывает ссылки каталога
+  const handlingCatalogLinks = () => {
+    // Найдем все контейнеры для кнопок-ссылок каталога (удалить и редактировать)
+    const catalogLinksWrappers = catalogList.querySelectorAll('.category-block__action-links');
+    
+    catalogLinksWrappers.forEach(wrapper => {
+      wrapper.addEventListener('click', (e) => {
+        const clickedBtn = e.target.closest('[data-btn]'); 
+        if(!clickedBtn) return; // если клик мимо кнопки
+
+        const clickedBtnData = clickedBtn.dataset.btn;
+        const clickedBtnParentData = clickedBtn.dataset.parentId;
+
+        const mainCategory = clickedBtn.closest('.accordion__item');
+        const subCategory = clickedBtn.closest('.catalog-list__sublist__item');
+    
+        let currentCategoryData;
+        if (mainCategory) currentCategoryData = cats.find(item => item.id == mainCategory.dataset.id);
+        if (subCategory) currentCategoryData = cats.find(item => item.id == subCategory.dataset.id);
 
 
-  const catalogListTemplate = cats.map(cat => getCatalogItemTemplate(cat)).join('');
-  catalogList.insertAdjacentHTML('beforeend', catalogListTemplate);
+        if ( clickedBtnData && clickedBtnData === 'edit') {
+          console.log('clicked edit');
+          console.log(e.target.closest('.accordion__item').dataset.id);
+          
+        }
+        
+        if ( clickedBtnData && clickedBtnData === 'remove') {
+          console.log('clicked remove');
+          console.log(e.target.closest('.accordion__item').dataset.id);
+          // console.log(mainCategoryData);
+          // if (confirm(`Вы действительно хотите удалть категорию ${mainCategoryData.name}?`)) console.log('okay');
+          
+        }
+        
+      });
+    });
+  }
 
-//   <li class="catalog-list__sublist__item">
-//   <button type="button" class="category-block category-block--sublist">
-//     <span class="category-block__text text-ellipsis">
-//       Сумки
-//       <!-- <span class="category-block__counter">(5)</span> -->
-//     </span>
-//     <span class="category-block__action-links">
-//       <a href="edit.php" class="category-block__link">
-//         <svg class="icon icon--edit">
-//           <use href="./img/svgsprite/sprite.symbol.svg#edit"></use>
-//         </svg>
-//       </a>
-//       <a href="delete.php" class="category-block__link">
-//         <svg class="icon icon--remove">
-//           <use href="./img/svgsprite/sprite.symbol.svg#remove"></use>
-//         </svg>
-//       </a>
-//     </span>
-//   </button>
-// </li>
-  
+  // Обходим массив категории и подставляем данные в шаблон
+  const catalogListTemplate = cats.map(cat => getCatalogItemCatTemplate(cat)).join('');
+  catalogList.insertAdjacentHTML('beforeend', catalogListTemplate); // добавляем разметку на страницу
+  handlingCatalogLinks(); // обрабатываем клики по ссылкам 
+  setTimeout(() => addAccordion('many', catalogWrapper), 0.1); // Запускаем функцию аккордеона
+ 
 }
 
 export default addAdminCatalog;
