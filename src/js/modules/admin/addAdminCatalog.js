@@ -2,13 +2,38 @@ import addAccordion from "./../addAccordion.js";
 import catalogData from './../../../data/categories.json';
 
 const addAdminCatalog = (catalogWrapper) => {
-  const cats = JSON.parse(JSON.stringify(catalogData));
+  const cats = catalogData;
+  const cardsWrapper = document.querySelector('#catalog-cards');
   const catalogList = document.querySelector(catalogWrapper);
 
   const getFirstLvlCatsList = catsData => catsData.filter(cat => cat.parentId == 0);
   const getCurrentSubCatList = (catsData, currentCat) => catsData.filter(cat => cat.parentId == currentCat.id);
 
   const firstLvlCatsList = getFirstLvlCatsList(cats);
+
+  // Templates
+  const getCatalogCardTemplate = (cat) => {
+    return `
+      <a href="shop-single.html" class="card-small" data-id="${cat.id}">
+        <div class="card-small__img">
+          
+          <svg class="icon icon--arrow-right">
+            <use href="./img/svgsprite/sprite.symbol.svg#arrow-right"></use>
+          </svg>
+        
+          <img src="./../../img/cats/${cat.img}" srcset="./../../img/cats/01@2x.jpg" alt="">
+        </div>
+        <!-- price -->
+        <div class="card-small__desc">
+          <div class="card-small__title">
+            <h4 class="h4">${cat.name}</h4>
+          </div>
+        </div>
+        <!--// price -->
+      </a>
+    `;
+  }
+
 
   // Ф-ция возвращает разметку кнопки с ссылками
   const getCategoryBlockLink = (url, dataBtn, icon, catId) => {
@@ -100,19 +125,35 @@ const addAdminCatalog = (catalogWrapper) => {
       });
     });
   }
-  
 
+  // Ф-ция добавления карточек подкатегории
+  const addCatalogCards = (e) => {
+    cardsWrapper.innerHTML = '';
+    const currentCatId = e.target.closest('li').dataset.id;
+    const currentSubCats = cats.filter(cat => {
+      if(cat.id < 0) return; // Если категория 'Все категории' - пропускаем
+      return +cat.parentId === + currentCatId;
+    });
+    const catalogCards = currentSubCats.map(cat => getCatalogCardTemplate(cat));
+    cardsWrapper.insertAdjacentHTML('beforeend', catalogCards);
+  }  
 
+  // Обходим массив категории и подставляем данные в шаблон
+  const catalogListTemplate = firstLvlCatsList.map(cat => getCatalogItemCatTemplate(cat)).join('');
+  catalogList.insertAdjacentHTML('beforeend', catalogListTemplate); // добавляем разметку на страницу
 
-   // Обходим массив категории и подставляем данные в шаблон
-   const catalogListTemplate = firstLvlCatsList.map(cat => getCatalogItemCatTemplate(cat)).join('');
-   catalogList.insertAdjacentHTML('beforeend', catalogListTemplate); // добавляем разметку на страницу
-   handlingCatalogLinks(); // обрабатываем клики по ссылкам 
-   setTimeout(() => addAccordion('many', catalogWrapper), 0.1); // Запускаем функцию аккордеона
+  // Отображение карочек каталога при первом просмотре
+  const catalogCardsData = cats.filter(cat => {
+    if ( +cat.id < 0) return;
+    return +cat.parentId === +firstLvlCatsList[0].id;
+  });
+  const catalogCards = catalogCardsData.map(cat => getCatalogCardTemplate(cat));
+  cardsWrapper.insertAdjacentHTML('beforeend', catalogCards);
 
-
-
-
+  // Слушаем клик по каталогу
+  catalogList.addEventListener('click', (e) => addCatalogCards(e)); 
+  handlingCatalogLinks(); // обрабатываем клики по ссылкам 
+  setTimeout(() => addAccordion('many', catalogWrapper), 0.1); // Запускаем функцию аккордеона
 }
 
 export default addAdminCatalog;
