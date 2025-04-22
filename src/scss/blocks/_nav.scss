@@ -50,7 +50,8 @@
 .sub-nav {
   z-index: 1;
   position: fixed;
-  top: 175px;
+  // top: 175px;
+  top: 170px;
   left: 0;
 
   width: 100%;
@@ -71,7 +72,6 @@
   //   border-right: 1px solid var(--accent)
   // }
 }
-
 
 .sub-nav__container {
   display: grid;
@@ -98,9 +98,8 @@
   column-gap: 20px;
   grid-template-columns: 20px 1fr 20px 10px;
 
-  transition:  background-color, 0.3s ease-in;
+  transition:  background-color 0.3s ease-in;
 }
-
 
 .sub-sub-nav__list {
   padding: 0px 0px 0px 5px;

@@ -77,28 +77,23 @@ const addAdminCatalog = (catalogWrapper) => {
         const clickedBtn = e.target.closest('[data-btn]'); 
         if(!clickedBtn) return; // если клик мимо кнопки
 
-        const clickedBtnData = clickedBtn.dataset.btn;
-        const clickedBtnParentData = clickedBtn.dataset.parentId;
-
         const mainCategory = clickedBtn.closest('.accordion__item');
-        const subCategory = clickedBtn.closest('.catalog-list__sublist__item');
+        const subCategory =  clickedBtn.closest('.catalog-list__sublist__item');
+
+        const clickedBtnData = clickedBtn.dataset.btn;
+
     
         let currentCategoryData;
-        if (mainCategory) currentCategoryData = cats.find(item => item.id == mainCategory.dataset.id);
-        if (subCategory) currentCategoryData = cats.find(item => item.id == subCategory.dataset.id);
-
+        if (mainCategory) currentCategoryData = cats.find(item => +item.id === mainCategory.dataset.id);
+        else if (subCategory) currentCategoryData = cats.find(item => +item.id === subCategory.dataset.id);
 
         if ( clickedBtnData && clickedBtnData === 'edit') {
-          console.log('clicked edit');
-          console.log(e.target.closest('.accordion__item').dataset.id);
-          
+          // const currentCatId = e.target.closest('li').dataset.id;
         }
         
         if ( clickedBtnData && clickedBtnData === 'remove') {
-          console.log('clicked remove');
-          console.log(e.target.closest('.accordion__item').dataset.id);
-          // console.log(mainCategoryData);
-          // if (confirm(`Вы действительно хотите удалть категорию ${mainCategoryData.name}?`)) console.log('okay');
+          const currenyCat = cats.find(cat => +cat.id === currentCategoryData.id);
+          if (confirm(`Вы действительно хотите удалть категорию ${currenyCat.name}?`)) console.log('okay');
           
         }
         
