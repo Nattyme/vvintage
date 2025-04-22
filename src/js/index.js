@@ -2,7 +2,6 @@
 import mobileNav from './modules/mobile-nav.js';
 import addAdminCatalog from './modules/admin/addAdminCatalog.js';
 import addSidebarControlPanel from './modules/admin/addSidebarControlPanel.js';
-import addCatsCards from './modules/addCatsCards.js';
 import addSubNavCats from './modules/addSubNavCats.js';
 import fancyBox from './modules/fancybox.js';
 // import yMap from './modules/ymap.js';
