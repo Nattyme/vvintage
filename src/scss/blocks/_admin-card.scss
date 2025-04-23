@@ -4,57 +4,12 @@
   height: 172px;
   border: 1px solid rgba(0, 0, 0, 0.3);
   box-shadow: -2px 4px 6px rgba(0, 0, 0, 0.8);
-
-  overflow: hidden;
 }
+
 .admin-card__tooltip {
 }
 
-.tooltip {
-  padding: 10px 10px 0 10px;
-  z-index: 9;
-  // display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 40px;
-  background-color: rgba(0, 0, 0, 0.6);
-  opacity: 1;
-  
-  // transform: translateY(-100%);
-  transition: opacity 0.4s ease;
-}
 
-// .tooltip--admin-card {
-//   bottom: 40px;
-// }
-.admin-card:hover .tooltip {
-  opacity: 1;
-  // transform: translateY(0);
-}
-
-.tooltip__row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.button-delete {
-  
-}
-.icon {
-}
-.icon--arrow-right {
-}
-.button-subTools {
-}
-.subTools {
-  display: none;
-}
-.subToolsItem {
-}
-.subToolsItem__text {
-}
 .admin-card__img {
   width: 200px;
   height: 130px;

@@ -1,20 +1,8 @@
-import addAdminCardToolOverlay from './addCardAdminToolOverlay.js';
+import {addAdminCardToolOverlay, handleToolsOverlay} from './addCardAdminToolOverlay.js';
 
-const addCatsCards = (catalogList, cardsContainer, cats, mainCats) => {
-  const cardsWrapper = document.querySelector(cardsContainer); // контейнер карточек
+const addCatsCards = (catalogList, cardsWrapper, cats, mainCats) => {
   const cardToolOverlay = addAdminCardToolOverlay();
 
-  const handleToolsOverlay = () => {
-    const toolsWrappers = cardsWrapper.querySelectorAll('.tooltip');
-    toolsWrappers.forEach(wrapper => {
-      wrapper.addEventListener('click', (e)=> {
-        if (!e.target.closest('[data-btn]')) return;
-        console.log(e.target.closest('[data-btn]'));
-      })
-    });
-  }
-
-  
   const getCatalogCardTemplate = (cat, cardToolOverlay) => {
     return `
      <li href="#" class="admin-card" data-id="2">
@@ -42,7 +30,7 @@ const addCatsCards = (catalogList, cardsContainer, cats, mainCats) => {
     const catalogCards = currentSubCats.map(cat => getCatalogCardTemplate(cat, cardToolOverlay)).join('');
     cardsWrapper.insertAdjacentHTML('beforeend', catalogCards);
 
-    handleToolsOverlay();
+    handleToolsOverlay(cardsWrapper, '.tooltip');
 
     console.log('after tool');
    
@@ -60,7 +48,7 @@ const addCatsCards = (catalogList, cardsContainer, cats, mainCats) => {
   // Слушаем клик по каталогу
   catalogList.addEventListener('click', (e) => addCatalogCards(e)); 
   // Слушаем клики по оверлею
-  handleToolsOverlay();
+  handleToolsOverlay(cardsWrapper, '.tooltip');
 
 }
 

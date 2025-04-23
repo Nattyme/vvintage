@@ -1,6 +1,5 @@
 const addAdminCardToolOverlay = () => {
-  const getToolOverlayTemplate = () => {
-    return `
+  return `
             <div class="tooltip">
                 <div class="tooltip__row">
                   <a href="#" class="button-delete" data-btn="delete">
@@ -26,13 +25,40 @@ const addAdminCardToolOverlay = () => {
                 </div>
             </div>
     `;
-  }
-
-  
-
-  return getToolOverlayTemplate();
-
-  
 }
 
-export default addAdminCardToolOverlay;
+const closeAllModals = (outerContainer) => {
+  const openModals = outerContainer.querySelectorAll('.subTools.open');
+  openModals.forEach(openModal => openModal.classList.remove('open'));
+}
+
+const toggleModal = (outerContainer, currentModalWrapper) => {
+  closeAllModals(outerContainer);
+  const currentModal = currentModalWrapper.querySelector('.subTools');
+  currentModal.classList.toggle('open');
+}
+
+
+const handleToolsOverlay = (outerContainer) => {
+  // Находим все контейнеры tools
+  outerContainer.addEventListener('click', (e) => {
+    e.preventDefault();
+    const btn = e.target.closest('[data-btn]');
+    if (!btn) return;
+    const currentToolWrapper = btn.closest('li');
+
+    switch (btn.dataset.btn) {
+      case 'delete' :
+        currentToolWrapper.remove();
+        break;
+      case 'menu' : 
+        toggleModal(outerContainer, currentToolWrapper);
+        break;
+      default: return;
+    }
+    
+  });  
+
+}
+
+export {addAdminCardToolOverlay, handleToolsOverlay, closeAllModals};

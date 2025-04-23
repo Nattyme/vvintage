@@ -3,10 +3,11 @@ import catalogData from './../../../data/categories.json';
 import addCatsCards from './addCatsCards.js';
 
 const addAdminCatalog = (catalogWrapper) => {
-  console.log(catalogWrapper);
+  console.log(closeAllModals);
   
   const cats = catalogData;
   const catalogList = document.querySelector(catalogWrapper); // контейнер категорий
+  const catalogCardsWrapper = document.querySelector('#catalog-cards');
   const getFirstLvlCatsList = catsData => catsData.filter(cat => cat.parentId == 0);
   const getCurrentSubCatList = (catsData, currentCat) => catsData.filter(cat => cat.parentId == currentCat.id);
   const firstLvlCatsList = getFirstLvlCatsList(cats);
@@ -110,7 +111,7 @@ const addAdminCatalog = (catalogWrapper) => {
   catalogList.insertAdjacentHTML('beforeend', catalogListTemplate); // добавляем разметку на страницу
 
   // Ф-ция показывает карочки каталога
-  addCatsCards(catalogList, '#catalog-cards', cats, firstLvlCatsList);
+  addCatsCards(catalogList, catalogCardsWrapper, cats, firstLvlCatsList);
 
   handlingCatalogLinks(); // обрабатываем клики по ссылкам 
   setTimeout(() => addAccordion('many', catalogWrapper), 0.1); // Запускаем функцию аккордеона
