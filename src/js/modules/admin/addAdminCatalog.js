@@ -3,8 +3,6 @@ import catalogData from './../../../data/categories.json';
 import addCatsCards from './addCatsCards.js';
 
 const addAdminCatalog = (catalogWrapper) => {
-  console.log(closeAllModals);
-  
   const cats = catalogData;
   const catalogList = document.querySelector(catalogWrapper); // контейнер категорий
   const catalogCardsWrapper = document.querySelector('#catalog-cards');

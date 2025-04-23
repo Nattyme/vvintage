@@ -1,4 +1,5 @@
-import {addAdminCardToolOverlay, handleToolsOverlay} from './addCardAdminToolOverlay.js';
+import addAdminCardToolOverlay from './addCardAdminToolOverlay.js';
+import initDropdown from './../initDropdownMenu.js';
 
 const addCatsCards = (catalogList, cardsWrapper, cats, mainCats) => {
   const cardToolOverlay = addAdminCardToolOverlay();
@@ -30,10 +31,7 @@ const addCatsCards = (catalogList, cardsWrapper, cats, mainCats) => {
     const catalogCards = currentSubCats.map(cat => getCatalogCardTemplate(cat, cardToolOverlay)).join('');
     cardsWrapper.insertAdjacentHTML('beforeend', catalogCards);
 
-    handleToolsOverlay(cardsWrapper, '.tooltip');
-
-    console.log('after tool');
-   
+    initDropdown(cardsWrapper, {triggerAttr : 'data-btn', menuSelector : '.subTools'});
   }  
 
 
@@ -48,7 +46,8 @@ const addCatsCards = (catalogList, cardsWrapper, cats, mainCats) => {
   // Слушаем клик по каталогу
   catalogList.addEventListener('click', (e) => addCatalogCards(e)); 
   // Слушаем клики по оверлею
-  handleToolsOverlay(cardsWrapper, '.tooltip');
+  // handleToolsOverlay(cardsWrapper, '.tooltip');
+  initDropdown(cardsWrapper, {triggerAttr : 'data-btn', menuSelector : '.subTools'});
 
 }
 

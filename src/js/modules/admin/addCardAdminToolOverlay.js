@@ -1,3 +1,16 @@
+const adminCardDropdown = `
+  <ul class="subTools" role="menu">
+    <li class="subToolsItem" role="menuitem">
+      <a href="#!">
+        <svg class="icon icon--arrow-right">
+          <use href="./img/svgsprite/sprite.symbol.svg#arrow-right"></use>
+        </svg>
+        <span class="subToolsItem__text">Изменить</span>
+      </a>
+    </li>
+  </ul>
+`;
+
 const addAdminCardToolOverlay = () => {
   return `
             <div class="tooltip">
@@ -11,16 +24,8 @@ const addAdminCardToolOverlay = () => {
                       <svg class="icon icon--arrow-menu">
                         <use href="./img/svgsprite/sprite.symbol.svg#menu"></use>
                       </svg>
-                      <ul class="subTools">
-                        <li class="subToolsItem">
-                          <a href="#!">
-                            <svg class="icon icon--arrow-right">
-                              <use href="./img/svgsprite/sprite.symbol.svg#arrow-right"></use>
-                            </svg>
-                            <span class="subToolsItem__text">Изменить</span>
-                          </a>
-                        </li>
-                      </ul>
+                      ${adminCardDropdown}
+                     
                   </button>
                 </div>
             </div>
@@ -61,4 +66,4 @@ const handleToolsOverlay = (outerContainer) => {
 
 }
 
-export {addAdminCardToolOverlay, handleToolsOverlay, closeAllModals};
+export default addAdminCardToolOverlay;
