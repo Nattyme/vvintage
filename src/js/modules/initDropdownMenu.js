@@ -35,6 +35,10 @@ const initDropdown = (container, {triggerAttr='data-btn', menuSelector='.dropdow
     // Проверяем, было ли открыто текущее меню
     const isOpen = menu.classList.contains('open');
 
+    if(btn.getAttribute(triggerAttr) === 'delete') {
+      menu.closest('li').remove();
+      return;
+    }
     closeAll(); // закрываем все меню
 
     // Открыть меню, если оно не бло октрытым
