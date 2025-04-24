@@ -6,9 +6,9 @@
   box-shadow: -2px 4px 6px rgba(0, 0, 0, 0.8);
 }
 
-.admin-card__tooltip {
+.admin-card:hover .tooltip {
+  opacity: 1;
 }
-
 
 .admin-card__img {
   width: 200px;
@@ -24,8 +24,4 @@
 .admin-card__desc {
   padding: 10px 15px;
   height: 40px;
-}
-.admin-card__title {
-}
-.h4 {
 }

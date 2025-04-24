@@ -22,16 +22,17 @@ const addCatsCards = (catalogList, cardsWrapper, cats, mainCats) => {
 
   // Ф-ция добавления карточек подкатегории
   const addCatalogCards = (e) => {
-    cardsWrapper.innerHTML = '';
-    const currentCatId = e.target.closest('li').dataset.id;
+    cardsWrapper.innerHTML = ''; // очищаем контейнер
+    const currentCatId = e.target.closest('li').dataset.id; // находим Id ближайшего li
     const currentSubCats = cats.filter(cat => {
       if(cat.id < 0) return; // Если категория 'Все категории' - пропускаем
       return +cat.parentId === + currentCatId;
     });
+    // Обходим массив и подставляем данные в шаблон
     const catalogCards = currentSubCats.map(cat => getCatalogCardTemplate(cat, cardToolOverlay)).join('');
-    cardsWrapper.insertAdjacentHTML('beforeend', catalogCards);
+    cardsWrapper.insertAdjacentHTML('beforeend', catalogCards); 
 
-    initDropdown(cardsWrapper, {triggerAttr : 'data-btn', menuSelector : '.subTools'});
+    initDropdown(cardsWrapper, {triggerAttr : 'data-btn', menuSelector : '.dropdownMenu'});
   }  
 
 
@@ -40,14 +41,15 @@ const addCatsCards = (catalogList, cardsWrapper, cats, mainCats) => {
     if ( +cat.id < 0) return;
     return +cat.parentId === +mainCats[0].id;
   });
+  
   const catalogCards = catalogCardsData.map(cat => getCatalogCardTemplate(cat, cardToolOverlay)).join('');
   cardsWrapper.insertAdjacentHTML('beforeend', catalogCards);
 
   // Слушаем клик по каталогу
   catalogList.addEventListener('click', (e) => addCatalogCards(e)); 
-  // Слушаем клики по оверлею
-  // handleToolsOverlay(cardsWrapper, '.tooltip');
-  initDropdown(cardsWrapper, {triggerAttr : 'data-btn', menuSelector : '.subTools'});
+
+  // Иниц-ция модальных окон
+  initDropdown(cardsWrapper, {triggerAttr : 'data-btn', menuSelector : '.dropdownMenu'});
 
 }
 

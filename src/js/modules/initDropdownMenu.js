@@ -1,5 +1,5 @@
 // container, triggerAttr, menuSelector, itemAttr, actions {}
-const initDropdown = (container, {triggerAttr='data-btn', menuSelector='.subTools'} = {}) => {
+const initDropdown = (container, {triggerAttr='data-btn', menuSelector='.dropdownMenu'} = {}) => {
   const root = typeof container === 'string' ? document.querySelector(container) : container;
 
   if (root._dropdownInited) return;
@@ -22,30 +22,27 @@ const initDropdown = (container, {triggerAttr='data-btn', menuSelector='.subTool
     if (e.key === 'Escape') closeAll();
   });
 
-    // Слушаем клик на контейнере карточек
-    root.addEventListener('click', (e) => {
-      console.log('clicked button');
-      
-      const btn = e.target.closest(`[${triggerAttr}]`);
-      if (!btn) return;
-      e.preventDefault();
-  console.log(btn);
-  
-      // Находим меню, по кнопке которого был клик
-      const menu = btn.querySelector(menuSelector) ? btn.querySelector(menuSelector) : root.querySelector(menuSelector);
-      if(!menu) return;
+  // Слушаем клик на контейнере карточек
+  root.addEventListener('click', (e) => {
+    const btn = e.target.closest(`[${triggerAttr}]`);
+    if (!btn) return;
+    e.preventDefault();
 
-      closeAll();
-      // Открыть / закрыть меню
-      menu.classList.toggle('open');
-  
-      // ОБрабатываем клик по пунку меню
-      // const menuItem = e.target.closest(`[${itemAttr}]`);
-    });
+    // Находим меню, по кнопке которого был клик
+    const menu = btn.closest('li, .card') ? btn.closest('li, .card').querySelector(menuSelector) : root.querySelector(menuSelector);
+    if(!menu) return;
 
-  return {
-    closeAll
-  }
+    // Проверяем, было ли открыто текущее меню
+    const isOpen = menu.classList.contains('open');
+
+    closeAll(); // закрываем все меню
+
+    // Открыть меню, если оно не бло октрытым
+    if(!isOpen) menu.classList.add('open');
+   
+    // ОБрабатываем клик по пунку меню
+    // const menuItem = e.target.closest(`[${itemAttr}]`);
+  });
 }
 
 export default initDropdown;

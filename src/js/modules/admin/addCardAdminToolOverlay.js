@@ -1,11 +1,43 @@
 const adminCardDropdown = `
-  <ul class="subTools" role="menu">
-    <li class="subToolsItem" role="menuitem">
-      <a href="#!">
-        <svg class="icon icon--arrow-right">
-          <use href="./img/svgsprite/sprite.symbol.svg#arrow-right"></use>
+  <ul class="dropdownMenu dropdownMenu--admin-card" role="menu">
+    <li class="dropdownMenu__item">
+      <a class="dropdownMenu__link" href="#!" role="menuitem">
+        <svg class="icon icon--edit">
+          <use href="./img/svgsprite/sprite.symbol.svg#edit"></use>
         </svg>
-        <span class="subToolsItem__text">Изменить</span>
+        <span class="dropdownMenu__text">Изменить</span>
+      </a>
+    </li>
+    <li class="dropdownMenu__item">
+      <a class="dropdownMenu__link" href="#!" role="menuitem">
+        <svg class="icon icon--invisible">
+          <use href="./img/svgsprite/sprite.symbol.svg#invisible"></use>
+        </svg>
+        <span class="dropdownMenu__text">Невидимый</span>
+      </a>
+    </li>
+    <li class="dropdownMenu__item">
+      <a class="dropdownMenu__link" href="#!" role="menuitem">
+        <svg class="icon icon--copy">
+          <use href="./img/svgsprite/sprite.symbol.svg#copy"></use>
+        </svg>
+        <span class="dropdownMenu__text">Копировать</span>
+      </a>
+    </li>
+    <li class="dropdownMenu__item">
+      <a class="dropdownMenu__link" href="#!" role="menuitem">
+        <svg class="icon icon--external_link">
+          <use href="./img/svgsprite/sprite.symbol.svg#external_link"></use>
+        </svg>
+        <span class="dropdownMenu__text">Предпросмотр</span>
+      </a>
+    </li>
+    <li class="dropdownMenu__item">
+      <a class="dropdownMenu__link" href="#!" role="menuitem">
+        <svg class="icon icon--delete">
+          <use href="./img/svgsprite/sprite.symbol.svg#delete"></use>
+        </svg>
+        <span class="dropdownMenu__text">Удалить</span>
       </a>
     </li>
   </ul>
@@ -13,57 +45,22 @@ const adminCardDropdown = `
 
 const addAdminCardToolOverlay = () => {
   return `
-            <div class="tooltip">
+            <div class="tooltip tooltip--admin-card">
                 <div class="tooltip__row">
                   <a href="#" class="button-delete" data-btn="delete">
                     <svg class="icon icon--close">
                       <use href="./img/svgsprite/sprite.symbol.svg#close"></use>
                     </svg>
                   </a>
-                  <button class="button-subTools" data-btn="menu">
+                  <button class="button-dropdownMenu" data-btn="menu">
                       <svg class="icon icon--arrow-menu">
                         <use href="./img/svgsprite/sprite.symbol.svg#menu"></use>
                       </svg>
-                      ${adminCardDropdown}
-                     
                   </button>
+                  ${adminCardDropdown}
                 </div>
             </div>
     `;
-}
-
-const closeAllModals = (outerContainer) => {
-  const openModals = outerContainer.querySelectorAll('.subTools.open');
-  openModals.forEach(openModal => openModal.classList.remove('open'));
-}
-
-const toggleModal = (outerContainer, currentModalWrapper) => {
-  closeAllModals(outerContainer);
-  const currentModal = currentModalWrapper.querySelector('.subTools');
-  currentModal.classList.toggle('open');
-}
-
-
-const handleToolsOverlay = (outerContainer) => {
-  // Находим все контейнеры tools
-  outerContainer.addEventListener('click', (e) => {
-    e.preventDefault();
-    const btn = e.target.closest('[data-btn]');
-    if (!btn) return;
-    const currentToolWrapper = btn.closest('li');
-
-    switch (btn.dataset.btn) {
-      case 'delete' :
-        currentToolWrapper.remove();
-        break;
-      case 'menu' : 
-        toggleModal(outerContainer, currentToolWrapper);
-        break;
-      default: return;
-    }
-    
-  });  
-
 }
 
 export default addAdminCardToolOverlay;
