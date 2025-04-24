@@ -10,8 +10,29 @@
 .shop__header {
   margin-bottom: 40px;
 }
-.h2 {
+
+.shop__row {
+  display: flex;
+  align-items: center;
+  column-gap: 80px;
 }
+
 .shop__content {
   overflow-x: auto;
+}
+
+.shop__search {
+  margin-left: auto;
+}
+
+.shop__button {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  color: #fff;
+}
+
+.shop__button .expand-icon__body::before,
+.shop__button .expand-icon__body::after {
+  background-color: #fff;
 }

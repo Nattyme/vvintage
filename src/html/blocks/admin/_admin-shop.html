@@ -1,15 +1,34 @@
 <section class="shop">
   <div class="shop__container">
-    <header class="shop__header">
-      <h2 class="h2">Все товары</h2>
+    
+    <header class="shop__header shop__row">
+      <div class="shop__title">
+        <h2 class="h3">Товары</h2>
+      </div>
+      <button class="shop__button button button-primary">
+        <span class="expand-icon">
+          <span class="expand-icon__body"></span>
+        </span>
+        <span>Добавить товар</span>
+       </button>
+      <div class="shop__search">
+        <input type="text" placeholder="Поиск товара">
+      </div>
     </header>
 
     <div class="shop__content">
       <table class="product-table table">
-        <thead>
+        <thead class="product-table__header">
           <tr>
-            <th>Изображение</th>
+            <th>
+              <label>
+                <input class="table__checkbox-hidden real-checkbox" type="checkbox" name="product">
+                <span class="table__checkbox-fake custom-checkbox"></span>
+              </label>
+            </th>
+            <th>Фото</th>
             <th>Наименование</th>
+            <th>Бренд</th>
             <th>Цена</th>
             <th>Ссылка</th>
             <th>Артикул</th>
@@ -17,12 +36,19 @@
         </thead>
         <tbody>
           <tr>
+            <td>
+              <label>
+                <input class="table__checkbox-hidden real-checkbox" type="checkbox" name="product">
+                <span class="table__checkbox-fake custom-checkbox"></span>
+              </label>
+            </td>
             <td class="product-table__img">
               <img src="./../../../img/products/1/chanel_gold_pendant_necklace_1.jpeg" srcset="./../../../img/products/1/chanel_gold_pendant_necklace_1.jpeg" alt="">
             </td>
             <td class="product-table__title">
               Цепочка и подвеска Chanel в форме креста из золотистого металла со стразами и жемчужно-белыми бусинами.
             </td>
+            <td>Chanel</td>
             <td>9000</td>
             <td>Ссылка</td>
             <td>1711817016</td>
