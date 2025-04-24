@@ -6,6 +6,11 @@ html, body {
   justify-content: space-between;
 }
 
+.admin-page {
+  background-color: var(--admin-dashboard-bg);
+}
+
+
 .admin-page > .admin-panel {
   position: relative;
 }

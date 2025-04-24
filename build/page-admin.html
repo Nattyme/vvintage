@@ -68,20 +68,61 @@
   <?php include ROOT . "admin/templates/components/success.tpl"; ?> -->
 
 						<main class="dashboard__content">
-							<div class="catalog">
-								<div class="catalog__container">
-									<header class="catalog__header">
-										<h2 class="h2">Каталог</h2>
+							<section class="shop">
+								<div class="shop__container">
+									<header class="shop__header">
+										<h2 class="h2">Все товары</h2>
 									</header>
 
-									<div class="catalog__content">
-										<ul class="catalog-list" id="catalog-list"></ul>
-
-										<!-- Заменить див ниже на ul -->
-										<ul class="catalog-cards" id="catalog-cards"></ul>
+									<div class="shop__content">
+										<table class="product-table table">
+											<thead>
+												<tr>
+													<th>Изображение</th>
+													<th>Наименование</th>
+													<th>Цена</th>
+													<th>Ссылка</th>
+													<th>Артикул</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="product-table__img">
+														<picture>
+															<source
+																srcset="
+																	./img/products/1/chanel_gold_pendant_necklace_1.webp    1x,
+																	./img/products/1/chanel_gold_pendant_necklace_1@2x.webp 2x
+																"
+																type="image/webp"
+															/>
+															<source
+																srcset="
+																	./img/products/1/chanel_gold_pendant_necklace_1.jpeg    1x,
+																	./img/products/1/chanel_gold_pendant_necklace_1@2x.jpeg 2x
+																"
+																type="image/jpeg"
+															/>
+															<img
+																src="./img/products/1/chanel_gold_pendant_necklace_1.jpeg"
+																srcset="./img/products/1/chanel_gold_pendant_necklace_1.jpeg"
+																alt=""
+															/>
+														</picture>
+													</td>
+													<td class="product-table__title">
+														Цепочка и&#160;подвеска Chanel в&#160;форме креста из&#160;золотистого металла со&#160;стразами и&#160;жемчужно-белыми
+														бусинами.
+													</td>
+													<td>9000</td>
+													<td>Ссылка</td>
+													<td>1711817016</td>
+												</tr>
+											</tbody>
+										</table>
 									</div>
 								</div>
-							</div>
+							</section>
 						</main>
 					</div>
 				</div>
