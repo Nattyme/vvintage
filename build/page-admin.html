@@ -74,15 +74,18 @@
 										<div class="shop__title">
 											<h2 class="h3">Товары</h2>
 										</div>
-										<button class="shop__button button button-primary">
+										<button class="shop__button button button-primary" data-btn="add">
 											<span class="expand-icon">
 												<span class="expand-icon__body"></span>
 											</span>
 											<span>Добавить товар</span>
 										</button>
-										<div class="shop__search">
+										<button class="shop__search search" data-btn="search">
+											<svg class="icon icon--loupe">
+												<use href="./img/svgsprite/sprite.symbol.svg#loupe"></use>
+											</svg>
 											<input type="text" placeholder="Поиск товара" />
-										</div>
+										</button>
 									</header>
 
 									<div class="shop__content">
@@ -91,7 +94,7 @@
 												<tr>
 													<th>
 														<label>
-															<input class="table__checkbox-hidden real-checkbox" type="checkbox" name="product" />
+															<input class="table__checkbox-hidden real-checkbox" type="checkbox" name="product" data-check="all" />
 															<span class="table__checkbox-fake custom-checkbox"></span>
 														</label>
 													</th>
@@ -101,13 +104,14 @@
 													<th>Цена</th>
 													<th>Ссылка</th>
 													<th>Артикул</th>
+													<th></th>
 												</tr>
 											</thead>
-											<tbody>
+											<tbody class="product-table__body">
 												<tr>
 													<td>
 														<label>
-															<input class="table__checkbox-hidden real-checkbox" type="checkbox" name="product" />
+															<input class="table__checkbox-hidden real-checkbox" type="checkbox" name="product" data-check="productId" />
 															<span class="table__checkbox-fake custom-checkbox"></span>
 														</label>
 													</td>
@@ -142,6 +146,13 @@
 													<td>9000</td>
 													<td>Ссылка</td>
 													<td>1711817016</td>
+													<td>
+														<button class="button-dropdownMenu" data-btn="menu">
+															<svg class="icon icon--menu">
+																<use href="./img/svgsprite/sprite.symbol.svg#menu"></use>
+															</svg>
+														</button>
+													</td>
 												</tr>
 											</tbody>
 										</table>

@@ -8,8 +8,8 @@
 
 .real-checkbox:focus + .custom-checkbox {
   box-shadow: 
-  0px 0px 0px 1px #38577a,
-  0px 0px 10px #7e9bbd;
+  0px 0px 0px 1px var(--accent),
+  0px 0px 10px rgb(251, 165, 5);
 }
 
 .custom-checkbox {
@@ -17,8 +17,8 @@
   display: inline-block;
   width: 20px;
   height: 20px;
+  border: 1px solid #1a1a1a;
   background-color: #fff;
-  border: 2px solid #7e9bbd;
   border-radius: 4px;
   vertical-align: sub;
   margin-right: 5px;

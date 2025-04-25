@@ -2,6 +2,24 @@
   background-color: #fff;
 }
 
+.product-table__header {
+  color: #fff;
+  background-color: #1d1d1d;
+}
+
+.product-table td {
+  vertical-align: middle;
+}
+
+.product-table__body tr {
+  cursor: pointer;
+  transition: background-color 0.2s ease-in;
+
+  &:hover {
+    background-color: rgba(232, 232, 232, 0.6); 
+  }
+}
+
 .product-table th:first-child {
   width: 40px;
 }
@@ -11,11 +29,6 @@
   width: 40%;
 }
 
-.product-table__header {
-  color: #fff;
-  background-color: #000;
-}
-
 .product-table__img img {
   width: 100px;
   height: 100px;
@@ -23,5 +36,13 @@
   object-fit: cover;
 }
 
-.product-table__title {
+
+
+.button-dropdownMenu .icon--menu {
+  stroke: #373737;
+  stroke-width: 2px;
+}
+
+.button-dropdownMenu {
+
 }

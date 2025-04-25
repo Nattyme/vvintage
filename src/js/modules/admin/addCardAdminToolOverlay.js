@@ -53,7 +53,7 @@ const addAdminCardToolOverlay = () => {
                     </svg>
                   </a>
                   <button class="button-dropdownMenu" data-btn="menu">
-                      <svg class="icon icon--arrow-menu">
+                      <svg class="icon icon--menu">
                         <use href="./img/svgsprite/sprite.symbol.svg#menu"></use>
                       </svg>
                   </button>
