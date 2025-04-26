@@ -3,6 +3,13 @@
   min-width: 600px;
   border-collapse: collapse;
   table-layout: fixed;
+
+  background-color: #fff;
+
+  thead {
+    color: #fff;
+    background-color: #1e1e1e;
+  }
 }
 
 th, td {

@@ -1,0 +1,59 @@
+<section class="shop">
+  <div class="shop__container">
+    
+    <header class="shop__header shop__row">
+      <div class="shop__title">
+        <h2 class="h3">Заказы</h2>
+      </div>
+
+      <button class="shop__search search" data-btn="search">
+        <svg class="icon icon--loupe">
+          <use href="./img/svgsprite/sprite.symbol.svg#loupe"></use>
+        </svg>
+        <input type="text" placeholder="Найти">
+      </button>
+    </header>
+
+    <div class="shop__content">
+      <table class="orders-table table">
+        <thead class="orders-table__header">
+          <tr>
+            <th>
+              <label>
+                <input class="table__checkbox-hidden real-checkbox" type="checkbox" name="order" data-check="all">
+                <span class="table__checkbox-fake custom-checkbox"></span>
+              </label>
+            </th>
+            <th>Номер заказа</th>
+            <th>ФИО</th>
+            <th>Дата</th>
+            <th>Сумма</th>
+            <th>Кол-во</th>
+            <th>Статус оплаты</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody class="order-table__body">
+          <tr>
+            <td>
+              <label>
+                <input class="table__checkbox-hidden real-checkbox" type="checkbox" name="order" data-check="productId">
+                <span class="table__checkbox-fake custom-checkbox"></span>
+              </label>
+            </td>
+            <td class="order-table__title">
+              1
+            </td>
+            <td>Chanel</td>
+            <td>9000</td>
+            <td>Ссылка</td>
+            <td>1711817016</td>
+            <td>Оплачено</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+  </div>
+</section>
