@@ -1,4 +1,6 @@
-<section class="catalog">
+const addSectionCatalogTemplate = () => {
+  return `
+    <section class="catalog">
   <div class="catalog__container">
     <header class="catalog__header">
       <h2 class="h2">Каталог</h2>
@@ -13,3 +15,7 @@
 
   </div>
 </section>
+  `;
+} 
+
+export default addSectionCatalogTemplate;

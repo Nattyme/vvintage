@@ -1,7 +1,11 @@
-const addNavigate = (clickedItemData) => {
+import router from "./router";
+
+const addNavigate = (section) => {
   console.log('hello from navigate');
-  console.log(clickedItemData);
-  history.pushState({page: clickedItemData}, `Панель администратора - ${clickedItemData}`, clickedItemData)
+
+  // меням url
+  history.pushState({}, `Панель администратора - ${section}`, `?${section}`);
+  router();
 }
 
 export default addNavigate;
