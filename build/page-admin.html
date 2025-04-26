@@ -67,6 +67,98 @@
 						<!-- <?php include ROOT . "admin/templates/components/errors.tpl"; ?>
   <?php include ROOT . "admin/templates/components/success.tpl"; ?> -->
 
+						<section class="shop">
+							<div class="shop__container">
+								<header class="shop__header shop__row">
+									<div class="shop__title">
+										<h2 class="h3">Добавление нового товара</h2>
+									</div>
+								</header>
+
+								<div class="shop__form">
+									<form action="POST" class="shop-form-new" enctype="multipart/form-data" name="newProductForm">
+										<div class="form__row">
+											<div class="form__column">
+												<formfield class="shop-form-new__field">
+													<label class="shop-form-new__item">
+														<span class="shop-form-new__text">Наименование</span>
+														<input class="shop-form-new__input" type="text" placeholder="Введите название товара" name="name" />
+													</label>
+												</formfield>
+												<formfield class="shop-form-new__field">
+													<span class="shop-form-new__text">Описание</span>
+													<label class="shop-form-new__item">
+														<textarea
+															class="shop-form-new__textarea"
+															placeholder="Введите описание товара"
+															name="desc"
+															rows="rows"
+															cols="cols"
+														></textarea>
+													</label>
+												</formfield>
+												<formfield class="shop-form-new__field shop-form-new__field--inputs-wrapper">
+													<label class="shop-form-new__item">
+														<span class="shop-form-new__text">Категория</span>
+														<input class="shop-form-new__input" type="text" placeholder="Введите категорию товара" name="category" />
+													</label>
+													<label class="shop-form-new__item">
+														<span class="shop-form-new__text">Бренд</span>
+														<input class="shop-form-new__input" type="text" placeholder="Введите бренд товара" name="brand" />
+													</label>
+												</formfield>
+												<formfield class="shop-form-new__field">
+													<label class="shop-form-new__item">
+														<span class="shop-form-new__text">Цена</span>
+														<input class="shop-form-new__input" type="text" placeholder="Введите стоимость товара" name="price" />
+													</label>
+												</formfield>
+											</div>
+											<div class="form__column form__column--imgs">
+												<formfield class="shop-form-new__field">
+													<label class="shop-form-new__item">
+														<span class="shop-form-new__text">Изображения</span>
+														<input class="shop-form-new__input" type="file" placeholder="Загрузите изображение" name="cover" />
+													</label>
+												</formfield>
+												<div class="shop-form-new__preview-img">
+													<div class="shop-form-new__img-wrapper">
+														<button type="button" class="button-close">
+															<svg class="icon icon--close">
+																<use href="./img/svgsprite/sprite.symbol.svg#close"></use>
+															</svg>
+														</button>
+
+														<picture>
+															<source
+																srcset="
+																	./img/arrival/chanel_gold_ring_with_precious_stones_solitaire_2.webp    1x,
+																	./img/arrival/chanel_gold_ring_with_precious_stones_solitaire_2@2x.webp 2x
+																"
+																type="image/webp"
+															/>
+															<source
+																srcset="
+																	./img/arrival/chanel_gold_ring_with_precious_stones_solitaire_2.jpeg    1x,
+																	./img/arrival/chanel_gold_ring_with_precious_stones_solitaire_2@2x.jpeg 2x
+																"
+																type="image/jpeg"
+															/>
+															<img src="./img/arrival/chanel_gold_ring_with_precious_stones_solitaire_2.jpeg" alt="" />
+														</picture>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="shop-form-new__button-wrapper">
+											<button class="shop-form-new__button button-solid" type="submit" name="submit">Сохранить</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</section>
+
 						<main class="dashboard__content" id="dashboard__content"></main>
 					</div>
 				</div>

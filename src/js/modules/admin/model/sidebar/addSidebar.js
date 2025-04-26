@@ -1,6 +1,6 @@
-import addAccordion from "./../addAccordion.js";
-import controlPanelData from './../../../data/admin/controlPanel.json';
-import addNavigate from "./addNavigate.js";
+import addAccordion from "./../../../addAccordion.js";
+import controlPanelData from './../../../../../data/admin/controlPanel.json';
+import addNavigate from "./../../addNavigate.js";
 
 const addSidebarControlPanel = () => {
   // Данные разделов панели управления 
@@ -72,14 +72,13 @@ const addSidebarControlPanel = () => {
   setTimeout(() => addAccordion('many', '#sidebar-tab'), 0);
 
   // Слушаем клик по сайдбару
-  sidebarWrapper.addEventListener('click', (e) => {
-    const currentItem = e.target.closest(`[data-section]`);
-    if(!currentItem) return;
-    console.log(e.target.closest(`[data-section]`));
-    addNavigate(currentItem.dataset.section);
-  });
+  // sidebarWrapper.addEventListener('click', (e) => {
+  //   const currentItem = e.target.closest(`[data-section]`);
+  //   if(!currentItem) return;
+  //   console.log(e.target.closest(`[data-section]`));
+  //   addNavigate(currentItem.dataset.section);
+  // });
 
 }
 
 export default addSidebarControlPanel;
-
