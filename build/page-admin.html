@@ -76,28 +76,22 @@
 								</header>
 
 								<div class="shop__form">
-									<form action="POST" class="shop-form-new" enctype="multipart/form-data" name="newProductForm">
+									<form method="POST" class="shop-form-new" enctype="multipart/form-data" name="newProductForm">
 										<div class="form__row">
 											<div class="form__column">
-												<formfield class="shop-form-new__field">
+												<fieldset class="shop-form-new__field">
 													<label class="shop-form-new__item">
 														<span class="shop-form-new__text">Наименование</span>
 														<input class="shop-form-new__input" type="text" placeholder="Введите название товара" name="name" />
 													</label>
-												</formfield>
-												<formfield class="shop-form-new__field">
+												</fieldset>
+												<fieldset class="shop-form-new__field">
 													<span class="shop-form-new__text">Описание</span>
 													<label class="shop-form-new__item">
-														<textarea
-															class="shop-form-new__textarea"
-															placeholder="Введите описание товара"
-															name="desc"
-															rows="rows"
-															cols="cols"
-														></textarea>
+														<textarea class="shop-form-new__textarea" placeholder="Введите описание товара" name="desc" rows="5" cols="1"></textarea>
 													</label>
-												</formfield>
-												<formfield class="shop-form-new__field shop-form-new__field--inputs-wrapper">
+												</fieldset>
+												<fieldset class="shop-form-new__field shop-form-new__field--inputs-wrapper">
 													<label class="shop-form-new__item">
 														<span class="shop-form-new__text">Категория</span>
 														<input class="shop-form-new__input" type="text" placeholder="Введите категорию товара" name="category" />
@@ -106,22 +100,147 @@
 														<span class="shop-form-new__text">Бренд</span>
 														<input class="shop-form-new__input" type="text" placeholder="Введите бренд товара" name="brand" />
 													</label>
-												</formfield>
-												<formfield class="shop-form-new__field">
+												</fieldset>
+												<fieldset class="shop-form-new__field">
 													<label class="shop-form-new__item">
 														<span class="shop-form-new__text">Цена</span>
 														<input class="shop-form-new__input" type="text" placeholder="Введите стоимость товара" name="price" />
 													</label>
-												</formfield>
+												</fieldset>
 											</div>
 											<div class="form__column form__column--imgs">
-												<formfield class="shop-form-new__field">
+												<fieldset class="shop-form-new__field">
 													<label class="shop-form-new__item">
 														<span class="shop-form-new__text">Изображения</span>
-														<input class="shop-form-new__input" type="file" placeholder="Загрузите изображение" name="cover" />
+														<input class="shop-form-new__input" type="file" name="cover" />
 													</label>
-												</formfield>
+												</fieldset>
 												<div class="shop-form-new__preview-img">
+													<div class="shop-form-new__img-wrapper">
+														<button type="button" class="button-close">
+															<svg class="icon icon--close">
+																<use href="./img/svgsprite/sprite.symbol.svg#close"></use>
+															</svg>
+														</button>
+
+														<picture>
+															<source
+																srcset="
+																	./img/arrival/chanel_gold_ring_with_precious_stones_solitaire_2.webp    1x,
+																	./img/arrival/chanel_gold_ring_with_precious_stones_solitaire_2@2x.webp 2x
+																"
+																type="image/webp"
+															/>
+															<source
+																srcset="
+																	./img/arrival/chanel_gold_ring_with_precious_stones_solitaire_2.jpeg    1x,
+																	./img/arrival/chanel_gold_ring_with_precious_stones_solitaire_2@2x.jpeg 2x
+																"
+																type="image/jpeg"
+															/>
+															<img src="./img/arrival/chanel_gold_ring_with_precious_stones_solitaire_2.jpeg" alt="" />
+														</picture>
+													</div>
+													<div class="shop-form-new__img-wrapper">
+														<button type="button" class="button-close">
+															<svg class="icon icon--close">
+																<use href="./img/svgsprite/sprite.symbol.svg#close"></use>
+															</svg>
+														</button>
+
+														<picture>
+															<source
+																srcset="
+																	./img/arrival/chanel_gold_ring_with_precious_stones_solitaire_2.webp    1x,
+																	./img/arrival/chanel_gold_ring_with_precious_stones_solitaire_2@2x.webp 2x
+																"
+																type="image/webp"
+															/>
+															<source
+																srcset="
+																	./img/arrival/chanel_gold_ring_with_precious_stones_solitaire_2.jpeg    1x,
+																	./img/arrival/chanel_gold_ring_with_precious_stones_solitaire_2@2x.jpeg 2x
+																"
+																type="image/jpeg"
+															/>
+															<img src="./img/arrival/chanel_gold_ring_with_precious_stones_solitaire_2.jpeg" alt="" />
+														</picture>
+													</div>
+													<div class="shop-form-new__img-wrapper">
+														<button type="button" class="button-close">
+															<svg class="icon icon--close">
+																<use href="./img/svgsprite/sprite.symbol.svg#close"></use>
+															</svg>
+														</button>
+
+														<picture>
+															<source
+																srcset="
+																	./img/arrival/chanel_gold_ring_with_precious_stones_solitaire_2.webp    1x,
+																	./img/arrival/chanel_gold_ring_with_precious_stones_solitaire_2@2x.webp 2x
+																"
+																type="image/webp"
+															/>
+															<source
+																srcset="
+																	./img/arrival/chanel_gold_ring_with_precious_stones_solitaire_2.jpeg    1x,
+																	./img/arrival/chanel_gold_ring_with_precious_stones_solitaire_2@2x.jpeg 2x
+																"
+																type="image/jpeg"
+															/>
+															<img src="./img/arrival/chanel_gold_ring_with_precious_stones_solitaire_2.jpeg" alt="" />
+														</picture>
+													</div>
+													<div class="shop-form-new__img-wrapper">
+														<button type="button" class="button-close">
+															<svg class="icon icon--close">
+																<use href="./img/svgsprite/sprite.symbol.svg#close"></use>
+															</svg>
+														</button>
+
+														<picture>
+															<source
+																srcset="
+																	./img/arrival/chanel_gold_ring_with_precious_stones_solitaire_2.webp    1x,
+																	./img/arrival/chanel_gold_ring_with_precious_stones_solitaire_2@2x.webp 2x
+																"
+																type="image/webp"
+															/>
+															<source
+																srcset="
+																	./img/arrival/chanel_gold_ring_with_precious_stones_solitaire_2.jpeg    1x,
+																	./img/arrival/chanel_gold_ring_with_precious_stones_solitaire_2@2x.jpeg 2x
+																"
+																type="image/jpeg"
+															/>
+															<img src="./img/arrival/chanel_gold_ring_with_precious_stones_solitaire_2.jpeg" alt="" />
+														</picture>
+													</div>
+													<div class="shop-form-new__img-wrapper">
+														<button type="button" class="button-close">
+															<svg class="icon icon--close">
+																<use href="./img/svgsprite/sprite.symbol.svg#close"></use>
+															</svg>
+														</button>
+
+														<picture>
+															<source
+																srcset="
+																	./img/arrival/chanel_gold_ring_with_precious_stones_solitaire_2.webp    1x,
+																	./img/arrival/chanel_gold_ring_with_precious_stones_solitaire_2@2x.webp 2x
+																"
+																type="image/webp"
+															/>
+															<source
+																srcset="
+																	./img/arrival/chanel_gold_ring_with_precious_stones_solitaire_2.jpeg    1x,
+																	./img/arrival/chanel_gold_ring_with_precious_stones_solitaire_2@2x.jpeg 2x
+																"
+																type="image/jpeg"
+															/>
+															<img src="./img/arrival/chanel_gold_ring_with_precious_stones_solitaire_2.jpeg" alt="" />
+														</picture>
+													</div>
 													<div class="shop-form-new__img-wrapper">
 														<button type="button" class="button-close">
 															<svg class="icon icon--close">
