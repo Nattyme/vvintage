@@ -1,11 +1,3 @@
-html, body {
-  position: relative;
-  min-height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .admin-page {
   background-color: var(--admin-dashboard-bg);
 }

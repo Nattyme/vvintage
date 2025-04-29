@@ -13,6 +13,14 @@ body {
   letter-spacing: 0.02em;
 }
 
+html, body {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 img {
 	display: block;
 }

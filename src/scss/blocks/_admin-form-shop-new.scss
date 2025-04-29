@@ -1,7 +1,4 @@
-.shop__form {
-}
-
-.shop-form-new {
+.form{
   padding: 20px 40px;
 
   background: #fff;
@@ -19,11 +16,11 @@
   }
 }
 
-.shop-form-new__field + .shop-form-new__field {
+.form__field + .form__field {
   margin-top: 15px;
 }
 
-.shop-form-new__field--inputs-wrapper {
+.form__field--inputs-wrapper {
   display: flex;
   column-gap: 20px;
 
@@ -32,11 +29,7 @@
   }
 }
 
-.shop-form-new__item {
-
-}
-
-.shop-form-new__text {
+.form__text {
   margin-bottom: 10px;
   display: block;
   
@@ -44,14 +37,14 @@
   font-weight: 600;
 }
 
-.shop-form-new__textarea {
+.form__textarea {
   padding: 10px 15px;
   width: 100%;
   border: 1px  solid #000;
   border-radius: 5px;
 }
 
-.shop-form-new__input {
+.form__input {
   padding: 10px 15px;
 
   width: 100%;
@@ -59,11 +52,11 @@
   border-radius: 5px;
 }
 
-.shop-form-new__button-wrapper {
+.form__button-wrapper {
   margin-top: 40px;
 }
 
-.shop-form-new__preview-img {
+.form__preview-img {
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -74,7 +67,7 @@
   max-width: 40%;
 }
 
-.shop-form-new__img-wrapper {
+.form__img-wrapper {
   position: relative;
   width: 100px;
   height: 100px;

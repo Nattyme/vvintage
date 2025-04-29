@@ -11,9 +11,9 @@
 	}
 }
 
-* + .header {
-  margin-top: 54px;
-  top: 54px;
+.header.header--with-admin-panel {
+  margin-top: 70px;
+  top: 70px;
 }
 
 .header__top {
@@ -40,4 +40,9 @@
   display: flex;
   column-gap: 10px;
   align-items: center;
+}
+
+.header__img svg {
+  width: 25px;
+  height: 25px;
 }

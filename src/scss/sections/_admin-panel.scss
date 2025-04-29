@@ -7,19 +7,15 @@
   left: 0;
   right: 0;
 
-  height: 54px;
-  line-height: 54px;
+  height: 70px;
+  line-height: 70px;
   background-color: var(--admin-panel-bg);
 
-  &__row {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-}
-
-.admin-panel ~ .header-top {
-  padding-top: 70px;
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+	
 }
 
 .admin-panel__logo .logo {
@@ -38,7 +34,7 @@
 
   position: relative;
 
-  display: inline-block;
+  display: flex;
   width: 24px;
   height: 24px;
 }
@@ -82,6 +78,13 @@
   &:hover {
     opacity: 0.8;
   }
+}
+
+.admin-panel__link--avatar img {
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
 .admin-panel__block-button {

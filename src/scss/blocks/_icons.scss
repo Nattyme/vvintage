@@ -93,10 +93,6 @@
   stroke: #000;
 }
 
-.icon--logout {
-  fill: #000;
-}
-
 .icon--plane, .icon--note, .icon--check, .icon--payment {
   width: 20px;
   height: 20px;
@@ -140,8 +136,11 @@
 // admin panel 
 .admin-panel {
   .icon--target, .icon--mail, .icon--folder, .icon--message-square, .icon--edit, .icon--user {
-    stroke: var(---white);
+    stroke: var(--white);
   }
+  .icon--logout {
+    fill: #fff;
+  }  
 }
 
 .category-block__link {
