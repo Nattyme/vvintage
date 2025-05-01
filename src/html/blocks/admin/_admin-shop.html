@@ -11,12 +11,15 @@
         </span>
         <span>Добавить товар</span>
        </button>
-      <button class="shop__search search" data-btn="search">
-        <svg class="icon icon--loupe">
-          <use href="./img/svgsprite/sprite.symbol.svg#loupe"></use>
-        </svg>
-        <input type="text" placeholder="Найти">
-      </button>
+
+       <form method="GET" action="" class="shop__search search" role="search">
+          <input type="text" name="query" placeholder="Найти">
+          <button type="search-submit">
+            <svg class="icon icon--loupe">
+              <use href="./../../../img/svgsprite/sprite.symbol.svg#loupe"></use>
+            </svg>
+          </button>
+        </form>
     </header>
 
     <div class="shop__content">

@@ -11,6 +11,10 @@ const pageProduct = '/shop-single.html';
 
 
 document.addEventListener('DOMContentLoaded', () => {
+
+  const pathHolder = document.querySelector('[data-config]');
+  const path = pathHolder.dataset.config;
+  
   addSidebarControlPanel();
   // router();
   if (window.location.pathname !== pageAdmin) {
@@ -23,6 +27,20 @@ document.addEventListener('DOMContentLoaded', () => {
   if (window.location.pathname.trim() === '/index.html' || window.location.pathname.trim() === '') {
     addCatsCards();
   }
+
+  if( !path) return;
+  
+  previewLoadImages(
+    {
+      blockSelector : '[data-preview="block"]',
+      imgServerUrl : path,
+      closeIconHref : '/static/imgs/svgsprite/sprite.symbol.svg#close',
+      onImageLoad : onPreviewImgLoaded
+    }
+  );
+  
+  onPreviewImgLoaded();
+ 
 });
 
 // yMap();

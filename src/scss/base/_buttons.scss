@@ -194,8 +194,27 @@
   }
 }
 
-.button-login {
+.button-close {
+  z-index: 9;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
 
+  svg {
+    transition: stroke 0.2s ease-in;
+  }
+
+}
+
+.button-close--with-bg {
+  padding: 5px;
+  backdrop-filter: blur(2px);
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.button-close--with-bg .icon--close {
+  stroke: #000;
 }
 
 

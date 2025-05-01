@@ -41,69 +41,28 @@
             </fieldset>
           </div>
           <div class="form__column form__column--imgs">
-            <fieldset class="form__field">
-              <label class="form__item">
-                <span class="form__text">Изображения</span>
-                <input class="form__input" type="file" name="cover">
-              </label>
-            </fieldset>
-            <div class="form__preview-img">
-              <div class="form__img-wrapper">
-                <button type="button" class="button-close">
-                  <svg class="icon icon--close">
-                    <use href="./../../../img/svgsprite/sprite.symbol.svg#close"></use>
-                  </svg>
-                </button>
+              <fieldset class="form__field" >
+                <label class="form__item">
+                  <span class="form__text">Фотографии товара</span>
               
-                <img src="./../../../img/arrival/chanel_gold_ring_with_precious_stones_solitaire_2.jpeg" alt="">
-              </div>
-              <div class="form__img-wrapper">
-                <button type="button" class="button-close">
-                  <svg class="icon icon--close">
-                    <use href="./../../../img/svgsprite/sprite.symbol.svg#close"></use>
-                  </svg>
-                </button>
-              
-                <img src="./../../../img/arrival/chanel_gold_ring_with_precious_stones_solitaire_2.jpeg" alt="">
-              </div>
-              <div class="form__img-wrapper">
-                <button type="button" class="button-close">
-                  <svg class="icon icon--close">
-                    <use href="./../../../img/svgsprite/sprite.symbol.svg#close"></use>
-                  </svg>
-                </button>
-              
-                <img src="./../../../img/arrival/chanel_gold_ring_with_precious_stones_solitaire_2.jpeg" alt="">
-              </div>
-              <div class="form__img-wrapper">
-                <button type="button" class="button-close">
-                  <svg class="icon icon--close">
-                    <use href="./../../../img/svgsprite/sprite.symbol.svg#close"></use>
-                  </svg>
-                </button>
-              
-                <img src="./../../../img/arrival/chanel_gold_ring_with_precious_stones_solitaire_2.jpeg" alt="">
-              </div>
-              <div class="form__img-wrapper">
-                <button type="button" class="button-close">
-                  <svg class="icon icon--close">
-                    <use href="./../../../img/svgsprite/sprite.symbol.svg#close"></use>
-                  </svg>
-                </button>
-              
-                <img src="./../../../img/arrival/chanel_gold_ring_with_precious_stones_solitaire_2.jpeg" alt="">
-              </div>
-              <div class="form__img-wrapper">
-                <button type="button" class="button-close">
-                  <svg class="icon icon--close">
-                    <use href="./../../../img/svgsprite/sprite.symbol.svg#close"></use>
-                  </svg>
-                </button>
-              
-                <img src="./../../../img/arrival/chanel_gold_ring_with_precious_stones_solitaire_2.jpeg" alt="">
-              </div>
-           
-            </div>
+                  <div class="block-upload" data-preview="block">
+                    <div class="block-upload__description">
+                      <p class="block-upload__title">
+                        Изображение jpg или png, рекомендуемая ширина 945px и больше, высота от 400px и более. Вес до 2Мб.
+                      </p>
+                    </div>
+                  
+                    <div class="block-upload__button">
+                      <label>
+                        <span class="block-upload__input-fake">Выбрать изображения</span>
+                        <input name="images[]" class="block-upload__input-real" type="file" multiple data-preview="input">
+                      </label>
+                    </div>
+                  
+                    <div class="block-upload__preview" data-preview="container"></div>
+                  </div>
+                </label>
+              </fieldset>
 
           </div>
         </div>

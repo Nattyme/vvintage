@@ -21,19 +21,12 @@
   }
 }
 
-.dashboard__item {
- 
+.dashboard__title--wrapper {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 45px;
 }
 
-.dashboard__title {
-}
-
-.heading {
-}
-
-.dashboard__content {
-
-}
 
 
 // .dashboard-item {

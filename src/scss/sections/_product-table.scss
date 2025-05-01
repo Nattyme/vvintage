@@ -11,12 +11,11 @@
   }
 }
 
-.product-table th:first-child {
+.product-table__item--checkbox {
   width: 40px;
 }
 
-.product-table th:nth-child(3),
-.product-table th:nth-child(3) {
+.product-table__item--title {
   width: 40%;
 }
 

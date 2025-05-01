@@ -13,16 +13,13 @@
 
 .shop__row {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   column-gap: 80px;
 }
 
 .shop__content {
   overflow-x: auto;
-}
-
-.shop__search {
-  margin-left: auto;
 }
 
 .shop__button {
