@@ -1,8 +1,6 @@
 .form {
   padding: 20px 40px;
-
   background: #fff;
-
   border: 1px solid #000;
   border-radius: 5px;
 }
@@ -18,8 +16,7 @@
 
 .form__field + .form__field {
   margin-top: 40px;
- }
-
+}
 
 .form__field--inputs-wrapper {
   display: flex;
@@ -33,7 +30,6 @@
 .form__text {
   margin-bottom: 10px;
   display: block;
-  
   font-size: 16px;
   font-weight: 600;
 }
@@ -41,17 +37,15 @@
 .form__textarea {
   padding: 10px 15px;
   width: 100%;
-  border: 1px  solid #000;
+  border: 1px solid #000;
   border-radius: 5px;
 }
 
 .form__input {
   padding: 10px 15px;
-
   width: 100%;
   border-radius: 5px;
   border: 1px solid #8e8e8e;
-  
   background-color: #fff;
 }
 
@@ -59,44 +53,17 @@
   margin-top: 40px;
 }
 
-.form__preview-img {
-  margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-.form__img-wrapper:hover img {
-  filter: brightness(70%);
-}
-
-.form__img-wrapper:hover .button-close svg {
-  stroke: #fff;
-}
-
 .form__column--imgs {
   max-width: 40%;
 }
 
-.form__img-wrapper {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  overflow: hidden;
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: filter 0.2s ease-in;
-  }
+.form__item + * {
+  margin-top: 20px;
 }
 
- .form__item + * {
-  margin-top: 20px;
- }
-
-.form__field, .block-upload__description, .block-upload__file-wrapper {
+.form__field,
+.block-upload__description,
+.block-upload__file-wrapper {
   padding: 10px 15px;
   border: 1px solid #fff;
   box-shadow: 1px 1px 4px #fff;
@@ -109,16 +76,16 @@
   justify-content: space-between;
   align-items: center;
   border-radius: 5px;
+
+  .form__item:first-child {
+    width: 50%;
+  }
 }
 
 .shop-form-new {
   padding: 60px 50px;
   background-color: #9f9e9e;
   border-radius: 15px;
-}
-
-.form__field--input-with-button .form__item:first-child {
-  width: 50%;
 }
 
 .form__select {
@@ -131,15 +98,3 @@
   border-radius: 6px;
   outline: none;
 }
-
-.form__img-wrapper .button-close {
-  top: 0;
-  right: 0;
-  opacity: 0;
-  transition: opacity 0.2s ease-in;
-}
-
-.form__img-wrapper:hover .button-close {
-  opacity: 1;
-}
-

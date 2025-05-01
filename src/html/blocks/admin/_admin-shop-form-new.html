@@ -1,80 +1,90 @@
 <section class="shop">
   <div class="shop__container">
-    
-    <header class="shop__header shop__row">
-      <div class="shop__title">
-        <h2 class="h3">Добавление нового товара</h2>
+
+    <form method="POST" class="shop-form-new" action="" enctype="multipart/form-data">
+      <div class="form__row">
+        <div class="form__column">
+          <fieldset class="form__field">
+            <label class="form__item">
+              <span class="form__text">Введите название товара</span>
+              <input name="title" class="form__input" type="text"
+                     value=""
+                     placeholder="Название товара" />
+            </label>
+          </fieldset>
+
+          <fieldset class="form__field">
+            <label class="form__item">
+              <span class="form__text">Цена</span>
+              <input name="price" class="form__input" type="text"
+                     value=""
+                     placeholder="Введите стоимость товара" />
+            </label>
+          </fieldset>
+
+          <fieldset class="form__field form__field--input-with-button">
+            <label class="form__item">
+              <span class="form__text">Выберите категорию</span>
+              <select class="form__select" name="cat">
+           
+                  <option value="<?php echo $cat['id']; ?>"></option>
+       
+              </select>
+            </label>
+            <div class="form__item">
+              <a class="button-outline button-outline--admin" href="">Создать новую категорию</a>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__field form__field--inputs-wrapper">
+            <label class="form__item">
+              <span class="form__text">Выберите бренд</span>
+              <select class="form__select" name="brand">
+                  <option value=""></option>
+              </select>
+            </label>
+            <div class="form__item d-flex justify-content-between mb-20">
+              <a class="button-outline button-outline--admin" href="">Создать новый бренд</a>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__field">
+            <label class="form__item">
+              <span class="form__text">Описание товара</span>
+            </label>
+            <textarea class="form__textarea" placeholder="Введите описание товара" name="desc" rows="5" cols="1">Описание товара</textarea>
+          </fieldset>
+        </div>
+
+        <div class="form__column form__column--imgs">
+          <fieldset class="form__field">
+            <label class="form__item">
+              <span class="form__text">Фотографии товара</span>
+              <div class="block-upload" data-preview="block">
+                <div class="block-upload__description">
+                  <p class="block-upload__title">
+                    Изображение jpg или png, рекомендуемая ширина 945px и больше, высота от 400px и более. Вес до 2Мб.
+                  </p>
+                </div>
+
+                <div class="block-upload__button">
+                  <label>
+                    <span class="block-upload__input-fake">Выбрать изображения</span>
+                    <input name="images[]" class="block-upload__input-real" type="file" multiple data-preview="input">
+                  </label>
+                </div>
+
+                <div class="block-upload__preview" data-preview="container"></div>
+              </div>
+            </label>
+          </fieldset>
+        </div>
       </div>
-    </header>
 
-    <div class="shop__form">
-      <form method="POST" class="shop-form-new" enctype="multipart/form-data" name="newProductForm">
-        <div class="form__row">
-          <div class="form__column">
-            <fieldset class="form__field">
-              <label class="form__item">
-                <span class="form__text">Наименование</span>
-                <input class="form__input" type="text" placeholder="Введите название товара" name="name">
-              </label>
-            </fieldset>
-            <fieldset class="form__field">
-              <span class="form__text">Описание</span>
-              <label class="form__item">
-                <textarea class="form__textarea" placeholder="Введите описание товара" name="desc" rows="5" cols="1"></textarea>
-              </label>
-            </fieldset>
-            <fieldset class="form__field shop-form-new__field--inputs-wrapper">
-              <label class="form__item">
-                <span class="form__text">Категория</span>
-                <input class="form__input" type="text" placeholder="Введите категорию товара" name="category">
-              </label>
-              <label class="form__item">
-                <span class="form__text">Бренд</span>
-                <input class="form__input" type="text" placeholder="Введите бренд товара" name="brand">
-              </label>
-            </fieldset>
-            <fieldset class="form__field">
-              <label class="form__item">
-                <span class="form__text">Цена</span>
-                <input class="form__input" type="text" placeholder="Введите стоимость товара" name="price">
-              </label>
-            </fieldset>
-          </div>
-          <div class="form__column form__column--imgs">
-              <fieldset class="form__field" >
-                <label class="form__item">
-                  <span class="form__text">Фотографии товара</span>
-              
-                  <div class="block-upload" data-preview="block">
-                    <div class="block-upload__description">
-                      <p class="block-upload__title">
-                        Изображение jpg или png, рекомендуемая ширина 945px и больше, высота от 400px и более. Вес до 2Мб.
-                      </p>
-                    </div>
-                  
-                    <div class="block-upload__button">
-                      <label>
-                        <span class="block-upload__input-fake">Выбрать изображения</span>
-                        <input name="images[]" class="block-upload__input-real" type="file" multiple data-preview="input">
-                      </label>
-                    </div>
-                  
-                    <div class="block-upload__preview" data-preview="container"></div>
-                  </div>
-                </label>
-              </fieldset>
-
-          </div>
-        </div>
-
-
-        <div class="form__button-wrapper">
-          <button class="form__button button-solid" type="submit" name="submit">Сохранить</button>
-        </div>
-   
-      </form>
-    </div>
-
-
+      <div class="form__button-wrapper">
+        <button class="form__button button-solid" type="submit" name="submit" value="submit">Опубликовать</button>
+        <a class="button-outline button-outline--admin" href="">Отмена</a>
+      </div>
+    </form>
   </div>
 </section>
