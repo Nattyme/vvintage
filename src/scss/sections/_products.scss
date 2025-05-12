@@ -10,7 +10,8 @@
 .products__cards-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  column-gap: 23px;
+  row-gap: 35px;
 }
 
 .products__pages-shown {

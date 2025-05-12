@@ -9,6 +9,10 @@
 
 }
 
+.cart__grid + .cart__grid  {
+  margin-top: 25px;
+}
+
 .cart__head {
   margin-bottom: 50px;
   height: 50px;
@@ -49,20 +53,10 @@
   line-height: 1.4;
 }
 
-
-
 .cart__delete {
   padding: 20px 20px;
   margin: -20px -20px;
-  margin-right: 45px;
-
-  svg {
-    transition: all 0.2s ease-in;
-  }
-
-  &:hover svg {
-    stroke: red;
-  }
+  margin-right: 35px;
 }
 
 .cart__img {

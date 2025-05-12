@@ -6,15 +6,20 @@
   max-height: calc(100vh - 300px);
 }
 
+
 .catalog-dropdown__background {
   display: none;
  
   position: fixed;
-  top: 175px;
+  // top: 175px;
   left: 0;
   height: 100vh;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.6);
+}
+
+.catalog-dropdown__background.catalog-dropdown__background--with-admin-panel {
+  top: 175px;
 }
 
 .catalog-dropdown__background.active {

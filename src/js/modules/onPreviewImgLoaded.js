@@ -5,10 +5,10 @@ let previewContainerListening = false;
 const onPreviewImgLoaded = () => {
   if (previewContainerListening === true) return;
   const previewContainer = document.querySelector('[data-preview="container"]');
+  if (!previewContainer) return;
 
-  
   // Слушаем клик по контейнеру с изображениями
-  previewContainer.addEventListener('click', (e) => {
+  previewContainer.addEventListener("click", (e) => {
     const btn = e.target.closest('[data-preview="btn-close"]');
     if (!btn) return;
 
@@ -23,10 +23,14 @@ const onPreviewImgLoaded = () => {
     previewModule.removeFile(imageURL);
 
     // Если фотографий нет - удалим активный стиль у контейнера изображений
-    if(!previewModule.getCurrentFiles().length && previewContainer.classList.contains('active')) previewContainer.classList.remove('active');
+    if (
+      !previewModule.getCurrentFiles().length &&
+      previewContainer.classList.contains("active")
+    )
+      previewContainer.classList.remove("active");
   });
 
   previewContainerListening = true;
-}
+};
 
 export default onPreviewImgLoaded;

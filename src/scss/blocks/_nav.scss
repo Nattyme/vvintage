@@ -43,6 +43,10 @@
   }
 }
 
+.nav__list--with-admin-panel .nav__block .sub-nav  {
+  top: 175px;
+}
+
 .sub-nav.active {
   display: flex;
 }
@@ -51,7 +55,6 @@
   z-index: 1;
   position: fixed;
   // top: 175px;
-  top: 170px;
   left: 0;
 
   width: 100%;
