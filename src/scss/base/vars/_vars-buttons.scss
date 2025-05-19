@@ -1,0 +1,41 @@
+/**
+ * Variables Buttons
+ * ----------------------------------------
+ * Переменные, связанные со стилем кнопок: фон, цвет текста, состояния.
+ * Включают стили по умолчанию, hover, active, focus и disabled.
+ *
+ * Пример:
+ *   --button-primary-bg: #c7762f;
+ *   --button-primary-bg-hover: #ea9145;
+ *
+ * Правила:
+ * - Имена переменных начинаются с --button-[тип]-[свойство]
+ * - Цвета берутся из color-переменных
+ * - Используется прозрачный фон для outline-кнопок
+ */
+
+:root {
+  /*buttons*/
+  --button-bg: var(--accent);
+  --button-bg-hover: var(--orange-200);
+
+  --button-primary-bg: var(--accent);
+  --button-primary-bg--hover: var(--orange-200);
+  --button-primary-text: var(--white);
+
+  --button-primary-bg--focus: var(--ohra-300);
+  --button-primary-bg--active: var(--ohra-400);
+  --button-primary-bg--disabled: var(--orange-100);
+
+  --button-primary-outline-bg: transparent;
+  --button-primary-outline-bg-hover: var(--orange-200); 
+  --button-primary-outline--hover: var(--button-primary-bg--hover);
+  --button-primary-outline-border: var(--white);
+  --button-primary-outline-text: var(--white);
+
+  --button-primary-outline-bg--focus: var(--ohra-300);
+  --button-primary-outline-bg--active: var(--ohra-400);
+  --button-primary-outline-bg--disabled: var(--orange-100);
+
+  --button-icon-bg: var(--blue-light-rgba-01);
+}

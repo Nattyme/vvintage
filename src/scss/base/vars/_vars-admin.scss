@@ -1,0 +1,28 @@
+/**
+ * Variables Admin Panel
+ * ----------------------------------------
+ * Стиль админки: фон, текст, кнопки, иконки, маркеры уведомлений.
+ * Переменные для sidebar, header, кнопок и маркеров.
+ *
+ * Пример:
+ *   --admin-panel-bg: #1b262c;
+ *   --admin-panel-font-size: 14px;
+ *
+ * Правила:
+ * - Имена начинаются с --admin-panel-[элемент]-[свойство]
+ * - Поддерживаем читабельность и контрастность
+ */
+
+
+ :root {
+  /* buttons*/
+  --button-solid-admin-bg: var(--accent);
+
+   /* admin panel */
+  --admin-panel-bg: var(--black-secondary);
+  --admin-panel-link-text: var(--white);
+  --admin-panel-button-text: var(--white-rgba-06);
+  --admin-panel-button-text-hover: var(--white);
+  --admin-panel-note-marker-bg: var(--color-warning);
+  --admin-panel-sidebar-icon: var(--white-rgba-07);
+ }

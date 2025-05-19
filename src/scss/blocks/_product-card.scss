@@ -1,0 +1,118 @@
+.product-card {
+  padding: 24px;
+  max-width: 360px;
+
+  border: 1px solid var(--product-card-border);
+  background-color: var(--product-card-bg);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+
+  font-family: 'Inter', sans-serif;
+  color: var(--product-card-text-color);
+}
+
+.product-card__cta {
+  display: flex;
+  column-gap: 11px;
+}
+
+.product-card__text {
+  margin-bottom: 14px;
+
+  font-weight: 500;
+  font-family: var(--font-secondary);
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.product-card__button {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.product-card__list {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #000;
+}
+
+.product-card__item {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 15px;
+}
+
+.product-card__item  + .product-card__item  {
+  margin-top: 15px;
+}
+
+
+
+
+/* Заголовок */
+.product-card__title {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #5b0a2d; /* тёмно-бордовый */
+  margin-bottom: 16px;
+}
+
+/* Цена */
+.product-card__price {
+  font-size: 24px;
+  font-weight: bold;
+  color: #b45309;
+  margin-bottom: 16px;
+  border-top: 1px solid #d6ad60;
+  padding-top: 12px;
+}
+
+/* Характеристики (список) */
+.product-card__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px 12px;
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.product-card__item dt {
+  font-weight: 500;
+  color: #6b7280; /* серо-бежевый */
+}
+
+.product-card__item dd {
+  font-weight: 600;
+  color: #111;
+  margin: 0;
+}
+
+/* Кнопка */
+.product-card__cta {
+  background-color: #b45309;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+.product-card__cta:hover {
+  background-color: #92400e;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-card__cta:active {
+  background-color: #78350f;
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+
