@@ -5,8 +5,10 @@
 	--container-tablet-big-width: 1140px;
 
   /*fonts*/
-	--font-main: "Dancing Script", sans-serif;
-	--font-titles: "Dancing Script", sans-serif;
+	--font-main: "Lora", serif;
+  --font-secondary: "Work Sans", sans-serif;
+  --font--accent: "Dancing Script", sans-serif;
+	--font-titles: var(--font-main);
 
   /*colors*/
   --white: #fff;

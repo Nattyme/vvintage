@@ -1,10 +1,11 @@
-.input {
-  display: block;
-  padding: 10px 15px;
+
+.textarea {
+  border: 1px solid #000;
+  padding: 15px 15px;
+  border-radius: 5px;
   width: 100%;
-  border-radius: 2px;
-  background-color: #fff;
-  border: 1px solid var(--input-border);
+  height: 145px;
+  resize: none;
 
   cursor: pointer;
   transition: all 0.2s ease-in;
