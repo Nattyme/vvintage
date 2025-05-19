@@ -17,48 +17,52 @@
 
 
  :root {
-  --button-icon-bg: rgba(110, 156, 159, 0.1);
-  --white: #fff;
-  --white-100: #f1eadc;
-  --white-rgba-06: rgba(255, 255, 255, 0.6);
-  --white-rgba-07: rgb(255, 255, 255, 0.7);
+  /* === БАЗОВЫЕ ЦВЕТА === */
+  --color-white: #fff;
+  --color-black: #000;
 
-  --black-100: hsl(0, 0%, 28%);
-  --black-300: #3a3939;
-  --black-400: #1b262c; /*400 secondary*/
-  --black-500: #252526;
-  --black-600: #111; /*thirdly*/
-  --black: #000;
 
-  --gray-100: #ededed; /*gray light*/
-  --gray-200: #e1e1e1;
-  --gray-400: #b7b7b7;
+  --color-button-icon-bg: rgba(110, 156, 159, 0.1);
+  --color-white-100: #f1eadc;
+  --color-white-rgba-06: rgba(255, 255, 255, 0.6);
+  --color-white-rgba-07: rgba(255, 255, 255, 0.7);
 
-  --red: #c90000;
+  --color-black-100: hsl(0, 0%, 28%);
+  --color-black-300: #3a3939;
+  --color-black-400: #1b262c; /*400 secondary*/
+  --color-black-500: #252526;
+  --color-black-600: #111; /*thirdly*/
 
-  --ohra-300: #c75614;
-  --ohra-400: #a75627;
+  /* === ГРАДАЦИИ СЕРЫХ === */
+  --color-gray-100: #ededed; /*gray light*/
+  --color-gray-200: #e1e1e1;
+  --color-gray-400: #b7b7b7;
 
-  --orange-100: #d3b59b;
-  --orange-200: #ea9145;
+  --color-red: #c90000;
 
-  --blue-light-rgba-01: rgba(110, 156, 159, 0.1);
+  --color-ohra-300: #c75614;
+  --color-ohra-400: #a75627;
 
-	--page-bg: var(--white);
-  --page-bg-accent: var(--white-100);
-	--text-color: var(--black);
-  --accent: #c7762f;
-	--accent-additional: #998e78;
-  --color-warning: var(--red);
-	--link-color: var(--accent);
+  --color-orange-100: #d3b59b;
+  --color-orange-200: #ea9145;
 
-  --color-border-main: var(--black-400);
-  --color-border-third: var(--ohra-300);
-  --color-border-accent: var(--accent);
-  --color-border-forth: var(--gray-400);
+  --color-blue-light-rgba-01: rgba(110, 156, 159, 0.1);
 
-  --color-bg-light: var(--gray-200);
+  /* === ФОНОВЫЕ И ФОН-АКЦЕНТЫ === */
+	--color-page-bg: var(--color-white);
+  --color-page-bg-accent: var(--color-white-100);
+	--color-text-color: var(--color-black);
+  --color-accent: #c7762f;
+	--color-accent-additional: #998e78;
+  --color-warning: var(--color-red);
+	--color-link-color: var(--color-accent);
 
+  --color-border-main: var(--color-black-400);
+  --color-border-third: var(--color-ohra-300);
+  --color-border-accent: var(--color-accent);
+  --color-border-forth: var(--color-gray-400);
+
+  --color-bg-light: var(--color-gray-200);
  }
 
  

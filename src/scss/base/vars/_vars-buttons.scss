@@ -16,26 +16,26 @@
 
 :root {
   /*buttons*/
-  --button-bg: var(--accent);
-  --button-bg-hover: var(--orange-200);
+  --button-bg: var(--color-accent);
+  --button-bg-hover: var(--color-orange-200);
 
-  --button-primary-bg: var(--accent);
-  --button-primary-bg--hover: var(--orange-200);
-  --button-primary-text: var(--white);
+  --button-primary-bg: var(--color-accent);
+  --button-primary-bg--hover: var(--color-orange-200);
+  --button-primary-text: var(--color-white);
 
-  --button-primary-bg--focus: var(--ohra-300);
-  --button-primary-bg--active: var(--ohra-400);
-  --button-primary-bg--disabled: var(--orange-100);
+  --button-primary-bg--focus: var(--color-ohra-300);
+  --button-primary-bg--active: var(--color-ohra-400);
+  --button-primary-bg--disabled: var(--color-orange-100);
 
   --button-primary-outline-bg: transparent;
-  --button-primary-outline-bg-hover: var(--orange-200); 
-  --button-primary-outline--hover: var(--button-primary-bg--hover);
-  --button-primary-outline-border: var(--white);
-  --button-primary-outline-text: var(--white);
+  --button-primary-outline-bg-hover: var(--color-orange-200); 
+  --button-primary-outline--hover: var(--color-button-primary-bg--hover);
+  --button-primary-outline-border: var(--color-white);
+  --button-primary-outline-text: var(--color-white);
 
-  --button-primary-outline-bg--focus: var(--ohra-300);
-  --button-primary-outline-bg--active: var(--ohra-400);
-  --button-primary-outline-bg--disabled: var(--orange-100);
+  --button-primary-outline-bg--focus: var(--color-ohra-300);
+  --button-primary-outline-bg--active: var(--color-ohra-400);
+  --button-primary-outline-bg--disabled: var(--color-orange-100);
 
-  --button-icon-bg: var(--blue-light-rgba-01);
+  --button-icon-bg: var(--color-blue-light-rgba-01);
 }

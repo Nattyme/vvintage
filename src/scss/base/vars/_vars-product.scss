@@ -17,9 +17,9 @@
   /**** Single product page ****/
 
   /* Product card*/
-  --product-card-border: var(--black);
-  --product-card-bg: var(--white);
-  --product-card-text-color: var(--black-600);
+  --product-card-border: var(--color-black);
+  --product-card-bg: var(--color-white);
+  --product-card-text-color: var(--color-black-600);
 
   /* Gallery*/
   --product-gallery-width: 660px;
@@ -29,6 +29,6 @@
   --product-gallery-small-img-width: calc((var(--product-gallery-block-width) / 2) - 2px);
 
   /* Components*/
-  --counter-bg-colour: var(--accent);
-  --counter-font-colour: var(--white);
+  --counter-bg-color: var(--color-accent);
+  --counter-font-color: var(--color-white);
 }

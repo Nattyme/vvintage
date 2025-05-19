@@ -16,13 +16,13 @@
 
  :root {
   /* buttons*/
-  --button-solid-admin-bg: var(--accent);
+  --button-solid-admin-bg: var(--color-accent);
 
    /* admin panel */
-  --admin-panel-bg: var(--black-secondary);
-  --admin-panel-link-text: var(--white);
-  --admin-panel-button-text: var(--white-rgba-06);
-  --admin-panel-button-text-hover: var(--white);
+  --admin-panel-bg: var(--color-black-secondary);
+  --admin-panel-link-text: var(--color-white);
+  --admin-panel-button-text: var(--color-white-rgba-06);
+  --admin-panel-button-text-hover: var(--color-white);
   --admin-panel-note-marker-bg: var(--color-warning);
-  --admin-panel-sidebar-icon: var(--white-rgba-07);
+  --admin-panel-sidebar-icon: var(--color-white-rgba-07);
  }
