@@ -8,10 +8,10 @@
   width: 23px;
   height: 22px;
   border-radius: 50%;
-  background-color: var(--counter-bg-colour);
+  background-color: var(--color-counter-bg-colour);
   
   & > * {
     font-size: 10px;
-    color: var(--counter-font-colour);
+    color: var(--color-counter-font-colour);
   }
 }

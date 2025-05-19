@@ -13,7 +13,7 @@
   padding-top: 40px;
   padding-bottom: 40px;
   // background: linear-gradient(209deg, #f5f7f8 -17.38%, #1b1a1a 78.4%), var(--mobile-menu-color-bg);
-	background-color: var(--mobile-menu-color-bg);
+	background-color: var(--color-mobile-menu-color-bg);
 	transition: all 0.2s ease-in;
 }
 
@@ -68,8 +68,8 @@
 
 .mobile-nav__title {
   font-weight: 500;
-  font-family: var(--mobile-menu-title-font);
-  font-size: var(--mobile-menu-title-size);
+  font-family: var(--color-mobile-menu-title-font);
+  font-size: var(--color-mobile-menu-title-size);
 }
 
 .mobile-nav__item {

@@ -10,7 +10,7 @@
   font-size: 13px;
   line-height: 1.2;
   text-transform: uppercase;
-  color: #000;
+  color: var(--color-black);
 }
 
 .admin-form-table__row {
@@ -19,7 +19,7 @@
   height: 60px;
   border-bottom: 1px solid rgba(126, 155, 189, 0.3);
 
-  background-color: #fff;
+  background-color: var(--color-white);
 }
 
 .admin-form-table__row.message-new {

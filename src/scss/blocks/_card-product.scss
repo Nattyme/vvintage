@@ -2,13 +2,13 @@
   padding: 24px;
   max-width: 360px;
 
-  border: 1px solid var(--product-card-border);
-  background-color: var(--product-card-bg);
+  border: 1px solid var(--color-product-card-border);
+  background-color: var(--color-product-card-bg);
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
 
-  font-family: 'Inter', sans-serif;
-  color: var(--product-card-text-color);
+  font-family: var(--font-third);
+  color: var(--color-product-card-text-color);
 }
 
 .product-card__cta {
@@ -46,15 +46,12 @@
   margin-top: 15px;
 }
 
-
-
-
 /* Заголовок */
 .product-card__title {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font--accent-secondary);
   font-size: 22px;
   font-weight: 700;
-  color: #5b0a2d; /* тёмно-бордовый */
+  color: var(--color-vinous); /* тёмно-бордовый */
   margin-bottom: 16px;
 }
 
@@ -64,9 +61,16 @@
   font-weight: bold;
   color: #b45309;
   margin-bottom: 16px;
-  border-top: 1px solid #d6ad60;
+  border-top: 1px solid var(--color-orange-200);
   padding-top: 12px;
 }
+
+
+
+
+
+
+
 
 /* Характеристики (список) */
 .product-card__list {

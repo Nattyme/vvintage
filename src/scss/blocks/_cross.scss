@@ -25,10 +25,10 @@
 
 .cross-wrapper:hover .leftright {
   transform: rotate(-45deg);
-  background-color: var(--accent);
+  background-color: var(--color-accent);
 }
 
 .cross-wrapper:hover .rightleft {
   transform: rotate(45deg);
-  background-color: var(--accent);
+  background-color: var(--color-accent);
 }

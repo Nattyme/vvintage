@@ -17,10 +17,10 @@
 :root {
   /*buttons*/
   --button-bg: var(--color-accent);
-  --button-bg-hover: var(--color-orange-200);
+  --button-bg-hover: var(--color-orange-300);
 
   --button-primary-bg: var(--color-accent);
-  --button-primary-bg--hover: var(--color-orange-200);
+  --button-primary-bg--hover: var(--color-orange-300);
   --button-primary-text: var(--color-white);
 
   --button-primary-bg--focus: var(--color-ohra-300);
@@ -28,7 +28,7 @@
   --button-primary-bg--disabled: var(--color-orange-100);
 
   --button-primary-outline-bg: transparent;
-  --button-primary-outline-bg-hover: var(--color-orange-200); 
+  --button-primary-outline-bg-hover: var(--color-orange-300); 
   --button-primary-outline--hover: var(--color-button-primary-bg--hover);
   --button-primary-outline-border: var(--color-white);
   --button-primary-outline-text: var(--color-white);

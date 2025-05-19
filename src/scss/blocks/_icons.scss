@@ -42,7 +42,7 @@
 }
 
 :is(a:hover) .icon--phone {
-  background-color: var(--accent);
+  background-color: var(--color-accent);
   fill: #fff;
 }
 
@@ -53,7 +53,7 @@
   transition: fill 0.2s ease-in;
 
   &:hover {
-    fill: var(--accent);
+    fill: var(--color-accent);
   }
 }
 
@@ -129,14 +129,14 @@
 }
 
 .header-top__login a:hover .icon--woman-with-hat {
-  fill: var(--accent);
+  fill: var(--color-accent);
 }
 
 
 // admin panel 
 .admin-panel {
   .icon--target, .icon--mail, .icon--folder, .icon--message-square, .icon--edit, .icon--user {
-    stroke: var(--white);
+    stroke: var(--color-white);
   }
   .icon--logout {
     fill: #fff;

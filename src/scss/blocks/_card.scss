@@ -70,7 +70,7 @@
 .card:hover svg {
   left: 50%;
   transform: translate(-50%, -50%);
-  stroke: #fff;
+  stroke: var(--color-white);
 }
 
 .card__title {
@@ -81,5 +81,5 @@
   font-weight: 600;
   font-size: 22px;
   line-height: 1.4;
-  color: var(--accent);
+  color: var(--color-accent);
 }

@@ -1,8 +1,8 @@
 .block-upload {
   padding: 15px;
-  background-color: rgba(255, 255, 255, 0.6);
-  border: 1px solid #fff;
-  box-shadow: 1px 1px 4px #fff;
+  background-color: var(--color-white-rgba-06);
+  border: 1px solid var(--color-white);
+  box-shadow: 1px 1px 4px var(--color-white);
   border-radius: 5px;
 
   &__description {
@@ -23,7 +23,7 @@
     padding: 10px 15px;
     border-radius: 5px;
     background-color: var(--accent, #007bff);
-    color: #fff;
+    color: var(--color-white);
     cursor: pointer;
     transition: opacity 0.2s ease-in;
 
@@ -64,7 +64,7 @@
     }
 
     &:hover .block-upload__remove-button svg {
-      stroke: #fff;
+      stroke: var(--color-white);
     }
   }
 
@@ -80,7 +80,7 @@
     svg {
       width: 16px;
       height: 16px;
-      stroke: #000;
+      stroke: var(--color-black);
       transition: stroke 0.2s ease-in;
     }
   }

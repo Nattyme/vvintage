@@ -1,7 +1,7 @@
 .form {
   padding: 20px 40px;
-  background: #fff;
-  border: 1px solid #000;
+  background: var(--color-white);
+  border: 1px solid var(--color-black);
   border-radius: 5px;
 }
 
@@ -37,7 +37,7 @@
 .form__textarea {
   padding: 10px 15px;
   width: 100%;
-  border: 1px solid #000;
+  border: 1px solid var(--color-black);
   border-radius: 5px;
 }
 
@@ -46,7 +46,7 @@
   width: 100%;
   border-radius: 5px;
   border: 1px solid #8e8e8e;
-  background-color: #fff;
+  background-color: var(--color-white);
 }
 
 .form__button-wrapper {
@@ -71,10 +71,10 @@
 .block-upload__description,
 .block-upload__file-wrapper {
   padding: 10px 15px;
-  border: 1px solid #fff;
-  box-shadow: 1px 1px 4px #fff;
+  border: 1px solid var(--color-white);
+  box-shadow: 1px 1px 4px var(--color-white);
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: var(--color-white-rgba-06);
 }
 
 .form__field--input-with-button {
@@ -99,7 +99,7 @@
   display: block;
   width: 100%;
   padding: 10px 14px;
-  background: #ffffff;
+  background: var(--color-white);
   border: 1px solid #7e9bbd;
   border-radius: 6px;
   outline: none;
