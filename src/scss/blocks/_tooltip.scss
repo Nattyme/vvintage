@@ -11,8 +11,8 @@
 }
 
 .tooltip--admin-card {
-  padding: 10px 10px 0 10px;
-  bottom: 40px;
+  padding: var(--space-sm) var(--space-sm) 0 var(--space-sm);
+  bottom: var(--space-2xl);
   background-color: rgba(0, 0, 0, 0.6);
 }
 

@@ -12,33 +12,33 @@
 }
 
 .header.header--with-admin-panel {
-  margin-top: 70px;
-  top: 70px;
+  margin-top: var(--space-4xl);
+  top: var(--space-4xl);
 }
 
 .header__top {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: var(--space-sm);
+  padding-bottom: var(--space-sm);
 }
 
 .header__row + .header__row {
-  margin-top: 35px;
+  margin-top: var(--space-xl);
 }
 
 .header__nav {
-  padding: 10px;
+  padding: var(--space-sm);
   position: relative;
 
   width: 100%;
-  border-top: 1px solid var(--accent);
+  border-top: 1px solid var(--color-accent);
 }
 
 
 .header__login {
-  margin-right: 25px;
+  margin-right: var(--space-lg);
   
   display: flex;
-  column-gap: 10px;
+  column-gap: var(--space-sm);
   align-items: center;
 }
 

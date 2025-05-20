@@ -1,41 +1,35 @@
 .h1 {
   font-family: var(	--font-titles);
-  font-size: 44px;
+  font-size: var(--font-size-3xl);
   line-height: 1.1;
 }
 
 .h2 {
   font-family: var(	--font-titles);
-  font-size: 40px;
+  font-size: var(--font-size-2xl);
   line-height: 1.1;
 }
 
 .h3 {
   font-family: var(	--font-titles);
-  font-size: 20px;
-  line-height: 1.4;
-}
-
-.h4 {
-  font-family: var(--font-family);
-  font-size: 20px;
+  font-size: var(--font-size-lg);
   line-height: 1.4;
 }
 
 .section-title {
-  margin-bottom: 35px;
+  margin-bottom: var(--space-xl);
 }
 
 .shop-header {
-  margin-bottom: 65px;
+  margin-bottom: var(--space-2xl);
 }
 
 .shop-header__title {
-  margin-bottom: 26px;
+  margin-bottom: var(--space-lg);
 }
 
 .text-bold {
- font-weight: 600;
+ font-weight: var(--font-weight-semi-bold);
 }
 
 .text-accent {
@@ -43,7 +37,7 @@
 }
 
 .text-big {
-  font-size: 22px;
+  font-size: var(--font-size-lg);
   text-transform: uppercase;
 }
 
@@ -64,10 +58,10 @@
   overflow: hidden; // Скрываем текст, кот может выйти за рамки контейнера
 
   .block__desc {
-      display: -webkit-box;
-      -webkit-box-orient: vertical; // Если конец строки обрезан, то добавляет многоточие
-      -webkit-line-clamp: 2; // Ограничиваем кол-во строк текста
-      overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical; // Если конец строки обрезан, то добавляет многоточие
+    -webkit-line-clamp: 2; // Ограничиваем кол-во строк текста
+    overflow: hidden;
   }
 }
 

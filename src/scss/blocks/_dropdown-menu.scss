@@ -10,7 +10,7 @@
   height: 100%;
 
   font-family: var(--color-font-secondary);
-  background-color: #fff;
+  background-color: var(--color-white);
 
   &::before {
     position: absolute;
@@ -20,7 +20,7 @@
 
     width: 0px;
     height: 0px;
-    border: 10px solid #fff;
+    border: 10px solid var(--color-white);
     border-top-color: transparent;
     border-left-color: transparent;
     transform: translateY(-50%) rotate(-45deg);
@@ -34,7 +34,7 @@
 
   width: 170px;
   height: 206px;
-  background-color: #fff;
+  background-color: var(--color-white);
   box-shadow: 1px 5px 6px #000;
   border-radius: 5px;
 
@@ -46,8 +46,8 @@
     width: 14px;
     height: 14px;
 
-    stroke: #000;
-    fill: #000;
+    stroke: var(--color-black);
+    fill: var(--color-black);
   }
 }
 
@@ -56,23 +56,23 @@
 }
 
 .dropdownMenu__link  {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-top: var(--space-xs);
+  padding-bottom: var(--space-xs);
+  padding-left: var(--space-md);
+  padding-right: var(--space-md);
 
   transition: background-color 0.2s ease;
 
   &:first-child {
-    padding-top: 10px;
+    padding-top: var(--space-sm);
   }
 
   &:last-child {
-    padding-bottom: 10px;
+    padding-bottom: var(--space-sm);
   }
 
   &:hover {
-    background-color: #ededed;
+    background-color: var(--color-gray-100);
   }
 }
 
@@ -82,7 +82,7 @@
 
 .dropdownMenu__link {
   display: flex;
-  column-gap: 15px;
+  column-gap: var(--space-md);
   align-items: center;
 
   .icon {
@@ -91,5 +91,5 @@
 }
 
 .dropdownMenu__text {
-  font-size: 15px;
+  font-size: var(--font-size-sm)
 }

@@ -1,6 +1,6 @@
 .nav { 
   position: relative;
-  background-color: #fff;
+  background-color: var(--color-white);
 }
 
 .nav__list {
@@ -17,20 +17,20 @@
 
 .nav__block {
   position: relative;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: var(--space-sm);
+  padding-right: var(--space-sm);
   height: 44px;
   line-height: 44px;
 
   transition: color 0.5s ease;
   overflow: hidden;
   
-  color: #000;
+  color: var(--color-black);
   font-family: var(--font-secondary);
 
 
   &:hover {
-    background-color: #dcdcdc2a;
+    background-color: var(--color-gray-100);
   
     &::after {
       position: absolute;
@@ -40,7 +40,7 @@
       bottom: 0;
       height: 1px;
       width: 100%;
-      background-color: #d5a609;
+      background-color: var(--color-orange-200);
     }
   }
 }
@@ -63,7 +63,7 @@
   min-height: 300px;
   padding: 20px 15px;
 
-  background-color: #fff;
+  background-color: var(--color-white);
 }
 
 .sub-nav__list {
@@ -71,7 +71,7 @@
 
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
+  row-gap: var(--space-sm);
 
   // &--with-right-border {
   //   border-right: 1px solid var(--accent)
@@ -80,27 +80,27 @@
 
 .sub-nav__container {
   display: grid;
-  column-gap: 20px;
+  column-gap: var(--space-lg);
   grid-template-columns: 300px 21px 1fr;
 }
 
 .sub-nav__line-separator {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: var(--space-sm);
+  margin-right: var(--space-sm);
   display: inline-block;
   width: 1px;
   height: 100%;
-  background-color: var(--accent);
+  background-color: var(--color-accent);
 }
 
 .sub-nav__item {
-  padding: 0 10px;
+  padding: var(--spacing-zero) var(--space-sm);
   height: 40px;
   line-height: 40px;
 
   display: grid;
   align-items: center;
-  column-gap: 20px;
+  column-gap: var(--space-lg);
   grid-template-columns: 20px 1fr 20px 10px;
 
   transition:  background-color 0.3s ease-in;
@@ -117,7 +117,7 @@
 }
 
 .sub-sub-nav__list > li {
-  background-color: #fff;
+  background-color: var(--color-white);
 }
 
 .sub-sub-nav__list {
@@ -129,20 +129,20 @@
   flex-direction: column;
   align-content: flex-start;
   flex-wrap: wrap;
-  column-gap: 30px;
-  row-gap: 10px;
+  column-gap: var(--space-xl);
+  row-gap: var(--space-sm);
 
   max-height: calc(100vh - 400px);
 }
 
 .sub-sub-nav__item {
-  padding: 0 10px;
+  padding: var(--spacing-zero) var(--space-sm);
   height: 40px;
   line-height: 40px;
   transition:  background-color, 0.3s ease-in;
 
   &:hover {
-    background-color: #ededed79;
+    background-color: var(--color-gray-100);
   }
 }
 
@@ -168,7 +168,7 @@
 }
 
 .sub-nav__item.active {
-  background-color: #ededed79;
+  background-color: var(--color-gray-200);
 
   .arrow {
     width: 10px;

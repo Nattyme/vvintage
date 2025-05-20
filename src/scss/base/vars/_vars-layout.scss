@@ -17,13 +17,18 @@
 
  :root {
   /*containers*/
-	--container-width: 1140px;
-  --container-padding: 15px;
-	--container-tablet-big-width: 1140px;
+	--container-width: var(--breakpoint-xl);
+  --container-padding: var(--space-md);
+	--container-desctop-width: var(--breakpoint-lg);
+	--container-laptop-width: var();
+	--container-tablet-width: var();
+	--container-mobile-width: var();
+	--container-mobile-xs-width: var();
 
 
    /* media */
-  --laptop-size: 1600px;
-	--tablet-size: 959px;
-	--mobile-size: 599px;
+  --desctop-size: var(--breakpoint-xl);
+  --laptop-size: var(--breakpoint-lg);
+	--tablet-size: var( --breakpoint-md);
+	--mobile-size: var(--breakpoint-sm);
  }

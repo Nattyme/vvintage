@@ -10,12 +10,12 @@
 .form-order__row {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 70px;
-  row-gap: 15px;
+  column-gap: var(--space-4xl);
+  row-gap: var(--space-md);
 }
 
 .form-order__row + .form-order__row  {
-  margin-top: 20px;
+  margin-top: var(--space-lg);
 }
 
 .form-order__input-wrapper {
@@ -27,14 +27,13 @@
 }
 
 .form-order__table-row {
-  padding: 20px 15px;
+  padding: var(--space-lg) var(--space-md);
 
   display: grid;
   grid-template-columns: 3fr 2fr 1fr;
   column-gap: 30px;
 
-   font-size: 18px;
-   box-shadow: 0px 0px 4px #cfcece;
+  box-shadow: 0px 0px 4px #cfcece;
 }
 
 .form-order__total--button-fake {
@@ -45,19 +44,19 @@
     display: inline-block;
     content: "";
     position: absolute;
-    top: -15px;
-    left: -18px;
+    top: -(var(--space-md));
+    left: -(var(--space-lg));
 
     display: inline-block;
     width: 65%;
     height: 57px;
 
-    background-color: #f1eadc;
+    background-color: var(--color-white-100);
 
-    font-weight: 500;
-    font-size: 25px;
+    font-weight: var(--font-weight-semi-bold);
+    font-size: var( --space-lg);
     line-height: 1.4;
-    color: #000;
+    color: var(--color-black);
   }
 }
 
@@ -71,32 +70,32 @@
 
   display: flex;
   align-items: center;
-  column-gap: 40px;
+  column-gap: var(--space-2xl);
 }
 
 .form-order__label {
-  margin-bottom: 15px;
+  margin-bottom: var(--space-md);
   display: block;
 }
 
 .form-order__field + .form-order__field {
-  margin-top: 30px;
+  margin-top: var(--space-xl);
 }
 
 .form-order__title {
-  font-size: 18px;
-  color: #fff;
+  font-size: var( --font-size-lg);
+  color: var(--color-white);
 }
 
 .form-order__title-block {
-  padding: 10px 15px;
- 
-  border-radius: 5px;
-  background-color: #000;
+  padding: var(--space-sm) var(--space-md);
+
+  border-radius: var(--radius-sm);
+  background-color: var(--color-black);
 }
 
 .form-order__title-wrapper {
-  margin-bottom: 30px;
+  margin-bottom: var(--space-xl);
 }
 
 .form-order__user .form-order__block:first-child {
@@ -110,15 +109,15 @@
 
 .form-order__total {
   margin-top: 40px;
-  background-color: #f1eadc;
+  background-color: var(--color-white-100);
 }
 
 .form-order__table-header {
-  font-size: 16px;
-  font-weight: 600;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  background-color: #ededed;
-  box-shadow: 0px 0px 6px #ababab;
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semi-bold);
+  border-top-left-radius: var(--radius-sm);
+  border-top-right-radius: var(--radius-sm);
+  background-color: var(--color-gray-100);
+  box-shadow: 0px 0px 6px var(--color-gray-400);
 }
 

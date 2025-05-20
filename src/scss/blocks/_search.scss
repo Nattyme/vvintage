@@ -1,16 +1,16 @@
 .search {
-  padding: 10px 15px;
+  padding: var(--space-sm) var(--space-md);
   display: flex;
-  column-gap: 20px;
+  column-gap: var(--space-lg);
   align-items: center;
 
-  border-radius: 20px;
-  background-color: #fff;
+  border-radius: var(--radius-lg);
+  background-color: var(--color-white);
   box-shadow: 0px 0px 4px #c1bebe, 0px 0px 10px #837f7f;
 }
 
 .search .icon--loupe {
   width: 20px;
   height: 20px;
-  fill: #837f7f;
+  fill: var(--color-gray-600);
 }

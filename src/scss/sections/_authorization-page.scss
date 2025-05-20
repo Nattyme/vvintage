@@ -12,12 +12,12 @@
 }
 
 .authorization-page-footer {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: var(--space-lg);
+  padding-bottom: var(--space-lg);
 }
 
 .authorization-page-footer__content{
-  font-size: 14px;
+  font-size: var(--font-size-sm);
   color: #fff;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .authorization__subtitle {
-  font-size: 20px;
+  font-size: var(--font-size-lg);
 }
 
 .authorization__img {
@@ -68,16 +68,16 @@
 }
 
 .authorization-page__header {
-  padding-top: 30px;
+  padding-top: var(--space-xl);
 }
 .authorization-page__link {
   display: flex;
   align-items: center;
-  column-gap: 30px;
+  column-gap: var(--space-xl);
 }
 
 .authorization-page__header-title {
-  font-size: 24px;
+  font-size: var(--font-size-xl);
   font-weight: 700;
   text-transform: uppercase;
 }

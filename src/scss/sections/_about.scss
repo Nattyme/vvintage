@@ -6,7 +6,7 @@
 .about__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Карточки крупнее */
-  gap: 25px;
+  gap: var(--space-lg);
 }
 
 

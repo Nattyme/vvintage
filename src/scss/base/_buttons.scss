@@ -4,53 +4,42 @@
   align-items: center;
   justify-content: center;
 
-  padding: 0 15px;
-  font-size: 16px;
+  padding: var(--spacing-zero) var(--space-md);
+  font-size: var(--font-size-md);
   font-family: var(--font-secondary);
   transition: all 0.3s ease;
   cursor: pointer;
   text-decoration: none;
 }
-// .button, a.button {
-//   display: inline-block;
-//   text-align: center;
-//   padding: 0 15px;
-//   font-size: 16px;
-//   line-height: 1.4;
-//   transition: all 0.3s ease;
-//   cursor: pointer;
-//   text-decoration: none;
-//   vertical-align: middle;
-// }
 
 /* Solid кнопка */
 .button-solid, a.button-solid {
   width: 243px;
-  padding: 22px 0;
+  padding: var(--space-lg) var(--spacing-zero);
 
-  background-color: var(--color-button-bg);
+  background-color: var(--button-bg);
   color: var(--color-white);
-  font-weight: 400;
-  font-size: 17px;
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-lg);
 
   transition: all 0.5s ease;
 }
 
 .button-solid:hover,
 a.button-solid:hover {
-  background-color: var(--color-button-bg-hover);
+  background-color: var(--button-bg-hover);
 }
 
 /* Outline кнопка */
 .button-outline, a.button-outline {
   width: 243px;
   height: 68px;
-  padding: 20px 0;
+  padding: var(--space-lg) var(--spacing-zero);
 
-  border: 1px solid var(--color-button-bg);
-  color: var(--color-button-bg);
-  font-weight: 400;
-  font-size: 17px;
+  border: 1px solid var(--button-bg);
+  color: var(--button-bg);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-lg);
   background-color: transparent;
 
   transition: all 0.5s ease;
@@ -59,12 +48,12 @@ a.button-solid:hover {
 .button-outline--small, a.button-outline--small {
   width: 155px;
   height: 50px;
-  font-size: 12px;
+  font-size: var(--font-size-xs);
 }
 
 .button-outline:hover,
 a.button-outline:hover {
-  background-color: var(--color-button-bg);
+  background-color: var(--button-bg);
   color: var(--color-white);
 }
 
@@ -72,35 +61,35 @@ a.button-outline:hover {
 .button-primary, a.button-primary {
   max-width: 200px;
   height: 50px;
-  border-radius: 5px;
+  border-radius: var(--radius-sm);
   line-height: 50px;
 
-  background-color: var(--color-button-primary-bg);
-  color: var(--color-button-primary-text);
-  border: 1px solid var(--color-button-primary-bg);
+  background-color: var(--button-primary-bg);
+  color: var(--button-primary-text);
+  border: 1px solid var(--button-primary-bg);
 
   transition: all 0.3s ease;
 }
 
 .button-primary:hover {
-  background-color: var(--color-button-primary-bg--hover);
-  border-color: var(--color-button-primary-bg--hover);
+  background-color: var(--button-primary-bg--hover);
+  border-color: var(--button-primary-bg--hover);
 }
 
 .button-primary:focus {
-  box-shadow: 0 0 5px var(--color-button-primary-bg--focus);
-  border-color: var(--color-button-primary-bg--focus);
+  box-shadow: 0 0 4px var(--button-primary-bg--focus);
+  border-color: var(--button-primary-bg--focus);
 }
 
 .button-primary:active {
-  background-color: var(--color-button-primary-bg--active);
-  border-color: var(--color-button-primary-bg--active);
+  background-color: var(--button-primary-bg--active);
+  border-color: var(--button-primary-bg--active);
   box-shadow: none;
 }
 
 .button-primary:disabled {
-  background-color: var(--color-button-primary-bg--disabled);
-  border-color: var(--color-button-primary-bg--disabled);
+  background-color: var(--button-primary-bg--disabled);
+  border-color: var(--button-primary-bg--disabled);
   cursor: not-allowed;
 }
 
@@ -108,46 +97,39 @@ a.button-outline:hover {
 .button-primary-outline, a.button-primary-outline {
   max-width: 200px;
   height: 50px;
-  padding: 0 15px;
+  padding: var(--spacing-zero) var(--space-md);
 
-  background-color: var(--color-button-primary-outline-bg);
-  border: 1px solid var(--color-button-primary-outline-border);
-  border-radius: 5px;
+  background-color: var(--button-primary-outline-bg);
+  border: 1px solid var(--button-primary-outline-border);
+  border-radius: var(--radius-sm);
 
-  color: var(--color-button-primary-outline-text);
+  color: var(--button-primary-outline-text);
   text-align: left;
 
   transition: all 0.3s ease;
 }
 
 .button-primary-outline:hover {
-  background-color: var(--color-button-primary-outline--hover);
-  border-color: var(--color-button-primary-outline--hover);
+  background-color: var(--button-primary-outline--hover);
+  border-color: var(--button-primary-outline--hover);
 }
 
 .button-primary-outline:focus {
-  box-shadow: 0 0 5px var(--color-button-primary-outline-bg--focus);
-  border-color: var(--color-button-primary-outline-bg--focus);
+  box-shadow: 0 0 5px var(--button-primary-outline-bg--focus);
+  border-color: var(--button-primary-outline-bg--focus);
 }
 
 .button-primary-outline:active {
-  background-color: var(--color-button-primary-outline-bg--active);
-  border-color: var(--color-button-primary-outline-bg--active);
+  background-color: var(--button-primary-outline-bg--active);
+  border-color: var(--button-primary-outline-bg--active);
   box-shadow: none;
 }
 
 .button-primary-outline:disabled {
-  background-color: var(--color-button-primary-outline-bg--disabled);
-  border-color: var(--color-button-primary-outline-bg--disabled);
+  background-color: var(--button-primary-outline-bg--disabled);
+  border-color: var(--button-primary-outline-bg--disabled);
   cursor: not-allowed;
 }
-
-/* Кнопка с иконкой */
-// .button--with-icon, a.button--with-icon {
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-// }
 
 .button--with-icon::after {
   margin-left: 20px;
@@ -161,7 +143,7 @@ a.button-outline:hover {
 }
 
 .button--with-icon:hover::after {
-  margin-left: 35px;
+  margin-left: var(--space-xl);
 }
 
 /* Специальная админская solid-кнопка */
@@ -169,11 +151,11 @@ a.button-outline:hover {
   max-width: 140px;
   height: 50px;
   line-height: 50px;
-  border-radius: 10px;
+  border-radius: var(--radius-md);
   background-color: var(--button-solid-admin-bg);
-  box-shadow: 1px 1px 2px var(--color-black-300);
+  box-shadow: 1px 1px 2px var(--black-300);
   color: var(--color-white);
-  font-size: 17px;
+  font-size: var(--font-size-lg);
 }
 
 .button-solid-admin:hover {
@@ -184,8 +166,8 @@ a.button-outline:hover {
 .button-close {
   z-index: 9;
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: var(--space-xs);
+  right: var(--space-xs);
   cursor: pointer;
 }
 
@@ -194,23 +176,11 @@ a.button-outline:hover {
 }
 
 .button-close--with-bg {
-  padding: 5px;
+  padding: var(--space-xs);
   backdrop-filter: blur(2px);
   background-color: color(--color-white-rgba-06);
 }
 
 .button-close--with-bg .icon--close {
   stroke: var(--color-black);
-}
-
-/* Псевдокнопка для загрузки */
-.button-fake {
-  max-width: 287px;
-  height: 68px;
-  padding: 16px 50px 16px 30px;
-
-  background-color: var(--color-white-100);
-  font-weight: 500;
-  font-size: 25px;
-  color: var(--color-black);
 }

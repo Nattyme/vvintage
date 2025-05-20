@@ -7,9 +7,9 @@
 }
 
 .catalog__container {
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin: var(--spacing-zero) auto;
+  padding-left: var(--space-md);
+  padding-right: var(--space-md);
   max-width: 100%;
 }
 
@@ -17,7 +17,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  column-gap: 30px;
+  column-gap: var(--space-xl);
 }
 
 .catalog-list {
@@ -29,17 +29,16 @@
 }
 
 .catalog-list__item {
-  // min-height: 50px;
   background-color: var(--color-white);
   border-bottom: 1px solid #b8b8b8;
 }
 
 .category-block {
-  padding: 15px 10px;
+  padding: var(--space-md) var(--space-sm);
 
   display: flex;
   align-items: center;
-  column-gap: 20px;
+  column-gap: var(--space-lg);
 
   transition: background-color 0.2s ease-in;
   cursor: pointer;
@@ -51,11 +50,11 @@
 
 .category-block > .category-block__text {
   max-width: 400px;
-  font-weight: 600;
+  font-weight: var(--font-weight-semi-bold);
 }
 
 .category-block--sublist > .category-block__text {
-  font-weight: 400;
+  font-weight: var(--font-weight-regular);
 }
 
 .category-block__action-links {
@@ -64,7 +63,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  column-gap: 10px;
+  column-gap: var(--space-sm);
 
   & > * {
     flex: 1 0 auto;
@@ -72,8 +71,8 @@
 }
 
 .category-block__link {
-  padding: 5px;
-  margin: -5px;
+  padding: var(--space-xs);
+  margin: var(--space-xs);
   display: inline-block;
   position: relative;
   z-index: 9;
@@ -86,7 +85,7 @@
 
 .catalog-list__sublist__item {
   border-bottom: 1px solid #e6e4e4;
-  border-radius: 2px;
+  border-radius: var(--radius-sm);
   cursor: pointer;
 
   button {
@@ -95,7 +94,7 @@
 } 
 
 .catalog-list__sublist__item > .category-block > .category-block__text {
-  padding-left: 40px;
+  padding-left: var(--space-2xl);
   max-width: calc(100% - 60px);
 }
 

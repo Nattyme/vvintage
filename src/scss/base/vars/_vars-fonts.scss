@@ -24,6 +24,24 @@
   --font-third: "Inter", sans-serif;
   --font--accent: "Dancing Script", sans-serif;
   --font--accent-secondary: "Playfair Display", serif;
+
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.9375rem;  /* 15px */
+  --font-size-md: 1rem;       /* 16px */  /* Основной текст */
+
+  /* Подзаголовки */
+  --font-size-lg: 1.25rem;    /* 20px */ 
+  --font-size-xl: 1.5625rem;  /* 25px */
+
+  /* Заголовки */
+  --font-size-2xl: 1.9375rem; /* 31px */ 
+  --font-size-3xl: 2.4375rem; /* 39px */
+  --font-size-4xl: 3.0625rem; /* 49px */
+
+  --font-weight-regular: 400;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+  --line-height-base: 1.5;
   
 	--font-titles: var(--font-main);
 
@@ -36,4 +54,19 @@
   /* Mobile menu*/
   --mobile-menu-title-size: 26px;
   --mobile-menu-title-font: var(--font-main);
+
+  @media (max-width: 768px) {
+  .h1 {
+    font-size: var(--font-size-3xl); /* 39px */
+  }
+  .h2 {
+    font-size: var(--font-size-2xl); /* 31px */
+  }
+  .h3 {
+    font-size: var(--font-size-xl);  /* 25px */
+  }
+  .h4 {
+    font-size: var(--font-size-lg);  /* 20px */
+  }
+}
 }

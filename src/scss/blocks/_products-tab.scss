@@ -1,25 +1,24 @@
 .products-tab__nav {
   margin-bottom: 65px;
 
-  column-gap: 10px;
+  column-gap: var(--space-sm);
   justify-content: flex-start;
 }
 
 .products-tab__block {
   justify-content: space-between;
   flex-wrap: wrap;
-  column-gap: 30px;
-  row-gap: 40px;
+  column-gap: var(--space-xl);
+  row-gap: var(--space-2xl);
 }
 
 .products-tab__nav-button {
-  padding: 19px 65px;
+  padding: var(--space-md) var(--space-4xl);
 
   min-width: 162px;
   border: 1px solid #000;
 
   font-weight: 500;
-  font-size: 17px;
   line-height: 1.4;
   text-overflow: ellipsis;
   transition: all 0.5s ease;

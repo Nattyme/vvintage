@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  column-gap: 14px;
+  column-gap: var(--space-md);
 }
 
 .section-pagination__item {
@@ -13,13 +13,12 @@
   height: 41px;
   border: 1px solid #000;
 
-  font-size: 17px;
   line-height: 1.4;
 }
 
 .section-pagination__item.active {
-  background-color: #000;
-  color: #fff;
+  background-color: var(--color-black);
+  color: var(--color-white);
 }
 
 .pagination-button {

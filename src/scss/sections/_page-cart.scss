@@ -19,12 +19,12 @@
 }
 
 .page-cart {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: var(--space-3xl);
+  padding-bottom:  var(--space-3xl);
 }
 
 .page-cart__header {
-  margin-bottom: 70px;
+  margin-bottom: var(--space-4xl);
 }
 
 .page-cart__cart-wrapper {
@@ -36,15 +36,15 @@
 }
 
 .page-cart__title-wrapper {
-  margin-bottom: 40px;
+  margin-bottom: var(--space-2xl);
 }
 
 .page-cart__title {
-  font-size: 32px;
+  font-size: var(--font-size-2xl);
 }
 
 .page-cart__header {
-    margin-bottom: 90px;
+  margin-bottom: var(--space-4xl);
 }
 
 

@@ -19,9 +19,9 @@
   height: 20px;
   border: 1px solid var(--accent);
   background-color: var(--color-white);
-  border-radius: 4px;
+  border-radius: var(--radius-sm);
   vertical-align: sub;
-  margin-right: 5px;
+  margin-right: var(--space-xs);
   }
 
 .custom-checkbox::before {
@@ -41,7 +41,7 @@
   left: 50%;
   top: 40%;
   transform: translate(-50%, -50%) rotate(-45deg) scale(0);
-  margin-top: 1px;
+  margin-top: var(--space-xxs);
 
   transition: transform 0.2s ease-in;
 }
@@ -51,7 +51,7 @@
 */
 
 .real-checkbox:checked + .custom-checkbox {
-  background-color: var(--accent);
+  background-color: var(--color-accent);
   &::before {
     transform: translate(-50%, -50%) rotate(-45deg) scale(1);
   }

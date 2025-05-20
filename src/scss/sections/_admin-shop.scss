@@ -3,12 +3,12 @@
 }
 .shop__container {
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: var(--space-md);
+  padding-right: var(--space-md);
   max-width: 100%;
 }
 .shop__header {
-  margin-bottom: 40px;
+  margin-bottom: var(--space-2xl);
 }
 
 .shop__row {
@@ -25,7 +25,7 @@
 .shop__button {
   display: flex;
   align-items: center;
-  column-gap: 20px;
+  column-gap: var(--space-lg);
   color: #fff;
 }
 

@@ -1,16 +1,16 @@
 .tab__nav {
-  margin-bottom: 65px;
+  margin-bottom: var(--space-4xl);
 
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  column-gap: 10px;
+  column-gap: var(--space-sm);
 }
 
 .tab__block {
   display: none;
-  column-gap: 30px;
-  row-gap: 65px;
+  column-gap: var(--space-xl);
+  row-gap: var(--space-4xl);
   flex-wrap: wrap;
 }
 
@@ -19,11 +19,10 @@
 }
 
 .tab__nav-button {
-  padding: 19px 65px;
+  padding: var(--space-lg) var(--space-4xl);
   border: 1px solid #000;
 
   font-weight: 500;
-  font-size: 17px;
   line-height: 1.4;
   text-overflow: ellipsis;
   transition: all 0.5s ease;
@@ -40,7 +39,7 @@
 }
 
 .profile-form .tab__nav {
-  margin-bottom: 15px;
+  margin-bottom: var(--space-md);
 }
 
 .profile-form .tab__nav {
@@ -54,13 +53,12 @@
 .tab__nav-button--outline {
   position: relative;
   display: inline-block;
-  padding: 15px 20px;
+  padding: var(--space-md) var(--space-lg);
 
   border: none;
   background-color: #fff;
 
   font-weight: 700;
-  font-size: 16px;
   line-height: 1;
   color: rgba(0, 0, 0, 0.3);
   

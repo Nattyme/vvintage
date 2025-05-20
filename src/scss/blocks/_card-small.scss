@@ -5,7 +5,7 @@
 }
 
 .card-small__img {
-  margin-bottom: 24px;
+  margin-bottom: var(--space-lg);
 
   position: relative;
   overflow: hidden;
@@ -25,7 +25,7 @@
   img {
     width: 270px;
     height: 270px;
-    border-radius: 5px;
+    border-radius: var(--radius-sm);
     object-fit: cover;
     filter: grayscale(70%);
   }
@@ -53,5 +53,5 @@
 }
 
 .card-small__title {
-  margin-bottom: 7px;
+  margin-bottom: var(--space-sm);
 }

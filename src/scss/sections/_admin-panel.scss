@@ -1,5 +1,5 @@
 .admin-panel {
-  padding: 0 20px;
+  padding: 0 var(--space-lg);
 
   position: fixed;
   z-index: 999;
@@ -19,18 +19,18 @@
 }
 
 .admin-panel__logo .logo {
-  font-size: 22px;
+  font-size: var(--font-size-lg);
   color: #fff;
 }
 
 .admin-panel__login {  
   display: flex;
   align-items: center;
-  column-gap: 20px;
+  column-gap: var(--space-lg);
 }
 
 .admin-panel__item {
-  margin-right: 10px;
+  margin-right: var(--space-sm);
 
   position: relative;
 
@@ -90,7 +90,6 @@
 .admin-panel__block-button {
   font-family: var(--font-secondary);
   font-weight: 600;
-  font-size: 16px;
   color: var(--color-admin-panel-button-text);
 
   transition: all 0.2s ease-in;

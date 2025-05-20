@@ -7,7 +7,7 @@
 .admin-form-table__header {
   font-style: normal;
   font-weight: bold;
-  font-size: 13px;
+  font-size: var(--font-size-xs);
   line-height: 1.2;
   text-transform: uppercase;
   color: var(--color-black);
@@ -16,17 +16,17 @@
 .admin-form-table__row {
   position: relative;
 
-  height: 60px;
+  height: var(--height-row-l);
   border-bottom: 1px solid rgba(126, 155, 189, 0.3);
 
   background-color: var(--color-white);
 }
 
 .admin-form-table__row.message-new {
-  background-color: #edffd0;
+  background-color: var(--admin-panel-new-message-bg);
 }
 
 .admin-form-table__unit {
-  padding: 20px;
+  padding: var(--space-lg);
 }
 

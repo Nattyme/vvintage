@@ -4,20 +4,20 @@
 }
 
 .feature__list {
-  margin-bottom: 65px;
+  margin-bottom: var(--space-4xl);
   display: grid;
-  column-gap: 30px;
+  column-gap: var(--space-xl);
   grid-template-columns: repeat(3, 1fr);
 }
 
 .feature__img {
-  margin-bottom: 37px;
+  margin-bottom: var(--space-xl);
 }
 
 .feature__name {
-  margin-bottom: 24px;
+  margin-bottom: var(--space-lg);
   
-  font-size: 25px;
+  font-size: var(--font-size-xl);
   line-height: 1.4;
   text-decoration: underline;
   text-underline-offset: 5px;
@@ -25,12 +25,11 @@
 }
 
 .feature__text {
-  font-size: 17px;
   line-height: 1.4;
   letter-spacing: 0.02em;
 
   p + p {
-    margin-top: 10px;
+    margin-top: var(--space-sm);
   }
 }
 

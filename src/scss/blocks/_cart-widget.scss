@@ -1,7 +1,7 @@
 .cart-widget {
   position: relative;
   display: inline-block;
-  padding-right: 14px;
+  padding-right: var(--space-md);
 }
 
 .cart-widget__counter {

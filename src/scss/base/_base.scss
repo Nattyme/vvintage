@@ -3,12 +3,12 @@ html {
 	background-color: rgb(39, 39, 39);
 }
 body {
-	background-color: var(--page-bg);
-	color: var(--text-color);
+	background-color: var(--color-page-bg);
+	color: var(--color-text-color);
 	font-family: var(--font-main);
-  font-size: 18px;
+  font-size: var(--font-size-md);
 	text-wrap: balance;
-  font-weight: 500;
+  font-weight: var(--font-weight-regular);
   line-height: 1.6;
   letter-spacing: 0.02em;
 }

@@ -9,8 +9,8 @@
   width: 25px;
 
   position: absolute;
-  background-color: #121212;
-  border-radius: 2px;
+  background-color: var(--color-black-500);
+  border-radius: var(--radius-xs);
 
   transition: all 0.3s ease-in;
 }

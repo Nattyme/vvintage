@@ -1,10 +1,10 @@
 .profile {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: var(--space-4xl);
+  padding-bottom: var(--space-4xl);
 }
 
 .profile__title {
-  padding-bottom: 40px;
+  padding-bottom: var(--space-2xl);
   text-align: center;
 }
 
@@ -12,16 +12,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-right: -15px;
-  margin-left: -15px;
+  margin-right: -(var(--space-md));
+  margin-left: -(var(--space-md));
   
 }
 
 .profile__column {
   position: relative;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: var(--space-md);
+  padding-left: var(--space-md);
 
   &--img {
     flex: 0 0 16.666667%;
@@ -35,7 +35,7 @@
 }
 
 .profile__definition-list {
-  margin-bottom: 20px;
+  margin-bottom: var(--space-lg);
 }
 
 // .enter-or-reg {

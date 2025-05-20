@@ -17,9 +17,14 @@
 
 
  :root {
+   --color-transparent: transparent;
+   
   /* === БАЗОВЫЕ ЦВЕТА === */
   --color-white: #fff;
+  --color-gray: #eeeaea; /*gray light*/
   --color-black: #000;
+  --color-red: #c90000;
+  --color-green: #047642;
   --color-vinous : #5b0a2d;
 
 
@@ -38,15 +43,23 @@
   --color-gray-100: #ededed; /*gray light*/
   --color-gray-200: #e1e1e1;
   --color-gray-400: #b7b7b7;
+  --color-gray-600: #6b7280;
 
-  --color-red: #c90000;
 
+  --color-red-400: #9c0505;
+
+  --color-ohra-200: #b45309;
   --color-ohra-300: #c75614;
   --color-ohra-400: #a75627;
 
   --color-orange-100: #d3b59b;
   --color-orange-200: #d6ad60;
   --color-orange-300: #ea9145;
+
+  /* Зеленый*/
+  --color-green-100: #edffd0;  
+  --color-green-300: #61d392;  
+
 
   --color-blue-light-rgba-01: rgba(110, 156, 159, 0.1);
 
