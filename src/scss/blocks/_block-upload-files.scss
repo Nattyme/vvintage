@@ -1,12 +1,6 @@
 .block-upload {
-  padding: var(--space-md);
-  background-color: var(--color-white-rgba-06);
-  border: 1px solid var(--color-white);
-  box-shadow: 1px 1px 4px var(--color-white);
-  border-radius: var(--radius-sm);
-
   &__description {
-    margin-bottom: var(--radius-sm);
+    margin-bottom: var(--radius-xl);
   }
 
   &__title {
@@ -22,7 +16,7 @@
     display: inline-block;
     padding: var(--space-sm) var( --space-md);
     border-radius: var(--radius-sm);
-    background-color: var(--accent, #007bff);
+    background-color: var(--color-accent);
     color: var(--color-white);
     cursor: pointer;
     transition: opacity 0.2s ease-in;
@@ -88,4 +82,9 @@
   &__img-wrapper:hover &__remove-button {
     opacity: 1;
   }
+}
+
+.block-upload__img--with-checkbox {
+  display: flex;
+  column-gap: 40px;
 }

@@ -9,6 +9,7 @@
   height: 44px;
 
   display: flex;
+  justify-content: space-between;
   align-items: center;
 
   overflow: hidden;
@@ -17,17 +18,16 @@
 
 .nav__block {
   position: relative;
-  padding-left: var(--space-sm);
-  padding-right: var(--space-sm);
+  padding-left: var(--space-md);
+  padding-right: var(--space-md);
   height: 44px;
   line-height: 44px;
 
   transition: color 0.5s ease;
   overflow: hidden;
   
+  font-size: var(--font-size-sm);
   color: var(--color-black);
-  font-family: var(--font-secondary);
-
 
   &:hover {
     background-color: var(--color-gray-100);
@@ -46,7 +46,8 @@
 }
 
 .nav__list--with-admin-panel .nav__block .sub-nav  {
-  top: 175px;
+  // top: 175px;
+  top: 190px;
 }
 
 .sub-nav.active {

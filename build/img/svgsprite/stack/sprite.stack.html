@@ -107,14 +107,16 @@ They might well be outsourced to an external stylesheet of course.
 <style>
  .svg-about-me-dims { width: 512px; height: 512px; }
  .svg-approved-dims { width: 61px; height: 61px; }
- .svg-arrow-bottom-dims { width: 16px; height: 29px; }
+ .svg-arrow-dims { width: 16px; height: 29px; }
  .svg-arrow-catalog-dims { width: 21px; height: 11px; }
  .svg-arrow-down-dims { width: 18px; height: 18px; }
  .svg-arrow-right-dims { width: 32px; height: 24px; }
  .svg-bag-dims { width: 512px; height: 512px; }
  .svg-belt-dims { width: 56px; height: 20px; }
  .svg-book-dims { width: 24px; height: 24px; }
+ .svg-calendar-dims { width: 24px; height: 24px; }
  .svg-cancel-dims { width: 122.88px; height: 122.88px; }
+ .svg-cart-dims { width: 24px; height: 24px; }
  .svg-catalog-dims { width: 24px; height: 24px; }
  .svg-category_all-dims { width: 64px; height: 64px; }
  .svg-check-dims { width: 800px; height: 800px; }
@@ -126,26 +128,28 @@ They might well be outsourced to an external stylesheet of course.
  .svg-copy-dims { width: 460px; height: 460px; }
  .svg-corner-dims { width: 24px; height: 24px; }
  .svg-cosmetics-dims { width: 247.65px; height: 247.65px; }
+ .svg-dark_mode-dims { width: 24px; height: 24px; }
  .svg-delete-dims { width: 16px; height: 16px; }
  .svg-delivery-package-dims { width: 800px; height: 800px; }
  .svg-done-dims { width: 16px; height: 16px; }
  .svg-earrings-dims { width: 440.08px; height: 440.08px; }
  .svg-edit-dims { width: 24px; height: 24px; }
  .svg-external_link-dims { width: 511.63px; height: 511.63px; }
+ .svg-eye-dims { width: 24px; height: 24px; }
  .svg-facebook-dims { width: 21px; height: 21px; }
  .svg-favorite-dims { width: 20px; height: 20px; }
- .svg-file-dims { width: 24px; height: 24px; }
- .svg-file-check-dims { width: 96px; height: 96px; }
- .svg-folder-dims { width: 24px; height: 24px; }
+ .svg-files-dims { width: 24px; height: 24px; }
  .svg-glasses-dims { width: 465.1px; height: 465.1px; }
  .svg-glasses_men-dims { width: 64px; height: 64px; }
  .svg-hand-dims { width: 63px; height: 63px; }
  .svg-inbox-dims { width: 24px; height: 24px; }
  .svg-instagram-dims { width: 22px; height: 23px; }
+ .svg-inventory-dims { width: 24px; height: 24px; }
  .svg-invisible-dims { width: 223.47px; height: 223.47px; }
- .svg-log-out-dims { width: 24px; height: 24px; }
+ .svg-location-dims { width: 24px; height: 24px; }
+ .svg-login-dims { width: 24px; height: 24px; }
  .svg-logo-dims { width: 25px; height: 25px; }
- .svg-logout-dims { width: 800px; height: 800px; }
+ .svg-logout-dims { width: 24px; height: 24px; }
  .svg-loupe-dims { width: 512px; height: 512px; }
  .svg-mail-dims { width: 24px; height: 24px; }
  .svg-mastercard-dims { width: 780px; height: 500px; }
@@ -159,19 +163,20 @@ They might well be outsourced to an external stylesheet of course.
  .svg-parfume-dims { width: 512px; height: 512px; }
  .svg-payment-dims { width: 800px; height: 800px; }
  .svg-paypal-dims { width: 780px; height: 500px; }
- .svg-phone-dims { width: 17px; height: 17px; }
+ .svg-phone-dims { width: 24px; height: 24px; }
  .svg-plane-dims { width: 800px; height: 800px; }
  .svg-plus-dims { width: 490px; height: 490px; }
  .svg-portfolio-dims { width: 24px; height: 24px; }
  .svg-profile-dims { width: 800px; height: 800px; }
  .svg-remove-dims { width: 512px; height: 512px; }
  .svg-settings-dims { width: 24px; height: 24px; }
- .svg-shop-dims { width: 800px; height: 800px; }
- .svg-shopping-bag-dims { width: 24px; height: 24px; }
+ .svg-shop-dims { width: 24px; height: 24px; }
  .svg-slider-arrow-dims { width: 21px; height: 11px; }
+ .svg-statistic-dims { width: 24px; height: 24px; }
  .svg-success-dims { width: 72px; height: 84px; }
  .svg-suitcase-dims { width: 54.96px; height: 54.96px; }
  .svg-target-dims { width: 24px; height: 24px; }
+ .svg-teg-dims { width: 24px; height: 24px; }
  .svg-toy-dims { width: 56.15px; height: 56.15px; }
  .svg-twitter-dims { width: 23px; height: 23px; }
  .svg-unionpay-dims { width: 780px; height: 500px; }
@@ -183,6 +188,7 @@ They might well be outsourced to an external stylesheet of course.
  .svg-wheel-dims { width: 78px; height: 78px; }
  .svg-woman-with-hat-dims { width: 682.667px; height: 682.667px; }
  .svg-yookassa-dims { width: 114px; height: 27px; }
+ .svg-zen-dims { width: 50px; height: 50px; }
  .svg-zoom-dims { width: 800px; height: 800px; }
 </style>
 
@@ -224,11 +230,11 @@ selector is used to show the very shape that is referenced by the fragment ident
                     </div>
                     <h2>approved, </h2>
                 </li>
-             <li title="arrow-bottom">
+             <li title="arrow">
                     <div class="icon-box">
-                        <img src="svg/sprite.stack.svg#arrow-bottom" class="svg-arrow-bottom-dims" alt="arrow-bottom">
+                        <img src="svg/sprite.stack.svg#arrow" class="svg-arrow-dims" alt="arrow">
                     </div>
-                    <h2>arrow-bottom, </h2>
+                    <h2>arrow, </h2>
                 </li>
              <li title="arrow-catalog">
                     <div class="icon-box">
@@ -266,11 +272,23 @@ selector is used to show the very shape that is referenced by the fragment ident
                     </div>
                     <h2>book, </h2>
                 </li>
+             <li title="calendar">
+                    <div class="icon-box">
+                        <img src="svg/sprite.stack.svg#calendar" class="svg-calendar-dims" alt="calendar">
+                    </div>
+                    <h2>calendar, </h2>
+                </li>
              <li title="cancel">
                     <div class="icon-box">
                         <img src="svg/sprite.stack.svg#cancel" class="svg-cancel-dims" alt="cancel">
                     </div>
                     <h2>cancel, </h2>
+                </li>
+             <li title="cart">
+                    <div class="icon-box">
+                        <img src="svg/sprite.stack.svg#cart" class="svg-cart-dims" alt="cart">
+                    </div>
+                    <h2>cart, </h2>
                 </li>
              <li title="catalog">
                     <div class="icon-box">
@@ -338,6 +356,12 @@ selector is used to show the very shape that is referenced by the fragment ident
                     </div>
                     <h2>cosmetics, </h2>
                 </li>
+             <li title="dark_mode">
+                    <div class="icon-box">
+                        <img src="svg/sprite.stack.svg#dark_mode" class="svg-dark_mode-dims" alt="dark_mode">
+                    </div>
+                    <h2>dark_mode, </h2>
+                </li>
              <li title="delete">
                     <div class="icon-box">
                         <img src="svg/sprite.stack.svg#delete" class="svg-delete-dims" alt="delete">
@@ -374,6 +398,12 @@ selector is used to show the very shape that is referenced by the fragment ident
                     </div>
                     <h2>external_link, </h2>
                 </li>
+             <li title="eye">
+                    <div class="icon-box">
+                        <img src="svg/sprite.stack.svg#eye" class="svg-eye-dims" alt="eye">
+                    </div>
+                    <h2>eye, </h2>
+                </li>
              <li title="facebook">
                     <div class="icon-box">
                         <img src="svg/sprite.stack.svg#facebook" class="svg-facebook-dims" alt="facebook">
@@ -386,23 +416,11 @@ selector is used to show the very shape that is referenced by the fragment ident
                     </div>
                     <h2>favorite, </h2>
                 </li>
-             <li title="file">
+             <li title="files">
                     <div class="icon-box">
-                        <img src="svg/sprite.stack.svg#file" class="svg-file-dims" alt="file">
+                        <img src="svg/sprite.stack.svg#files" class="svg-files-dims" alt="files">
                     </div>
-                    <h2>file, </h2>
-                </li>
-             <li title="file-check">
-                    <div class="icon-box">
-                        <img src="svg/sprite.stack.svg#file-check" class="svg-file-check-dims" alt="file-check">
-                    </div>
-                    <h2>file-check, </h2>
-                </li>
-             <li title="folder">
-                    <div class="icon-box">
-                        <img src="svg/sprite.stack.svg#folder" class="svg-folder-dims" alt="folder">
-                    </div>
-                    <h2>folder, </h2>
+                    <h2>files, </h2>
                 </li>
              <li title="glasses">
                     <div class="icon-box">
@@ -434,17 +452,29 @@ selector is used to show the very shape that is referenced by the fragment ident
                     </div>
                     <h2>instagram, </h2>
                 </li>
+             <li title="inventory">
+                    <div class="icon-box">
+                        <img src="svg/sprite.stack.svg#inventory" class="svg-inventory-dims" alt="inventory">
+                    </div>
+                    <h2>inventory, </h2>
+                </li>
              <li title="invisible">
                     <div class="icon-box">
                         <img src="svg/sprite.stack.svg#invisible" class="svg-invisible-dims" alt="invisible">
                     </div>
                     <h2>invisible, </h2>
                 </li>
-             <li title="log-out">
+             <li title="location">
                     <div class="icon-box">
-                        <img src="svg/sprite.stack.svg#log-out" class="svg-log-out-dims" alt="log-out">
+                        <img src="svg/sprite.stack.svg#location" class="svg-location-dims" alt="location">
                     </div>
-                    <h2>log-out, </h2>
+                    <h2>location, </h2>
+                </li>
+             <li title="login">
+                    <div class="icon-box">
+                        <img src="svg/sprite.stack.svg#login" class="svg-login-dims" alt="login">
+                    </div>
+                    <h2>login, </h2>
                 </li>
              <li title="logo">
                     <div class="icon-box">
@@ -584,17 +614,17 @@ selector is used to show the very shape that is referenced by the fragment ident
                     </div>
                     <h2>shop, </h2>
                 </li>
-             <li title="shopping-bag">
-                    <div class="icon-box">
-                        <img src="svg/sprite.stack.svg#shopping-bag" class="svg-shopping-bag-dims" alt="shopping-bag">
-                    </div>
-                    <h2>shopping-bag, </h2>
-                </li>
              <li title="slider-arrow">
                     <div class="icon-box">
                         <img src="svg/sprite.stack.svg#slider-arrow" class="svg-slider-arrow-dims" alt="slider-arrow">
                     </div>
                     <h2>slider-arrow, </h2>
+                </li>
+             <li title="statistic">
+                    <div class="icon-box">
+                        <img src="svg/sprite.stack.svg#statistic" class="svg-statistic-dims" alt="statistic">
+                    </div>
+                    <h2>statistic, </h2>
                 </li>
              <li title="success">
                     <div class="icon-box">
@@ -613,6 +643,12 @@ selector is used to show the very shape that is referenced by the fragment ident
                         <img src="svg/sprite.stack.svg#target" class="svg-target-dims" alt="target">
                     </div>
                     <h2>target, </h2>
+                </li>
+             <li title="teg">
+                    <div class="icon-box">
+                        <img src="svg/sprite.stack.svg#teg" class="svg-teg-dims" alt="teg">
+                    </div>
+                    <h2>teg, </h2>
                 </li>
              <li title="toy">
                     <div class="icon-box">
@@ -680,6 +716,12 @@ selector is used to show the very shape that is referenced by the fragment ident
                     </div>
                     <h2>yookassa, </h2>
                 </li>
+             <li title="zen">
+                    <div class="icon-box">
+                        <img src="svg/sprite.stack.svg#zen" class="svg-zen-dims" alt="zen">
+                    </div>
+                    <h2>zen, </h2>
+                </li>
              <li title="zoom">
                     <div class="icon-box">
                         <img src="svg/sprite.stack.svg#zoom" class="svg-zoom-dims" alt="zoom">
@@ -694,7 +736,7 @@ selector is used to show the very shape that is referenced by the fragment ident
 
         </section>
         <footer>
-            <p>Generated at Tue, 20 May 2025 15:37:41 GMT by <a href="https://github.com/svg-sprite/svg-sprite" target="_blank" rel="noopener noreferrer">svg-sprite</a>.</p>
+            <p>Generated at Sat, 07 Jun 2025 01:54:31 GMT by <a href="https://github.com/svg-sprite/svg-sprite" target="_blank" rel="noopener noreferrer">svg-sprite</a>.</p>
         </footer>
     </body>
 </html>

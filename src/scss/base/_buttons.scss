@@ -1,3 +1,9 @@
+.buttons {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
 /* Базовый стиль для всех кнопок */
 .button, a.button {
   display: flex;
@@ -15,7 +21,8 @@
 /* Solid кнопка */
 .button-solid, a.button-solid {
   width: 243px;
-  padding: var(--space-lg) var(--spacing-zero);
+  height: 68px;
+  padding: var(--spacing-zero) var(--space-lg) ;
 
   background-color: var(--button-bg);
   color: var(--color-white);
@@ -23,6 +30,15 @@
   font-size: var(--font-size-lg);
 
   transition: all 0.5s ease;
+}
+
+.button-solid.button-solid--success {
+  display: flex;
+  width: unset;
+  background-color: var(--color-green-300);
+  &:hover {
+    background-color: var(--color-green-300);
+  }
 }
 
 .button-solid:hover,
@@ -51,6 +67,10 @@ a.button-solid:hover {
   font-size: var(--font-size-xs);
 }
 
+.button-outline.button-outline--admin {
+  background-color: var(--color-white);
+}
+
 .button-outline:hover,
 a.button-outline:hover {
   background-color: var(--button-bg);
@@ -72,25 +92,33 @@ a.button-outline:hover {
 }
 
 .button-primary:hover {
-  background-color: var(--button-primary-bg--hover);
-  border-color: var(--button-primary-bg--hover);
+  background-color: var(--button-primary-bg-hover);
+  border-color: var(--button-primary-bg-hover);
 }
 
 .button-primary:focus {
-  box-shadow: 0 0 4px var(--button-primary-bg--focus);
-  border-color: var(--button-primary-bg--focus);
+  box-shadow: 0 0 4px var(--button-primary-bg-focus);
+  border-color: var(--button-primary-bg-focus);
 }
 
 .button-primary:active {
-  background-color: var(--button-primary-bg--active);
-  border-color: var(--button-primary-bg--active);
+  background-color: var(--button-primary-bg-active);
+  border-color: var(--button-primary-bg-active);
   box-shadow: none;
 }
 
 .button-primary:disabled {
-  background-color: var(--button-primary-bg--disabled);
-  border-color: var(--button-primary-bg--disabled);
+  background-color: var(--button-primary-bg-disabled);
+  border-color: var(--button-primary-bg-disabled);
   cursor: not-allowed;
+}
+
+.button-primary--warning {
+  background-color: var(--button-primary--warning-bg);
+
+  &:hover {
+    background-color: var(--button-primary--warning-bg-hover);
+  }
 }
 
 /* Outline вариант Primary */
@@ -110,24 +138,24 @@ a.button-outline:hover {
 }
 
 .button-primary-outline:hover {
-  background-color: var(--button-primary-outline--hover);
-  border-color: var(--button-primary-outline--hover);
+  background-color: var(--button-primary-outline-bg-hover);
+  border-color: var(--button-primary-outline-bg-hover);
 }
 
 .button-primary-outline:focus {
-  box-shadow: 0 0 5px var(--button-primary-outline-bg--focus);
-  border-color: var(--button-primary-outline-bg--focus);
+  box-shadow: 0 0 5px var(--button-primary-outline-bg-focus);
+  border-color: var(--button-primary-outline-bg-focus);
 }
 
 .button-primary-outline:active {
-  background-color: var(--button-primary-outline-bg--active);
-  border-color: var(--button-primary-outline-bg--active);
+  background-color: var(--button-primary-outline-bg-active);
+  border-color: var(--button-primary-outline-bg-active);
   box-shadow: none;
 }
 
 .button-primary-outline:disabled {
-  background-color: var(--button-primary-outline-bg--disabled);
-  border-color: var(--button-primary-outline-bg--disabled);
+  background-color: var(--button-primary-outline-bg-disabled);
+  border-color: var(--button-primary-outline-bg-disabled);
   cursor: not-allowed;
 }
 
@@ -178,9 +206,62 @@ a.button-outline:hover {
 .button-close--with-bg {
   padding: var(--space-xs);
   backdrop-filter: blur(2px);
-  background-color: color(--color-white-rgba-06);
+  background-color: (--color-white-rgba-06);
 }
 
 .button-close--with-bg .icon--close {
   stroke: var(--color-black);
 }
+
+
+.backtop-btn {
+  z-index: 100;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 30px;
+  height: 45px;
+
+  background-color: var(--color-white);
+  opacity: 0;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+  overflow: visible; /* важно для псевдоэлемента */
+}
+
+.backtop-btn.active {
+  opacity: 0.4;
+}
+
+.backtop-btn::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  bottom: -20px;
+  left: -20px;
+  /* создаёт невидимую зону вокруг кнопки */
+}
+
+.backtop-btn svg {
+  transition: fill 0.2s ease-in;
+  pointer-events: none; /* чтобы SVG не мешал hover-зоне */
+}
+
+
+.backtop-btn.active:hover {
+  opacity: 1;
+  background-color: var(--color-white);
+  transform: scale(1.1); /* можно убрать или настроить */
+
+  .icon--arrow {
+    stroke: var(--color-black);
+  }
+}
+
+

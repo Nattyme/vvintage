@@ -1,0 +1,12 @@
+.post-meta {
+  display: flex;
+  align-items: center;
+  column-gap: var(--space-xl);
+}
+
+.post-meta__date, .post-meta__views  {
+  display: flex;
+  align-items: center;
+  column-gap: var(--space-md);
+}
+

@@ -1,22 +1,6 @@
 .shop {
   padding-bottom: 50px;
 }
-.shop__container {
-  margin: 0 auto;
-  padding-left: var(--space-md);
-  padding-right: var(--space-md);
-  max-width: 100%;
-}
-.shop__header {
-  margin-bottom: var(--space-2xl);
-}
-
-.shop__row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  column-gap: 80px;
-}
 
 .shop__content {
   overflow-x: auto;

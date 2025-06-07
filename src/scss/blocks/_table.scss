@@ -13,12 +13,16 @@
 }
 
 th, td {
-  padding: var( --space-md) var( --space-sm);
+  padding: var( --space-md) var( --space-lg);
   text-align: left;
   border-bottom: 1px solid #ddd;
-  vertical-align: top;
+  vertical-align: center;
   word-wrap: break-word;
   overflow-wrap: break-word;
   white-space: normal;
   word-break: break-word;
+}
+
+tr {
+  position: relative;
 }

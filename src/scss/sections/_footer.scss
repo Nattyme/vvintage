@@ -60,25 +60,15 @@
     margin-top: var(--space-sm);
   }
 }
-
-.nav-list {
-  display: flex;
-  justify-content: space-between;
+.footer__topics {
+  margin-bottom: 100px;
+  text-align: center;
 }
 
-.nav-list__item {
+.footer__topics-header {
+  margin-bottom: 25px;
+  text-transform: uppercase;
   font-size: var(--font-size-sm);
 }
 
-.inner-nav-wrapper {
-  margin-top: var(--space-2xl);
-}
-
-.inner-nav__list li + li {
-  margin-top: var(--space-sm);
-}
-
-.inner-nav__list {
-  font-size: var(--font-size-xs);
-}
 

@@ -65,7 +65,7 @@
   height: auto;
 }
 
-.form-order__button-wrappers {
+.form-order__button-wrapper {
   margin-top: 100px;
 
   display: flex;
@@ -83,7 +83,7 @@
 }
 
 .form-order__title {
-  font-size: var( --font-size-lg);
+  font-size: var(--font-size-lg);
   color: var(--color-white);
 }
 
@@ -113,7 +113,7 @@
 }
 
 .form-order__table-header {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-md);
   font-weight: var(--font-weight-semi-bold);
   border-top-left-radius: var(--radius-sm);
   border-top-right-radius: var(--radius-sm);

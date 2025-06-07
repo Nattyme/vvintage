@@ -33,19 +33,6 @@
   fill: #000;
 }
 
-.icon--phone {
-  padding: 3px 4px 7px 6px;
-  width: 27px;
-  height: 27px;
-  fill: #6E9C9F;
-	transition: all 0.5s ease;
-}
-
-:is(a:hover) .icon--phone {
-  background-color: var(--color-accent);
-  fill: #fff;
-}
-
 .icon--instagram, .icon--facebook, .icon--twitter {
   width: 23px;
   height: 23px;
@@ -119,28 +106,9 @@
   stroke: #000;
 }
 
-.icon--woman-with-hat {
-  stroke: #000;
-  fill: #000;
-  width: 50px;
-  height: 50px;
-
-  transition: fill 0.2s ease-in;
-}
-
-.header-top__login a:hover .icon--woman-with-hat {
-  fill: var(--color-accent);
-}
-
-
 // admin panel 
-.admin-panel {
-  .icon--target, .icon--mail, .icon--folder, .icon--message-square, .icon--edit, .icon--user {
-    stroke: var(--color-white);
-  }
-  .icon--logout {
-    fill: #fff;
-  }  
+.icon--target, .icon--folder, .icon--message-square, .icon--user {
+  stroke: var(--color-white);
 }
 
 .category-block__link {
@@ -168,4 +136,37 @@
   height: 15px;
   stroke: #fff;
   fill: #fff;
+}
+
+.icon--zen, .icon--login, .icon--cart, .icon--teg {
+  fill: var(--color-black);
+}
+
+.contacts__item {
+  .icon--mail, .icon--phone, .icon--location {
+    fill: var(--color-accent);
+  } 
+}
+
+.icon--calendar, .icon--eye {
+  fill: var(--color-black-300);
+}
+
+.sidebar__list-img-wrapper {
+  .icon--mail {
+    fill: var(--color-white);
+  }
+}
+
+.icon--user, .icon--users, .icon--book, .icon--message, 
+.icon--logout, .icon--mail, .icon--inventory, .icon--files,
+.icon--settings, .icon--corner, .icon--shop, .icon--statistic {
+  width: 32px;
+  height: 32px;
+  fill: var(--color-white);
+}
+
+.icon--arrow {
+  stroke: var(--color-black);
+  transform: rotate(180deg);
 }
