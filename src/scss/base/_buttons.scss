@@ -1,3 +1,5 @@
+@import './mixins';
+
 .buttons {
   display: flex;
   align-items: center;
@@ -5,115 +7,54 @@
 }
 
 /* Базовый стиль для всех кнопок */
-.button, a.button {
+.button {
   display: flex;
   align-items: center;
   justify-content: center;
 
-  padding: var(--spacing-zero) var(--space-md);
+  max-width: 100%;
+
   font-size: var(--font-size-md);
   font-family: var(--font-secondary);
-  transition: all 0.3s ease;
-  cursor: pointer;
+  font-weight: var(--font-weight-regular);
+  transition: all 0.2s ease-in;
   text-decoration: none;
-}
 
-/* Solid кнопка */
-.button-solid, a.button-solid {
-  width: 243px;
-  height: 68px;
-  padding: var(--spacing-zero) var(--space-lg) ;
-
-  background-color: var(--button-bg);
-  color: var(--color-white);
-  font-weight: var(--font-weight-regular);
-  font-size: var(--font-size-lg);
-
-  transition: all 0.5s ease;
-}
-
-.button-solid.button-solid--success {
-  display: flex;
-  width: unset;
-  background-color: var(--color-green-300);
-  &:hover {
-    background-color: var(--color-green-300);
-  }
-}
-
-.button-solid:hover,
-a.button-solid:hover {
-  background-color: var(--button-bg-hover);
-}
-
-/* Outline кнопка */
-.button-outline, a.button-outline {
-  width: 243px;
-  height: 68px;
-  padding: var(--space-lg) var(--spacing-zero);
-
-  border: 1px solid var(--button-bg);
-  color: var(--button-bg);
-  font-weight: var(--font-weight-regular);
-  font-size: var(--font-size-lg);
-  background-color: transparent;
-
-  transition: all 0.5s ease;
-}
-
-.button-outline--small, a.button-outline--small {
-  width: 155px;
-  height: 50px;
-  font-size: var(--font-size-xs);
-}
-
-.button-outline.button-outline--admin {
-  background-color: var(--color-white);
-}
-
-.button-outline:hover,
-a.button-outline:hover {
-  background-color: var(--button-bg);
-  color: var(--color-white);
+  cursor: pointer;
 }
 
 /* Primary кнопка */
-.button-primary, a.button-primary {
-  max-width: 200px;
-  height: 50px;
+.button--primary {
   border-radius: var(--radius-sm);
-  line-height: 50px;
-
   background-color: var(--button-primary-bg);
   color: var(--button-primary-text);
   border: 1px solid var(--button-primary-bg);
-
-  transition: all 0.3s ease;
 }
 
-.button-primary:hover {
+.button--primary:hover {
   background-color: var(--button-primary-bg-hover);
   border-color: var(--button-primary-bg-hover);
 }
 
-.button-primary:focus {
+.button--primary:focus {
   box-shadow: 0 0 4px var(--button-primary-bg-focus);
   border-color: var(--button-primary-bg-focus);
 }
 
-.button-primary:active {
+.button--primary:active {
   background-color: var(--button-primary-bg-active);
   border-color: var(--button-primary-bg-active);
   box-shadow: none;
 }
 
-.button-primary:disabled {
+.button--primary:disabled {
   background-color: var(--button-primary-bg-disabled);
   border-color: var(--button-primary-bg-disabled);
   cursor: not-allowed;
 }
 
-.button-primary--warning {
+/* Button Warning */
+.button--warning {
   background-color: var(--button-primary--warning-bg);
 
   &:hover {
@@ -121,124 +62,116 @@ a.button-outline:hover {
   }
 }
 
-/* Outline вариант Primary */
-.button-primary-outline, a.button-primary-outline {
-  max-width: 200px;
-  height: 50px;
-  padding: var(--spacing-zero) var(--space-md);
 
-  background-color: var(--button-primary-outline-bg);
-  border: 1px solid var(--button-primary-outline-border);
+/** Outline кнопка **/
+.button--outline {
+  border: 1px solid var(--color-accent);
   border-radius: var(--radius-sm);
-
-  color: var(--button-primary-outline-text);
-  text-align: left;
-
-  transition: all 0.3s ease;
+  color: var(--color-accent);
+  background-color: var(--color-white);
 }
 
-.button-primary-outline:hover {
-  background-color: var(--button-primary-outline-bg-hover);
-  border-color: var(--button-primary-outline-bg-hover);
+.button--outline-transparent {
+  color: var(--color-white);
+  border-color: var(--color-white);
+  background-color: var(--color-transparent); 
 }
 
-.button-primary-outline:focus {
+.button--outline:hover {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-white);
+}
+
+.button--outline:focus {
   box-shadow: 0 0 5px var(--button-primary-outline-bg-focus);
   border-color: var(--button-primary-outline-bg-focus);
 }
 
-.button-primary-outline:active {
+.button--outline:active {
   background-color: var(--button-primary-outline-bg-active);
   border-color: var(--button-primary-outline-bg-active);
   box-shadow: none;
 }
 
-.button-primary-outline:disabled {
+.button--outline:disabled {
   background-color: var(--button-primary-outline-bg-disabled);
   border-color: var(--button-primary-outline-bg-disabled);
   cursor: not-allowed;
 }
 
-.button--with-icon::after {
-  margin-left: 20px;
-  content: "";
-  width: 10px;
-  height: 10px;
-  border-left: 2px solid var(--color-white);
-  border-top: 2px solid var(--color-white);
-  transform: rotate(135deg);
-  transition: margin 0.5s ease;
+
+/** Кнопка с иконкой **/
+.button--with-icon {
+  width: 150px;
+  text-align: left;
+  justify-content: flex-start;
+
+  &::after {
+    margin-left: 20px;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-left: 2px solid var(--color-white);
+    border-top: 2px solid var(--color-white);
+    transform: rotate(135deg);
+    transition: margin 0.5s ease;
+  }
 }
 
 .button--with-icon:hover::after {
   margin-left: var(--space-xl);
 }
 
-/* Специальная админская solid-кнопка */
-.button-solid-admin, a.button-solid-admin {
-  max-width: 140px;
-  height: 50px;
-  line-height: 50px;
-  border-radius: var(--radius-md);
-  background-color: var(--button-solid-admin-bg);
-  box-shadow: 1px 1px 2px var(--black-300);
-  color: var(--color-white);
-  font-size: var(--font-size-lg);
-}
-
-.button-solid-admin:hover {
-  background-color: var(--button-bg-hover);
-}
 
 /* Закрывающая кнопка */
-.button-close {
+.button--close {
   z-index: 9;
   position: absolute;
   top: var(--space-xs);
   right: var(--space-xs);
-  cursor: pointer;
 }
 
-.button-close svg {
-  transition: stroke 0.2s ease-in;
+.button--close svg {
+  // transition: stroke 0.2s ease-in;
 }
 
-.button-close--with-bg {
+.button--close-with-bg {
   padding: var(--space-xs);
   backdrop-filter: blur(2px);
   background-color: (--color-white-rgba-06);
+
+  svg {
+    stroke: var(--color-black);
+  }
 }
 
-.button-close--with-bg .icon--close {
-  stroke: var(--color-black);
-}
-
-
-.backtop-btn {
+/* BUTTON BACKTOP*/
+.button--backtop {
   z-index: 100;
   position: fixed;
   bottom: 25px;
   right: 25px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
   width: 30px;
   height: 45px;
 
   background-color: var(--color-white);
   opacity: 0;
-  transition: all 0.2s ease-in;
-  cursor: pointer;
   overflow: visible; /* важно для псевдоэлемента */
 }
 
-.backtop-btn.active {
-  opacity: 0.4;
+.button--backtop-active:hover {
+  opacity: 1;
+  background-color: var(--color-white);
+  transform: scale(1.1); /* можно убрать или настроить */
+
+  .icon--arrow {
+    stroke: var(--color-black);
+  }
 }
 
-.backtop-btn::before {
+.button--backtop::before {
   content: "";
   position: absolute;
   top: -20px;
@@ -248,20 +181,27 @@ a.button-outline:hover {
   /* создаёт невидимую зону вокруг кнопки */
 }
 
-.backtop-btn svg {
+.button--backtop svg {
   transition: fill 0.2s ease-in;
   pointer-events: none; /* чтобы SVG не мешал hover-зоне */
 }
 
 
-.backtop-btn.active:hover {
-  opacity: 1;
-  background-color: var(--color-white);
-  transform: scale(1.1); /* можно убрать или настроить */
+/* РАЗМЕРЫ*/
+.button--xs {
 
-  .icon--arrow {
-    stroke: var(--color-black);
-  }
+}
+
+.button--s {
+
+}
+// $height, $padding-x, $min-width, $font-size: var(--font-size-sm)
+.button--m {
+  @include button-size(50px, var(--space-md), 200px, var(--font-size-sm));
+}
+
+.button--l {
+  @include button-size(68px, var(--space-lg), 250px, var(--font-size-sm));
 }
 
 
