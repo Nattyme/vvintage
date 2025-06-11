@@ -193,15 +193,22 @@
 }
 
 .button--s {
-
+  @include button-size(40px, var(--space-md), 150px, var(--font-size-xs));
+  max-width: 150px;
 }
 // $height, $padding-x, $min-width, $font-size: var(--font-size-sm)
 .button--m {
   @include button-size(50px, var(--space-md), 200px, var(--font-size-sm));
+  max-width: 200px;
 }
 
 .button--l {
-  @include button-size(68px, var(--space-lg), 250px, var(--font-size-sm));
+  @include button-size(68px, var(--space-lg), 250px, var(--font-size-lg));
+  max-width: 250px;
+}
+
+.button--xl {
+  @include button-size(68px, var(--space-lg), 250px, var(--font-size-lg));
 }
 
 
