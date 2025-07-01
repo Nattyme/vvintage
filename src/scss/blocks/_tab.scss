@@ -1,17 +1,22 @@
+.tab {
+  background-color: var(--color-white);
+}
+
 .tab__nav {
   margin-bottom: var(--space-4xl);
 
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  column-gap: var(--space-sm);
 }
 
 .tab__block {
+  padding: 0 var(--space-lg);
   display: none;
-  column-gap: var(--space-xl);
-  row-gap: var(--space-4xl);
-  flex-wrap: wrap;
+}
+
+.tab__block--social {
+  max-width: 50%;
 }
 
 .tab__block.active {

@@ -18,10 +18,6 @@
 
 .nav__block {
   position: relative;
-  padding-left: var(--space-md);
-  padding-right: var(--space-md);
-  height: 44px;
-  line-height: 44px;
 
   transition: color 0.5s ease;
   overflow: hidden;
@@ -31,18 +27,14 @@
 
   &:hover {
     background-color: var(--color-gray-100);
-  
-    &::after {
-      position: absolute;
-      display: inline-block;
-      content: "";
-      left: 0;
-      bottom: 0;
-      height: 1px;
-      width: 100%;
-      background-color: var(--color-orange-200);
-    }
   }
+}
+
+.nav__link {
+  padding-left: var(--space-md);
+  padding-right: var(--space-md);
+  height: 44px;
+  line-height: 44px;
 }
 
 .nav__list--with-admin-panel .nav__block .sub-nav  {

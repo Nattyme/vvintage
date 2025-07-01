@@ -8,19 +8,28 @@
 
 /* Базовый стиль для всех кнопок */
 .button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
   max-width: 100%;
 
+  text-align: center;
+  line-height: 1.5; // это font size * 1,5, для лучшей читаемости
   font-size: var(--font-size-md);
   font-family: var(--font-secondary);
   font-weight: var(--font-weight-regular);
+
   transition: all 0.2s ease-in;
   text-decoration: none;
 
   cursor: pointer;
+}
+
+.button--full {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 /* Primary кнопка */
@@ -109,9 +118,13 @@
 
   &::after {
     margin-left: 20px;
-    content: "";
+
+    display: inline-block;
     width: 10px;
     height: 10px;
+
+    content: "";
+    
     border-left: 2px solid var(--color-white);
     border-top: 2px solid var(--color-white);
     transform: rotate(135deg);
@@ -184,6 +197,22 @@
 .button--backtop svg {
   transition: fill 0.2s ease-in;
   pointer-events: none; /* чтобы SVG не мешал hover-зоне */
+}
+
+.button--tab {
+  border: 1px solid var(--color-black);
+  color: var(--color-white);
+  background-color: var(--color-black);
+}
+
+.button--tab.active {
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+
+.button--tab:hover:not(.active) {
+  border-color: var(--color-accent);
+  background-color: var(--color-accent);
 }
 
 

@@ -47,7 +47,7 @@
 .icon--file-check {
   width: 96px;
   height: 96px;
-  fill: #6E9C9F;
+  fill: var(--color-black);
 }
 
 .icon--control-up, .icon--control-down {
@@ -59,17 +59,17 @@
 .icon--delete {
   width: 12px;
   height: 12px;
-  stroke: #000;
+  stroke: var(--color-black);
 }
 
 .icon--success {
   width: 96px;
   height: 96px;
-  fill: #6E9C9F;
+  fill: var(--color-black);
 }
 
 .icon--slider-arrow {
-  stroke: #000;
+  stroke: var(--color-black);
 }
 
 .icon--slider-arrow-prev {
@@ -102,8 +102,8 @@
  {
   width: 20px;
   height: 20px;
-  fill: #000;
-  stroke: #000;
+  fill: var(--color-black);
+  stroke: var(--color-black);
 }
 
 // admin panel 
@@ -163,7 +163,8 @@
 .icon--settings, .icon--corner, .icon--shop, .icon--statistic {
   width: 32px;
   height: 32px;
-  fill: var(--color-white);
+  fill: var(--color-white-rgba-07);
+  transition: fill 0.2s ease-in;
 }
 
 .icon--arrow {
