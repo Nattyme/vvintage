@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Доставка</title>
+		<link rel="stylesheet" href="./css/main.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__top">
+				<div class="container">
+					<div class="header__row">
+						<div class="header__logo">
+							<a href="index.html" class="logo">
+								VVintage
+							</a>
+						</div>
+
+						<div class="header__cta">
+							<div class="header__user flex-block">
+								<div class="header__login">
+									<a href="./../page-login.html" class=""><span>Войти</span></a>
+									<a href="./../page-registration.html" class=""><span>Регистрация</span></a>
+								</div>
+								<div class="header__cart">
+									<a href="good.html" class="cart-widget">
+										<svg class="icon icon--zen">
+											<use href="./img/svgsprite/sprite.symbol.svg#zen"></use>
+										</svg>
+										<svg class="icon icon--shopping-bag">
+											<use href="./img/svgsprite/sprite.symbol.svg#shopping-bag"></use>
+										</svg>
+										<div class="cart-widget__counter">
+											<div class="counter">
+												<span class="text-ellipsis">33</span>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<button class="mobile-nav-btn">
+							<div class="nav-icon"></div>
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="header__nav">
+				<div class="container catalog-dropdown__container">
+					<nav class="nav" id="nav">
+						<ul class="nav__list" role="tablist" id="nav__list"></ul>
+					</nav>
+
+					<div class="catalog-dropdown__background" role="none"></div>
+				</div>
+			</div>
+		</header>
+		<div class="mobile-nav">
+			<div class="container">
+				<div class="mobile-nav__buttons-wrapper">
+					<div class="mobile-nav__buttons">
+						<button class="button button-primary text-big"><span>Вход</span></button>
+						<button class="button button-primary-outline text-big"><span>Регистрация</span></button>
+					</div>
+				</div>
+				<div class="mobile-nav__block-wrapper">
+					<div class="mobile-nav__block">
+						<div class="mobile-nav__title-wrapper">
+							<h3 class="mobile-nav__title">Категории</h3>
+						</div>
+						<ul class="mobile-nav__list"></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<main class="inner-page">
+			<section class="delivery">
+				<div class="container">
+					<div class="delivery__header">
+						<div class="section-title">
+							<h1 class="h1">Доставка и&#160;оплата</h1>
+						</div>
+
+						<div class="breadcrumbs">
+							<a href="#!" class="breadcrumb ">Главная</a>
+							<span>&#8212;</span>
+							<a href="#!" class="breadcrumb breadcrumb--active">Доставка и&#160;оплата</a>
+						</div>
+					</div>
+
+					<div class="delivery__grid">
+						<div class="delivery__schema">
+							<ul class="schema">
+								<li class="schema__item">
+									<div class="schema__icon">
+										<svg class="icon icon--shopping_bag_speed">
+											<use href="./img/svgsprite/sprite.symbol.svg#shopping_bag_speed"></use>
+										</svg>
+									</div>
+									<p>Оформите заказ на&#160;сайте</p>
+								</li>
+								<li class="schema__item">
+									<div class="schema__icon">
+										<svg class="icon icon--order_approve">
+											<use href="./img/svgsprite/sprite.symbol.svg#order_approve"></use>
+										</svg>
+									</div>
+									<p>Администратор проверит наличие товара, подтвердит заказ и&#160;направит данные по&#160;оплате</p>
+								</li>
+								<li class="schema__item">
+									<div class="schema__icon">
+										<svg class="icon icon--credit_card_clock">
+											<use href="./img/svgsprite/sprite.symbol.svg#credit_card_clock"></use>
+										</svg>
+									</div>
+									<p>Оплатить заказ нужно в&#160;течении 15мин, иначе он&#160;автоматически отменяется.</p>
+								</li>
+								<li class="schema__item">
+									<div class="schema__icon">
+										<svg class="icon icon--delivery_speed">
+											<use href="./img/svgsprite/sprite.symbol.svg#delivery_speed"></use>
+										</svg>
+									</div>
+									<p>
+										После оплаты выкупаем товар у&#160;поставщика и&#160;отправляем почтой. В&#160;графе заказа в&#160;профиле появится трек-номер для
+										отслеживания.
+									</p>
+								</li>
+							</ul>
+						</div>
+
+						<div class="delivery__tip">
+							<p>Статус заказа можно отслеживать в&#160;профиле</p>
+							<p>Если вы&#160;ищете определенный аромат, который не&#160;представлен в&#160;нашем магазине&#160;&#8212; напишите нам по&#160;форме обратной связи.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__content">
+					<div class="footer__column">
+						<div class="footer__logo">
+							<a href="index.html" class="logo">
+								VVintage
+							</a>
+						</div>
+						<div class="footer__copyright">
+							<p>&#169; Все права защищены</p>
+							<p><a href="">Политика конфиденциальности</a></p>
+							<p><a href="">Публичная оферта</a></p>
+							<p><a href="./policy.html">О&#160;предоставлении услуг</a></p>
+						</div>
+					</div>
+
+					<div class="footer__nav">
+						<ul class="nav-list">
+							<li class="nav-list__item">
+								<a class="nav-list__link" href="#!">Главная</a>
+							</li>
+							<li class="nav-list__item">
+								<a class="nav-list__link nav-list__inner-nav" href="#!">Магазин</a>
+								<div class="inner-nav-wrapper">
+									<ul class="inner-nav__list">
+										<li class="inner-nav__item">
+											<a href="#!" class="inner-nav__link">Пальто</a>
+										</li>
+										<li class="inner-nav__item">
+											<a href="#!" class="inner-nav__link">Свитшоты</a>
+										</li>
+										<li class="inner-nav__item">
+											<a href="#!" class="inner-nav__link">Кардиганы</a>
+										</li>
+										<li class="inner-nav__item">
+											<a href="#!" class="inner-nav__link">Толстовки</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="nav-list__item">
+								<a class="nav-list__link" href="#!">О&#160;нас</a>
+							</li>
+							<li class="nav-list__item">
+								<a class="nav-list__link" href="#!">Контакты</a>
+							</li>
+						</ul>
+					</div>
+
+					<div class="footer__column">
+						<div class="footer__contact">
+							<a href="tel:330606459426">+33-0606459426</a>
+							<a href="mailto:vvintage.store@yandex.com">vvintage.store@yandex.com</a>
+						</div>
+						<ul class="social-list">
+							<li>
+								<a href="#">
+									<svg class="icon icon--instagram">
+										<use href="./img/svgsprite/sprite.symbol.svg#instagram"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<svg class="icon icon--facebook">
+										<use href="./img/svgsprite/sprite.symbol.svg#facebook"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<svg class="icon icon--twitter">
+										<use href="./img/svgsprite/sprite.symbol.svg#twitter"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+						<ul class="payment-list">
+							<li>
+								<picture>
+									<source srcset="./img/payment/visa-mastercard.webp 1x, ./img/payment/visa-mastercard@2x.webp 2x" type="image/webp" />
+									<source srcset="./img/payment/visa-mastercard.png 1x, ./img/payment/visa-mastercard@2x.png 2x" type="image/png" />
+									<img src="./img/payment/visa-mastercard.png" srcset="./img/payment/visa-mastercard@2x.png" alt="" />
+								</picture>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

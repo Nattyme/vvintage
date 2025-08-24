@@ -2,10 +2,10 @@
   margin-bottom: var(--space-4xl);
 }
 
-.products__cards-row {
+.products__cards {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   column-gap: var(--space-lg);
   row-gap: var(--space-xl);
@@ -15,3 +15,93 @@
   margin-bottom: var(--space-4xl);
 }
 
+
+/* ======= Магазин ======= */
+.products {
+  padding: 40px 0;
+}
+
+.products__content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* ======= Верхняя панель ======= */
+.products__toolbar {
+  margin-bottom: 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background: #fafafa;
+  font-size: 14px;
+}
+
+.products__sort select {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+  font-size: 14px;
+}
+
+/* ======= Сетка контента ======= */
+.products__layout {
+  margin-bottom: 40px;
+
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 30px;
+  overflow: hidden;
+}
+
+/* ======= Фильтры ======= */
+.products__sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.products__filters select,
+.products__filters input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fafafa;
+  font-size: 14px;
+}
+
+.products__filters select:focus,
+.products__filters input:focus {
+  outline: none;
+  border-color: #000;
+  background: #fff;
+}
+
+/* ======= Карточки ======= */
+.products__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* ======= Нижняя панель ======= */
+.products__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background: #fafafa;
+  font-size: 14px;
+}

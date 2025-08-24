@@ -19,11 +19,18 @@
   --button-bg: var(--color-accent);
   --button-bg-hover: var(--color-orange-300);
 
+  --button--danger-bg: var(--color-red-500);
+  --button--danger-bg-hover: var(--color-red-400);
+  --button--danger-text: var(--color-white);
+  --button--danger-border-color: var(--color-red-500);
+
+  --button--danger-bg-focus: var(--color-red-200);
+  --button--danger-bg-active: var(--color-red-200);
+  --button--danger-bg-disabled: var(--color-red-100);
+
   --button-primary-bg: var(--color-accent);
   --button-primary-bg-hover: var(--color-orange-300);
   --button-primary-text: var(--color-white);
-  --button-primary--warning-bg: var(--color-red-400);
-  --button-primary--warning-bg-hover: var(--color-red);
 
   --button-primary-bg-focus: var(--color-ohra-300);
   --button-primary-bg-active: var(--color-ohra-400);

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Доставка</title>
+  <link rel="stylesheet" href="./css/main.css" />
+</head>
+<body>
+   @@include('sections/header.html')
+	<main class="inner-page">
+    <section class="delivery">
+      <div class="container">
+        <div class="delivery__header">
+          <div class="section-title">
+            <h1 class="h1">Доставка и оплата </h1>
+          </div>
+        
+          <div class="breadcrumbs">
+            <a href="#!" class="breadcrumb ">Главная</a> 
+            <span>&mdash;</span> 
+            <a href="#!" class="breadcrumb breadcrumb--active">Доставка и оплата</a>
+          </div>
+        </div>
+
+
+        <div class="delivery__grid">
+          <div class="delivery__schema">
+           
+                <ul class="schema">
+                  <li class="schema__item">
+                    <div class="schema__icon">
+                      <svg class="icon icon--shopping_bag_speed">
+                        <use href="./img/svgsprite/sprite.symbol.svg#shopping_bag_speed"></use>
+                      </svg>
+                    </div>
+                    <p>Оформите заказ на сайте</p>
+                  </li>
+                  <li class="schema__item">
+                    <div class="schema__icon">
+                      <svg class="icon icon--order_approve">
+                        <use href="./img/svgsprite/sprite.symbol.svg#order_approve"></use>
+                      </svg>
+                    </div>
+                    <p>Администратор проверит наличие товара, подтвердит заказ и направит данные по оплате</p>
+                  </li>
+                  <li class="schema__item">
+                    <div class="schema__icon">
+                      <svg class="icon icon--credit_card_clock">
+                        <use href="./img/svgsprite/sprite.symbol.svg#credit_card_clock"></use>
+                      </svg>
+                    </div>
+                    <p>Оплатить заказ нужно в течении 15мин, иначе он автоматически отменяется. </p>
+                  </li>
+                  <li class="schema__item">
+                    <div class="schema__icon">
+
+                      <svg class="icon icon--delivery_speed">
+                        <use href="./img/svgsprite/sprite.symbol.svg#delivery_speed"></use>
+                      </svg>
+                    </div>
+                    <p>После оплаты выкупаем товар у поставщика и отправляем почтой. В графе заказа в профиле появится трек-номер для отслеживания.</p>
+                  </li>
+                </ul>
+          
+          </div>
+
+          <div class="delivery__tip">
+            <p>Статус заказа можно отслеживать в профиле</p>
+            <p>Если вы ищете определенный аромат, который не представлен в нашем магазине - напишите нам по форме обратной связи.</p>
+          </div>
+        </div>
+
+
+   
+      </div>
+    </section>
+	</main>
+	@@include('sections/footer.html')
+</body>
+</html>

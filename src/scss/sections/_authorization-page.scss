@@ -1,14 +1,18 @@
 .authorization-page {
   position: relative;
+  z-index: 9;
 
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
+  row-gap: 50px;
+}
 
-  background-color: #fff;
- 
-  
+.authorization-page__header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .authorization-page-footer {
@@ -67,9 +71,7 @@
   }
 }
 
-.authorization-page__header {
-  padding-top: var(--space-xl);
-}
+
 .authorization-page__link {
   display: flex;
   align-items: center;

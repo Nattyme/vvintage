@@ -13,6 +13,16 @@ body {
   letter-spacing: 0.02em;
 }
 
+body.animated-bg-lines {
+  .authorization-page__link {
+    color: #fff;
+  }
+  header, .authorization {
+    position: relative;
+    z-index: 9;
+  }
+}
+
 html, body {
   position: relative;
   min-height: 100vh;
@@ -32,6 +42,13 @@ a {
 
 .main-content {
   padding-bottom: 100px;
+}
+
+main.inner-page {
+  // flex :1; // занимает всё свободное место между header и footer
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .inner-page {

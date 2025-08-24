@@ -31,13 +31,9 @@
   }
 
   &__preview {
-    display: none;
+    display: flex;
     flex-wrap: wrap;
     gap: var(--space-sm);
-
-    &.active {
-      display: flex;
-    }
   }
 
   &__img-wrapper {
@@ -87,4 +83,28 @@
 .block-upload__img--with-checkbox {
   display: flex;
   column-gap: 40px;
+}
+
+.block-upload__preview {
+  position: relative;
+  min-height: 150px;
+  border: 4px dashed var(--color-gray-600);
+  border-radius: 4px;
+  padding: 10px 15px;
+  transition: opacity 0.2s ease-in, border-color 0.2s ease-in;
+}
+
+.block-upload__preview.active {
+  border-color: var(--color-accent);
+}
+
+.block-upload__preview:hover {
+  opacity: 0.8;
+  border-color: var(--color-accent);
+}
+
+.admin-form__block-upload__button {
+    position: absolute;
+    bottom: 0;
+    right: 15px;
 }

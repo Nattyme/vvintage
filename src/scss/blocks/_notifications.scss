@@ -50,6 +50,11 @@
 
 .notifications__message {
   padding: var(--space-lg);
+
+  display: flex;
+  align-items: center;
+  column-gap: 35px;
+  
   background-color: var(--color-gray-100);
   border-radius: 0px 0px 6px 6px;
 }
@@ -60,6 +65,6 @@
   line-height: 1.5;
 }
 
-.notifications__message p:not(:last-child) {
-  margin-bottom: var(--space-sm);
-}
+// .notifications__message p:not(:last-child) {
+//   margin-bottom: var(--space-sm);
+// }

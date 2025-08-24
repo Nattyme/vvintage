@@ -20,7 +20,7 @@
 }
 
 .tab__block.active {
-  display: flex;
+  display: block;
 }
 
 .tab__nav-button {
@@ -42,6 +42,21 @@
   background-color: #000;
   color: #fff;
 }
+
+.tab__nav-button--flags {
+  padding: 10px 15px;
+  border-color: var(--color-gray-200);
+
+  img {
+    width: 40px;
+    height: auto; 
+  }
+
+  &.active {
+    background-color: var(--color-gray-400);
+  }
+}
+
 
 .profile-form .tab__nav {
   margin-bottom: var(--space-md);
