@@ -12,6 +12,36 @@
 }
 
 
+.post-logos {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.post-text {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap; /* чтобы красиво ломалось на телефонах */
+}
+
+.logos img {
+  height: 40px;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.logos img:hover {
+  opacity: 1;
+}
+
+
 
 
 

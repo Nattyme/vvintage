@@ -9,9 +9,8 @@
 <body>
    @@include('sections/header.html')
 	<main class="inner-page">
-    <section class="delivery">
-      <div class="container">
-        <div class="delivery__header">
+    <div class="container">
+       <div class="delivery__header">
           <div class="section-title">
             <h1 class="h1">Доставка и оплата </h1>
           </div>
@@ -24,57 +23,120 @@
         </div>
 
 
-        <div class="delivery__grid">
-          <div class="delivery__schema">
-           
-                <ul class="schema">
-                  <li class="schema__item">
-                    <div class="schema__icon">
-                      <svg class="icon icon--shopping_bag_speed">
-                        <use href="./img/svgsprite/sprite.symbol.svg#shopping_bag_speed"></use>
-                      </svg>
-                    </div>
-                    <p>Оформите заказ на сайте</p>
-                  </li>
-                  <li class="schema__item">
-                    <div class="schema__icon">
-                      <svg class="icon icon--order_approve">
-                        <use href="./img/svgsprite/sprite.symbol.svg#order_approve"></use>
-                      </svg>
-                    </div>
-                    <p>Администратор проверит наличие товара, подтвердит заказ и направит данные по оплате</p>
-                  </li>
-                  <li class="schema__item">
-                    <div class="schema__icon">
-                      <svg class="icon icon--credit_card_clock">
-                        <use href="./img/svgsprite/sprite.symbol.svg#credit_card_clock"></use>
-                      </svg>
-                    </div>
-                    <p>Оплатить заказ нужно в течении 15мин, иначе он автоматически отменяется. </p>
-                  </li>
-                  <li class="schema__item">
-                    <div class="schema__icon">
+  
+      <section class="delivery__schema">
+        <h2 class="h2">Оформление заказа</h2>
+            <ul class="schema">
+              <li class="schema__item">
+                <div class="schema__icon">
+                  <svg class="icon icon--shopping_bag_speed">
+                    <use href="./img/svgsprite/sprite.symbol.svg#shopping_bag_speed"></use>
+                  </svg>
+                </div>
+                <p>Оформите заказ на сайте. Доступно после <a>регистрации на сайте.</a></p>
+              </li>
+              <li class="schema__item">
+                <div class="schema__icon">
+                  <svg class="icon icon--order_approve">
+                    <use href="./img/svgsprite/sprite.symbol.svg#order_approve"></use>
+                  </svg>
+                </div>
+                <p>Администратор проверит наличие товара, подтвердит заказ и направит данные по оплате</p>
+              </li>
+              <li class="schema__item">
+                <div class="schema__icon">
+                  <svg class="icon icon--credit_card_clock">
+                    <use href="./img/svgsprite/sprite.symbol.svg#credit_card_clock"></use>
+                  </svg>
+                </div>
+                <p>После получения оплаты выкупаем товар у поставщика. Оплатить заказ нужно в течении 15мин, иначе он автоматически отменяется. </p>
+                <a class="schema__link" href="">Все способы оплаты</a>
+              </li>
+              <li class="schema__item">
+                <div class="schema__icon">
 
-                      <svg class="icon icon--delivery_speed">
-                        <use href="./img/svgsprite/sprite.symbol.svg#delivery_speed"></use>
-                      </svg>
-                    </div>
-                    <p>После оплаты выкупаем товар у поставщика и отправляем почтой. В графе заказа в профиле появится трек-номер для отслеживания.</p>
-                  </li>
-                </ul>
-          
+                  <svg class="icon icon--delivery_speed">
+                    <use href="./img/svgsprite/sprite.symbol.svg#delivery_speed"></use>
+                  </svg>
+                </div>
+                <p>Заказ отправляем государственной почтой вашей страны. В графе заказа в профиле появится трек-номер для отслеживания.</p>
+                <a class="schema__link" href="">Перейти к тарифам</a>
+              </li>
+            </ul>
+      
+      </section>
+
+      <section class="post-logos">
+        <p class="post-text">Мы отправляем заказы государственными почтовыми службами:</p>
+        <ul class="logos">
+          <li class="logos__item">
+            <a href="https://www.laposte.fr/" class="logos__link">
+              <svg class="icon icon--logo-la-poste-post">
+                <use href="./img/svgsprite/sprite.symbol.svg#logo-la-poste-post"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="logos__item">
+            <a href="https://www.japanpost.jp/" class="logos__link">
+              <svg class="icon icon--logo-japan-post">
+                <use href="./img/svgsprite/sprite.symbol.svg#logo-japan-post"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="logos__item">
+            <a href="http://www.chinapost.com.cn/" class="logos__link">
+                <svg class="icon icon--logo-china-post">
+                  <use href="./img/svgsprite/sprite.symbol.svg#logo-china-post"></use>
+                </svg>
+            </a>
+          </li>
+          <li class="logos__item">
+            <a href="#" class="logos__link">
+               <svg class="icon icon--logo-russian-post">
+                <use href="./img/svgsprite/sprite.symbol.svg#logo-russian-post"></use>
+               </svg>
+            </a>
+          </li>
+          <li class="logos__item">
+            <a href="#" class="logos__link">
+               <svg class="icon icon--logo-correos-post">
+                <use href="./img/svgsprite/sprite.symbol.svg#logo-correos-post"></use>
+               </svg>
+            </a>
+          </li>
+          <li class="logos__item">
+            <a href="#" class="logos__link">
+               <svg class="icon icon--logo-deutsche-post">
+                <use href="./img/svgsprite/sprite.symbol.svg#logo-deutsche-post"></use>
+               </svg>
+            </a>
+          </li>
+          <li class="logos__item">
+            <a href="#" class="logos__link">
+               <svg class="icon icon--logo-royal-post">
+                <use href="./img/svgsprite/sprite.symbol.svg#logo-royal-post"></use>
+               </svg>
+            </a>
+          </li>
+ 
+  
+        </ul>
+      </section>
+
+
+      <section class="delivery__tip">
+        <div class="tip-list">
+          <div class="tip-item">
+              <p>Посмотреть трек номер и статус отправки можно в вашем профиле. <a class="button button--outline button--s">Зарегестрироваться</a></p>
           </div>
-
-          <div class="delivery__tip">
-            <p>Посмотреть трек номер и статус отправки можно в вашем профиле. <a>Оформить профиль</a></p>
-            <p>Если у вас отсались вопросы или не нашли, что искали - напишите нам</p>
+          <div class="tip-item">
+              <p>Задать нам вопрос или отправить предложение можно <a class="link">здесь</a></p>
           </div>
         </div>
+      
+      </section>
 
-
-   
-      </div>
-    </section>
+    </div>
 	</main>
 	@@include('sections/footer.html')
 </body>
