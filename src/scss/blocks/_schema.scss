@@ -1,7 +1,8 @@
 .schema {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: stretch;
   
   text-align: center;
   column-gap: 20px;
@@ -15,13 +16,19 @@
     height: 80px;
     flex-shrink: 0;
   }
+
+  link {
+    display: block;
+    margin-top: 100%;
+  }
 }
 
 .schema__item {
-  padding-top: 40px;
+  // padding-top: 40px;
   position: relative;
 
-  display: flex;
+  display: grid;
+  grid-template-rows: 40px 80px 1fr 30px;
   justify-content: space-between;
   row-gap: 20px;
   align-items: center;
@@ -36,6 +43,8 @@
     position: absolute;
     display: inline-block;
     content: "1";
+    color: var(--color-white);
+    font-weight: 500;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -49,6 +58,10 @@
 
 .schema__icon {
   margin-bottom: 15px;
+}
+
+.schema__link {
+  margin-top: auto;
 }
 
 

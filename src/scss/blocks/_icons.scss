@@ -186,3 +186,22 @@
 .icon--delivery_speed, .icon--shopping_bag_speed, .icon--order_approve, .icon--credit_card_clock {
   fill: #818181;
 }
+
+.icon--logo-la-poste-post,
+.icon--logo-japan-post,
+.icon--logo-china-post {
+  fill: #000;
+}
+
+.icon--logo-russian-post,
+.icon--logo-correos-post,
+.icon--logo-deutsche-post,
+.icon--logo-royal-post {
+  height: 50px;  /* чтобы все были одного уровня */
+  width: 150px;
+}
+
+// .icon--logo-pay-paypal, .icon--logologo-pay-mastercard, .icon--logologo-pay-bitcoin,
+// .icon--logologo-pay-visa, .icon--logologo-pay--mir, .icon--logologo-pay-bitcoin-accepted-here {
+//   fill: #000;
+// }

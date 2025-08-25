@@ -21,7 +21,6 @@
 .price-card__body {
   height: 80%;
   border-radius: 15px;
-  background-color: #1b262c;
 }
 
 .price-card__title {
@@ -36,7 +35,7 @@
   font-size: 32px;
   font-weight: 600;
   text-align: center;
-  color: #fff;
+   color: var(--color--black);
 }
 
 .price-card__text {
@@ -47,7 +46,7 @@
   align-items: center;
 
   font-size: 22px;
-  color: #fff;
+  color: var(--color--black);
 }
 
 .price-card__table {
@@ -57,7 +56,6 @@
   height: 270px;
   width: 90%;
 
-  border: 2px solid #000;
 }
 
 .price-card__plans-row {
@@ -78,22 +76,5 @@
   text-align: center;
 }
 
-
-
-.price-card__plan--1 {
-  background-color: #efecd5;
-}
-.price-card__plan--2 {
-  background-color: #f3e780;
-}
-.price-card__plan--3 {
-  background-color: #efbc4e;
-}
-.price-card__plan--4 {
-  background-color: #e0c619;
-}
-.price-card__plan--5 {
-  background-color: #caa709;
-}
 
 

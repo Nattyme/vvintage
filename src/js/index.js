@@ -11,7 +11,8 @@ const pageProduct = '/shop-single.html';
 
 
 document.addEventListener('DOMContentLoaded', () => {
-
+ addAccordion("many", "#prices");
+  
   const pathHolder = document.querySelector('[data-config]');
   const path = pathHolder.dataset.config;
   
