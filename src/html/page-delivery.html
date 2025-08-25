@@ -36,7 +36,7 @@
                 <use href="./img/svgsprite/sprite.symbol.svg#shopping_bag_speed"></use>
               </svg>
             </div>
-            <p>Оформите заказ на сайте. Доступно после <a>регистрации на сайте.</a></p>
+            <p>Оформите заказ на сайте. Доступно после <a class="link">регистрации</a></p>
           </li>
           <li class="schema__item">
             <div class="schema__icon">
@@ -68,7 +68,7 @@
             </div>
             <p>Товар поступает на склад в течение 1-ой недели. После проверки он отправляется покупателю государственной почтой вашей страны. В графе заказа в профиле появится трек-номер</p>
         
-              <a class="schema__link link" href="#!">Перейти к тарифам</a>
+            <a class="schema__link link" href="#!">Перейти к тарифам</a>
        
           </li>
         </ul>
@@ -115,11 +115,12 @@
       <section class="delivery__tip">
         <div class="tip-list">
           <div class="tip-item">
-              <p>Посмотреть трек номер и статус отправки можно в вашем профиле. Для оформления профиля нужно <a class="link">зарегестрироваться на сайте</a></p>
+              <p>Посмотреть трек номер и статус отправки можно в вашем <a href="#!" class="link">профиле.</a></p>
           </div>
           <div class="sub-nav__line-separator"></div>
           <div class="tip-item">
-              <p>Есть вопросы? Ищите конкретный товар?  <a class="button button--s button--outline">Напишите нам</a></p>
+              <p>Есть вопросы? Ищите конкретный товар?</p>
+              <a class="button button--s button--outline">Напишите нам</a>
           </div>
         </div>
       
@@ -179,14 +180,9 @@
                 </div>
                 <p>ОТ <span class="text-bold text-accent">35 €</span></p>
               </div>
-              <div class="price-card__text accordion__btn">
-                <p>Подробнее о тарифах</p>
-              </div>
-              <!-- <div class="price-card__img">
-                <svg class="icon icon--box">
-                  <use href="./img/svgsprite/sprite.symbol.svg#box"></use>
-                </svg>
-              </div> -->
+           
+              <button class="button button--primary button--s accordion__btn">Подробнее</button>
+          
               <div class="price-card__table accordion__content">
                 <div class="price-card__plans-row">
                   <div class="price-card__plan price-card__plan--1">
@@ -221,19 +217,13 @@
             <div class="price-card__body">
               <div class="price-card__header">
                 <div class="price-card__title price-card__title--with-line accordion__btn">
-                  <h2 class="price-card__title">Другие страны</h2>
+                  <h2 class="price-card__title">МИР</h2>
                 </div>
             
                 <p>ОТ <span class="text-bold text-accent">37 €</span></p>
               </div>
-              <div class="price-card__text">
-                <p>Подробнее о тарифах</p>
-              </div>
-              <!-- <div class="price-card__img">
-                <svg class="icon icon--box">
-                  <use href="./img/svgsprite/sprite.symbol.svg#box"></use>
-                </svg>
-              </div> -->
+              <button class="button button--primary button--s accordion__btn">Подробнее</button>
+          
               <div class="price-card__table accordion__content">
                 <div class="price-card__plans-row">
                   <div class="price-card__plan price-card__plan--1">
@@ -316,8 +306,17 @@
     <section class="terms">
       <div class="container">
            <div class="section-title">
-              <h3 class="h3">Гарантии  и условия поставки </h3>
+              <h3 class="h3">Гарантии и условия поставки </h3>
             </div>
+            <ul>
+              <li>Оператор выкупает товар сразу же после поступления оплаты.</li>
+              <li>Если к моменту перевода средств товар уже продан -  возвращаем оплату. Удержается только комиссия по переводу через системы.</li>
+              <li>Все претензии должны направляться в письменной форме.</li>
+              <li>В связи со сложной международной ситуацией и сложной работой почты, мы не принимаем возвраты товара.</li>
+              <li>Мы стараемся выложить как можно больше фотографий, чтобы покупатель имел четкое представление о том, что он приобретает.</li>
+              <li>Мы не несем ответственности за работу почты России.</li>
+              <li>По желанию отправка может быть застрахована</li>
+            </ul>
 
       </div>
     </section>
@@ -327,6 +326,12 @@
         <div class="section-title">
           <h3 class="h3">Способы оплаты</h3>
         </div>
+
+        <ul>
+          <li>Оплата принимается разными способами. Через международные средства оплаты, такие как : Paypal, дебетовые  карты, денежные переводы, а также через отправку электронных платежей таких как системы переводов и криптовалюта. </li>
+          <li>Все цены указаны в евро. Курс евро зависит от выбранного способа оплаты.</li>
+          <li>Расчет производится в рублях, евро и долларах по реальному курсу на день выставления счета</li>
+        </ul>
 
         <ul class="payment-logos">
           <li class="payment-logos__item">

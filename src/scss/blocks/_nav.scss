@@ -73,6 +73,15 @@
 }
 .sub-nav__link:hover {
   background-color: var(--color-gray-100);
+
+  svg {
+    transition: fill 0.2s ease-in;
+  }
+
+  svg {
+    fill: var(--color-accent);
+    stroke: var(--color-accent-additional);
+  }
 }
 
 .sub-nav__list {
