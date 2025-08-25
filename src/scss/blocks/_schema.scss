@@ -8,30 +8,25 @@
   column-gap: 20px;
 
   * {
-    flex: 1 1;
+    // flex: 1 1;
   }
 
   svg {
+    margin-left: auto;
+    margin-right: auto;
     width: 80px;
     height: 80px;
     flex-shrink: 0;
   }
-
-  link {
-    display: block;
-    margin-top: 100%;
-  }
 }
 
 .schema__item {
-  // padding-top: 40px;
+  padding-top: 40px;
   position: relative;
 
-  display: grid;
-  grid-template-rows: 40px 80px 1fr 30px;
-  justify-content: space-between;
+  display: flex;
+  // justify-content: space-between;
   row-gap: 20px;
-  align-items: center;
   flex-direction: column;
 
   p {
@@ -58,6 +53,8 @@
 
 .schema__icon {
   margin-bottom: 15px;
+   flex-grow: 0;
+  flex-shrink: 1;
 }
 
 .schema__link {
