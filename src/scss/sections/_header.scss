@@ -15,8 +15,8 @@
 }
 
 .header.header--with-admin-panel {
-  margin-top: 70px;
-  top: 70px;
+  // margin-top: 70px;
+  // top: 70px;
 }
 
 .header__top-panel {
@@ -83,4 +83,10 @@
 .header__tools {
   display: flex;
   grid-column: 3;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

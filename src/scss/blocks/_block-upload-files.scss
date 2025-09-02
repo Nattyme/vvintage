@@ -85,11 +85,31 @@
   column-gap: 40px;
 }
 
-.block-upload__preview {
+.block-upload__dropzone {
   position: relative;
   min-height: 150px;
   border: 4px dashed var(--color-gray-600);
   border-radius: 4px;
+  padding: 10px 15px;
+  transition: opacity 0.2s ease-in, border-color 0.2s ease-in;
+}
+
+.block-upload__dropzone.active {
+  animation: dash-background 2s linear infinite;
+  border-color: transparent; /* скрываем обычную границу */
+}
+
+@keyframes dash-background {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 40px 0;
+  }
+}
+
+
+.block-upload__preview {
   padding: 10px 15px;
   transition: opacity 0.2s ease-in, border-color 0.2s ease-in;
 }

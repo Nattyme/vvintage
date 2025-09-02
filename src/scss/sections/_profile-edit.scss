@@ -1,10 +1,21 @@
-.profile-form__row {
+.profile-card__content {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-right: -15px;
-  margin-left: -15px;
+
+  & > * {
+    flex: 1 1;
+  }
 }
+
+// .profile-form__row {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: center;
+//   margin-right: -15px;
+//   margin-left: -15px;
+// }
 
 .profile-form__row + .profile-form__row {
   margin-top: 40px;
